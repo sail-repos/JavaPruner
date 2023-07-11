@@ -1,0 +1,853 @@
+public class javaT.lang.String.Supplementary extends java.lang.Object
+{
+    static final java.lang.String[] input;
+    static final int[][] golden1;
+    static final int[][] golden2;
+    static final int[][] golden3;
+    static final boolean At;
+    static final boolean Before;
+    static final boolean FIRST;
+    static final boolean LAST;
+    public static long TRAPCOUNT;
+    private java.util.ArrayList[][][] field_617287;
+    private static volatile java.lang.ref.SoftReference field_617291;
+
+    static void <clinit>()
+    {
+        java.lang.String[] r0;
+        int[][] r1, r6, r11;
+        int[] r2, r3, r4, r5, r7, r8, r9, r10, r12, r13, r14, r15, r16, r17;
+
+        r0 = newarray (java.lang.String)[6];
+
+        r0[0] = "abc\ud800\udc00def\ud800\ud800ab\ud800\udc00cdefa\udc00bcdef";
+
+        r0[1] = "\ud800defg\ud800hij\ud800\udc00klm\udc00nop\udc00\ud800rt\udc00";
+
+        r0[2] = "\udc00abcd\udbff\udfffefgh\ud800\udc009ik\udc00\udc00lm\udc00no\ud800";
+
+        r0[3] = "\ud800\udc00!#$\ud800%&\ud800\udc00;+\udc00<>;=^\udc00\\@\ud800\udc00";
+
+        r0[4] = "\udb40\ude00abc\ude01\udb40de\udb40\ude02f\udb40\ude03ghi\udb40\ude02";
+
+        r0[5] = "\ud800\udc00\ud800\udc01\ud800\udc02\ud800\udc03\ud800\udc04\ud800\udc05\ud800\udc06\ud800\udc07\ud800\udc08\ud800\udc08\ud800\udc09\ud800\udc0a\ud800\udc0b\ud800\udc0c\ud800\udc0d\ud800\udc0a\ud800\udc0f\ud800\udc10";
+
+        <javaT.lang.String.Supplementary: java.lang.String[] input> = r0;
+
+        r1 = newarray (int[])[4];
+
+        r2 = newarray (int)[6];
+
+        r2[0] = 97;
+
+        r2[1] = 55296;
+
+        r2[2] = 56320;
+
+        r2[3] = 65536;
+
+        r2[4] = 918016;
+
+        r2[5] = 65536;
+
+        r1[0] = r2;
+
+        r3 = newarray (int)[6];
+
+        r3[0] = 55296;
+
+        r3[1] = 65536;
+
+        r3[2] = 103;
+
+        r3[3] = 56320;
+
+        r3[4] = 918018;
+
+        r3[5] = 56324;
+
+        r1[1] = r3;
+
+        r4 = newarray (int)[6];
+
+        r4[0] = 102;
+
+        r4[1] = 56320;
+
+        r4[2] = 55296;
+
+        r4[3] = 56320;
+
+        r4[4] = 56834;
+
+        r4[5] = 56336;
+
+        r1[2] = r4;
+
+        r5 = newarray (int)[6];
+
+        r5[0] = 102;
+
+        r5[1] = 112;
+
+        r5[2] = 56320;
+
+        r5[3] = 94;
+
+        r5[4] = 918018;
+
+        r5[5] = 56328;
+
+        r1[3] = r5;
+
+        <javaT.lang.String.Supplementary: int[][] golden1> = r1;
+
+        r6 = newarray (int[])[4];
+
+        r7 = newarray (int)[6];
+
+        r7[0] = 97;
+
+        r7[1] = 55296;
+
+        r7[2] = 56320;
+
+        r7[3] = 55296;
+
+        r7[4] = 56128;
+
+        r7[5] = 55296;
+
+        r6[0] = r7;
+
+        r8 = newarray (int)[6];
+
+        r8[0] = 55296;
+
+        r8[1] = 108;
+
+        r8[2] = 65536;
+
+        r8[3] = 56320;
+
+        r8[4] = 56128;
+
+        r8[5] = 55296;
+
+        r6[1] = r8;
+
+        r9 = newarray (int)[6];
+
+        r9[0] = 102;
+
+        r9[1] = 56320;
+
+        r9[2] = 55296;
+
+        r9[3] = 65536;
+
+        r9[4] = 918018;
+
+        r9[5] = 65552;
+
+        r6[2] = r9;
+
+        r10 = newarray (int)[6];
+
+        r10[0] = 98;
+
+        r10[1] = 100;
+
+        r10[2] = 97;
+
+        r10[3] = 56320;
+
+        r10[4] = 56832;
+
+        r10[5] = 56320;
+
+        r6[3] = r10;
+
+        <javaT.lang.String.Supplementary: int[][] golden2> = r6;
+
+        r11 = newarray (int[])[6];
+
+        r12 = newarray (int)[6];
+
+        r12[0] = 98;
+
+        r12[1] = -1;
+
+        r12[2] = 1;
+
+        r12[3] = 11;
+
+        r12[4] = 20;
+
+        r12[5] = -1;
+
+        r11[0] = r12;
+
+        r13 = newarray (int)[7];
+
+        r13[0] = 55296;
+
+        r13[1] = -1;
+
+        r13[3] = 5;
+
+        r13[4] = 9;
+
+        r13[5] = 19;
+
+        r13[6] = -1;
+
+        r11[1] = r13;
+
+        r14 = newarray (int)[8];
+
+        r14[0] = 56320;
+
+        r14[1] = -1;
+
+        r14[3] = 12;
+
+        r14[4] = 16;
+
+        r14[5] = 17;
+
+        r14[6] = 20;
+
+        r14[7] = -1;
+
+        r11[2] = r14;
+
+        r15 = newarray (int)[6];
+
+        r15[0] = 65536;
+
+        r15[1] = -1;
+
+        r15[3] = 8;
+
+        r15[4] = 21;
+
+        r15[5] = -1;
+
+        r11[3] = r15;
+
+        r16 = newarray (int)[5];
+
+        r16[0] = 918018;
+
+        r16[1] = -1;
+
+        r16[2] = 9;
+
+        r16[3] = 17;
+
+        r16[4] = -1;
+
+        r11[4] = r16;
+
+        r17 = newarray (int)[5];
+
+        r17[0] = 65546;
+
+        r17[1] = -1;
+
+        r17[2] = 22;
+
+        r17[3] = 30;
+
+        r17[4] = -1;
+
+        r11[5] = r17;
+
+        <javaT.lang.String.Supplementary: int[][] golden3> = r11;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        javaT.lang.String.Supplementary r0;
+        java.util.ArrayList[][][] $r1;
+
+        r0 := @this: javaT.lang.String.Supplementary;
+
+        $r1 = newmultiarray (java.util.ArrayList)[64][32][8];
+
+        r0.<javaT.lang.String.Supplementary: java.util.ArrayList[][][] field_617287> = $r1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+
+        r0 := @parameter0: java.lang.String[];
+
+        staticinvoke <javaT.lang.String.Supplementary: void test9()>();
+
+        return;
+
+        return;
+    }
+
+    static void test9()
+    {
+        javaT.lang.String.Supplementary $r0;
+        java.lang.String[] $r1, $r2;
+        int $i0, i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, i18, i19, i20, i21, i22, i23, i24, i25, i26, i27, i28;
+        java.lang.String r3, $r4, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r35, $r36, $r37, $r38, $r39, $r40, $r41, $r42, $r43, $r44, $r45, $r46, $r47, $r48, $r49, $r50, $r51, $r52, $r53, $r54, $r55, $r56, $r57, $r58, $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r67, $r68, $r69, $r70, $r71, $r72, $r73, $r74, $r75, $r76, $r77, $r78, $r79, $r80, $r81, $r82, $r83, $r84, $r85, $r86, $r87, $r88, $r89, $r90, $r91, $r92, $r93, $r94, $r95, $r96, $r97, $r98, $r99, $r100, $r101, $r102, $r103, $r104, $r105, $r106, $r107, $r108, $r109, $r110, $r126, $r134, $r142, $r148, $r157, $r163, r165, r166, r167;
+        java.lang.ref.WeakReference $r5, $r117, $r124;
+        java.util.Calendar$Builder $r111;
+        java.lang.ref.SoftReference $r112, $r118, $r120;
+        java.util.ArrayList $r113, $r125;
+        java.util.LinkedList $r114;
+        java.text.ParseException $r115;
+        java.net.InetSocketAddress $r116;
+        java.lang.Object $r119;
+        java.security.InvalidParameterException $r121;
+        java.security.AccessControlException $r122;
+        java.lang.NoSuchMethodError $r123;
+        java.lang.StringBuilder $r127, $r128, $r129, $r130, $r131, $r132, $r133, $r135, $r136, $r137, $r138, $r139, $r140, $r141, $r143, $r144, $r145, $r146, $r147, $r149, $r150, $r151, $r152, $r154, $r155, $r156;
+        boolean $z0, $z1, z2, z3, z4, z5;
+        java.lang.OutOfMemoryError $r158, $r162, $r164;
+        GCObj $r160, $r161;
+        long $l14, $l15, $l16, $l17;
+
+        i18 = 0;
+
+     label1:
+        $r2 = <javaT.lang.String.Supplementary: java.lang.String[] input>;
+
+        r3 = $r2[i18];
+
+        i1 = virtualinvoke r3.<java.lang.String: int length()>();
+
+        $r5 = new java.lang.ref.WeakReference;
+
+        $r4 = new java.lang.String;
+
+        specialinvoke $r4.<java.lang.String: void <init>(java.lang.String)>("4");
+
+        $r6 = new java.lang.String;
+
+        specialinvoke $r6.<java.lang.String: void <init>(java.lang.String)>("C(i?");
+
+        $r7 = new java.lang.String;
+
+        specialinvoke $r7.<java.lang.String: void <init>(java.lang.String)>("C(i?");
+
+        $r8 = new java.lang.String;
+
+        specialinvoke $r8.<java.lang.String: void <init>(java.lang.String)>("C(i?");
+
+        $r9 = new java.lang.String;
+
+        specialinvoke $r9.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r10 = new java.lang.String;
+
+        specialinvoke $r10.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r11 = new java.lang.String;
+
+        specialinvoke $r11.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r12 = new java.lang.String;
+
+        specialinvoke $r12.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r13 = new java.lang.String;
+
+        specialinvoke $r13.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r14 = new java.lang.String;
+
+        specialinvoke $r14.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r15 = new java.lang.String;
+
+        specialinvoke $r15.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r16 = new java.lang.String;
+
+        specialinvoke $r16.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r17 = new java.lang.String;
+
+        specialinvoke $r17.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r18 = new java.lang.String;
+
+        specialinvoke $r18.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r19 = new java.lang.String;
+
+        specialinvoke $r19.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        r165 = new java.lang.String;
+
+        specialinvoke r165.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r20 = new java.lang.String;
+
+        specialinvoke $r20.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r21 = new java.lang.String;
+
+        specialinvoke $r21.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r22 = new java.lang.String;
+
+        specialinvoke $r22.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r23 = new java.lang.String;
+
+        specialinvoke $r23.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r24 = new java.lang.String;
+
+        specialinvoke $r24.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r25 = new java.lang.String;
+
+        specialinvoke $r25.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r26 = new java.lang.String;
+
+        specialinvoke $r26.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r27 = new java.lang.String;
+
+        specialinvoke $r27.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r28 = new java.lang.String;
+
+        specialinvoke $r28.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r29 = new java.lang.String;
+
+        specialinvoke $r29.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r30 = new java.lang.String;
+
+        specialinvoke $r30.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r31 = new java.lang.String;
+
+        specialinvoke $r31.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r32 = new java.lang.String;
+
+        specialinvoke $r32.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r33 = new java.lang.String;
+
+        specialinvoke $r33.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r34 = new java.lang.String;
+
+        specialinvoke $r34.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r35 = new java.lang.String;
+
+        specialinvoke $r35.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r36 = new java.lang.String;
+
+        specialinvoke $r36.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r37 = new java.lang.String;
+
+        specialinvoke $r37.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r38 = new java.lang.String;
+
+        specialinvoke $r38.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r39 = new java.lang.String;
+
+        specialinvoke $r39.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r40 = new java.lang.String;
+
+        specialinvoke $r40.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r41 = new java.lang.String;
+
+        specialinvoke $r41.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r42 = new java.lang.String;
+
+        specialinvoke $r42.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r43 = new java.lang.String;
+
+        specialinvoke $r43.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r44 = new java.lang.String;
+
+        specialinvoke $r44.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r45 = new java.lang.String;
+
+        specialinvoke $r45.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r46 = new java.lang.String;
+
+        specialinvoke $r46.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r47 = new java.lang.String;
+
+        specialinvoke $r47.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r48 = new java.lang.String;
+
+        specialinvoke $r48.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r49 = new java.lang.String;
+
+        specialinvoke $r49.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r50 = new java.lang.String;
+
+        specialinvoke $r50.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r51 = new java.lang.String;
+
+        specialinvoke $r51.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r52 = new java.lang.String;
+
+        specialinvoke $r52.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r53 = new java.lang.String;
+
+        specialinvoke $r53.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r54 = new java.lang.String;
+
+        specialinvoke $r54.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r55 = new java.lang.String;
+
+        specialinvoke $r55.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r56 = new java.lang.String;
+
+        specialinvoke $r56.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r57 = new java.lang.String;
+
+        specialinvoke $r57.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r58 = new java.lang.String;
+
+        specialinvoke $r58.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        r166 = new java.lang.String;
+
+        specialinvoke r166.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r59 = new java.lang.String;
+
+        specialinvoke $r59.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r60 = new java.lang.String;
+
+        specialinvoke $r60.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r61 = new java.lang.String;
+
+        specialinvoke $r61.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r62 = new java.lang.String;
+
+        specialinvoke $r62.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r63 = new java.lang.String;
+
+        specialinvoke $r63.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r64 = new java.lang.String;
+
+        specialinvoke $r64.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r65 = new java.lang.String;
+
+        specialinvoke $r65.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r66 = new java.lang.String;
+
+        specialinvoke $r66.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r67 = new java.lang.String;
+
+        specialinvoke $r67.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r68 = new java.lang.String;
+
+        specialinvoke $r68.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r69 = new java.lang.String;
+
+        specialinvoke $r69.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r70 = new java.lang.String;
+
+        specialinvoke $r70.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r71 = new java.lang.String;
+
+        specialinvoke $r71.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r72 = new java.lang.String;
+
+        specialinvoke $r72.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r73 = new java.lang.String;
+
+        specialinvoke $r73.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r74 = new java.lang.String;
+
+        specialinvoke $r74.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r75 = new java.lang.String;
+
+        specialinvoke $r75.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r76 = new java.lang.String;
+
+        specialinvoke $r76.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r77 = new java.lang.String;
+
+        specialinvoke $r77.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r78 = new java.lang.String;
+
+        specialinvoke $r78.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r79 = new java.lang.String;
+
+        specialinvoke $r79.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r80 = new java.lang.String;
+
+        specialinvoke $r80.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r81 = new java.lang.String;
+
+        specialinvoke $r81.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r82 = new java.lang.String;
+
+        specialinvoke $r82.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        r167 = new java.lang.String;
+
+        specialinvoke r167.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r83 = new java.lang.String;
+
+        specialinvoke $r83.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r84 = new java.lang.String;
+
+        specialinvoke $r84.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r85 = new java.lang.String;
+
+        specialinvoke $r85.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r86 = new java.lang.String;
+
+        specialinvoke $r86.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r87 = new java.lang.String;
+
+        specialinvoke $r87.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r88 = new java.lang.String;
+
+        specialinvoke $r88.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r89 = new java.lang.String;
+
+        specialinvoke $r89.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r90 = new java.lang.String;
+
+        specialinvoke $r90.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r91 = new java.lang.String;
+
+        specialinvoke $r91.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r92 = new java.lang.String;
+
+        specialinvoke $r92.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r93 = new java.lang.String;
+
+        specialinvoke $r93.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r94 = new java.lang.String;
+
+        specialinvoke $r94.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r95 = new java.lang.String;
+
+        specialinvoke $r95.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r96 = new java.lang.String;
+
+        specialinvoke $r96.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r97 = new java.lang.String;
+
+        specialinvoke $r97.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r98 = new java.lang.String;
+
+        specialinvoke $r98.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r99 = new java.lang.String;
+
+        specialinvoke $r99.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r100 = new java.lang.String;
+
+        specialinvoke $r100.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r101 = new java.lang.String;
+
+        specialinvoke $r101.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r102 = new java.lang.String;
+
+        specialinvoke $r102.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r103 = new java.lang.String;
+
+        specialinvoke $r103.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r104 = new java.lang.String;
+
+        specialinvoke $r104.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r105 = new java.lang.String;
+
+        specialinvoke $r105.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r106 = new java.lang.String;
+
+        specialinvoke $r106.<java.lang.String: void <init>(java.lang.String)>("xx");
+
+        $r107 = new java.lang.String;
+
+        specialinvoke $r107.<java.lang.String: void <init>(java.lang.String)>("lJW");
+
+        $r108 = new java.lang.String;
+
+        specialinvoke $r108.<java.lang.String: void <init>(java.lang.String)>("lJW");
+
+        $r109 = new java.lang.String;
+
+        specialinvoke $r109.<java.lang.String: void <init>(java.lang.String)>("|V~x");
+
+        $r110 = new java.lang.String;
+
+        specialinvoke $r110.<java.lang.String: void <init>(java.lang.String)>("|V~x");
+
+        $r111 = new java.util.Calendar$Builder;
+
+        specialinvoke $r111.<java.util.Calendar$Builder: void <init>()>();
+
+        $r112 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r112.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r3);
+
+        $r113 = new java.util.ArrayList;
+
+        specialinvoke $r113.<java.util.ArrayList: void <init>()>();
+
+        $r114 = new java.util.LinkedList;
+
+        specialinvoke $r114.<java.util.LinkedList: void <init>()>();
+
+        specialinvoke $r5.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r4);
+
+        $r115 = new java.text.ParseException;
+
+        specialinvoke $r115.<java.text.ParseException: void <init>(java.lang.String,int)>("G+", -1);
+
+        $r116 = new java.net.InetSocketAddress;
+
+        specialinvoke $r116.<java.net.InetSocketAddress: void <init>(int)>(-2);
+
+        $r117 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r117.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r165);
+
+        $r118 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r118.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r166);
+
+        $r120 = new java.lang.ref.SoftReference;
+
+        $r119 = new java.lang.Object;
+
+        specialinvoke $r119.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r120.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r119);
+
+        $r121 = new java.security.InvalidParameterException;
+
+        specialinvoke $r121.<java.security.InvalidParameterException: void <init>()>();
+
+        $r122 = new java.security.AccessControlException;
+
+        specialinvoke $r122.<java.security.AccessControlException: void <init>(java.lang.String)>("#.N9l$}L-:NZrhb&pz\'0-(j#mTm$S@KILY!|JJr<uNz}mV+}>JY=J* %/Ll0]sOK%X~_dv{{:5%`|`b SMKz|#ZVj8LXjp%itCaR%");
+
+        $r123 = new java.lang.NoSuchMethodError;
+
+        specialinvoke $r123.<java.lang.NoSuchMethodError: void <init>()>();
+
+        $r124 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r124.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r167);
+
+        $r125 = new java.util.ArrayList;
+
+        specialinvoke $r125.<java.util.ArrayList: void <init>()>();
+
+        i19 = 0;
+
+        goto label2;
+
+     label2:
+        $r1 = <javaT.lang.String.Supplementary: java.lang.String[] input>;
+
+        $i0 = lengthof $r1;
+
+        if i18 < $i0 goto label1;
+
+        return;
+
+        return;
+
+        catch java.lang.OutOfMemoryError from label2 to label2 with label2;
+        catch java.lang.OutOfMemoryError from label2 to label2 with label2;
+    }
+}

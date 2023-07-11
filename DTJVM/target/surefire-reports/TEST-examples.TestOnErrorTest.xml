@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="0" name="examples.TestOnErrorTest" time="0.036" errors="1" skipped="0">
+  <properties>
+    <property name="idea.version" value="2022.2.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Users\15331\.jdks\temurin-1.8.0_362\jre\bin"/>
+    <property name="java.vm.version" value="25.362-b09"/>
+    <property name="java.vm.vendor" value="Temurin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\TestReducer\ClassReducer"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\TestReducer\ClassReducer"/>
+    <property name="java.runtime.version" value="1.8.0_362-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\15331\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="maven.ext.class.path" value="D:\Program File\ideaIC-2022.2.3.win\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="D:\Env\Maven\apache-maven-3.8.6\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Users\15331\.jdks\temurin-1.8.0_362\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\Env\Java\jdk1.8.0_351\bin;D:\Env\Java\jre1.8.0_351\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program File\Git\cmd;D:\Env\Maven\apache-maven-3.8.6\bin;D:\Env\Maven\apache-maven-3.8.6\bin;D:\Program File\Xftp 7\;D:\Program File\Xshell 7\;D:\Program File\Bitvise SSH Client;C:\Program Files\Docker\Docker\resources\bin;D:\Program File\Graphviz\bin;D:\Env\Python\Python3_11\Scripts\;D:\Env\Python\Python3_11\;C:\Users\15331\AppData\Local\Microsoft\WindowsApps;;D:\Program File\PyCharm Community Edition 2022.2.4\bin;;."/>
+    <property name="maven.conf" value="D:\Env\Maven\apache-maven-3.8.6/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="D:\Env\Maven\mvn-repository"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\15331"/>
+    <property name="user.timezone" value="GMT+08:00"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="15331"/>
+    <property name="java.class.path" value="D:\Env\Maven\apache-maven-3.8.6\boot\plexus-classworlds-2.6.0.jar;D:\Env\Maven\apache-maven-3.8.6\boot\plexus-classworlds.license;D:\Program File\ideaIC-2022.2.3.win\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Users\15331\.jdks\temurin-1.8.0_362\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.3 -s D:\Env\Maven\apache-maven-3.8.6\conf\settings.xml -Dmaven.repo.local=D:\Env\Maven\mvn-repository package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_362"/>
+    <property name="java.ext.dirs" value="C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\resources.jar;C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\rt.jar;C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\sunrsasign.jar;C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\jsse.jar;C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\jce.jar;C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\charsets.jar;C:\Users\15331\.jdks\temurin-1.8.0_362\jre\lib\jfr.jar;C:\Users\15331\.jdks\temurin-1.8.0_362\jre\classes"/>
+    <property name="java.vendor" value="Temurin"/>
+    <property name="java.specification.maintenance.version" value="4"/>
+    <property name="maven.home" value="D:\Env\Maven\apache-maven-3.8.6"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="examples.TestOnErrorTest" name="test" time="0.007">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at examples.Platform.isDebugBuild(Platform.java:8)
+	at examples.TestOnErrorTest.test(TestOnErrorTest.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="examples.TestOnErrorTest" name="test2" time="0.029"/>
+</testsuite>

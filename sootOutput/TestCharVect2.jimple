@@ -1,0 +1,465 @@
+public class compiler.codegen.TestCharVect2 extends java.lang.Object
+{
+    private static final int ARRLEN;
+    private static final int ITERS;
+    private static final int ADD_INIT;
+    private static final int BIT_MASK;
+    private static final int VALUE;
+    private static final int SHIFT;
+
+    public void <init>()
+    {
+        compiler.codegen.TestCharVect2 r0;
+
+        r0 := @this: compiler.codegen.TestCharVect2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream $r0, $r1, $r3;
+        java.lang.StringBuilder $r2, $r4, $r5;
+        java.lang.String $r6;
+        java.lang.String[] r7;
+        int i0;
+
+        r7 := @parameter0: java.lang.String[];
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Testing Char vectors");
+
+        i0 = staticinvoke <compiler.codegen.TestCharVect2: int test()>();
+
+        return;
+
+        return;
+    }
+
+    static int test()
+    {
+        int $i0, $i2, $i4, $i7, $i8, $i10, $i13, $i14, $i16, $i19, $i20, $i22, $i25, $i26, $i28, $i31, $i32, $i34, $i37, $i38, $i40, $i43, $i44, $i46, $i49, $i50, $i52, $i55, $i56, $i58, $i61, $i62, $i64, $i67, $i68, $i70, $i73, $i74, $i76, $i79, $i80, $i82, $i85, $i86, $i88, $i91, $i92, $i94, $i97, $i98, $i100, $i103, $i104, $i106, $i109, $i110, $i112, $i114, $i115, $i117, $i119, $i120, $i122, $i124, $i125, $i127, $i129, $i130, $i132, $i134, $i135, $i137, $i139, $i140, $i142, $i144, $i145, $i147, $i149, $i150, $i152, $i154, $i155, $i157, $i160, $i161, $i163, $i166, $i167, $i169, $i171, $i172, $i174, $i176, $i177, $i179, $i181, $i182, $i184, $i186, $i187, $i189, $i192, $i193, $i195, $i198, $i199, $i201, $i203, $i204, $i206, $i208, $i209, $i211, $i213, $i214, $i216, $i218, $i219, $i221, $i224, $i225, $i227, $i230, $i231, $i233, $i235, $i236, $i238, $i240, $i241, $i243, $i245, $i246, $i248, $i250, $i251, $i253, $i256, $i257, $i259, $i262, $i263, $i265, $i267, $i268, $i270, $i272, $i273, $i275, $i277, $i278, $i280, $i282, $i283, $i285, $i286, $i289, $i290, $i292, $i293, $i296, $i297, $i299, $i300, $i303, $i304, $i306, $i307, $i310, $i311, $i313, $i314, $i317, $i318, $i320, $i321, $i324, $i325, $i327, $i328, $i331, $i332, $i334, $i335, $i338, $i339, $i341, $i342, $i344, $i345, $i347, $i348, $i350, $i351, $i353, $i354, $i356, $i357, $i359, $i360, $i362, $i363, $i364, $i365, $i366, $i367, $i368, $i369, $i370, $i371, $i372, $i373, $i376, $i377, $i378, $i379, $i380, $i381, $i382, $i383, $i384, $i385, $i386, $i387, $i390, $i391, $i392, $i393, $i395, $i396, $i397, $i402, $i403, $i404, $i409, $i410, $i411, $i418, $i419, $i422, $i423, $i424, $i425, $i427, $i428, $i429, $i434, $i435, $i436, $i441, $i442, $i443, $i450, $i451, $i454, i528, i529, i531, i532, i533, i534, i535, i536, i537, i538, i539, i540, i541, i542, i543, i544, i545, i546, i547, i548, i549, i550, i551, i552, i553, i554, i555, i556, i557, i558, i559, i560, i561, i562, i563, i564, i565, i566, i567, i568, i569, i570, i571, i572, i573, i574, i575, i576, i577, i578, i579, i580, i581, i582, i583, i584, i585, i586, i587, i588, i589, i590, i591, i592, i593, i594, i595, i596, i597, i598, i599, i600, i601, i602, i603, i604, i605, i606, i607, i608, i610, i613, i616, i619, i622, i625, i628, i631, i634, i637, i640, i643, i646, i649, i652, i655, i658, i661, i664, i667, i670, i673, i676, i679, i682, i685, i688, i691, i694, i697, i700, i703, i706, i709, i712, i715, i718, i721, i724, i727, i730, i733, i736, i739, i742, i745, i748, i751, i754, i757, i760, i763, i766, i769, i772, i775, i778, i781, i784, i787, i790, i793, i796, i799, i802, i805, i808, i811, i814, i817, i820, i823;
+        java.io.PrintStream $r0, $r1, $r2, $r148, r160, r162, r164, r166, r168, r170, r172, r174, r176, r178, r180, r182, r184, r186, r188, r190, r192, r194, r196, r198, r200, r202, r204, r206, r208, r210, r212, r214, r216, r218, r220, r222, r224, r226, r228, r230, r232, r234, r236, r238, r240, r242, r244, r246, r248, r250, r252, r254, r256, r258, r260, r262, r264, r266, r268, r270, r272, r274, r276, r278, r280, r282, r284, r286, r288, r290, r292, r294, r296, r298, r300, r302;
+        char $c3, $c5, $c6, $c9, $c11, $c12, $c15, $c17, $c18, $c21, $c23, $c24, $c27, $c29, $c30, $c33, $c35, $c36, $c39, $c41, $c42, $c45, $c47, $c48, $c51, $c53, $c54, $c57, $c59, $c60, $c63, $c65, $c66, $c69, $c71, $c72, $c75, $c77, $c78, $c81, $c83, $c84, $c87, $c89, $c90, $c93, $c95, $c96, $c99, $c101, $c102, $c105, $c107, $c108, $c111, $c113, $c116, $c118, $c121, $c123, $c126, $c128, $c131, $c133, $c136, $c138, $c141, $c143, $c146, $c148, $c151, $c153, $c156, $c158, $c159, $c162, $c164, $c165, $c168, $c170, $c173, $c175, $c178, $c180, $c183, $c185, $c188, $c190, $c191, $c194, $c196, $c197, $c200, $c202, $c205, $c207, $c210, $c212, $c215, $c217, $c220, $c222, $c223, $c226, $c228, $c229, $c232, $c234, $c237, $c239, $c242, $c244, $c247, $c249, $c252, $c254, $c255, $c258, $c260, $c261, $c264, $c266, $c269, $c271, $c274, $c276, $c279, $c281, $c284, $c287, $c288, $c291, $c294, $c295, $c298, $c301, $c302, $c305, $c308, $c309, $c312, $c315, $c316, $c319, $c322, $c323, $c326, $c329, $c330, $c333, $c336, $c337, $c340, $c343, $c346, $c349, $c352, $c355, $c358, $c361, $c374, $c375, $c388, $c389, $c420, $c421, $c452, $c453, c530;
+        long $l394, $l398, $l399, $l400, $l401, $l405, $l406, $l407, $l408, $l412, $l413, $l414, $l415, $l416, $l417, $l426, $l430, $l431, $l432, $l433, $l437, $l438, $l439, $l440, $l444, $l445, $l446, $l447, $l448, $l449, $l456, $l457, $l458, $l459, $l460, $l461, $l462, $l463, $l464, $l465, $l466, $l467, $l468, $l469, $l470, $l471, $l472, $l473, $l474, $l475, $l476, $l477, $l478, $l479, $l480, $l481, $l482, $l483, $l484, $l485, $l486, $l487, $l488, $l489, $l490, $l491, $l492, $l493, $l494, $l495, $l496, $l497, $l498, $l499, $l500, $l501, $l502, $l503, $l504, $l505, $l506, $l507, $l508, $l509, $l510, $l511, $l512, $l513, $l514, $l515, $l516, $l517, $l518, $l519, $l520, $l521, $l522, $l523, $l524, $l525, $l526, $l527, l609, l611, l612, l614, l615, l617, l618, l620, l621, l623, l624, l626, l627, l629, l630, l632, l633, l635, l636, l638, l639, l641, l642, l644, l645, l647, l648, l650, l651, l653, l654, l656, l657, l659, l660, l662, l663, l665, l666, l668, l669, l671, l672, l674, l675, l677, l678, l680, l681, l683, l684, l686, l687, l689, l690, l692, l693, l695, l696, l698, l699, l701, l702, l704, l705, l707, l708, l710, l711, l713, l714, l716, l717, l719, l720, l722, l723, l725, l726, l728, l729, l731, l732, l734, l735, l737, l738, l740, l741, l743, l744, l746, l747, l749, l750, l752, l753, l755, l756, l758, l759, l761, l762, l764, l765, l767, l768, l770, l771, l773, l774, l776, l777, l779, l780, l782, l783, l785, l786, l788, l789, l791, l792, l794, l795, l797, l798, l800, l801, l803, l804, l806, l807, l809, l810, l812, l813, l815, l816, l818, l819, l821, l822, l824;
+        java.lang.StringBuilder $r3, $r5, $r7, $r9, $r11, $r13, $r15, $r17, $r19, $r21, $r23, $r25, $r27, $r29, $r31, $r33, $r35, $r37, $r39, $r41, $r43, $r45, $r47, $r49, $r51, $r53, $r55, $r57, $r59, $r61, $r63, $r65, $r67, $r69, $r71, $r73, $r75, $r77, $r79, $r81, $r83, $r85, $r87, $r89, $r91, $r93, $r95, $r97, $r99, $r101, $r103, $r105, $r107, $r109, $r111, $r113, $r115, $r117, $r119, $r121, $r123, $r125, $r127, $r129, $r131, $r133, $r135, $r137, $r139, $r141, $r143, $r145, $r147, $r149, $r150, $r151, r161, r163, r165, r167, r169, r171, r173, r175, r177, r179, r181, r183, r185, r187, r189, r191, r193, r195, r197, r199, r201, r203, r205, r207, r209, r211, r213, r215, r217, r219, r221, r223, r225, r227, r229, r231, r233, r235, r237, r239, r241, r243, r245, r247, r249, r251, r253, r255, r257, r259, r261, r263, r265, r267, r269, r271, r273, r275, r277, r279, r281, r283, r285, r287, r289, r291, r293, r295, r297, r299, r301, r303;
+        java.lang.String $r4, $r6, $r8, $r10, $r12, $r14, $r16, $r18, $r20, $r22, $r24, $r26, $r28, $r30, $r32, $r34, $r36, $r38, $r40, $r42, $r44, $r46, $r48, $r50, $r52, $r54, $r56, $r58, $r60, $r62, $r64, $r66, $r68, $r70, $r72, $r74, $r76, $r78, $r80, $r82, $r84, $r86, $r88, $r90, $r92, $r94, $r96, $r98, $r100, $r102, $r104, $r106, $r108, $r110, $r112, $r114, $r116, $r118, $r120, $r122, $r124, $r126, $r128, $r130, $r132, $r134, $r136, $r138, $r140, $r142, $r144, $r146, $r152;
+        char[] r153, r154;
+        short[] r155, r156, r157;
+        int[] r158;
+        long[] r159;
+
+        r153 = newarray (char)[997];
+
+        r154 = newarray (char)[997];
+
+        i532 = 0;
+
+        staticinvoke <compiler.codegen.TestCharVect2: void test_srlc_add(char[],char[])>(r153, r154);
+
+        i587 = 0;
+
+        goto label1;
+
+     label1:
+        if i532 <= 0 goto label2;
+
+        return i532;
+
+     label2:
+        return i532;
+    }
+
+    static void test_pack2(int[], char[])
+    {
+        int[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i7, $i8, $i10, $i11, $i12, i13;
+        char[] r1;
+        char $c6, $c9;
+
+        r0 := @parameter0: int[];
+
+        r1 := @parameter1: char[];
+
+        $i0 = lengthof r0;
+
+        $i2 = $i0 * 2;
+
+        $i1 = lengthof r1;
+
+        if $i2 <= $i1 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    static void test_pack2_swap(int[], char[])
+    {
+        java.lang.RuntimeException $r0;
+        java.lang.StringBuilder $r1, $r2, $r3, $r4;
+        java.lang.String $r5;
+        java.lang.Throwable $r6;
+        int[] r7;
+        char[] r8;
+
+        r7 := @parameter0: int[];
+
+        r8 := @parameter1: char[];
+
+        return;
+    }
+
+    static void test_pack4(long[], char[])
+    {
+        long[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i8, $i9, $i15, $i16, $i22, $i23, i30;
+        char[] r1;
+        char $c6, $c10, $c17, $c24;
+        long $l7, $l11, $l12, $l13, $l14, $l18, $l19, $l20, $l21, $l25, $l26, $l27, $l28, $l29;
+
+        r0 := @parameter0: long[];
+
+        r1 := @parameter1: char[];
+
+        $i0 = lengthof r0;
+
+        $i2 = $i0 * 4;
+
+        $i1 = lengthof r1;
+
+        if $i2 <= $i1 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    static void test_pack4_swap(long[], char[])
+    {
+        long[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i9, $i10, $i14, $i15, $i19, $i20, i30;
+        char[] r1;
+        char $c6, $c11, $c16, $c21;
+        long $l7, $l8, $l12, $l13, $l17, $l18, $l22, $l23, $l24, $l25, $l26, $l27, $l28, $l29;
+
+        r0 := @parameter0: long[];
+
+        r1 := @parameter1: char[];
+
+        $i0 = lengthof r0;
+
+        $i2 = $i0 * 4;
+
+        $i1 = lengthof r1;
+
+        if $i2 <= $i1 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    static void test_sllc_and(char[], char[])
+    {
+        char[] r0, r1;
+        int $i0, $i2, $i3, i5;
+        char $c1, $c4;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        return;
+
+        return;
+    }
+
+    static void test_sllv_and(char[], char[], int)
+    {
+        char[] r0, r1;
+        int $i0, i1, $i3, $i4, i6;
+        char $c2, $c5;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        i1 := @parameter2: int;
+
+        return;
+
+        return;
+    }
+
+    static void test_srac_add(char[], char[])
+    {
+        char[] r0, r1;
+        int $i0, $i2, $i3, i5;
+        char $c1, $c4;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        return;
+
+        return;
+    }
+
+    static void test_srac_and(char[], char[])
+    {
+        char[] r0, r1;
+        int $i0, i4;
+        char $c1, $c2, $c3;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        return;
+
+        return;
+    }
+
+    static void test_srav_add(char[], char[], int)
+    {
+        char[] r0, r1;
+        int $i0, i1, $i3, $i4, i6;
+        char $c2, $c5;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        i1 := @parameter2: int;
+
+        return;
+
+        return;
+    }
+
+    static void test_srav_and(char[], char[], int)
+    {
+        java.lang.NullPointerException $r0;
+        char[] r1, r2;
+        int i0;
+
+        r1 := @parameter0: char[];
+
+        r2 := @parameter1: char[];
+
+        i0 := @parameter2: int;
+
+        return;
+    }
+
+    static void test_srlc_add(char[], char[])
+    {
+        char[] r0, r1;
+        char $c0, $c9;
+        int $i1, i2, $i3, $i4, $i5, $i6, i7, i8, $i10;
+        int[] $r2;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        compiler.c2.Test6832293$ImmediateSubclass[] $r3, r15;
+        compiler.c2.Test6832293$SomeClass[] $r4, $r5, $r6, $r7, $r8, $r9, $r10, r11, r13, r14, r16, r20, r21, r22;
+        compiler.c2.Test6832293$AnotherInterface[] r12, r23;
+        compiler.c2.Test6832293$SomeClass[][] r17, r18, r19;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        r11 = newarray (compiler.c2.Test6832293$SomeClass)[-3];
+
+        r12 = newarray (compiler.c2.Test6832293$AnotherInterface)[1];
+
+        r13 = newarray (compiler.c2.Test6832293$SomeClass)[1];
+
+        r14 = newarray (compiler.c2.Test6832293$SomeClass)[1];
+
+        r15 = newarray (compiler.c2.Test6832293$ImmediateSubclass)[-1];
+
+        r16 = newarray (compiler.c2.Test6832293$SomeClass)[-100];
+
+        i7 = 0;
+
+        goto label1;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    static void test_srlc_and(char[], char[])
+    {
+        char[] r0, r1;
+        int $i0, i4;
+        char $c1, $c2, $c3;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        return;
+
+        return;
+    }
+
+    static void test_srlv_add(char[], char[], int)
+    {
+        char[] r0, r1;
+        int $i0, i1, $i3, $i4, i6;
+        char $c2, $c5;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        i1 := @parameter2: int;
+
+        return;
+
+        return;
+    }
+
+    static void test_srlv_and(char[], char[], int)
+    {
+        char[] r0, r1;
+        int $i0, i1, $i3, $i4, i6;
+        char $c2, $c5;
+
+        r0 := @parameter0: char[];
+
+        r1 := @parameter1: char[];
+
+        i1 := @parameter2: int;
+
+        return;
+
+        return;
+    }
+
+    static void test_unpack2(char[], int[])
+    {
+        int[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i8, $i9, $i10, $i12, i13;
+        char[] r1;
+        char c7, $c11;
+
+        r1 := @parameter0: char[];
+
+        r0 := @parameter1: int[];
+
+        $i0 = lengthof r0;
+
+        $i2 = $i0 * 2;
+
+        $i1 = lengthof r1;
+
+        if $i2 <= $i1 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    static void test_unpack2_swap(char[], int[])
+    {
+        int[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i8, $i9, $i10, $i12, i13;
+        char[] r1;
+        char c7, $c11;
+
+        r1 := @parameter0: char[];
+
+        r0 := @parameter1: int[];
+
+        $i0 = lengthof r0;
+
+        $i2 = $i0 * 2;
+
+        $i1 = lengthof r1;
+
+        if $i2 <= $i1 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    static void test_unpack4(char[], long[])
+    {
+        long[] r0;
+        int $i0, $i1, $i2, $i3, $i5, $i7, $i9, $i10, $i12, $i14, $i15, $i17, $i19, $i20, $i22, $i24, i25;
+        char[] r1;
+        long l4, $l6, $l11, $l16, $l21;
+        char $c8, $c13, $c18, $c23;
+
+        r1 := @parameter0: char[];
+
+        r0 := @parameter1: long[];
+
+        $i0 = lengthof r0;
+
+        $i2 = $i0 * 4;
+
+        $i1 = lengthof r1;
+
+        if $i2 <= $i1 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    static void test_unpack4_swap(char[], long[])
+    {
+        long[] r0;
+        int $i0, $i1, $i2, $i3, $i5, $i7, $i9, $i10, $i12, $i14, $i15, $i17, $i19, $i20, $i22, $i24, i25;
+        char[] r1;
+        long l4, $l6, $l11, $l16, $l21;
+        char $c8, $c13, $c18, $c23;
+
+        r1 := @parameter0: char[];
+
+        r0 := @parameter1: long[];
+
+        $i0 = lengthof r0;
+
+        $i2 = $i0 * 4;
+
+        $i1 = lengthof r1;
+
+        if $i2 <= $i1 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+}

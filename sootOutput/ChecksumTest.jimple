@@ -1,0 +1,174 @@
+public class ChecksumTest extends java.lang.Object
+{
+    int[] arr;
+    int[] arr2;
+    public static int CHECKSUM;
+    protected volatile java.lang.Exception[][] field_280369;
+    public long[][][][][] field_280377;
+    public static double field_280379;
+    private volatile short field_280381;
+    private volatile double field_280383;
+    public static volatile boolean[][][][] field_280385;
+
+    public void <init>()
+    {
+        long[][][][][] $r0;
+        java.lang.Exception[][] $r1;
+        java.lang.Throwable $r2, $r4, r7;
+        java.lang.Exception[] $r3;
+        java.lang.Exception $r5;
+        ChecksumTest r6;
+
+        r6 := @this: ChecksumTest;
+
+        specialinvoke r6.<java.lang.Object: void <init>()>();
+
+        r6.<ChecksumTest: double field_280383> = 0.1;
+
+        r6.<ChecksumTest: short field_280381> = 0;
+
+        $r0 = newmultiarray (long)[17][4][1][3][1];
+
+        r6.<ChecksumTest: long[][][][][] field_280377> = $r0;
+
+        $r1 = newmultiarray (java.lang.Exception)[17][7];
+
+        $r3 = $r1[13];
+
+        r7 = (java.lang.Throwable) null;
+
+        $r2 = new java.lang.Throwable;
+
+        specialinvoke $r2.<java.lang.Throwable: void <init>(java.lang.Throwable)>(r7);
+
+        $r4 = new java.lang.Throwable;
+
+        specialinvoke $r4.<java.lang.Throwable: void <init>(java.lang.String,java.lang.Throwable)>("", r7);
+
+        $r5 = new java.lang.Exception;
+
+        specialinvoke $r5.<java.lang.Exception: void <init>(java.lang.Throwable)>(r7);
+
+        $r3[2] = $r5;
+
+        r6.<ChecksumTest: java.lang.Exception[][] field_280369> = $r1;
+
+        return;
+    }
+
+    int kontest(int)
+    {
+        long l0, l1, l6;
+        int i2, i3, i4, i5, $i7, $i8, $i9, $i10, $i12, $i13;
+        ChecksumTest r0;
+        byte $b11;
+
+        i2 := @parameter0: int;
+
+        i3 = 0;
+
+     label1:
+        i4 = i3;
+
+     label2:
+        i5 = 0;
+
+        l6 = 0L;
+
+     label3:
+        l0 = (long) i5;
+
+        l1 = l0 + l6;
+
+        $i7 = <ChecksumTest: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i7, l0);
+
+        <ChecksumTest: int CHECKSUM> = $i8;
+
+        i5 = (int) l1;
+
+        $i9 = <ChecksumTest: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i9, l1);
+
+        <ChecksumTest: int CHECKSUM> = $i10;
+
+        l6 = l6 + 1L;
+
+        $b11 = l6 cmp 100L;
+
+        $i12 = <ChecksumTest: int CHECKSUM>;
+
+        $i13 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i12, l6);
+
+        <ChecksumTest: int CHECKSUM> = $i13;
+
+        if $b11 < 0 goto label3;
+
+        i4 = i4 + 1;
+
+        if i4 < 100 goto label2;
+
+        i3 = i3 + 1;
+
+        if i3 < 100 goto label1;
+
+        return i2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        long[][][][][] r1;
+        boolean[][][][] $r2;
+        java.io.PrintStream $r3, $r5;
+        java.lang.StringBuilder $r4, $r6, $r7;
+        int $i1, $i2, $i3, i4, i5;
+        java.lang.String $r8;
+        int[] $r9;
+        java.lang.String[] r10;
+        ChecksumTest r11;
+
+        r10 := @parameter0: java.lang.String[];
+
+        i4 = 0;
+
+        r11 = new ChecksumTest;
+
+        specialinvoke r11.<ChecksumTest: void <init>()>();
+
+        r1 = newmultiarray (long)[10][1][12][1][2];
+
+        virtualinvoke r11.<ChecksumTest: int kontest(int)>(0);
+
+        i5 = 0;
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        $r2 = newmultiarray (boolean)[17][7][1][2];
+
+        <ChecksumTest: boolean[][][][] field_280385> = $r2;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("Warmup is done.");
+
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        $r6 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i1 = <ChecksumTest: int CHECKSUM>;
+
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i1);
+
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(java.lang.String)>($r8);
+
+        return;
+
+        return;
+    }
+}

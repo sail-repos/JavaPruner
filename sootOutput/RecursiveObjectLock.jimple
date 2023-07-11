@@ -1,0 +1,3417 @@
+public class RecursiveObjectLock extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        RecursiveObjectLock r0;
+
+        r0 := @this: RecursiveObjectLock;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        RecursiveObjectLock $r0;
+        java.io.PrintStream $r1;
+        java.lang.String[] r2;
+
+        r2 := @parameter0: java.lang.String[];
+
+        $r0 = new RecursiveObjectLock;
+
+        specialinvoke $r0.<RecursiveObjectLock: void <init>()>();
+
+        virtualinvoke $r0.<RecursiveObjectLock: void testMethod()>();
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>("ready");
+
+        return;
+
+        return;
+    }
+
+    public void testMethod()
+    {
+        selectionresolution.SelectionResolutionTestCase$Builder $r1, $r2, $r76, $r88, $r142, $r174, $r206, $r253, $r269, $r286, $r301, $r365, $r382, $r398, $r415, $r432, $r449, $r466, $r468, $r471, $r487, $r503, $r519, $r535, $r551, $r568, $r585, $r602, $r620, $r638, $r656, $r674, $r692, $r710, $r728, $r747, $r767, $r787, $r807, $r827, $r845, $r864, $r883, $r902, $r921, $r940, $r959, $r978, $r997, $r1016, $r1035, r1057, r1062, r1064, r1066, r1069, r1071, r1073, r1076, r1077, r1080, r1083, r1085, r1086, r1087, r1094, r1095, r1096;
+        selectionresolution.SelectionResolutionTest$TestGroup$Simple $r3, $r12, $r23, $r34, $r44, $r54, $r66, $r77, $r89, $r102, $r114, $r128, $r143, $r159, $r175, $r191, $r207, $r224, $r240, $r254, $r270, $r287, $r302, $r318, $r334, $r350, $r366, $r383, $r399, $r416, $r433, $r450, $r469, $r485, $r501, $r517, $r533, $r549, $r566, $r583, $r600, $r618, $r636, $r654, $r672, $r690, $r708, $r726, $r745, $r765, $r785, $r805, $r825, $r843, $r862, $r881, $r900, $r919, $r938, $r957, $r976, $r995, $r1014, $r1033;
+        selectionresolution.Template[] $r4, $r6, $r11, $r13, $r15, $r18, $r20, $r22, $r24, $r27, $r29, $r31, $r33, $r36, $r39, $r41, $r43, $r45, $r47, $r49, $r52, $r55, $r57, $r59, $r61, $r63, $r65, $r67, $r69, $r72, $r74, $r78, $r79, $r82, $r84, $r86, $r90, $r91, $r93, $r95, $r97, $r99, $r101, $r103, $r105, $r107, $r109, $r111, $r113, $r115, $r117, $r120, $r123, $r125, $r127, $r130, $r132, $r134, $r136, $r138, $r140, $r144, $r145, $r147, $r149, $r151, $r153, $r156, $r158, $r160, $r162, $r164, $r166, $r168, $r170, $r172, $r176, $r177, $r179, $r182, $r184, $r186, $r188, $r190, $r192, $r194, $r196, $r198, $r200, $r202, $r204, $r208, $r209, $r211, $r213, $r215, $r217, $r219, $r221, $r223, $r225, $r227, $r229, $r231, $r233, $r235, $r237, $r239, $r242, $r244, $r247, $r249, $r251, $r255, $r257, $r259, $r261, $r263, $r265, $r267, $r271, $r272, $r274, $r276, $r278, $r280, $r282, $r284, $r288, $r291, $r293, $r295, $r297, $r299, $r303, $r305, $r307, $r309, $r311, $r313, $r315, $r317, $r319, $r321, $r323, $r325, $r327, $r329, $r331, $r333, $r335, $r337, $r339, $r341, $r343, $r345, $r347, $r349, $r351, $r353, $r355, $r357, $r359, $r361, $r363, $r367, $r368, $r370, $r372, $r374, $r376, $r378, $r380, $r384, $r386, $r388, $r390, $r392, $r394, $r396, $r400, $r401, $r403, $r405, $r407, $r409, $r411, $r413, $r417, $r418, $r420, $r422, $r424, $r426, $r428, $r430, $r434, $r435, $r437, $r439, $r441, $r443, $r445, $r447, $r451, $r452, $r454, $r456, $r458, $r460, $r462, $r464, r1058, r1059, r1060, r1061, r1063, r1065, r1067, r1068, r1070, r1072, r1074, r1075, r1078, r1079, r1081, r1082, r1084, r1088, r1089, r1090, r1091, r1092, r1093, r1097, r1099, r1100, r1101, r1102, r1103, r1104, r1105, r1106, r1107, r1108, r1109, r1110, r1111, r1112, r1113, r1114, r1115, r1116, r1117, r1118, r1119, r1120, r1121, r1122, r1123, r1124, r1125, r1126, r1127, r1128, r1129, r1130;
+        selectionresolution.Template $r5, $r7, $r8, $r9, $r10, $r14, $r16, $r17, $r19, $r21, $r25, $r26, $r28, $r30, $r32, $r35, $r37, $r38, $r40, $r42, $r46, $r48, $r50, $r51, $r53, $r56, $r58, $r60, $r62, $r64, $r68, $r70, $r71, $r73, $r75, $r80, $r81, $r83, $r85, $r87, $r92, $r94, $r96, $r98, $r100, $r104, $r106, $r108, $r110, $r112, $r116, $r118, $r119, $r121, $r122, $r124, $r126, $r129, $r131, $r133, $r135, $r137, $r139, $r141, $r146, $r148, $r150, $r152, $r154, $r155, $r157, $r161, $r163, $r165, $r167, $r169, $r171, $r173, $r178, $r180, $r181, $r183, $r185, $r187, $r189, $r193, $r195, $r197, $r199, $r201, $r203, $r205, $r210, $r212, $r214, $r216, $r218, $r220, $r222, $r226, $r228, $r230, $r232, $r234, $r236, $r238, $r241, $r243, $r245, $r246, $r248, $r250, $r252, $r256, $r258, $r260, $r262, $r264, $r266, $r268, $r273, $r275, $r277, $r279, $r281, $r283, $r285, $r289, $r290, $r292, $r294, $r296, $r298, $r300, $r304, $r306, $r308, $r310, $r312, $r314, $r316, $r320, $r322, $r324, $r326, $r328, $r330, $r332, $r336, $r338, $r340, $r342, $r344, $r346, $r348, $r352, $r354, $r356, $r358, $r360, $r362, $r364, $r369, $r371, $r373, $r375, $r377, $r379, $r381, $r385, $r387, $r389, $r391, $r393, $r395, $r397, $r402, $r404, $r406, $r408, $r410, $r412, $r414, $r419, $r421, $r423, $r425, $r427, $r429, $r431, $r436, $r438, $r440, $r442, $r444, $r446, $r448, $r453, $r455, $r457, $r459, $r461, $r463, $r465, $r472, $r481, $r482, $r483, $r484, $r488, $r497, $r498, $r499, $r500, $r504, $r513, $r514, $r515, $r516, $r520, $r529, $r530, $r531, $r532, $r536, $r545, $r546, $r547, $r548, $r552, $r562, $r563, $r564, $r565, $r569, $r579, $r580, $r581, $r582, $r586, $r596, $r597, $r598, $r599, $r603, $r614, $r615, $r616, $r617, $r621, $r632, $r633, $r634, $r635, $r639, $r648, $r649, $r650, $r651, $r652, $r653, $r657, $r666, $r667, $r668, $r669, $r670, $r671, $r675, $r684, $r685, $r686, $r687, $r688, $r689, $r693, $r702, $r703, $r704, $r705, $r706, $r707, $r711, $r720, $r721, $r722, $r723, $r724, $r725, $r729, $r739, $r740, $r741, $r742, $r743, $r744, $r748, $r759, $r760, $r761, $r762, $r763, $r764, $r768, $r779, $r780, $r781, $r782, $r783, $r784, $r788, $r799, $r800, $r801, $r802, $r803, $r804, $r808, $r819, $r820, $r821, $r822, $r823, $r824, $r828, $r837, $r838, $r839, $r840, $r841, $r842, $r846, $r856, $r857, $r858, $r859, $r860, $r861, $r865, $r875, $r876, $r877, $r878, $r879, $r880, $r884, $r894, $r895, $r896, $r897, $r898, $r899, $r903, $r913, $r914, $r915, $r916, $r917, $r918, $r922, $r932, $r933, $r934, $r935, $r936, $r937, $r941, $r951, $r952, $r953, $r954, $r955, $r956, $r960, $r970, $r971, $r972, $r973, $r974, $r975, $r979, $r989, $r990, $r991, $r992, $r993, $r994, $r998, $r1008, $r1009, $r1010, $r1011, $r1012, $r1013, $r1017, $r1027, $r1028, $r1029, $r1030, $r1031, $r1032, $r1036, $r1047, $r1048, $r1049, $r1050, $r1051, $r1052;
+        selectionresolution.Result $r467;
+        selectionresolution.SelectionResolutionTestCase$InvokeInstruction $r470, $r486, $r502, $r518, $r534, $r550, $r567, $r584, $r601, $r619, $r637, $r655, $r673, $r691, $r709, $r727, $r746, $r766, $r786, $r806, $r826, $r844, $r863, $r882, $r901, $r920, $r939, $r958, $r977, $r996, $r1015, $r1034;
+        selectionresolution.Template$Kind $r473, $r489, $r505, $r521, $r537, $r553, $r570, $r587, $r604, $r622, $r640, $r658, $r676, $r694, $r712, $r730, $r749, $r769, $r789, $r809, $r829, $r847, $r866, $r885, $r904, $r923, $r942, $r961, $r980, $r999, $r1018, $r1037;
+        java.util.EnumSet $r474, $r476, $r478, $r480, $r490, $r492, $r494, $r496, $r506, $r508, $r510, $r512, $r522, $r524, $r526, $r528, $r538, $r540, $r542, $r544, $r554, $r557, $r559, $r561, $r571, $r574, $r576, $r578, $r588, $r591, $r593, $r595, $r605, $r609, $r611, $r613, $r623, $r627, $r629, $r631, $r641, $r643, $r645, $r647, $r659, $r661, $r663, $r665, $r677, $r679, $r681, $r683, $r695, $r697, $r699, $r701, $r713, $r715, $r717, $r719, $r731, $r734, $r736, $r738, $r750, $r753, $r756, $r758, $r770, $r773, $r776, $r778, $r790, $r793, $r796, $r798, $r810, $r813, $r816, $r818, $r830, $r832, $r834, $r836, $r848, $r850, $r852, $r855, $r867, $r869, $r871, $r874, $r886, $r888, $r890, $r893, $r905, $r907, $r909, $r912, $r924, $r926, $r928, $r931, $r943, $r945, $r948, $r950, $r962, $r964, $r967, $r969, $r981, $r983, $r986, $r988, $r1000, $r1003, $r1005, $r1007, $r1019, $r1022, $r1024, $r1026, $r1038, $r1041, $r1044, $r1046;
+        selectionresolution.MethodData$Access $r475, $r491, $r507, $r523, $r539, $r555, $r556, $r572, $r573, $r589, $r590, $r606, $r607, $r608, $r624, $r625, $r626, $r642, $r660, $r678, $r696, $r714, $r732, $r733, $r751, $r752, $r771, $r772, $r791, $r792, $r811, $r812, $r831, $r849, $r868, $r887, $r906, $r925, $r944, $r963, $r982, $r1001, $r1002, $r1020, $r1021, $r1039, $r1040;
+        selectionresolution.MethodData$Context $r477, $r493, $r509, $r525, $r541, $r558, $r575, $r592, $r610, $r628, $r644, $r662, $r680, $r698, $r716, $r735, $r754, $r755, $r774, $r775, $r794, $r795, $r814, $r815, $r833, $r851, $r870, $r889, $r908, $r927, $r946, $r947, $r965, $r966, $r984, $r985, $r1004, $r1023, $r1042, $r1043;
+        selectionresolution.ClassData$Package $r479, $r495, $r511, $r527, $r543, $r560, $r577, $r594, $r612, $r630, $r646, $r664, $r682, $r700, $r718, $r737, $r757, $r777, $r797, $r817, $r835, $r853, $r854, $r872, $r873, $r891, $r892, $r910, $r911, $r929, $r930, $r949, $r968, $r987, $r1006, $r1025, $r1045;
+        java.util.List $r1053;
+        java.lang.Throwable $r1054;
+        RecursiveObjectLock r1055;
+        selectionresolution.SelectionResolutionTest$TestGroup[] r1056, r1098;
+
+        r1055 := @this: RecursiveObjectLock;
+
+        entermonitor r1055;
+
+        $r1 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r1.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r2 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r2.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        r1056 = newarray (selectionresolution.SelectionResolutionTest$TestGroup)[-3];
+
+        r1057 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1057.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        r1058 = newarray (selectionresolution.Template)[-100];
+
+        $r3 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        specialinvoke $r3.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1057, r1058);
+
+        $r5 = new selectionresolution.Template;
+
+        $r4 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r5.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("3", $r4);
+
+        $r7 = new selectionresolution.Template;
+
+        $r6 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r7.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("j", $r6);
+
+        $r8 = new selectionresolution.Template;
+
+        r1059 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r8.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1059);
+
+        $r9 = new selectionresolution.Template;
+
+        r1060 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r9.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("~", r1060);
+
+        $r10 = new selectionresolution.Template;
+
+        r1061 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r10.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("%", r1061);
+
+        r1062 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1062.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r12 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r11 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r12.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1062, $r11);
+
+        $r14 = new selectionresolution.Template;
+
+        $r13 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r14.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r13);
+
+        $r16 = new selectionresolution.Template;
+
+        $r15 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r16.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r15);
+
+        $r17 = new selectionresolution.Template;
+
+        r1063 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r17.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("FH", r1063);
+
+        $r19 = new selectionresolution.Template;
+
+        $r18 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r19.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("`t", $r18);
+
+        $r21 = new selectionresolution.Template;
+
+        $r20 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r21.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r20);
+
+        r1064 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1064.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r23 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r22 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r23.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1064, $r22);
+
+        $r25 = new selectionresolution.Template;
+
+        $r24 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r25.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("I", $r24);
+
+        $r26 = new selectionresolution.Template;
+
+        r1065 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r26.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1065);
+
+        $r28 = new selectionresolution.Template;
+
+        $r27 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r28.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r27);
+
+        $r30 = new selectionresolution.Template;
+
+        $r29 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r30.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("8M?_{", $r29);
+
+        $r32 = new selectionresolution.Template;
+
+        $r31 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r32.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r31);
+
+        r1066 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1066.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r34 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r33 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r34.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1066, $r33);
+
+        $r35 = new selectionresolution.Template;
+
+        r1067 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r35.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("w", r1067);
+
+        $r37 = new selectionresolution.Template;
+
+        $r36 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r37.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r36);
+
+        r1068 = newarray (selectionresolution.Template)[0];
+
+        $r38 = new selectionresolution.Template;
+
+        specialinvoke $r38.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("^", r1068);
+
+        $r40 = new selectionresolution.Template;
+
+        $r39 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r40.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r39);
+
+        $r42 = new selectionresolution.Template;
+
+        $r41 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r42.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("%,g", $r41);
+
+        r1069 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1069.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r44 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r43 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r44.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1069, $r43);
+
+        $r46 = new selectionresolution.Template;
+
+        $r45 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r46.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r45);
+
+        $r48 = new selectionresolution.Template;
+
+        $r47 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r48.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("HnTo", $r47);
+
+        $r50 = new selectionresolution.Template;
+
+        $r49 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r50.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("*", $r49);
+
+        $r51 = new selectionresolution.Template;
+
+        r1070 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r51.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1070);
+
+        $r53 = new selectionresolution.Template;
+
+        $r52 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r53.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("=%", $r52);
+
+        r1071 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1071.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r54 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        r1072 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r54.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1071, r1072);
+
+        $r56 = new selectionresolution.Template;
+
+        $r55 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r56.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r55);
+
+        $r58 = new selectionresolution.Template;
+
+        $r57 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r58.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("1", $r57);
+
+        $r60 = new selectionresolution.Template;
+
+        $r59 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r60.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(",", $r59);
+
+        $r62 = new selectionresolution.Template;
+
+        $r61 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r62.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("9", $r61);
+
+        $r64 = new selectionresolution.Template;
+
+        $r63 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r64.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("X", $r63);
+
+        r1073 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1073.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r66 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r65 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r66.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1073, $r65);
+
+        $r68 = new selectionresolution.Template;
+
+        $r67 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r68.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("N", $r67);
+
+        $r70 = new selectionresolution.Template;
+
+        $r69 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r70.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r69);
+
+        $r71 = new selectionresolution.Template;
+
+        r1074 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r71.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1074);
+
+        $r73 = new selectionresolution.Template;
+
+        $r72 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r73.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("f", $r72);
+
+        $r75 = new selectionresolution.Template;
+
+        $r74 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r75.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("g", $r74);
+
+        $r77 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r76 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r76.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r78 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r77.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r76, $r78);
+
+        $r80 = new selectionresolution.Template;
+
+        $r79 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r80.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r79);
+
+        r1075 = newarray (selectionresolution.Template)[-3];
+
+        $r81 = new selectionresolution.Template;
+
+        specialinvoke $r81.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1075);
+
+        $r83 = new selectionresolution.Template;
+
+        $r82 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r83.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r82);
+
+        $r85 = new selectionresolution.Template;
+
+        $r84 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r85.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r84);
+
+        $r87 = new selectionresolution.Template;
+
+        $r86 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r87.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r86);
+
+        $r89 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r88 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r88.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r90 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r89.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r88, $r90);
+
+        $r92 = new selectionresolution.Template;
+
+        $r91 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r92.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r91);
+
+        $r94 = new selectionresolution.Template;
+
+        $r93 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r94.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r93);
+
+        $r96 = new selectionresolution.Template;
+
+        $r95 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r96.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r95);
+
+        $r98 = new selectionresolution.Template;
+
+        $r97 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r98.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r97);
+
+        $r100 = new selectionresolution.Template;
+
+        $r99 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r100.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("K", $r99);
+
+        r1076 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1076.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r102 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r101 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r102.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1076, $r101);
+
+        $r104 = new selectionresolution.Template;
+
+        $r103 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r104.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r103);
+
+        $r106 = new selectionresolution.Template;
+
+        $r105 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r106.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("T!", $r105);
+
+        $r108 = new selectionresolution.Template;
+
+        $r107 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r108.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("^", $r107);
+
+        $r110 = new selectionresolution.Template;
+
+        $r109 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r110.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r109);
+
+        $r112 = new selectionresolution.Template;
+
+        $r111 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r112.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("E", $r111);
+
+        r1077 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1077.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r114 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r113 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r114.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1077, $r113);
+
+        $r116 = new selectionresolution.Template;
+
+        $r115 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r116.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("\'", $r115);
+
+        $r118 = new selectionresolution.Template;
+
+        $r117 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r118.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("\'", $r117);
+
+        $r119 = new selectionresolution.Template;
+
+        r1078 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r119.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1078);
+
+        $r121 = new selectionresolution.Template;
+
+        $r120 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r121.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("M", $r120);
+
+        $r122 = new selectionresolution.Template;
+
+        r1079 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r122.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1079);
+
+        $r124 = new selectionresolution.Template;
+
+        $r123 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r124.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r123);
+
+        $r126 = new selectionresolution.Template;
+
+        $r125 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r126.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("rsH$Bjo;", $r125);
+
+        r1080 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1080.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r128 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r127 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r128.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1080, $r127);
+
+        $r129 = new selectionresolution.Template;
+
+        r1081 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r129.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1081);
+
+        $r131 = new selectionresolution.Template;
+
+        $r130 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r131.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("x", $r130);
+
+        $r133 = new selectionresolution.Template;
+
+        $r132 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r133.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("l}", $r132);
+
+        $r135 = new selectionresolution.Template;
+
+        $r134 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r135.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("0V", $r134);
+
+        $r137 = new selectionresolution.Template;
+
+        $r136 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r137.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("/[", $r136);
+
+        $r139 = new selectionresolution.Template;
+
+        $r138 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r139.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r138);
+
+        $r141 = new selectionresolution.Template;
+
+        $r140 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r141.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("|pN", $r140);
+
+        $r143 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r142 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r142.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r144 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r143.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r142, $r144);
+
+        $r146 = new selectionresolution.Template;
+
+        $r145 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r146.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("yg", $r145);
+
+        $r148 = new selectionresolution.Template;
+
+        $r147 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r148.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("mU", $r147);
+
+        $r150 = new selectionresolution.Template;
+
+        $r149 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r150.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("D", $r149);
+
+        $r152 = new selectionresolution.Template;
+
+        $r151 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r152.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("I", $r151);
+
+        $r154 = new selectionresolution.Template;
+
+        $r153 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r154.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r153);
+
+        $r155 = new selectionresolution.Template;
+
+        r1082 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r155.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1082);
+
+        $r157 = new selectionresolution.Template;
+
+        $r156 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r157.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("z", $r156);
+
+        r1083 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1083.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r159 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r158 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r159.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1083, $r158);
+
+        $r161 = new selectionresolution.Template;
+
+        $r160 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r161.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("DT", $r160);
+
+        $r163 = new selectionresolution.Template;
+
+        $r162 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r163.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("&", $r162);
+
+        $r165 = new selectionresolution.Template;
+
+        $r164 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r165.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("Ev/h", $r164);
+
+        $r167 = new selectionresolution.Template;
+
+        $r166 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r167.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("8", $r166);
+
+        $r169 = new selectionresolution.Template;
+
+        $r168 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r169.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r168);
+
+        $r171 = new selectionresolution.Template;
+
+        $r170 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r171.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r170);
+
+        $r173 = new selectionresolution.Template;
+
+        $r172 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r173.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("Uup", $r172);
+
+        $r175 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r174 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r174.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r176 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r175.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r174, $r176);
+
+        $r178 = new selectionresolution.Template;
+
+        $r177 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r178.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("_", $r177);
+
+        $r180 = new selectionresolution.Template;
+
+        $r179 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r180.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("]*", $r179);
+
+        $r181 = new selectionresolution.Template;
+
+        r1084 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r181.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1084);
+
+        $r183 = new selectionresolution.Template;
+
+        $r182 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r183.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r182);
+
+        $r185 = new selectionresolution.Template;
+
+        $r184 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r185.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r184);
+
+        $r187 = new selectionresolution.Template;
+
+        $r186 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r187.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("2~Q", $r186);
+
+        $r189 = new selectionresolution.Template;
+
+        $r188 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r189.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r188);
+
+        r1085 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1085.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r191 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r190 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r191.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1085, $r190);
+
+        $r193 = new selectionresolution.Template;
+
+        $r192 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r193.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(".;s", $r192);
+
+        $r195 = new selectionresolution.Template;
+
+        $r194 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r195.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r194);
+
+        $r197 = new selectionresolution.Template;
+
+        $r196 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r197.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r196);
+
+        $r199 = new selectionresolution.Template;
+
+        $r198 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r199.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r198);
+
+        $r201 = new selectionresolution.Template;
+
+        $r200 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r201.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r200);
+
+        $r203 = new selectionresolution.Template;
+
+        $r202 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r203.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("k", $r202);
+
+        $r205 = new selectionresolution.Template;
+
+        $r204 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r205.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r204);
+
+        $r207 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r206 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r206.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r208 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r207.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r206, $r208);
+
+        $r210 = new selectionresolution.Template;
+
+        $r209 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r210.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("^", $r209);
+
+        $r212 = new selectionresolution.Template;
+
+        $r211 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r212.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r211);
+
+        $r214 = new selectionresolution.Template;
+
+        $r213 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r214.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("y;XA)cY>[V", $r213);
+
+        $r216 = new selectionresolution.Template;
+
+        $r215 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r216.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("98 ", $r215);
+
+        $r218 = new selectionresolution.Template;
+
+        $r217 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r218.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("1{T", $r217);
+
+        $r220 = new selectionresolution.Template;
+
+        $r219 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r220.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("P+", $r219);
+
+        $r222 = new selectionresolution.Template;
+
+        $r221 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r222.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r221);
+
+        r1086 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1086.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r224 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r223 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r224.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1086, $r223);
+
+        $r226 = new selectionresolution.Template;
+
+        $r225 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r226.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("V[A", $r225);
+
+        $r228 = new selectionresolution.Template;
+
+        $r227 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r228.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r227);
+
+        $r230 = new selectionresolution.Template;
+
+        $r229 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r230.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r229);
+
+        $r232 = new selectionresolution.Template;
+
+        $r231 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r232.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r231);
+
+        $r234 = new selectionresolution.Template;
+
+        $r233 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r234.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("?i", $r233);
+
+        $r236 = new selectionresolution.Template;
+
+        $r235 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r236.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r235);
+
+        $r238 = new selectionresolution.Template;
+
+        $r237 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r238.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("j", $r237);
+
+        r1087 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1087.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r240 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r239 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r240.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1087, $r239);
+
+        $r241 = new selectionresolution.Template;
+
+        r1088 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r241.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1088);
+
+        $r243 = new selectionresolution.Template;
+
+        $r242 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r243.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r242);
+
+        $r245 = new selectionresolution.Template;
+
+        $r244 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r245.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("qIU", $r244);
+
+        $r246 = new selectionresolution.Template;
+
+        r1089 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r246.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1089);
+
+        $r248 = new selectionresolution.Template;
+
+        $r247 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r248.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("\'", $r247);
+
+        $r250 = new selectionresolution.Template;
+
+        $r249 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r250.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r249);
+
+        $r252 = new selectionresolution.Template;
+
+        $r251 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r252.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("oZ", $r251);
+
+        $r254 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r253 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r253.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r255 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r254.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r253, $r255);
+
+        $r256 = new selectionresolution.Template;
+
+        r1090 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r256.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("^zQrD", r1090);
+
+        $r258 = new selectionresolution.Template;
+
+        $r257 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r258.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("Z", $r257);
+
+        $r260 = new selectionresolution.Template;
+
+        $r259 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r260.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r259);
+
+        $r262 = new selectionresolution.Template;
+
+        $r261 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r262.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r261);
+
+        $r264 = new selectionresolution.Template;
+
+        $r263 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r264.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("HY", $r263);
+
+        $r266 = new selectionresolution.Template;
+
+        $r265 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r266.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r265);
+
+        $r268 = new selectionresolution.Template;
+
+        $r267 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r268.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("j", $r267);
+
+        $r270 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r269 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r269.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r271 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r270.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r269, $r271);
+
+        $r273 = new selectionresolution.Template;
+
+        $r272 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r273.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r272);
+
+        $r275 = new selectionresolution.Template;
+
+        $r274 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r275.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r274);
+
+        $r277 = new selectionresolution.Template;
+
+        $r276 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r277.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r276);
+
+        $r279 = new selectionresolution.Template;
+
+        $r278 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r279.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r278);
+
+        $r281 = new selectionresolution.Template;
+
+        $r280 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r281.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("P", $r280);
+
+        $r283 = new selectionresolution.Template;
+
+        $r282 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r283.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("Dt", $r282);
+
+        $r285 = new selectionresolution.Template;
+
+        $r284 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r285.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("J]", $r284);
+
+        $r287 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r286 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r286.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r288 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r287.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r286, $r288);
+
+        $r289 = new selectionresolution.Template;
+
+        r1091 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r289.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("f", r1091);
+
+        $r290 = new selectionresolution.Template;
+
+        r1092 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r290.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1092);
+
+        $r292 = new selectionresolution.Template;
+
+        $r291 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r292.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r291);
+
+        $r294 = new selectionresolution.Template;
+
+        $r293 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r294.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(")r", $r293);
+
+        $r296 = new selectionresolution.Template;
+
+        $r295 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r296.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("S", $r295);
+
+        $r298 = new selectionresolution.Template;
+
+        $r297 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r298.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r297);
+
+        $r300 = new selectionresolution.Template;
+
+        $r299 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r300.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r299);
+
+        $r302 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r301 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r301.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r303 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r302.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r301, $r303);
+
+        $r304 = new selectionresolution.Template;
+
+        r1093 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r304.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", r1093);
+
+        $r306 = new selectionresolution.Template;
+
+        $r305 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r306.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(".1", $r305);
+
+        $r308 = new selectionresolution.Template;
+
+        $r307 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r308.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r307);
+
+        $r310 = new selectionresolution.Template;
+
+        $r309 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r310.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("2.j", $r309);
+
+        $r312 = new selectionresolution.Template;
+
+        $r311 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r312.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r311);
+
+        $r314 = new selectionresolution.Template;
+
+        $r313 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r314.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("R|_", $r313);
+
+        $r316 = new selectionresolution.Template;
+
+        $r315 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r316.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(">", $r315);
+
+        r1094 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1094.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r318 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r317 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r318.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1094, $r317);
+
+        $r320 = new selectionresolution.Template;
+
+        $r319 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r320.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r319);
+
+        $r322 = new selectionresolution.Template;
+
+        $r321 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r322.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("/;", $r321);
+
+        $r324 = new selectionresolution.Template;
+
+        $r323 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r324.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("G", $r323);
+
+        $r326 = new selectionresolution.Template;
+
+        $r325 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r326.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r325);
+
+        $r328 = new selectionresolution.Template;
+
+        $r327 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r328.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r327);
+
+        $r330 = new selectionresolution.Template;
+
+        $r329 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r330.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("JWn5", $r329);
+
+        $r332 = new selectionresolution.Template;
+
+        $r331 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r332.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r331);
+
+        r1095 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1095.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r334 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r333 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r334.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1095, $r333);
+
+        $r336 = new selectionresolution.Template;
+
+        $r335 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r336.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("i", $r335);
+
+        $r338 = new selectionresolution.Template;
+
+        $r337 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r338.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r337);
+
+        $r340 = new selectionresolution.Template;
+
+        $r339 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r340.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r339);
+
+        $r342 = new selectionresolution.Template;
+
+        $r341 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r342.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("Q", $r341);
+
+        $r344 = new selectionresolution.Template;
+
+        $r343 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r344.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("3", $r343);
+
+        $r346 = new selectionresolution.Template;
+
+        $r345 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r346.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("i0`", $r345);
+
+        $r348 = new selectionresolution.Template;
+
+        $r347 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r348.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r347);
+
+        r1096 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke r1096.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r350 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r349 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r350.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>(r1096, $r349);
+
+        $r352 = new selectionresolution.Template;
+
+        $r351 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r352.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("}", $r351);
+
+        $r354 = new selectionresolution.Template;
+
+        $r353 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r354.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r353);
+
+        $r356 = new selectionresolution.Template;
+
+        $r355 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r356.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("e%", $r355);
+
+        $r358 = new selectionresolution.Template;
+
+        $r357 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r358.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r357);
+
+        $r360 = new selectionresolution.Template;
+
+        $r359 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r360.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r359);
+
+        $r362 = new selectionresolution.Template;
+
+        $r361 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r362.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("/&", $r361);
+
+        $r364 = new selectionresolution.Template;
+
+        $r363 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r364.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("#P0`w", $r363);
+
+        $r366 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r365 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r365.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r367 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r366.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r365, $r367);
+
+        $r369 = new selectionresolution.Template;
+
+        $r368 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r369.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r368);
+
+        $r371 = new selectionresolution.Template;
+
+        $r370 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r371.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("f", $r370);
+
+        $r373 = new selectionresolution.Template;
+
+        $r372 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r373.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("zKi{", $r372);
+
+        $r375 = new selectionresolution.Template;
+
+        $r374 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r375.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r374);
+
+        $r377 = new selectionresolution.Template;
+
+        $r376 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r377.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r376);
+
+        $r379 = new selectionresolution.Template;
+
+        $r378 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r379.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r378);
+
+        $r381 = new selectionresolution.Template;
+
+        $r380 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r381.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r380);
+
+        $r383 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r382 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r382.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r384 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r383.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r382, $r384);
+
+        $r385 = new selectionresolution.Template;
+
+        r1097 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r385.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("A", r1097);
+
+        $r387 = new selectionresolution.Template;
+
+        $r386 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r387.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("7", $r386);
+
+        $r389 = new selectionresolution.Template;
+
+        $r388 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r389.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r388);
+
+        $r391 = new selectionresolution.Template;
+
+        $r390 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r391.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("HrD", $r390);
+
+        $r393 = new selectionresolution.Template;
+
+        $r392 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r393.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r392);
+
+        $r395 = new selectionresolution.Template;
+
+        $r394 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r395.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r394);
+
+        $r397 = new selectionresolution.Template;
+
+        $r396 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r397.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("?", $r396);
+
+        $r399 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r398 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r398.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r400 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r399.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r398, $r400);
+
+        $r402 = new selectionresolution.Template;
+
+        $r401 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r402.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("|_q\'V]", $r401);
+
+        $r404 = new selectionresolution.Template;
+
+        $r403 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r404.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r403);
+
+        $r406 = new selectionresolution.Template;
+
+        $r405 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r406.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("5Y", $r405);
+
+        $r408 = new selectionresolution.Template;
+
+        $r407 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r408.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r407);
+
+        $r410 = new selectionresolution.Template;
+
+        $r409 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r410.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(")", $r409);
+
+        $r412 = new selectionresolution.Template;
+
+        $r411 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r412.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("Br+t0", $r411);
+
+        $r414 = new selectionresolution.Template;
+
+        $r413 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r414.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("[", $r413);
+
+        $r416 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r415 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r415.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r417 = newarray (selectionresolution.Template)[-1];
+
+        specialinvoke $r416.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r415, $r417);
+
+        $r419 = new selectionresolution.Template;
+
+        $r418 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r419.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("X \'?11", $r418);
+
+        $r421 = new selectionresolution.Template;
+
+        $r420 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r421.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("2o", $r420);
+
+        $r423 = new selectionresolution.Template;
+
+        $r422 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r423.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("O", $r422);
+
+        $r425 = new selectionresolution.Template;
+
+        $r424 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r425.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("f", $r424);
+
+        $r427 = new selectionresolution.Template;
+
+        $r426 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r427.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(":}", $r426);
+
+        $r429 = new selectionresolution.Template;
+
+        $r428 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r429.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("}q", $r428);
+
+        $r431 = new selectionresolution.Template;
+
+        $r430 = newarray (selectionresolution.Template)[3];
+
+        specialinvoke $r431.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r430);
+
+        $r433 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r432 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r432.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r434 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r433.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r432, $r434);
+
+        $r436 = new selectionresolution.Template;
+
+        $r435 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r436.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r435);
+
+        $r438 = new selectionresolution.Template;
+
+        $r437 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r438.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("teM", $r437);
+
+        $r440 = new selectionresolution.Template;
+
+        $r439 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r440.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>(".6", $r439);
+
+        $r442 = new selectionresolution.Template;
+
+        $r441 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r442.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("}E", $r441);
+
+        $r444 = new selectionresolution.Template;
+
+        $r443 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r444.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("N)", $r443);
+
+        $r446 = new selectionresolution.Template;
+
+        $r445 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r446.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("UsB#", $r445);
+
+        $r448 = new selectionresolution.Template;
+
+        $r447 = newarray (selectionresolution.Template)[100];
+
+        specialinvoke $r448.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r447);
+
+        $r450 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r449 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r449.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        $r451 = newarray (selectionresolution.Template)[-3];
+
+        specialinvoke $r450.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r449, $r451);
+
+        $r453 = new selectionresolution.Template;
+
+        $r452 = newarray (selectionresolution.Template)[-100];
+
+        specialinvoke $r453.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("`f", $r452);
+
+        $r455 = new selectionresolution.Template;
+
+        $r454 = newarray (selectionresolution.Template)[-2];
+
+        specialinvoke $r455.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("< ", $r454);
+
+        $r457 = new selectionresolution.Template;
+
+        $r456 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r457.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r456);
+
+        $r459 = new selectionresolution.Template;
+
+        $r458 = newarray (selectionresolution.Template)[2];
+
+        specialinvoke $r459.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("1f>", $r458);
+
+        $r461 = new selectionresolution.Template;
+
+        $r460 = newarray (selectionresolution.Template)[1];
+
+        specialinvoke $r461.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("I", $r460);
+
+        $r463 = new selectionresolution.Template;
+
+        $r462 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r463.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r462);
+
+        $r465 = new selectionresolution.Template;
+
+        $r464 = newarray (selectionresolution.Template)[0];
+
+        specialinvoke $r465.<selectionresolution.Template: void <init>(java.lang.String,selectionresolution.Template[])>("", $r464);
+
+        $r466 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r466.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder> = $r466;
+
+        $r468 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        $r467 = <selectionresolution.Result: selectionresolution.Result IAE>;
+
+        virtualinvoke $r468.<selectionresolution.SelectionResolutionTestCase$Builder: void setResult(selectionresolution.Result)>($r467);
+
+        r1098 = newarray (selectionresolution.SelectionResolutionTest$TestGroup)[32];
+
+        $r469 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r471 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1099 = newarray (selectionresolution.Template)[5];
+
+        $r470 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r472 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r470);
+
+        r1099[0] = $r472;
+
+        $r473 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r474 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r473);
+
+        $r475 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r476 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r475);
+
+        $r477 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r478 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r477);
+
+        $r479 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r480 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r479);
+
+        $r481 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r474, $r476, $r478, $r480);
+
+        r1099[1] = $r481;
+
+        $r482 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1099[2] = $r482;
+
+        $r483 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1099[3] = $r483;
+
+        $r484 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1099[4] = $r484;
+
+        specialinvoke $r469.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r471, r1099);
+
+        r1098[0] = $r469;
+
+        $r485 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r487 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1100 = newarray (selectionresolution.Template)[5];
+
+        $r486 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r488 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r486);
+
+        r1100[0] = $r488;
+
+        $r489 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r490 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r489);
+
+        $r491 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r492 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r491);
+
+        $r493 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r494 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r493);
+
+        $r495 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r496 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r495);
+
+        $r497 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r490, $r492, $r494, $r496);
+
+        r1100[1] = $r497;
+
+        $r498 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1100[2] = $r498;
+
+        $r499 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1100[3] = $r499;
+
+        $r500 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1100[4] = $r500;
+
+        specialinvoke $r485.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r487, r1100);
+
+        r1098[1] = $r485;
+
+        $r501 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r503 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1101 = newarray (selectionresolution.Template)[5];
+
+        $r502 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r504 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r502);
+
+        r1101[0] = $r504;
+
+        $r505 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r506 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r505);
+
+        $r507 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r508 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r507);
+
+        $r509 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r510 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r509);
+
+        $r511 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r512 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r511);
+
+        $r513 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r506, $r508, $r510, $r512);
+
+        r1101[1] = $r513;
+
+        $r514 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1101[2] = $r514;
+
+        $r515 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1101[3] = $r515;
+
+        $r516 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1101[4] = $r516;
+
+        specialinvoke $r501.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r503, r1101);
+
+        r1098[2] = $r501;
+
+        $r517 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r519 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1102 = newarray (selectionresolution.Template)[5];
+
+        $r518 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r520 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r518);
+
+        r1102[0] = $r520;
+
+        $r521 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r522 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r521);
+
+        $r523 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r524 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r523);
+
+        $r525 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r526 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r525);
+
+        $r527 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r528 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r527);
+
+        $r529 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r522, $r524, $r526, $r528);
+
+        r1102[1] = $r529;
+
+        $r530 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1102[2] = $r530;
+
+        $r531 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1102[3] = $r531;
+
+        $r532 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1102[4] = $r532;
+
+        specialinvoke $r517.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r519, r1102);
+
+        r1098[3] = $r517;
+
+        $r533 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r535 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1103 = newarray (selectionresolution.Template)[5];
+
+        $r534 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r536 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r534);
+
+        r1103[0] = $r536;
+
+        $r537 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r538 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r537);
+
+        $r539 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r540 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r539);
+
+        $r541 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r542 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r541);
+
+        $r543 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r544 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r543);
+
+        $r545 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r538, $r540, $r542, $r544);
+
+        r1103[1] = $r545;
+
+        $r546 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1103[2] = $r546;
+
+        $r547 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1103[3] = $r547;
+
+        $r548 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1103[4] = $r548;
+
+        specialinvoke $r533.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r535, r1103);
+
+        r1098[4] = $r533;
+
+        $r549 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r551 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1104 = newarray (selectionresolution.Template)[5];
+
+        $r550 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r552 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r550);
+
+        r1104[0] = $r552;
+
+        $r553 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r554 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r553);
+
+        $r556 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r555 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r557 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r556, $r555);
+
+        $r558 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r559 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r558);
+
+        $r560 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r561 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r560);
+
+        $r562 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r554, $r557, $r559, $r561);
+
+        r1104[1] = $r562;
+
+        $r563 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1104[2] = $r563;
+
+        $r564 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1104[3] = $r564;
+
+        $r565 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1104[4] = $r565;
+
+        specialinvoke $r549.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r551, r1104);
+
+        r1098[5] = $r549;
+
+        $r566 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r568 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1105 = newarray (selectionresolution.Template)[5];
+
+        $r567 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r569 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r567);
+
+        r1105[0] = $r569;
+
+        $r570 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r571 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r570);
+
+        $r573 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r572 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r574 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r573, $r572);
+
+        $r575 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r576 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r575);
+
+        $r577 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r578 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r577);
+
+        $r579 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r571, $r574, $r576, $r578);
+
+        r1105[1] = $r579;
+
+        $r580 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1105[2] = $r580;
+
+        $r581 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1105[3] = $r581;
+
+        $r582 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1105[4] = $r582;
+
+        specialinvoke $r566.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r568, r1105);
+
+        r1098[6] = $r566;
+
+        $r583 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r585 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1106 = newarray (selectionresolution.Template)[5];
+
+        $r584 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r586 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r584);
+
+        r1106[0] = $r586;
+
+        $r587 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r588 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r587);
+
+        $r590 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r589 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r591 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r590, $r589);
+
+        $r592 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r593 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r592);
+
+        $r594 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r595 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r594);
+
+        $r596 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r588, $r591, $r593, $r595);
+
+        r1106[1] = $r596;
+
+        $r597 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1106[2] = $r597;
+
+        $r598 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1106[3] = $r598;
+
+        $r599 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1106[4] = $r599;
+
+        specialinvoke $r583.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r585, r1106);
+
+        r1098[7] = $r583;
+
+        $r600 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r602 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1107 = newarray (selectionresolution.Template)[5];
+
+        $r601 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r603 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r601);
+
+        r1107[0] = $r603;
+
+        $r604 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r605 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r604);
+
+        $r608 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r607 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PROTECTED>;
+
+        $r606 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r609 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum,java.lang.Enum)>($r608, $r607, $r606);
+
+        $r610 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r611 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r610);
+
+        $r612 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r613 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r612);
+
+        $r614 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r605, $r609, $r611, $r613);
+
+        r1107[1] = $r614;
+
+        $r615 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1107[2] = $r615;
+
+        $r616 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1107[3] = $r616;
+
+        $r617 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1107[4] = $r617;
+
+        specialinvoke $r600.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r602, r1107);
+
+        r1098[8] = $r600;
+
+        $r618 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r620 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1108 = newarray (selectionresolution.Template)[5];
+
+        $r619 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r621 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r619);
+
+        r1108[0] = $r621;
+
+        $r622 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r623 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r622);
+
+        $r626 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r625 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PROTECTED>;
+
+        $r624 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r627 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum,java.lang.Enum)>($r626, $r625, $r624);
+
+        $r628 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        $r629 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r628);
+
+        $r630 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r631 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r630);
+
+        $r632 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r623, $r627, $r629, $r631);
+
+        r1108[1] = $r632;
+
+        $r633 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1108[2] = $r633;
+
+        $r634 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1108[3] = $r634;
+
+        $r635 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r1108[4] = $r635;
+
+        specialinvoke $r618.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r620, r1108);
+
+        r1098[9] = $r618;
+
+        $r636 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r638 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1109 = newarray (selectionresolution.Template)[7];
+
+        $r637 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r639 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r637);
+
+        r1109[0] = $r639;
+
+        $r640 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r641 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r640);
+
+        $r642 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r643 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r642);
+
+        $r644 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r645 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r644);
+
+        $r646 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r647 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r646);
+
+        $r648 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r641, $r643, $r645, $r647);
+
+        r1109[1] = $r648;
+
+        $r649 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1109[2] = $r649;
+
+        $r650 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1109[3] = $r650;
+
+        $r651 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1109[4] = $r651;
+
+        $r652 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1109[5] = $r652;
+
+        $r653 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1109[6] = $r653;
+
+        specialinvoke $r636.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r638, r1109);
+
+        r1098[10] = $r636;
+
+        $r654 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r656 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1110 = newarray (selectionresolution.Template)[7];
+
+        $r655 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r657 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r655);
+
+        r1110[0] = $r657;
+
+        $r658 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r659 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r658);
+
+        $r660 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r661 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r660);
+
+        $r662 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r663 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r662);
+
+        $r664 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r665 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r664);
+
+        $r666 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r659, $r661, $r663, $r665);
+
+        r1110[1] = $r666;
+
+        $r667 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1110[2] = $r667;
+
+        $r668 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1110[3] = $r668;
+
+        $r669 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1110[4] = $r669;
+
+        $r670 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1110[5] = $r670;
+
+        $r671 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1110[6] = $r671;
+
+        specialinvoke $r654.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r656, r1110);
+
+        r1098[11] = $r654;
+
+        $r672 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r674 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1111 = newarray (selectionresolution.Template)[7];
+
+        $r673 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r675 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r673);
+
+        r1111[0] = $r675;
+
+        $r676 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r677 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r676);
+
+        $r678 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r679 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r678);
+
+        $r680 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r681 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r680);
+
+        $r682 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r683 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r682);
+
+        $r684 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r677, $r679, $r681, $r683);
+
+        r1111[1] = $r684;
+
+        $r685 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1111[2] = $r685;
+
+        $r686 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1111[3] = $r686;
+
+        $r687 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1111[4] = $r687;
+
+        $r688 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1111[5] = $r688;
+
+        $r689 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1111[6] = $r689;
+
+        specialinvoke $r672.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r674, r1111);
+
+        r1098[12] = $r672;
+
+        $r690 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r692 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1112 = newarray (selectionresolution.Template)[7];
+
+        $r691 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r693 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r691);
+
+        r1112[0] = $r693;
+
+        $r694 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r695 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r694);
+
+        $r696 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r697 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r696);
+
+        $r698 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r699 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r698);
+
+        $r700 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r701 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r700);
+
+        $r702 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r695, $r697, $r699, $r701);
+
+        r1112[1] = $r702;
+
+        $r703 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1112[2] = $r703;
+
+        $r704 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1112[3] = $r704;
+
+        $r705 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1112[4] = $r705;
+
+        $r706 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1112[5] = $r706;
+
+        $r707 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1112[6] = $r707;
+
+        specialinvoke $r690.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r692, r1112);
+
+        r1098[13] = $r690;
+
+        $r708 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r710 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1113 = newarray (selectionresolution.Template)[7];
+
+        $r709 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r711 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r709);
+
+        r1113[0] = $r711;
+
+        $r712 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r713 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r712);
+
+        $r714 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r715 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r714);
+
+        $r716 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r717 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r716);
+
+        $r718 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r719 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r718);
+
+        $r720 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r713, $r715, $r717, $r719);
+
+        r1113[1] = $r720;
+
+        $r721 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1113[2] = $r721;
+
+        $r722 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1113[3] = $r722;
+
+        $r723 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1113[4] = $r723;
+
+        $r724 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1113[5] = $r724;
+
+        $r725 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1113[6] = $r725;
+
+        specialinvoke $r708.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r710, r1113);
+
+        r1098[14] = $r708;
+
+        $r726 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r728 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1114 = newarray (selectionresolution.Template)[7];
+
+        $r727 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r729 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r727);
+
+        r1114[0] = $r729;
+
+        $r730 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r731 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r730);
+
+        $r733 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r732 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r734 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r733, $r732);
+
+        $r735 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r736 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r735);
+
+        $r737 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r738 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r737);
+
+        $r739 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r731, $r734, $r736, $r738);
+
+        r1114[1] = $r739;
+
+        $r740 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1114[2] = $r740;
+
+        $r741 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1114[3] = $r741;
+
+        $r742 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1114[4] = $r742;
+
+        $r743 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1114[5] = $r743;
+
+        $r744 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1114[6] = $r744;
+
+        specialinvoke $r726.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r728, r1114);
+
+        r1098[15] = $r726;
+
+        $r745 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r747 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1115 = newarray (selectionresolution.Template)[7];
+
+        $r746 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r748 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r746);
+
+        r1115[0] = $r748;
+
+        $r749 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r750 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r749);
+
+        $r752 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r751 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r753 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r752, $r751);
+
+        $r755 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r754 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r756 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r755, $r754);
+
+        $r757 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r758 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r757);
+
+        $r759 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r750, $r753, $r756, $r758);
+
+        r1115[1] = $r759;
+
+        $r760 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1115[2] = $r760;
+
+        $r761 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1115[3] = $r761;
+
+        $r762 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1115[4] = $r762;
+
+        $r763 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1115[5] = $r763;
+
+        $r764 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1115[6] = $r764;
+
+        specialinvoke $r745.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r747, r1115);
+
+        r1098[16] = $r745;
+
+        $r765 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r767 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1116 = newarray (selectionresolution.Template)[7];
+
+        $r766 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r768 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r766);
+
+        r1116[0] = $r768;
+
+        $r769 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r770 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r769);
+
+        $r772 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r771 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r773 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r772, $r771);
+
+        $r775 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r774 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r776 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r775, $r774);
+
+        $r777 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r778 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r777);
+
+        $r779 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r770, $r773, $r776, $r778);
+
+        r1116[1] = $r779;
+
+        $r780 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1116[2] = $r780;
+
+        $r781 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1116[3] = $r781;
+
+        $r782 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1116[4] = $r782;
+
+        $r783 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1116[5] = $r783;
+
+        $r784 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1116[6] = $r784;
+
+        specialinvoke $r765.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r767, r1116);
+
+        r1098[17] = $r765;
+
+        $r785 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r787 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1117 = newarray (selectionresolution.Template)[7];
+
+        $r786 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r788 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r786);
+
+        r1117[0] = $r788;
+
+        $r789 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r790 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r789);
+
+        $r792 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r791 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r793 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r792, $r791);
+
+        $r795 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r794 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r796 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r795, $r794);
+
+        $r797 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r798 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r797);
+
+        $r799 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r790, $r793, $r796, $r798);
+
+        r1117[1] = $r799;
+
+        $r800 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1117[2] = $r800;
+
+        $r801 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1117[3] = $r801;
+
+        $r802 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1117[4] = $r802;
+
+        $r803 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1117[5] = $r803;
+
+        $r804 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1117[6] = $r804;
+
+        specialinvoke $r785.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r787, r1117);
+
+        r1098[18] = $r785;
+
+        $r805 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r807 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1118 = newarray (selectionresolution.Template)[7];
+
+        $r806 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r808 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r806);
+
+        r1118[0] = $r808;
+
+        $r809 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r810 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r809);
+
+        $r812 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r811 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r813 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r812, $r811);
+
+        $r815 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r814 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r816 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r815, $r814);
+
+        $r817 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r818 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r817);
+
+        $r819 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r810, $r813, $r816, $r818);
+
+        r1118[1] = $r819;
+
+        $r820 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1118[2] = $r820;
+
+        $r821 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1118[3] = $r821;
+
+        $r822 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1118[4] = $r822;
+
+        $r823 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1118[5] = $r823;
+
+        $r824 = <selectionresolution.Template: selectionresolution.Template MethodrefSelectionResolvedIsClass>;
+
+        r1118[6] = $r824;
+
+        specialinvoke $r805.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r807, r1118);
+
+        r1098[19] = $r805;
+
+        $r825 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r827 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1119 = newarray (selectionresolution.Template)[7];
+
+        $r826 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r828 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r826);
+
+        r1119[0] = $r828;
+
+        $r829 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r830 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r829);
+
+        $r831 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r832 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r831);
+
+        $r833 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r834 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r833);
+
+        $r835 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r836 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r835);
+
+        $r837 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r830, $r832, $r834, $r836);
+
+        r1119[1] = $r837;
+
+        $r838 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedIface>;
+
+        r1119[2] = $r838;
+
+        $r839 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1119[3] = $r839;
+
+        $r840 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1119[4] = $r840;
+
+        $r841 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1119[5] = $r841;
+
+        $r842 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefSelectionOverrideNonPublic>;
+
+        r1119[6] = $r842;
+
+        specialinvoke $r825.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r827, r1119);
+
+        r1098[20] = $r825;
+
+        $r843 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r845 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1120 = newarray (selectionresolution.Template)[7];
+
+        $r844 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r846 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r844);
+
+        r1120[0] = $r846;
+
+        $r847 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r848 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r847);
+
+        $r849 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r850 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r849);
+
+        $r851 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r852 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r851);
+
+        $r854 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r853 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r855 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r854, $r853);
+
+        $r856 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r848, $r850, $r852, $r855);
+
+        r1120[1] = $r856;
+
+        $r857 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedIface>;
+
+        r1120[2] = $r857;
+
+        $r858 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefNotEqualsExpected>;
+
+        r1120[3] = $r858;
+
+        $r859 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1120[4] = $r859;
+
+        $r860 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1120[5] = $r860;
+
+        $r861 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefSelectionOverrideNonPublic>;
+
+        r1120[6] = $r861;
+
+        specialinvoke $r843.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r845, r1120);
+
+        r1098[21] = $r843;
+
+        $r862 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r864 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1121 = newarray (selectionresolution.Template)[7];
+
+        $r863 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r865 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r863);
+
+        r1121[0] = $r865;
+
+        $r866 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r867 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r866);
+
+        $r868 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r869 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r868);
+
+        $r870 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r871 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r870);
+
+        $r873 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r872 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r874 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r873, $r872);
+
+        $r875 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r867, $r869, $r871, $r874);
+
+        r1121[1] = $r875;
+
+        $r876 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedIface>;
+
+        r1121[2] = $r876;
+
+        $r877 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1121[3] = $r877;
+
+        $r878 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1121[4] = $r878;
+
+        $r879 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1121[5] = $r879;
+
+        $r880 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefSelectionOverrideNonPublic>;
+
+        r1121[6] = $r880;
+
+        specialinvoke $r862.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r864, r1121);
+
+        r1098[22] = $r862;
+
+        $r881 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r883 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1122 = newarray (selectionresolution.Template)[7];
+
+        $r882 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r884 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r882);
+
+        r1122[0] = $r884;
+
+        $r885 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r886 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r885);
+
+        $r887 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r888 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r887);
+
+        $r889 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r890 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r889);
+
+        $r892 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r891 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r893 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r892, $r891);
+
+        $r894 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r886, $r888, $r890, $r893);
+
+        r1122[1] = $r894;
+
+        $r895 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedIface>;
+
+        r1122[2] = $r895;
+
+        $r896 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefNotEqualsExpected>;
+
+        r1122[3] = $r896;
+
+        $r897 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1122[4] = $r897;
+
+        $r898 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1122[5] = $r898;
+
+        $r899 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefSelectionOverrideNonPublic>;
+
+        r1122[6] = $r899;
+
+        specialinvoke $r881.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r883, r1122);
+
+        r1098[23] = $r881;
+
+        $r900 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r902 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1123 = newarray (selectionresolution.Template)[7];
+
+        $r901 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r903 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r901);
+
+        r1123[0] = $r903;
+
+        $r904 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r905 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r904);
+
+        $r906 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r907 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r906);
+
+        $r908 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r909 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r908);
+
+        $r911 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r910 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r912 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r911, $r910);
+
+        $r913 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r905, $r907, $r909, $r912);
+
+        r1123[1] = $r913;
+
+        $r914 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedIface>;
+
+        r1123[2] = $r914;
+
+        $r915 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1123[3] = $r915;
+
+        $r916 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1123[4] = $r916;
+
+        $r917 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1123[5] = $r917;
+
+        $r918 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefSelectionOverrideNonPublic>;
+
+        r1123[6] = $r918;
+
+        specialinvoke $r900.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r902, r1123);
+
+        r1098[24] = $r900;
+
+        $r919 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r921 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1124 = newarray (selectionresolution.Template)[7];
+
+        $r920 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r922 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r920);
+
+        r1124[0] = $r922;
+
+        $r923 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r924 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r923);
+
+        $r925 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r926 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r925);
+
+        $r927 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r928 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r927);
+
+        $r930 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r929 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r931 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r930, $r929);
+
+        $r932 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r924, $r926, $r928, $r931);
+
+        r1124[1] = $r932;
+
+        $r933 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedIface>;
+
+        r1124[2] = $r933;
+
+        $r934 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefNotEqualsExpected>;
+
+        r1124[3] = $r934;
+
+        $r935 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1124[4] = $r935;
+
+        $r936 = <selectionresolution.Template: selectionresolution.Template CallsiteUnrelatedToMethodref>;
+
+        r1124[5] = $r936;
+
+        $r937 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefSelectionOverrideNonPublic>;
+
+        r1124[6] = $r937;
+
+        specialinvoke $r919.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r921, r1124);
+
+        r1098[25] = $r919;
+
+        $r938 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r940 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1125 = newarray (selectionresolution.Template)[7];
+
+        $r939 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESPECIAL>;
+
+        $r941 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r939);
+
+        r1125[0] = $r941;
+
+        $r942 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r943 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r942);
+
+        $r944 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r945 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r944);
+
+        $r947 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r946 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r948 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r947, $r946);
+
+        $r949 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r950 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r949);
+
+        $r951 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r943, $r945, $r948, $r950);
+
+        r1125[1] = $r951;
+
+        $r952 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1125[2] = $r952;
+
+        $r953 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1125[3] = $r953;
+
+        $r954 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1125[4] = $r954;
+
+        $r955 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1125[5] = $r955;
+
+        $r956 = <selectionresolution.Template: selectionresolution.Template ObjectrefAssignableToCallsite>;
+
+        r1125[6] = $r956;
+
+        specialinvoke $r938.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r940, r1125);
+
+        r1098[26] = $r938;
+
+        $r957 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r959 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1126 = newarray (selectionresolution.Template)[7];
+
+        $r958 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESPECIAL>;
+
+        $r960 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r958);
+
+        r1126[0] = $r960;
+
+        $r961 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r962 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r961);
+
+        $r963 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r964 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r963);
+
+        $r966 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r965 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r967 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r966, $r965);
+
+        $r968 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r969 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r968);
+
+        $r970 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r962, $r964, $r967, $r969);
+
+        r1126[1] = $r970;
+
+        $r971 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1126[2] = $r971;
+
+        $r972 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1126[3] = $r972;
+
+        $r973 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1126[4] = $r973;
+
+        $r974 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1126[5] = $r974;
+
+        $r975 = <selectionresolution.Template: selectionresolution.Template ObjectrefAssignableToCallsite>;
+
+        r1126[6] = $r975;
+
+        specialinvoke $r957.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r959, r1126);
+
+        r1098[27] = $r957;
+
+        $r976 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r978 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1127 = newarray (selectionresolution.Template)[7];
+
+        $r977 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESPECIAL>;
+
+        $r979 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r977);
+
+        r1127[0] = $r979;
+
+        $r980 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r981 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r980);
+
+        $r982 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r983 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r982);
+
+        $r985 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r984 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r986 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r985, $r984);
+
+        $r987 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r988 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r987);
+
+        $r989 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r981, $r983, $r986, $r988);
+
+        r1127[1] = $r989;
+
+        $r990 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1127[2] = $r990;
+
+        $r991 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1127[3] = $r991;
+
+        $r992 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1127[4] = $r992;
+
+        $r993 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1127[5] = $r993;
+
+        $r994 = <selectionresolution.Template: selectionresolution.Template ObjectrefAssignableToCallsite>;
+
+        r1127[6] = $r994;
+
+        specialinvoke $r976.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r978, r1127);
+
+        r1098[28] = $r976;
+
+        $r995 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r997 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1128 = newarray (selectionresolution.Template)[7];
+
+        $r996 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESPECIAL>;
+
+        $r998 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r996);
+
+        r1128[0] = $r998;
+
+        $r999 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r1000 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r999);
+
+        $r1002 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r1001 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r1003 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r1002, $r1001);
+
+        $r1004 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r1005 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r1004);
+
+        $r1006 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r1007 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r1006);
+
+        $r1008 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r1000, $r1003, $r1005, $r1007);
+
+        r1128[1] = $r1008;
+
+        $r1009 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1128[2] = $r1009;
+
+        $r1010 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1128[3] = $r1010;
+
+        $r1011 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1128[4] = $r1011;
+
+        $r1012 = <selectionresolution.Template: selectionresolution.Template CallsiteEqualsMethodref>;
+
+        r1128[5] = $r1012;
+
+        $r1013 = <selectionresolution.Template: selectionresolution.Template ObjectrefExactSubclassOfCallsite>;
+
+        r1128[6] = $r1013;
+
+        specialinvoke $r995.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r997, r1128);
+
+        r1098[29] = $r995;
+
+        $r1014 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r1016 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1129 = newarray (selectionresolution.Template)[7];
+
+        $r1015 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESPECIAL>;
+
+        $r1017 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r1015);
+
+        r1129[0] = $r1017;
+
+        $r1018 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r1019 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r1018);
+
+        $r1021 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r1020 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r1022 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r1021, $r1020);
+
+        $r1023 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r1024 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r1023);
+
+        $r1025 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r1026 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r1025);
+
+        $r1027 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r1019, $r1022, $r1024, $r1026);
+
+        r1129[1] = $r1027;
+
+        $r1028 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1129[2] = $r1028;
+
+        $r1029 = <selectionresolution.Template: selectionresolution.Template MethodrefEqualsExpected>;
+
+        r1129[3] = $r1029;
+
+        $r1030 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1129[4] = $r1030;
+
+        $r1031 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1129[5] = $r1031;
+
+        $r1032 = <selectionresolution.Template: selectionresolution.Template ObjectrefExactSubclassOfCallsite>;
+
+        r1129[6] = $r1032;
+
+        specialinvoke $r1014.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r1016, r1129);
+
+        r1098[30] = $r1014;
+
+        $r1033 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r1035 = <IllegalAccessErrorTest_mutator: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r1130 = newarray (selectionresolution.Template)[7];
+
+        $r1034 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESPECIAL>;
+
+        $r1036 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r1034);
+
+        r1130[0] = $r1036;
+
+        $r1037 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind CLASS>;
+
+        $r1038 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r1037);
+
+        $r1040 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PACKAGE>;
+
+        $r1039 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r1041 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r1040, $r1039);
+
+        $r1043 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r1042 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r1044 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r1043, $r1042);
+
+        $r1045 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r1046 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r1045);
+
+        $r1047 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r1038, $r1041, $r1044, $r1046);
+
+        r1130[1] = $r1047;
+
+        $r1048 = <selectionresolution.Template: selectionresolution.Template OverrideAbstractExpectedClass>;
+
+        r1130[2] = $r1048;
+
+        $r1049 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedClass>;
+
+        r1130[3] = $r1049;
+
+        $r1050 = <selectionresolution.Template: selectionresolution.Template IgnoredAbstract>;
+
+        r1130[4] = $r1050;
+
+        $r1051 = <selectionresolution.Template: selectionresolution.Template CallsiteSubclassMethodref>;
+
+        r1130[5] = $r1051;
+
+        $r1052 = <selectionresolution.Template: selectionresolution.Template ObjectrefExactSubclassOfCallsite>;
+
+        r1130[6] = $r1052;
+
+        specialinvoke $r1033.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r1035, r1130);
+
+        r1098[31] = $r1033;
+
+        $r1053 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>(r1098);
+
+        <IllegalAccessErrorTest_mutator: java.util.Collection testgroups> = $r1053;
+
+     label1:
+        exitmonitor r1055;
+
+     label2:
+        goto label4;
+
+     label3:
+        $r1054 := @caughtexception;
+
+     label4:
+        return;
+
+        return;
+
+        catch java.lang.Throwable from label1 to label2 with label3;
+        catch java.lang.Throwable from label3 to label4 with label3;
+    }
+}

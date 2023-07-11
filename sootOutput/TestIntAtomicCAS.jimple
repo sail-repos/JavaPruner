@@ -1,0 +1,152 @@
+public class compiler.c2.cr8004867.TestIntAtomicCAS extends java.lang.Object
+{
+    private static final int ARRLEN;
+    private static final int ITERS;
+    private static final int OFFSET;
+    private static final int SCALE;
+    private static final int ALIGN_OFF;
+    private static final int UNALIGN_OFF;
+    public volatile int[][][] field_173277;
+    public static java.util.ArrayList[][][] field_173281;
+    public static long TRAPCOUNT;
+
+    static void <clinit>()
+    {
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.c2.cr8004867.TestIntAtomicCAS r0;
+        int[][][] $r1;
+
+        r0 := @this: compiler.c2.cr8004867.TestIntAtomicCAS;
+
+        $r1 = newmultiarray (int)[128][256][64];
+
+        r0.<compiler.c2.cr8004867.TestIntAtomicCAS: int[][][] field_173277> = $r1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream $r0;
+        java.lang.String[] r1;
+
+        r1 := @parameter0: java.lang.String[];
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Testing Integer array atomic CAS operations");
+
+        staticinvoke <compiler.c2.cr8004867.TestIntAtomicCAS: int test(boolean)>(0);
+
+        return;
+
+        return;
+    }
+
+    static int test(boolean)
+    {
+        java.util.concurrent.atomic.AtomicIntegerArray r0, r1;
+        boolean z0, z1;
+        int i0;
+
+        z0 := @parameter0: boolean;
+
+        r0 = new java.util.concurrent.atomic.AtomicIntegerArray;
+
+        specialinvoke r0.<java.util.concurrent.atomic.AtomicIntegerArray: void <init>(int)>(97);
+
+        r1 = new java.util.concurrent.atomic.AtomicIntegerArray;
+
+        specialinvoke r1.<java.util.concurrent.atomic.AtomicIntegerArray: void <init>(int)>(97);
+
+        z1 = 0;
+
+        goto label1;
+
+     label1:
+        i0 = 0;
+
+        staticinvoke <compiler.c2.cr8004867.TestIntAtomicCAS: void test_cp(java.util.concurrent.atomic.AtomicIntegerArray,java.util.concurrent.atomic.AtomicIntegerArray)>(r0, r1);
+
+        i0 = i0 + 1;
+
+        if z0 == 0 goto label2;
+
+        return -2;
+
+     label2:
+        return 0;
+    }
+
+    static void test_cp(java.util.concurrent.atomic.AtomicIntegerArray, java.util.concurrent.atomic.AtomicIntegerArray)
+    {
+        compiler.c2.cr8004867.TestIntAtomicCAS $r0;
+        java.util.concurrent.atomic.AtomicIntegerArray r1, r2;
+        int $i0, i1, $i2, i3;
+        sun.hotspot.WhiteBox $r3;
+        GCObj $r4, $r5;
+        java.util.ArrayList[][][] r6;
+        java.util.ArrayList[][] $r7;
+        java.util.Random r8;
+
+        r1 := @parameter0: java.util.concurrent.atomic.AtomicIntegerArray;
+
+        r2 := @parameter1: java.util.concurrent.atomic.AtomicIntegerArray;
+
+        $r0 = new compiler.c2.cr8004867.TestIntAtomicCAS;
+
+        specialinvoke $r0.<compiler.c2.cr8004867.TestIntAtomicCAS: void <init>()>();
+
+        goto label2;
+
+     label1:
+        $i0 = virtualinvoke r2.<java.util.concurrent.atomic.AtomicIntegerArray: int get(int)>(0);
+
+        virtualinvoke r1.<java.util.concurrent.atomic.AtomicIntegerArray: boolean compareAndSet(int,int,int)>(0, -123, $i0);
+
+        $r3 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        virtualinvoke $r3.<sun.hotspot.WhiteBox: void youngGC()>();
+
+        $r4 = new GCObj;
+
+        specialinvoke $r4.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 262144);
+
+        $r5 = new GCObj;
+
+        specialinvoke $r5.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 536870912);
+
+        r6 = <compiler.c2.cr8004867.TestIntAtomicCAS: java.util.ArrayList[][][] field_173281>;
+
+        r8 = new java.util.Random;
+
+        specialinvoke r8.<java.util.Random: void <init>(long)>(100L);
+
+        i1 = lengthof r6;
+
+     label2:
+        goto label1;
+
+        if i1 <= 0 goto label2;
+
+        $i2 = virtualinvoke r8.<java.util.Random: int nextInt(int)>(i1);
+
+        $r7 = r6[$i2];
+
+        i3 = lengthof $r7;
+
+        if i3 <= 0 goto label2;
+
+        if i3 <= 0 goto label2;
+
+        return;
+    }
+}

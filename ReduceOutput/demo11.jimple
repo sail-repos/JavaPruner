@@ -1,0 +1,1040 @@
+public class demo11 extends java.lang.Object
+{
+    public static int maxN;
+    public static int CHECKSUM;
+    private static volatile int[] field_962;
+    protected static volatile int[][] field_964;
+    private static short[][][][][] field_970;
+    public static volatile int field_972;
+    public static long TRAPCOUNT;
+    private static volatile java.lang.StringBuilder[][][] field_2675;
+    protected java.util.zip.Inflater[][][] field_2677;
+    private static int field_2679;
+    public static java.awt.ImageCapabilities[][][] field_2681;
+    protected volatile boolean[] field_3447;
+    private char[][][][][] field_7080;
+    protected static java.beans.VetoableChangeListenerProxy field_9387;
+    protected static volatile java.util.Random field_9391;
+    public long[][][] field_9393;
+    private volatile float field_19514;
+    public volatile double[][] field_19516;
+    private char[][][][][] field_19525;
+    public volatile short[][][][] field_19527;
+    protected volatile long[][][][][] field_19529;
+    protected static volatile java.security.cert.CertificateParsingException[][][][][] field_19531;
+    protected static java.io.ObjectStreamField field_156726;
+    public static volatile int[][][][][] field_156730;
+    protected static volatile java.util.Scanner[][][][] field_156732;
+    public float field_156734;
+    public static volatile int[][][][] field_156736;
+    private volatile short[][][][][] field_157465;
+    private static volatile short field_157467;
+    protected volatile long[][][][] field_157469;
+    private volatile long[][][][] field_157480;
+    public static float[][][][] field_157482;
+    private double[] field_157484;
+    private short[][][][] field_157486;
+
+    public static int[] func_2731(int, double[], boolean)
+    {
+        int $i0, $i1, i2;
+        int[] $r0;
+        double[] r1;
+        boolean z0;
+
+        i2 := @parameter0: int;
+
+        r1 := @parameter1: double[];
+
+        z0 := @parameter2: boolean;
+
+        $r0 = newarray (int)[17];
+
+        $i0 = <demo11: int maxN>;
+
+        $i1 = $i0 ^ 1;
+
+        <demo11: int maxN> = $i1;
+
+        return $r0;
+    }
+
+    protected static void func_988(double[][], int[])
+    {
+        int[] r0;
+        double[][] r1;
+
+        r1 := @parameter0: double[][];
+
+        r0 := @parameter1: int[];
+
+        staticinvoke <java.lang.Float: int floatToRawIntBits(float)>(2.0F);
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        int $i0, $i1, $i2, i3;
+        java.lang.StringBuilder $r0, $r2, $r3;
+        java.io.PrintStream $r1;
+        java.lang.String $r4;
+        java.lang.String[] r5;
+
+        r5 := @parameter0: java.lang.String[];
+
+        i3 = <demo11: int maxN>;
+
+        staticinvoke <demo11: void opt(int)>(i3);
+
+        $i0 = <demo11: int CHECKSUM>;
+
+        $i1 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i0, i3);
+
+        <demo11: int CHECKSUM> = $i1;
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        $r0 = new java.lang.StringBuilder;
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>()>();
+
+        $r2 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i2 = <demo11: int CHECKSUM>;
+
+        $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i2);
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>($r4);
+
+        return;
+    }
+
+    public static void opt(int)
+    {
+        int i0, $i1, $i2, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i34, $i37, $i38, $i39, $i40, $i41, $i42, $i91, $i92, $i93, $i94, $i95, $i96, $i97, $i98, $i99, $i100, $i101, $i102, $i103, $i104, $i125, $i126, $i127, $i128, $i129, $i130, $i131, $i132, $i171, $i172, $i175, $i176, $i177, $i178, $i179, $i180, $i181, $i182, $i183, $i184, $i185, $i186, $i187, i188, i189, i193, i194, i195, i196, i197, i198, i199, i202, i203, i204, i205, $i208, $i211, i213, i261, i262, i263, i267;
+        char[] $r0, $r1, $r2, $r3, $r4, $r50, r116, r127;
+        int[] $r5, $r36, r126, $r132, r133, r176, r178;
+        java.util.prefs.InvalidPreferencesFormatException $r6, $r72;
+        java.lang.Throwable $r7, $r114, r188;
+        java.util.UnknownFormatFlagsException $r8, $r112;
+        long $l3, $l4, $l23, $l24, $l35, $l36, $l169, $l170, $l173, $l174, l206, l207, $l209, $l210, l223, l224, l225, l226, l268, l269, l270, l271, l272, l273;
+        double[] $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r17, $r18, $r20, $r21, r141, r174, r182;
+        short[][][][][] $r16, $r27, $r111, r117, r118, $r129, r142, r143;
+        java.util.ArrayList $r25;
+        java.util.Collection $r26;
+        java.lang.Object $r28;
+        java.awt.datatransfer.UnsupportedFlavorException $r29, $r110;
+        java.awt.datatransfer.DataFlavor $r30;
+        java.lang.String $r31, $r43;
+        java.nio.channels.ShutdownChannelGroupException $r32, $r108;
+        java.util.Random $r33, $r187;
+        java.awt.image.SinglePixelPackedSampleModel $r35;
+        java.net.URLStreamHandler $r40, $r42;
+        java.net.URL $r41, $r44, $r45, r119;
+        java.security.cert.Certificate $r46, $r47, $r48, $r49, $r51;
+        java.lang.IndexOutOfBoundsException $r52, $r73;
+        java.lang.Thread$UncaughtExceptionHandler $r53;
+        java.util.ConcurrentModificationException $r80, $r113;
+        java.security.cert.Certificate[] r120, r122;
+        java.security.CodeSource r121, r123;
+        int[][][] $r130;
+        int[][] $r131;
+        double[][] r135, r144, r181;
+        float[][][][][] r140;
+        float[][][][] r177;
+        int[][][][] r179;
+        double[][][][] r180;
+        double[][][][][] r183;
+        char[][] r190;
+        long[][][][][] r191;
+
+        i188 := @parameter0: int;
+
+        if i188 > 0 goto label01;
+
+        return;
+
+     label01:
+        i0 = i188 - 1;
+
+        i189 = 44;
+
+     label02:
+        if i189 >= 62 goto label05;
+
+        goto label03;
+
+     label03:
+        goto label04;
+
+     label04:
+        i189 = i189 + 3;
+
+        $i41 = <demo11: int CHECKSUM>;
+
+        $i42 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i41, i189);
+
+        <demo11: int CHECKSUM> = $i42;
+
+        goto label02;
+
+     label05:
+        r116 = newarray (char)[17];
+
+        r116[14] = 97;
+
+        r116[16] = 36;
+
+        r116[16] = 35;
+
+        r116[12] = 103;
+
+        r116[8] = 56;
+
+        r116[3] = 50;
+
+        r116[14] = 68;
+
+        r116[9] = 72;
+
+        r116[0] = 110;
+
+        r116[1] = 93;
+
+        r116[7] = 82;
+
+        r116[16] = 114;
+
+        r116[6] = 58;
+
+        r116[14] = 79;
+
+        i193 = <demo11: int CHECKSUM>;
+
+        i194 = <demo11: int maxN>;
+
+        i195 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>(i193, i194);
+
+        <demo11: int CHECKSUM> = i195;
+
+        i196 = i194 << i0;
+
+        i197 = <demo11: int CHECKSUM>;
+
+        i198 = i196 % i188;
+
+        i199 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>(i197, i198);
+
+        <demo11: int CHECKSUM> = i199;
+
+     label06:
+        goto label07;
+
+     label07:
+        lookupswitch(1)
+        {
+            case 0: goto label08;
+            case 1: goto label25;
+            case 2: goto label28;
+            case 3: goto label36;
+            case 4: goto label37;
+            case 5: goto label38;
+            case 6: goto label44;
+            default: goto label45;
+        };
+
+     label08:
+        r117 = newmultiarray (short)[17][6][1][1][2];
+
+        lookupswitch(i196)
+        {
+            case 0: goto label09;
+            case 1: goto label10;
+            case 2: goto label11;
+            case 3: goto label12;
+            case 4: goto label13;
+            case 5: goto label15;
+            case 6: goto label16;
+            default: goto label24;
+        };
+
+     label09:
+        goto label24;
+
+     label10:
+        $r53 = (java.lang.Thread$UncaughtExceptionHandler) null;
+
+        staticinvoke <java.lang.Thread: void setDefaultUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler)>($r53);
+
+        goto label24;
+
+     label11:
+        goto label24;
+
+     label12:
+        r118 = newmultiarray (short)[18][6][2][1][1];
+
+        goto label24;
+
+     label13:
+        i202 = <demo11: int CHECKSUM>;
+
+        i203 = 72;
+
+        if i203 >= 62 goto label14;
+
+        return;
+
+     label14:
+        goto label24;
+
+     label15:
+        goto label24;
+
+     label16:
+        r119 = (java.net.URL) null;
+
+        r120 = newarray (java.security.cert.Certificate)[10];
+
+        r121 = new java.security.CodeSource;
+
+        r122 = newarray (java.security.cert.Certificate)[10];
+
+        r123 = new java.security.CodeSource;
+
+        specialinvoke r123.<java.security.CodeSource: void <init>(java.net.URL,java.security.cert.Certificate[])>(r119, r122);
+
+        i204 = 81;
+
+     label17:
+        if i204 >= 85 goto label22;
+
+        $i37 = <demo11: int CHECKSUM>;
+
+        $l35 = <demo11: long TRAPCOUNT>;
+
+        $l36 = $l35 * 0L;
+
+        <demo11: long TRAPCOUNT> = $l36;
+
+        $i38 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i37, $l36);
+
+        <demo11: int CHECKSUM> = $i38;
+
+     label18:
+        $r52 = new java.lang.IndexOutOfBoundsException;
+
+        specialinvoke $r52.<java.lang.IndexOutOfBoundsException: void <init>()>();
+
+        throw $r52;
+
+     label19:
+        $r73 := @caughtexception;
+
+        i205 = 85;
+
+     label20:
+        if i205 >= 81 goto label21;
+
+        l206 = <demo11: long TRAPCOUNT>;
+
+        l207 = l206 + 1L;
+
+        $i99 = <demo11: int CHECKSUM>;
+
+        $i100 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i99, l206);
+
+        <demo11: int CHECKSUM> = $i100;
+
+        <demo11: long TRAPCOUNT> = l207;
+
+        $i101 = <demo11: int CHECKSUM>;
+
+        $i102 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i101, l207);
+
+        <demo11: int CHECKSUM> = $i102;
+
+        i205 = i205 + 2;
+
+        $i103 = <demo11: int CHECKSUM>;
+
+        $i104 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i103, i205);
+
+        <demo11: int CHECKSUM> = $i104;
+
+        goto label20;
+
+     label21:
+        r126 = <demo11: int[] field_962>;
+
+        $r41 = new java.net.URL;
+
+        $r40 = (java.net.URLStreamHandler) null;
+
+        specialinvoke $r41.<java.net.URL: void <init>(java.net.URL,java.lang.String,java.net.URLStreamHandler)>(r119, "b", $r40);
+
+        $r44 = new java.net.URL;
+
+        $r43 = (java.lang.String) null;
+
+        $r42 = (java.net.URLStreamHandler) null;
+
+        specialinvoke $r44.<java.net.URL: void <init>(java.net.URL,java.lang.String,java.net.URLStreamHandler)>(r119, $r43, $r42);
+
+        $r45 = new java.net.URL;
+
+        specialinvoke $r45.<java.net.URL: void <init>(java.net.URL,java.lang.String)>(r119, "");
+
+        $r46 = (java.security.cert.Certificate) null;
+
+        r122[9] = $r46;
+
+        $r47 = (java.security.cert.Certificate) null;
+
+        r122[6] = $r47;
+
+        $r48 = (java.security.cert.Certificate) null;
+
+        r122[3] = $r48;
+
+        $r49 = (java.security.cert.Certificate) null;
+
+        r122[7] = $r49;
+
+        r127 = newarray (char)[11];
+
+        r127[9] = 46;
+
+        r127[3] = 97;
+
+        r127[1] = 105;
+
+        r127[10] = 36;
+
+        r127[10] = 61;
+
+        r127[8] = 81;
+
+        r127[2] = 99;
+
+        r127[0] = 95;
+
+        r127[10] = 99;
+
+        $r50 = newarray (char)[8];
+
+        staticinvoke <demo2: float[][][][][] func_59876(char[],char[])>(r127, $r50);
+
+        $r51 = (java.security.cert.Certificate) null;
+
+        r122[4] = $r51;
+
+        i204 = i204 + 4;
+
+        $i39 = <demo11: int CHECKSUM>;
+
+        $i40 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i39, i204);
+
+        <demo11: int CHECKSUM> = $i40;
+
+        goto label17;
+
+     label22:
+        goto label23;
+
+     label23:
+        virtualinvoke r123.<java.security.CodeSource: java.net.URL getLocation()>();
+
+        goto label24;
+
+     label24:
+        $r129 = newmultiarray (short)[14][8][2][1][1];
+
+        $i208 = <demo11: int CHECKSUM>;
+
+        $l209 = <demo11: long TRAPCOUNT>;
+
+        $l210 = $l209 * -1L;
+
+        <demo11: long TRAPCOUNT> = $l210;
+
+        $i211 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i208, $l210);
+
+        $r130 = newmultiarray (int)[17][3][4];
+
+        $r131 = $r130[14];
+
+        $r132 = $r131[1];
+
+        $r132[0] = 2;
+
+        <demo11: int CHECKSUM> = $i211;
+
+        <demo11: short[][][][][] field_970> = $r129;
+
+        r133 = <demo11: int[] field_962>;
+
+        <demo11: short[][][][][] field_970> = r117;
+
+        goto label45;
+
+     label25:
+        i213 = <demo11: int CHECKSUM>;
+
+        $r33 = <demo11: java.util.Random field_9391>;
+
+        virtualinvoke $r33.<java.util.Random: java.util.stream.DoubleStream doubles(double,double)>(0.1, 100.0);
+
+        $i19 = <demo11: int CHECKSUM>;
+
+        $i20 = staticinvoke <JITFuzzing.Check: int checksum(int,double)>($i19, 100.0);
+
+        <demo11: int CHECKSUM> = $i20;
+
+        $i21 = <demo11: int CHECKSUM>;
+
+        $i22 = staticinvoke <JITFuzzing.Check: int checksum(int,double)>($i21, 0.1);
+
+        <demo11: int CHECKSUM> = $i22;
+
+        goto label26;
+
+     label26:
+        goto label27;
+
+     label27:
+        $l23 = <demo11: long TRAPCOUNT>;
+
+        $l24 = $l23 / -100L;
+
+        <demo11: long TRAPCOUNT> = $l24;
+
+        $r35 = new java.awt.image.SinglePixelPackedSampleModel;
+
+        $r36 = newarray (int)[1];
+
+        specialinvoke $r35.<java.awt.image.SinglePixelPackedSampleModel: void <init>(int,int,int,int,int[])>(0, 100, 3, -100, $r36);
+
+        $i25 = <demo11: int CHECKSUM>;
+
+        $i26 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i25, -100);
+
+        <demo11: int CHECKSUM> = $i26;
+
+        $i27 = <demo11: int CHECKSUM>;
+
+        $i28 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i27, 3);
+
+        <demo11: int CHECKSUM> = $i28;
+
+        $i29 = <demo11: int CHECKSUM>;
+
+        $i30 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i29, 100);
+
+        <demo11: int CHECKSUM> = $i30;
+
+        $i31 = <demo11: int CHECKSUM>;
+
+        $i32 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i31, 0);
+
+        <demo11: int CHECKSUM> = $i32;
+
+        virtualinvoke $r35.<java.awt.image.SinglePixelPackedSampleModel: int getNumDataElements()>();
+
+        $i34 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>(i213, $l24);
+
+        <demo11: int CHECKSUM> = $i34;
+
+        goto label45;
+
+     label28:
+        r135 = newmultiarray (double)[18][12];
+
+     label29:
+        $r32 = new java.nio.channels.ShutdownChannelGroupException;
+
+        specialinvoke $r32.<java.nio.channels.ShutdownChannelGroupException: void <init>()>();
+
+        throw $r32;
+
+     label30:
+        $r108 := @caughtexception;
+
+        $i171 = <demo11: int CHECKSUM>;
+
+        $l169 = <demo11: long TRAPCOUNT>;
+
+        $l170 = $l169 + 2L;
+
+        <demo11: long TRAPCOUNT> = $l170;
+
+        $i172 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i171, $l170);
+
+        <demo11: int CHECKSUM> = $i172;
+
+        goto label31;
+
+     label31:
+        goto label32;
+
+     label32:
+        l223 = <demo11: long TRAPCOUNT>;
+
+        l224 = l223 + 1L;
+
+        $i91 = <demo11: int CHECKSUM>;
+
+        $i92 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i91, l223);
+
+        <demo11: int CHECKSUM> = $i92;
+
+        <demo11: long TRAPCOUNT> = l224;
+
+        $i93 = <demo11: int CHECKSUM>;
+
+        $i94 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i93, l224);
+
+        <demo11: int CHECKSUM> = $i94;
+
+        $r29 = new java.awt.datatransfer.UnsupportedFlavorException;
+
+        $r30 = new java.awt.datatransfer.DataFlavor;
+
+        $r31 = (java.lang.String) null;
+
+        specialinvoke $r30.<java.awt.datatransfer.DataFlavor: void <init>(java.lang.String,java.lang.String)>("", $r31);
+
+        specialinvoke $r29.<java.awt.datatransfer.UnsupportedFlavorException: void <init>(java.awt.datatransfer.DataFlavor)>($r30);
+
+        throw $r29;
+
+     label33:
+        $r110 := @caughtexception;
+
+        $i175 = <demo11: int CHECKSUM>;
+
+        $l173 = <demo11: long TRAPCOUNT>;
+
+        $l174 = $l173 + -3L;
+
+        <demo11: long TRAPCOUNT> = $l174;
+
+        $i176 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i175, $l174);
+
+        <demo11: int CHECKSUM> = $i176;
+
+        $r111 = newmultiarray (short)[14][6][1][3][1];
+
+        <demo11: short[][][][][] field_970> = $r111;
+
+        l225 = <demo11: long TRAPCOUNT>;
+
+        l226 = l225 + 1L;
+
+        $i177 = <demo11: int CHECKSUM>;
+
+        r140 = newmultiarray (float)[7][5][5][1][1];
+
+        $i178 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i177, l225);
+
+        <demo11: int CHECKSUM> = $i178;
+
+        <demo11: long TRAPCOUNT> = l226;
+
+        $i179 = <demo11: int CHECKSUM>;
+
+        $i180 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i179, l226);
+
+        <demo11: int CHECKSUM> = $i180;
+
+        r141 = r135[16];
+
+        $i18 = <demo11: int field_2679>;
+
+        lookupswitch($i18)
+        {
+            case 0: goto label34;
+            default: goto label35;
+        };
+
+     label34:
+        r142 = newmultiarray (short)[17][4][3][1][1];
+
+        goto label35;
+
+     label35:
+        r141[6] = 100.0;
+
+        goto label45;
+
+     label36:
+        r143 = newmultiarray (short)[7][5][6][1][1];
+
+        goto label45;
+
+     label37:
+        $r27 = newmultiarray (short)[6][19][2][1][1];
+
+        $r25 = new java.util.ArrayList;
+
+        $r26 = (java.util.Collection) null;
+
+        specialinvoke $r25.<java.util.ArrayList: void <init>(java.util.Collection)>($r26);
+
+        $r28 = new java.lang.Object;
+
+        specialinvoke $r28.<java.lang.Object: void <init>()>();
+
+        virtualinvoke $r25.<java.util.ArrayList: boolean contains(java.lang.Object)>($r28);
+
+        <demo11: short[][][][][] field_970> = $r27;
+
+        goto label45;
+
+     label38:
+        r144 = newmultiarray (double)[12][20];
+
+        goto label39;
+
+     label39:
+        goto label40;
+
+     label40:
+        r174 = r144[2];
+
+        $i17 = <demo11: int CHECKSUM>;
+
+        if $i17 == -100 goto label43;
+
+        goto label41;
+
+     label41:
+        goto label42;
+
+     label42:
+        r174[0] = -3.0;
+
+        $r20 = r144[2];
+
+        $r20[13] = -3.0;
+
+        $r21 = r144[6];
+
+        $r21[19] = -100.0;
+
+        r176 = newarray (int)[9];
+
+        r176[8] = -3;
+
+        r176[3] = 2;
+
+        r176[8] = 3;
+
+        r176[8] = 2;
+
+        r176[3] = 0;
+
+        r176[7] = 2;
+
+        r176[5] = 1;
+
+        staticinvoke <demo11: void func_988(double[][],int[])>(r144, r176);
+
+     label43:
+        goto label45;
+
+     label44:
+        r177 = newmultiarray (float)[20][12][1][1];
+
+        goto label45;
+
+     label45:
+        r178 = newarray (int)[7];
+
+        r179 = newmultiarray (int)[1][14][17][1];
+
+        i261 = 6;
+
+     label46:
+        if i261 >= 27 goto label51;
+
+        $i5 = <demo11: int CHECKSUM>;
+
+        $l3 = <demo11: long TRAPCOUNT>;
+
+        $l4 = $l3 / 3L;
+
+        <demo11: long TRAPCOUNT> = $l4;
+
+        $i6 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i5, $l4);
+
+        <demo11: int CHECKSUM> = $i6;
+
+        i261 = i261 + 4;
+
+        i262 = 42;
+
+     label47:
+        if i262 >= 5 goto label50;
+
+        i263 = 1;
+
+     label48:
+        if i263 >= 89 goto label49;
+
+        r178[2] = -2;
+
+        r180 = newmultiarray (double)[1][11][16][1];
+
+        r181 = newmultiarray (double)[7][20];
+
+        $r9 = r181[1];
+
+        $r9[17] = -0.1;
+
+        $r10 = r181[1];
+
+        $r10[19] = -100.0;
+
+        $r11 = r181[4];
+
+        $r11[10] = 0.0;
+
+        $r12 = r181[6];
+
+        $r12[0] = -3.0;
+
+        $r13 = r181[2];
+
+        $r13[2] = 2.0;
+
+        $r14 = r181[6];
+
+        $r14[19] = 3.0;
+
+        $r15 = r181[5];
+
+        $r15[10] = 2.0;
+
+        $r16 = newmultiarray (short)[15][1][5][3][1];
+
+        <demo11: short[][][][][] field_970> = $r16;
+
+        $r17 = r181[0];
+
+        $r17[14] = 3.0;
+
+        $r18 = r181[5];
+
+        r182 = newarray (double)[19];
+
+        r182[16] = -0.1;
+
+        r182[14] = 100.0;
+
+        staticinvoke <demo11: int[] func_2731(int,double[],boolean)>(3, r182, 1);
+
+        r183 = newmultiarray (double)[6][3][4][2][1];
+
+        $i9 = <demo11: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,boolean)>($i9, 1);
+
+        <demo11: int CHECKSUM> = $i10;
+
+        $i11 = <demo11: int CHECKSUM>;
+
+        $i12 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i11, 3);
+
+        <demo11: int CHECKSUM> = $i12;
+
+        $r18[7] = -100.0;
+
+        staticinvoke <demo11: void func_988(double[][],int[])>(r181, r178);
+
+        r178[1] = -2;
+
+        $i13 = <demo11: int CHECKSUM>;
+
+        $i14 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i13, i261);
+
+        <demo11: int CHECKSUM> = $i14;
+
+        i263 = i263 + 1;
+
+        $i15 = <demo11: int CHECKSUM>;
+
+        $i16 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i15, i263);
+
+        <demo11: int CHECKSUM> = $i16;
+
+        goto label48;
+
+     label49:
+        i262 = i262 + 5;
+
+        $i7 = <demo11: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i7, i262);
+
+        <demo11: int CHECKSUM> = $i8;
+
+        goto label47;
+
+     label50:
+        goto label46;
+
+     label51:
+        $r8 = new java.util.UnknownFormatFlagsException;
+
+        specialinvoke $r8.<java.util.UnknownFormatFlagsException: void <init>(java.lang.String)>("YaiH<");
+
+        throw $r8;
+
+     label52:
+        $r112 := @caughtexception;
+
+        $i182 = <demo11: int CHECKSUM>;
+
+        $i181 = <demo11: int CHECKSUM>;
+
+        $i183 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i182, $i181);
+
+        <demo11: int CHECKSUM> = $i183;
+
+        $i184 = <demo11: int CHECKSUM>;
+
+        i267 = <demo11: int maxN>;
+
+        $i185 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i184, i267);
+
+        <demo11: int CHECKSUM> = $i185;
+
+        $i186 = <demo11: int CHECKSUM>;
+
+        $i187 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i186, i267);
+
+        <demo11: int CHECKSUM> = $i187;
+
+     label53:
+        $r113 = new java.util.ConcurrentModificationException;
+
+        $r114 = (java.lang.Throwable) null;
+
+        specialinvoke $r113.<java.util.ConcurrentModificationException: void <init>(java.lang.Throwable)>($r114);
+
+        throw $r113;
+
+     label54:
+        $r80 := @caughtexception;
+
+        l268 = <demo11: long TRAPCOUNT>;
+
+        l269 = l268 + 1L;
+
+        $i125 = <demo11: int CHECKSUM>;
+
+        $i126 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i125, l268);
+
+        <demo11: int CHECKSUM> = $i126;
+
+        <demo11: long TRAPCOUNT> = l269;
+
+        $i127 = <demo11: int CHECKSUM>;
+
+        $i128 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i127, l269);
+
+        <demo11: int CHECKSUM> = $i128;
+
+        l270 = <demo11: long TRAPCOUNT>;
+
+        l271 = l270 + 1L;
+
+        $i129 = <demo11: int CHECKSUM>;
+
+        $i130 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i129, l270);
+
+        <demo11: int CHECKSUM> = $i130;
+
+        <demo11: long TRAPCOUNT> = l271;
+
+        $i131 = <demo11: int CHECKSUM>;
+
+        $i132 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i131, l271);
+
+        <demo11: int CHECKSUM> = $i132;
+
+        staticinvoke <demo11: void opt(int)>(i0);
+
+        $r187 = <demo11: java.util.Random field_9391>;
+
+        if $r187 == null goto label56;
+
+     label55:
+        l272 = <demo11: long TRAPCOUNT>;
+
+        l273 = l272 + 1L;
+
+        $i95 = <demo11: int CHECKSUM>;
+
+        $i96 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i95, l272);
+
+        <demo11: int CHECKSUM> = $i96;
+
+        <demo11: long TRAPCOUNT> = l273;
+
+        $i97 = <demo11: int CHECKSUM>;
+
+        $i98 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i97, l273);
+
+        <demo11: int CHECKSUM> = $i98;
+
+        r190 = newmultiarray (char)[4][10];
+
+        $r0 = r190[0];
+
+        $r0[1] = 87;
+
+        $r1 = r190[2];
+
+        $r1[6] = 86;
+
+        $r2 = r190[1];
+
+        $r2[9] = 123;
+
+        $r3 = r190[1];
+
+        $r3[0] = 101;
+
+        $r4 = r190[0];
+
+        $r4[0] = 119;
+
+        r191 = newmultiarray (long)[2][18][6][1][1];
+
+        $i1 = <demo11: int CHECKSUM>;
+
+        $r5 = newarray (int)[6];
+
+        $r5[1] = 1;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, i0);
+
+        <demo11: int CHECKSUM> = $i2;
+
+     label56:
+        return;
+
+        catch java.util.UnknownFormatFlagsException from label06 to label14 with label52;
+        catch java.util.UnknownFormatFlagsException from label14 to label52 with label52;
+        catch java.awt.datatransfer.UnsupportedFlavorException from label29 to label33 with label33;
+        catch java.nio.channels.ShutdownChannelGroupException from label29 to label30 with label30;
+        catch java.util.ConcurrentModificationException from label53 to label54 with label54;
+        catch java.lang.IndexOutOfBoundsException from label18 to label19 with label19;
+        catch java.util.prefs.InvalidPreferencesFormatException from label55 to label56 with label56;
+    }
+}

@@ -1,0 +1,66 @@
+public class compiler.codegen.TestShortDoubleVect extends java.lang.Object
+{
+    private static final int ARRLEN;
+    private static final int ITERS;
+    private static final int OFFSET;
+    private static final int SCALE;
+    private static final int ALIGN_OFF;
+    private static final int UNALIGN_OFF;
+    private static java.lang.ref.PhantomReference field_9878;
+    public static long TRAPCOUNT;
+    private static volatile java.lang.ref.WeakReference field_12744;
+    protected java.lang.ref.SoftReference[][][] field_12748;
+
+    static void <clinit>()
+    {
+        <compiler.codegen.TestShortDoubleVect: long TRAPCOUNT> = 0L;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.codegen.TestShortDoubleVect r0;
+        java.lang.ref.SoftReference[][][] $r1;
+
+        r0 := @this: compiler.codegen.TestShortDoubleVect;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        $r1 = newmultiarray (java.lang.ref.SoftReference)[32][256][512];
+
+        r0.<compiler.codegen.TestShortDoubleVect: java.lang.ref.SoftReference[][][] field_12748> = $r1;
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream $r0, $r1, $r3;
+        java.lang.StringBuilder $r2, $r4, $r5;
+        java.lang.String $r6;
+        java.lang.String[] r7;
+        int i0;
+
+        r7 := @parameter0: java.lang.String[];
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Testing Short + Double vectors");
+
+        i0 = staticinvoke <compiler.codegen.TestShortDoubleVect: int test()>();
+
+        return;
+    }
+
+    static int test()
+    {
+        java.lang.Error $r0;
+
+        $r0 = new java.lang.Error;
+
+        specialinvoke $r0.<java.lang.Error: void <init>(java.lang.String)>("Unresolved compilation problem: \n\tThe method s() is undefined for the type TestShortDoubleVect\n");
+
+        throw $r0;
+    }
+}

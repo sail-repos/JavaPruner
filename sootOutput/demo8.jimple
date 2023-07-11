@@ -1,0 +1,357 @@
+public class demo8 extends java.lang.Object
+{
+    public static int maxN;
+    public static int maxM;
+    public static int CHECKSUM;
+    protected static volatile long[][][][][] field_1968;
+    protected volatile short field_1970;
+    public java.net.HttpCookie[][][][][] field_1972;
+    public double[][][][][] field_10334;
+    public static java.awt.print.PrinterException field_10336;
+    public static long TRAPCOUNT;
+    protected int field_32924;
+    protected float[][][] field_32926;
+    private volatile double[][][][] field_32930;
+    private static volatile boolean field_32932;
+    private static volatile int[][][][] field_32934;
+    private volatile short[][] field_32936;
+    public int[][] field_32938;
+    protected java.security.KeyStore$TrustedCertificateEntry[][][][][] field_35833;
+    public volatile int[][][][][] field_35835;
+    public volatile float field_35837;
+    private volatile java.beans.VetoableChangeSupport[][][][] field_35839;
+    protected static double[][][] field_35841;
+    protected long field_35843;
+    private static volatile char field_35845;
+    protected static int[] field_35847;
+    private java.awt.geom.Ellipse2D$Double[][] field_118704;
+    public int[][][][][] field_118736;
+    public static volatile long[] field_118738;
+    protected volatile float field_118740;
+    public static volatile double field_118742;
+    public volatile short[][][][] field_118744;
+    public short[][][] field_119747;
+    public int[] field_120197;
+    public volatile java.lang.IllegalMonitorStateException[][][][][] field_120199;
+    private int[][][] field_120201;
+
+    static void <clinit>()
+    {
+        long[] $r0;
+        int[] r1;
+        double[][][] $r2;
+        int[][][][] $r3;
+        java.awt.print.PrinterException $r4;
+        long[][][][][] $r5;
+        int $i0, $i1, $i2;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        demo8 r0;
+        int[][][] $r1;
+        java.lang.IllegalMonitorStateException[][][][][] $r2;
+        short[][][] $r3;
+        short[][][][] $r4;
+        int[][][][][] $r5, $r25;
+        java.awt.geom.Ellipse2D$Double $r6, $r8, $r10, $r12, $r14, $r16, $r18, $r20, $r22;
+        java.awt.geom.Ellipse2D$Double[] $r7, $r9, $r11, $r13, $r15, $r17, $r19, $r21, $r23;
+        java.beans.VetoableChangeSupport[][][][] $r24;
+        java.security.KeyStore$TrustedCertificateEntry[][][][][] $r26;
+        int[] $r27, $r28, r36;
+        short[][] $r29;
+        double[][][][] $r30;
+        float[][][] $r31;
+        float[][] $r32;
+        float[] $r33;
+        double[][][][][] $r34;
+        java.net.HttpCookie[][][][][] $r35;
+        java.awt.geom.Ellipse2D$Double[][] r37;
+        int[][] r38;
+
+        r0 := @this: demo8;
+
+        $r1 = newmultiarray (int)[14][10][1];
+
+        r0.<demo8: int[][][] field_120201> = $r1;
+
+        $r2 = newmultiarray (java.lang.IllegalMonitorStateException)[4][20][1][2][1];
+
+        r0.<demo8: java.lang.IllegalMonitorStateException[][][][][] field_120199> = $r2;
+
+        r36 = newarray (int)[8];
+
+        r36[0] = 0;
+
+        r36[4] = -100;
+
+        r36[1] = -100;
+
+        r36[2] = 100;
+
+        r36[2] = 2;
+
+        r36[5] = 0;
+
+        r36[6] = 0;
+
+        r0.<demo8: int[] field_120197> = r36;
+
+        $r3 = newmultiarray (short)[7][8][3];
+
+        r0.<demo8: short[][][] field_119747> = $r3;
+
+        $r4 = newmultiarray (short)[4][11][5][1];
+
+        r0.<demo8: short[][][][] field_118744> = $r4;
+
+        r0.<demo8: float field_118740> = -1.0F;
+
+        $r5 = newmultiarray (int)[10][19][1][1][1];
+
+        r0.<demo8: int[][][][][] field_118736> = $r5;
+
+        r37 = newmultiarray (java.awt.geom.Ellipse2D$Double)[13][18];
+
+        $r7 = r37[5];
+
+        $r6 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r6.<java.awt.geom.Ellipse2D$Double: void <init>(double,double,double,double)>(0.1, -0.1, -100.0, 1.0);
+
+        $r7[9] = $r6;
+
+        $r9 = r37[7];
+
+        $r8 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r8.<java.awt.geom.Ellipse2D$Double: void <init>()>();
+
+        $r9[7] = $r8;
+
+        $r11 = r37[3];
+
+        $r10 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r10.<java.awt.geom.Ellipse2D$Double: void <init>(double,double,double,double)>(0.0, -3.0, 0.1, -2.0);
+
+        $r11[1] = $r10;
+
+        $r13 = r37[3];
+
+        $r12 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r12.<java.awt.geom.Ellipse2D$Double: void <init>()>();
+
+        $r13[1] = $r12;
+
+        $r15 = r37[4];
+
+        $r14 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r14.<java.awt.geom.Ellipse2D$Double: void <init>(double,double,double,double)>(-1.0, 2.0, 2.0, -3.0);
+
+        $r15[6] = $r14;
+
+        $r17 = r37[2];
+
+        $r16 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r16.<java.awt.geom.Ellipse2D$Double: void <init>()>();
+
+        $r17[8] = $r16;
+
+        $r19 = r37[1];
+
+        $r18 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r18.<java.awt.geom.Ellipse2D$Double: void <init>()>();
+
+        $r19[3] = $r18;
+
+        $r21 = r37[0];
+
+        $r20 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r20.<java.awt.geom.Ellipse2D$Double: void <init>()>();
+
+        $r21[14] = $r20;
+
+        $r23 = r37[8];
+
+        $r22 = new java.awt.geom.Ellipse2D$Double;
+
+        specialinvoke $r22.<java.awt.geom.Ellipse2D$Double: void <init>()>();
+
+        $r23[3] = $r22;
+
+        r0.<demo8: java.awt.geom.Ellipse2D$Double[][] field_118704> = r37;
+
+        r0.<demo8: long field_35843> = 3L;
+
+        $r24 = newmultiarray (java.beans.VetoableChangeSupport)[6][5][6][1];
+
+        r0.<demo8: java.beans.VetoableChangeSupport[][][][] field_35839> = $r24;
+
+        r0.<demo8: float field_35837> = -1.0F;
+
+        $r25 = newmultiarray (int)[11][13][1][1][1];
+
+        r0.<demo8: int[][][][][] field_35835> = $r25;
+
+        $r26 = newmultiarray (java.security.KeyStore$TrustedCertificateEntry)[3][14][1][5][1];
+
+        r0.<demo8: java.security.KeyStore$TrustedCertificateEntry[][][][][] field_35833> = $r26;
+
+        r38 = newmultiarray (int)[4][5];
+
+        $r27 = r38[1];
+
+        $r27[2] = -100;
+
+        $r28 = r38[0];
+
+        $r28[1] = -1;
+
+        r0.<demo8: int[][] field_32938> = r38;
+
+        $r29 = newmultiarray (short)[13][1];
+
+        r0.<demo8: short[][] field_32936> = $r29;
+
+        $r30 = newmultiarray (double)[19][11][1][1];
+
+        r0.<demo8: double[][][][] field_32930> = $r30;
+
+        $r31 = newmultiarray (float)[5][7][2];
+
+        $r32 = $r31[1];
+
+        $r33 = $r32[6];
+
+        $r33[1] = 0.0F;
+
+        r0.<demo8: float[][][] field_32926> = $r31;
+
+        r0.<demo8: int field_32924> = -1;
+
+        $r34 = newmultiarray (double)[12][15][1][1][1];
+
+        r0.<demo8: double[][][][][] field_10334> = $r34;
+
+        $r35 = newmultiarray (java.net.HttpCookie)[8][17][1][1][1];
+
+        r0.<demo8: java.net.HttpCookie[][][][][] field_1972> = $r35;
+
+        r0.<demo8: short field_1970> = 2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    int kontest(int)
+    {
+        long l0, l1, l6;
+        int i2, i3, i4, i5, $i7, $i8, $i9, $i10, $i12, $i13;
+        demo8 r0;
+        byte $b11;
+
+        i2 := @parameter0: int;
+
+        i3 = 0;
+
+     label1:
+        i4 = i3;
+
+     label2:
+        i5 = 0;
+
+        l6 = 0L;
+
+     label3:
+        l0 = (long) i5;
+
+        l1 = l0 + l6;
+
+        $i7 = <demo8: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i7, l0);
+
+        <demo8: int CHECKSUM> = $i8;
+
+        i5 = (int) l1;
+
+        $i9 = <demo8: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i9, l1);
+
+        <demo8: int CHECKSUM> = $i10;
+
+        l6 = l6 + 1L;
+
+        $b11 = l6 cmp 100L;
+
+        $i12 = <demo8: int CHECKSUM>;
+
+        $i13 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i12, l6);
+
+        <demo8: int CHECKSUM> = $i13;
+
+        if $b11 < 0 goto label3;
+
+        i4 = i4 + 1;
+
+        if i4 < 100 goto label2;
+
+        i3 = i3 + 1;
+
+        if i3 < 100 goto label1;
+
+        return i2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        demo8 $r0;
+        int $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, i12, i13, i14;
+        java.lang.StringBuilder $r1, $r3, $r4;
+        java.io.PrintStream $r2;
+        java.lang.String $r5;
+        java.lang.String[] r6;
+
+        r6 := @parameter0: java.lang.String[];
+
+        i12 = 0;
+
+        $r0 = new demo8;
+
+        specialinvoke $r0.<demo8: void <init>()>();
+
+        virtualinvoke $r0.<demo8: int kontest(int)>(0);
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i2 = <demo8: int CHECKSUM>;
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i2);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>($r5);
+
+        return;
+
+        return;
+    }
+}

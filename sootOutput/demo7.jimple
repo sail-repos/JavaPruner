@@ -1,0 +1,608 @@
+public class demo7 extends java.lang.Object
+{
+    public static int maxN;
+    public static int maxM;
+    public static int CHECKSUM;
+    protected static java.util.ArrayDeque[][][] field_7273;
+    protected volatile java.awt.Font[][][] field_7275;
+    public volatile char[][][][][] field_7277;
+    protected int field_7279;
+    public static int[][][][][] field_7281;
+    protected static volatile java.time.DateTimeException[][][][][] field_7283;
+    private volatile java.security.cert.CertificateNotYetValidException[][][][][] field_7285;
+    public static long TRAPCOUNT;
+    public short[][][][] field_56804;
+    public float[][] field_56806;
+    public static volatile char field_56809;
+    protected static boolean[] field_64314;
+    private volatile float field_64316;
+    public volatile int field_64318;
+    private java.awt.font.TextLayout$CaretPolicy[][][][][] field_64320;
+    public static volatile java.net.NetPermission[][][][] field_78073;
+    protected volatile short[] field_78075;
+    public volatile int[] field_78077;
+
+    static void <clinit>()
+    {
+        java.net.NetPermission[][][][] $r0;
+        boolean[] r1;
+        java.time.DateTimeException[][][][][] $r2;
+        int[][][][][] $r3;
+        java.util.ArrayDeque[][][] $r4;
+        int $i0, $i1, $i2;
+
+        $r0 = newmultiarray (java.net.NetPermission)[7][12][3][1];
+
+        <demo7: java.net.NetPermission[][][][] field_78073> = $r0;
+
+        r1 = newarray (boolean)[18];
+
+        r1[17] = 1;
+
+        r1[0] = 0;
+
+        r1[15] = 1;
+
+        r1[3] = 0;
+
+        r1[2] = 0;
+
+        r1[7] = 1;
+
+        r1[1] = 0;
+
+        r1[14] = 0;
+
+        r1[3] = 1;
+
+        r1[16] = 0;
+
+        r1[16] = 1;
+
+        r1[13] = 1;
+
+        r1[2] = 0;
+
+        r1[16] = 1;
+
+        <demo7: boolean[] field_64314> = r1;
+
+        <demo7: char field_56809> = 120;
+
+        <demo7: long TRAPCOUNT> = 0L;
+
+        $r2 = newmultiarray (java.time.DateTimeException)[11][5][3][1][1];
+
+        <demo7: java.time.DateTimeException[][][][][] field_7283> = $r2;
+
+        $r3 = newmultiarray (int)[9][20][1][1][1];
+
+        <demo7: int[][][][][] field_7281> = $r3;
+
+        $r4 = newmultiarray (java.util.ArrayDeque)[18][2][1];
+
+        <demo7: java.util.ArrayDeque[][][] field_7273> = $r4;
+
+        <demo7: int maxN> = 100;
+
+        <demo7: int maxM> = 50;
+
+        <demo7: int CHECKSUM> = 0;
+
+        $i1 = <demo7: int CHECKSUM>;
+
+        $i0 = <demo7: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, $i0);
+
+        <demo7: int CHECKSUM> = $i2;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        demo7 r0;
+        int[] $r1;
+        short[] r2;
+        java.awt.font.TextLayout$CaretPolicy[][][][][] $r3;
+        float[][] $r4;
+        float[] $r5;
+        short[][][][] $r6;
+        java.security.cert.CertificateNotYetValidException[][][][][] $r7;
+        char[][][][][] $r8;
+        java.awt.Font[][][] $r9;
+
+        r0 := @this: demo7;
+
+        $r1 = newarray (int)[4];
+
+        r0.<demo7: int[] field_78077> = $r1;
+
+        r2 = newarray (short)[8];
+
+        r2[4] = -2;
+
+        r2[2] = 3;
+
+        r2[7] = 3;
+
+        r0.<demo7: short[] field_78075> = r2;
+
+        $r3 = newmultiarray (java.awt.font.TextLayout$CaretPolicy)[8][3][10][1][1];
+
+        r0.<demo7: java.awt.font.TextLayout$CaretPolicy[][][][][] field_64320> = $r3;
+
+        r0.<demo7: int field_64318> = -100;
+
+        r0.<demo7: float field_64316> = 2.0F;
+
+        $r4 = newmultiarray (float)[12][2];
+
+        $r5 = $r4[3];
+
+        $r5[0] = -1.0F;
+
+        r0.<demo7: float[][] field_56806> = $r4;
+
+        $r6 = newmultiarray (short)[3][7][9][1];
+
+        r0.<demo7: short[][][][] field_56804> = $r6;
+
+        $r7 = newmultiarray (java.security.cert.CertificateNotYetValidException)[20][1][11][1][1];
+
+        r0.<demo7: java.security.cert.CertificateNotYetValidException[][][][][] field_7285> = $r7;
+
+        r0.<demo7: int field_7279> = 100;
+
+        $r8 = newmultiarray (char)[11][5][1][4][1];
+
+        r0.<demo7: char[][][][][] field_7277> = $r8;
+
+        $r9 = newmultiarray (java.awt.Font)[18][4][1];
+
+        r0.<demo7: java.awt.Font[][][] field_7275> = $r9;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    int kontest(int)
+    {
+        long l0, l1, l6;
+        int i2, i3, i4, i5, $i7, $i8, $i9, $i10, $i12, $i13;
+        demo7 r0;
+        byte $b11;
+
+        r0 := @this: demo7;
+
+        i2 := @parameter0: int;
+
+        i3 = 0;
+
+     label1:
+        i4 = i3;
+
+     label2:
+        i5 = 0;
+
+        l6 = 0L;
+
+     label3:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONint kontest(int)-:-14");
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONint kontest(int)-:-15");
+
+        l0 = (long) i5;
+
+        l1 = l0 + l6;
+
+        $i7 = <demo7: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i7, l0);
+
+        <demo7: int CHECKSUM> = $i8;
+
+        i5 = (int) l1;
+
+        $i9 = <demo7: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i9, l1);
+
+        <demo7: int CHECKSUM> = $i10;
+
+        l6 = l6 + 1L;
+
+        $b11 = l6 cmp 100L;
+
+        $i12 = <demo7: int CHECKSUM>;
+
+        $i13 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i12, l6);
+
+        <demo7: int CHECKSUM> = $i13;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONint kontest(int)-:-16");
+
+        if $b11 < 0 goto label3;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONint kontest(int)-:-17");
+
+        i4 = i4 + 1;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONint kontest(int)-:-18");
+
+        if i4 < 100 goto label2;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONint kontest(int)-:-19");
+
+        i3 = i3 + 1;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONint kontest(int)-:-20");
+
+        if i3 < 100 goto label1;
+
+        return i2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        demo7 $r0;
+        int $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, i11, i12, i13;
+        java.lang.StringBuilder $r1, $r3, $r4;
+        java.io.PrintStream $r2;
+        java.lang.String $r5;
+        java.lang.String[] r6;
+
+        r6 := @parameter0: java.lang.String[];
+
+        i11 = 0;
+
+        $r0 = new demo7;
+
+        specialinvoke $r0.<demo7: void <init>()>();
+
+        virtualinvoke $r0.<demo7: int kontest(int)>(i11);
+
+     label1:
+        $i1 = <demo7: int maxN>;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-14");
+
+        if i11 >= $i1 goto label5;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-15");
+
+        i12 = 0;
+
+     label2:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-16");
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-17");
+
+        i13 = <demo7: int maxM>;
+
+        $i4 = i11 + i13;
+
+        $i3 = <demo7: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i13);
+
+        <demo7: int CHECKSUM> = $i5;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-18");
+
+        if i12 >= $i4 goto label3;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-19");
+
+        staticinvoke <demo7: void opt1()>();
+
+        i12 = i12 + 1;
+
+        $i9 = <demo7: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i9, i12);
+
+        <demo7: int CHECKSUM> = $i10;
+
+        goto label2;
+
+     label3:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-20");
+
+        $i6 = i11 % 2;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-21");
+
+        if $i6 != 0 goto label4;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-22");
+
+        staticinvoke <demo7: void opt2()>();
+
+     label4:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-23");
+
+        i11 = i11 + 1;
+
+        $i7 = <demo7: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i7, i11);
+
+        <demo7: int CHECKSUM> = $i8;
+
+        goto label1;
+
+     label5:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-24");
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i2 = <demo7: int CHECKSUM>;
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i2);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>($r5);
+
+        return;
+    }
+
+    public static void opt1()
+    {
+        char $c0, $c2, $c4, $c24, $c27, $c28, $c65, $c67, $c69, $c71, $c73, $c75, c107;
+        int $i1, $i3, $i5, $i6, $i8, $i9, $i11, $i13, $i14, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i25, $i26, $i29, $i31, $i32, $i34, $i35, $i36, $i37, $i39, $i40, $i41, $i42, $i45, $i46, $i47, $i48, $i51, $i52, $i53, $i54, $i55, $i56, $i57, $i58, $i59, $i60, $i61, $i62, $i63, $i64, $i66, $i68, $i70, $i72, $i74, $i76, $i77, $i78, $i79, $i80, $i83, $i84, $i85, $i86, $i87, $i88, $i89, $i90, $i91, $i92, $i93, $i94, $i95, $i96, i103, $i105, $i108, i109, $i110, $i113, i115, i118, $i125, $i126, $i127, $i128, $i129, $i130, i133;
+        long $l7, $l10, $l49, $l50, $l81, $l82, l98, l99, l100, l101, $l111, $l112, l119, l120, l121, l122, l123, l124, l131, l132, l136, l137;
+        boolean[] $r1, $r2, $r3, $r4, r111, r112, r113, r116, r117, r123, r125;
+        java.io.UnsupportedEncodingException $r5, $r104, r139;
+        java.lang.String $r7, $r45, $r52, $r58, $r79, $r82;
+        java.time.DateTimeException[][][][][] $r8, $r101;
+        java.security.NoSuchProviderException $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r24, $r26, $r28, $r30, $r32, $r34, $r36, $r38, $r40, $r42, $r44, $r47, $r49, $r51, $r74, $r75, $r76, $r77, $r78, $r80;
+        java.security.PrivilegedActionException $r21, $r109, r134, r135;
+        java.lang.Exception $r22;
+        java.nio.charset.MalformedInputException $r23, $r108, r128, r133;
+        java.security.NoSuchProviderException[] $r25, $r27, $r29, $r31, $r33, $r35, $r37, $r39, $r41, $r43, $r46, $r48, $r50, $r53, r120, r121, r137, r138;
+        int[][][][][] $r54, $r89;
+        java.util.IllformedLocaleException $r55;
+        java.text.AttributedString $r56;
+        java.util.Map $r57;
+        java.text.AttributedCharacterIterator$Attribute $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r67, $r68, $r69, $r70, $r71, $r72;
+        java.io.StringReader $r81;
+        byte b43, b97, b102, b104, b106, b114, b116, b117, b134, b135;
+        char[] $r83;
+        java.util.Locale $r85;
+        java.util.concurrent.TimeoutException $r87, $r106, r115;
+        java.security.UnrecoverableEntryException $r88, $r105, r114;
+        short[] $r90, $r91, $r92, $r93, $r94, $r95, $r96;
+        java.io.EOFException $r97, $r103, r132;
+        java.util.ConcurrentModificationException $r98, $r102, r131;
+        java.lang.Throwable $r99, $r100, r130;
+        java.util.ArrayDeque[][][] $r107;
+        short[][] r110;
+        float f0;
+        boolean[][][] r118;
+        java.security.cert.CertificateExpiredException[][][][][] r119;
+        java.text.AttributedCharacterIterator$Attribute[] r122;
+        float[][] r124;
+        float[] r126;
+        java.security.NoSuchProviderException[][] r127;
+        int[][][][] r129;
+        boolean[][] r136;
+        short[][][][] r140;
+
+     label01:
+        b97 = 8;
+
+        lookupswitch(b97)
+        {
+            case 0: goto label02;
+            case 1: goto label02;
+            case 2: goto label02;
+            case 3: goto label02;
+            case 4: goto label02;
+            case 5: goto label02;
+            case 6: goto label03;
+            case 7: goto label03;
+            default: goto label03;
+        };
+
+     label02:
+        if 1 == 0 goto label03;
+
+        return;
+
+     label03:
+        lookupswitch(1)
+        {
+            case 0: goto label04;
+            case 1: goto label04;
+            case 2: goto label05;
+            case 3: goto label05;
+            case 4: goto label06;
+            case 5: goto label07;
+            case 6: goto label07;
+            case 7: goto label07;
+            case 8: goto label07;
+            default: goto label07;
+        };
+
+     label04:
+        $i51 = <demo7: int CHECKSUM>;
+
+        $l49 = <demo7: long TRAPCOUNT>;
+
+        $l50 = $l49 % -1L;
+
+        <demo7: long TRAPCOUNT> = $l50;
+
+        $i52 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i51, $l50);
+
+        <demo7: int CHECKSUM> = $i52;
+
+        goto label07;
+
+     label05:
+        if 1 == 0 goto label06;
+
+        return;
+
+     label06:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid opt1()-:-116");
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid opt1()-:-122");
+
+     label07:
+        if 1 == 0 goto label08;
+
+        $r23 = new java.nio.charset.MalformedInputException;
+
+        b117 = -3;
+
+        specialinvoke $r23.<java.nio.charset.MalformedInputException: void <init>(int)>(b117);
+
+        $i18 = <demo7: int CHECKSUM>;
+
+        $i19 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i18, b117);
+
+        <demo7: int CHECKSUM> = $i19;
+
+        throw $r23;
+
+     label08:
+        goto label10;
+
+     label09:
+        i118 = 4;
+
+        if i118 >= 99 goto label10;
+
+     label10:
+        if 1 == 1 goto label11;
+
+     label11:
+        goto label13;
+
+     label12:
+        $r109 := @caughtexception;
+
+        if 1 == 0 goto label13;
+
+     label13:
+        r136 = newmultiarray (boolean)[10][11];
+
+        i133 = <demo7: int maxM>;
+
+        lookupswitch(i133)
+        {
+            case 0: goto label14;
+            case 1: goto label15;
+            case 2: goto label15;
+            case 3: goto label15;
+            case 4: goto label15;
+            default: goto label15;
+        };
+
+     label14:
+        goto label15;
+
+     label15:
+        if 1 == 1 goto label16;
+
+     label16:
+        goto label18;
+
+     label17:
+        $r104 := @caughtexception;
+
+     label18:
+        $r1 = r136[0];
+
+        $r1[6] = 0;
+
+        $r2 = r136[9];
+
+        $r2[10] = 1;
+
+        $r3 = r136[8];
+
+        $r3[5] = 1;
+
+        $r4 = r136[2];
+
+        $r4[2] = 0;
+
+        r140 = newmultiarray (short)[10][16][1][1];
+
+        return;
+
+        catch java.security.PrivilegedActionException from label10 to label11 with label12;
+        catch java.nio.charset.MalformedInputException from label01 to label03 with label09;
+        catch java.nio.charset.MalformedInputException from label03 to label06 with label09;
+        catch java.nio.charset.MalformedInputException from label06 to label08 with label09;
+        catch java.util.concurrent.TimeoutException from label03 to label03 with label03;
+        catch java.security.UnrecoverableEntryException from label03 to label03 with label03;
+        catch java.io.UnsupportedEncodingException from label15 to label16 with label17;
+        catch java.util.ConcurrentModificationException from label10 to label10 with label10;
+        catch java.io.EOFException from label10 to label10 with label10;
+    }
+
+    public static void opt2()
+    {
+        int i0, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i31, $i32, $i33, $i34, $i35, $i36, $i37, $i38, $i40, $i41, $i43, $i44, i45, i46, i47, i49, i51, i52, i53, i54;
+        byte b1, b2, $b39, b48, b50;
+        int[][][] $r0;
+        int[][] $r1;
+        int[] $r2, r6, r7, r8, r9, r10, r13;
+        float[][] $r3;
+        float[] $r4, $r5;
+        boolean z0;
+        float[][][] r11;
+        java.awt.geom.Line2D$Float[][][][] r12;
+
+        z0 = 1;
+
+        i45 = <demo7: int maxN>;
+
+        i46 = i45;
+
+        i0 = <demo7: int maxM>;
+
+        i47 = i0;
+
+        b1 = 1;
+
+        if b1 == 0 goto label1;
+
+        return;
+
+     label1:
+        b2 = 0;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid opt2()-:-15");
+
+        lookupswitch(b2)
+        {
+            case 0: goto label2;
+            case 1: goto label2;
+            case 2: goto label2;
+            case 3: goto label2;
+            case 4: goto label2;
+            case 5: goto label2;
+            case 6: goto label2;
+            case 7: goto label2;
+            case 8: goto label2;
+            default: goto label2;
+        };
+
+     label2:
+        return;
+    }
+}

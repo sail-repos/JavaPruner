@@ -1,0 +1,199 @@
+public class demo1 extends java.lang.Object
+{
+    public static int CHECKSUM;
+    private short field_3760;
+    private static double field_3762;
+    protected static volatile double[][] field_3764;
+    private static int[] field_3776;
+    public static short field_3778;
+    public static volatile char field_3780;
+    private volatile short field_3782;
+    protected static volatile long field_156156;
+    private static volatile boolean field_156158;
+    public static long TRAPCOUNT;
+    public volatile int[][] field_159905;
+    protected static float field_159917;
+    protected char field_159919;
+    protected char[][][][][] field_159921;
+
+    static void <clinit>()
+    {
+        double[] $r0, $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9;
+        int $i0, $i1, $i2;
+        int[] r10;
+        double[][] r11;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        demo1 r0;
+        char[][][][][] $r1;
+        int[][] r2;
+        int[] $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12;
+
+        r0 := @this: demo1;
+
+        $r1 = newmultiarray (char)[5][10][3][1][1];
+
+        r0.<demo1: char[][][][][] field_159921> = $r1;
+
+        r0.<demo1: char field_159919> = 117;
+
+        r2 = newmultiarray (int)[7][12];
+
+        $r3 = r2[2];
+
+        $r3[10] = -1;
+
+        $r4 = r2[4];
+
+        $r4[3] = 0;
+
+        $r5 = r2[6];
+
+        $r5[5] = 2;
+
+        $r6 = r2[2];
+
+        $r6[0] = 0;
+
+        $r7 = r2[6];
+
+        $r7[6] = 0;
+
+        $r8 = r2[0];
+
+        $r8[3] = -3;
+
+        $r9 = r2[4];
+
+        $r9[2] = 100;
+
+        $r10 = r2[3];
+
+        $r10[5] = -1;
+
+        $r11 = r2[4];
+
+        $r11[9] = 3;
+
+        $r12 = r2[3];
+
+        $r12[3] = 2;
+
+        r0.<demo1: int[][] field_159905> = r2;
+
+        r0.<demo1: short field_3782> = 3;
+
+        r0.<demo1: short field_3760> = 100;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    int kontest(int)
+    {
+        long l0, l1, l6;
+        int i2, i3, i4, i5, $i7, $i8, $i9, $i10, $i12, $i13;
+        demo1 r0;
+        byte $b11;
+
+        i2 := @parameter0: int;
+
+        i3 = 0;
+
+     label1:
+        i4 = i3;
+
+     label2:
+        i5 = 0;
+
+        l6 = 0L;
+
+     label3:
+        l0 = (long) i5;
+
+        l1 = l0 + l6;
+
+        $i7 = <demo1: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i7, l0);
+
+        <demo1: int CHECKSUM> = $i8;
+
+        i5 = (int) l1;
+
+        $i9 = <demo1: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i9, l1);
+
+        <demo1: int CHECKSUM> = $i10;
+
+        l6 = l6 + 1L;
+
+        $b11 = l6 cmp 100L;
+
+        $i12 = <demo1: int CHECKSUM>;
+
+        $i13 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i12, l6);
+
+        <demo1: int CHECKSUM> = $i13;
+
+        if $b11 < 0 goto label3;
+
+        i4 = i4 + 1;
+
+        if i4 < 100 goto label2;
+
+        i3 = i3 + 1;
+
+        if i3 < 100 goto label1;
+
+        return i2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        demo1 $r0;
+        java.lang.StringBuilder $r1, $r3, $r4;
+        java.io.PrintStream $r2;
+        int $i1, $i2, $i3, i4;
+        java.lang.String $r5;
+        java.lang.String[] r6;
+
+        r6 := @parameter0: java.lang.String[];
+
+        i4 = 0;
+
+        $r0 = new demo1;
+
+        specialinvoke $r0.<demo1: void <init>()>();
+
+        virtualinvoke $r0.<demo1: int kontest(int)>(0);
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i1 = <demo1: int CHECKSUM>;
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i1);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>($r5);
+
+        return;
+
+        return;
+    }
+}

@@ -1,0 +1,177 @@
+public class TestGCOld extends java.lang.Object
+{
+    private static int size;
+    private static int workUnits;
+    private static int promoteRate;
+    private static int ptrMutRate;
+    private static int steps;
+    private static final int MEG;
+    private static final int INSIGNIFICANT;
+    private static final int BYTES_PER_WORD;
+    private static final int BYTES_PER_NODE;
+    private static final int WORDS_DEAD;
+    private static final int treeHeight;
+    private static final long treeSize;
+    private static final java.lang.String msg1;
+    private static final java.lang.String msg2;
+    private static final java.lang.String msg3;
+    private static final java.lang.String msg4;
+    private static final java.lang.String msg5;
+    private static final java.lang.String msg6;
+    private static long youngBytes;
+    private static long nodes;
+    private static long actuallyMut;
+    private static long mutatorSum;
+    public static int[] aexport;
+    private static TreeNode[] trees;
+    private static int where;
+    private static java.util.Random rnd;
+
+    static void <clinit>()
+    {
+        long $l0;
+        java.util.Random $r0;
+
+        $l0 = staticinvoke <TestGCOld: long heightToBytes(int)>(14);
+
+        <TestGCOld: long treeSize> = $l0;
+
+        <TestGCOld: long youngBytes> = 0L;
+
+        <TestGCOld: long nodes> = 0L;
+
+        <TestGCOld: long actuallyMut> = 0L;
+
+        <TestGCOld: long mutatorSum> = 0L;
+
+        <TestGCOld: int where> = 0;
+
+        $r0 = new java.util.Random;
+
+        specialinvoke $r0.<java.util.Random: void <init>()>();
+
+        <TestGCOld: java.util.Random rnd> = $r0;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        TestGCOld r0;
+
+        r0 := @this: TestGCOld;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    private static long heightToBytes(int)
+    {
+        int i0;
+        long $l1, $l2;
+
+        i0 := @parameter0: int;
+
+        $l1 = staticinvoke <TestGCOld: long heightToNodes(int)>(i0);
+
+        $l2 = 20L * $l1;
+
+        return $l2;
+    }
+
+    private static long heightToNodes(int)
+    {
+        long $l1, $l2, l4;
+        int i3;
+        compiler.arraycopy.TestMissingControl$A[] r2;
+
+        i3 := @parameter0: int;
+
+        if i3 != 0 goto label1;
+
+        return 0L;
+
+     label1:
+        l4 = 1L;
+
+        r2 = newarray (compiler.arraycopy.TestMissingControl$A)[-2];
+
+        $l1 = l4 + l4;
+
+        $l2 = $l1 - 1L;
+
+        return $l2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i12, $i15, $i16, $i18, $i19, $i22, $i23, i29;
+        java.lang.String $r0, $r1, $r2, $r3, $r4, $r7, $r9, $r12, $r14, $r18, $r22, $r25, $r27, $r32, $r35, $r44, $r47, $r50, $r53, $r58, $r61, $r64, $r67, $r72, $r77, $r80;
+        java.lang.StringBuilder $r5, $r8, $r10, $r13, $r15, $r17, $r19, $r21, $r23, $r26, $r30, $r33, $r34, $r36, $r41, $r42, $r43, $r45, $r46, $r48, $r51, $r52, $r54, $r56, $r57, $r59, $r60, $r62, $r65, $r66, $r68, $r71, $r73, $r75, $r76, $r78, $r79;
+        java.io.PrintStream $r6, $r11, $r16, $r20, $r24, $r28, $r31, $r40, $r49, $r55, $r63, $r69, $r74, $r81, $r82, $r83, $r84, $r85, $r86;
+        long l11, $l13, $l14, $l17, $l20, $l21, $l24, $l25, $l26, $l27, $l28;
+        float $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, f12, f13;
+        java.text.NumberFormat r29;
+        double $d0, $d1, $d2, $d3, $d4, $d5;
+        byte[] r37, $r38;
+        java.lang.Object[] $r39;
+        int[] $r70;
+        java.lang.String[] r87;
+
+        r87 := @parameter0: java.lang.String[];
+
+        $i0 = lengthof r87;
+
+        if $i0 == 5 goto label1;
+
+        return;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    private static TreeNode makeTree(int)
+    {
+        int i0, $i3, $i4;
+        TreeNode $r0, $r2, $r3;
+        long $l1, $l2;
+
+        i0 := @parameter0: int;
+
+        if i0 != 0 goto label1;
+
+        return null;
+
+     label1:
+        $r0 = new TreeNode;
+
+        specialinvoke $r0.<TreeNode: void <init>()>();
+
+        $l1 = <TestGCOld: long nodes>;
+
+        $l2 = $l1 + 1L;
+
+        <TestGCOld: long nodes> = $l2;
+
+        $i3 = i0 - 1;
+
+        $r2 = staticinvoke <TestGCOld: TreeNode makeTree(int)>($i3);
+
+        $r0.<TreeNode: TreeNode left> = $r2;
+
+        $i4 = i0 - 1;
+
+        $r3 = staticinvoke <TestGCOld: TreeNode makeTree(int)>($i4);
+
+        $r0.<TreeNode: TreeNode right> = $r3;
+
+        $r0.<TreeNode: int val> = i0;
+
+        return $r0;
+    }
+}

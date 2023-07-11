@@ -1,0 +1,369 @@
+public class demo4 extends java.lang.Object
+{
+    public static int maxN;
+    public static int maxM;
+    public static int CHECKSUM;
+    private static volatile char field_574;
+    protected volatile int[] field_576;
+    protected static volatile boolean[][][] field_578;
+    protected static int field_580;
+    private static char[][] field_582;
+    public static int field_590;
+    private static volatile long[][][][][] field_592;
+    public volatile char[][] field_594;
+    protected static int[] field_600;
+    public static long TRAPCOUNT;
+    public char field_20154;
+    public static volatile int field_20156;
+    private short[][][][][] field_20158;
+    private double field_20160;
+    public volatile int field_20162;
+    protected static int[] field_29690;
+    private java.awt.Font[] field_29692;
+    protected volatile java.security.KeyStore$SecretKeyEntry[][][] field_29698;
+    public volatile boolean field_29700;
+    public static int field_29702;
+    protected static volatile int[][] field_29704;
+    private static volatile char[][] field_29706;
+    protected static volatile java.util.concurrent.ConcurrentLinkedQueue[] field_29709;
+    public volatile boolean field_57855;
+    protected static volatile char field_57857;
+    protected char field_57859;
+    protected static volatile int[][][] field_57861;
+    private volatile double[] field_57869;
+    protected float[][][] field_57871;
+    private double[][][] field_122090;
+    public static volatile java.lang.LinkageError[][][][][] field_122092;
+    private static volatile int[][][][] field_122094;
+    private float field_153714;
+    protected volatile double field_153716;
+    public static short field_153718;
+    protected static volatile java.nio.file.AtomicMoveNotSupportedException field_153720;
+    public static volatile double[][][] field_153725;
+    private java.nio.channels.ClosedSelectorException field_155306;
+    protected volatile char[][] field_155308;
+    private java.awt.PopupMenu field_183520;
+    private static float[][] field_183523;
+    private volatile java.awt.AWTPermission[][][][][] field_282645;
+    private static volatile java.io.InvalidObjectException[][][] field_282647;
+    public static volatile long field_282649;
+    private volatile int[][][][][] field_282651;
+    private volatile int[][][][] field_1458309;
+    public static volatile int field_1458311;
+    private int[][][][] field_1458313;
+
+    static void <clinit>()
+    {
+        java.io.InvalidObjectException[][][] $r0;
+        float[][] $r1;
+        float[] $r2;
+        double[][][] $r3;
+        java.nio.file.AtomicMoveNotSupportedException $r4;
+        java.lang.String $r5, $r6, $r7;
+        int[][][][] $r8;
+        java.lang.LinkageError[][][][][] $r9;
+        int[][] $r10, $r12, $r14, $r20;
+        int[] $r11, $r13, $r15, $r21, $r22;
+        java.util.concurrent.ConcurrentLinkedQueue[] $r16;
+        java.util.concurrent.ConcurrentLinkedQueue $r17;
+        char[][] $r18, r32;
+        char[] $r19, $r24, $r25, $r26, $r27, $r28, $r29;
+        long[][][][][] $r23;
+        boolean[][][] $r30;
+        int $i0, $i1, $i2;
+        int[][][] r31;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        demo4 r0;
+        int[][][][] $r1, $r2;
+        int[][][][][] $r3;
+        java.awt.AWTPermission[][][][][] $r4;
+        java.awt.PopupMenu $r5;
+        char[] $r6, $r7, $r8, $r9, $r10, $r11, $r19, $r20, $r21, $r22;
+        java.nio.channels.ClosedSelectorException $r12;
+        double[][][] $r13;
+        float[][][] $r14;
+        java.security.KeyStore$SecretKeyEntry[][][] $r15;
+        java.awt.Font[] $r16;
+        java.awt.Font $r17;
+        short[][][][][] $r18;
+        char[][] r23, r25;
+        double[] r24;
+        int[] r26;
+
+        r0 := @this: demo4;
+
+        $r1 = newmultiarray (int)[2][6][6][2];
+
+        r0.<demo4: int[][][][] field_1458313> = $r1;
+
+        $r2 = newmultiarray (int)[16][4][3][1];
+
+        r0.<demo4: int[][][][] field_1458309> = $r2;
+
+        $r3 = newmultiarray (int)[9][1][13][2][1];
+
+        r0.<demo4: int[][][][][] field_282651> = $r3;
+
+        $r4 = newmultiarray (java.awt.AWTPermission)[5][14][1][3][1];
+
+        r0.<demo4: java.awt.AWTPermission[][][][][] field_282645> = $r4;
+
+        $r5 = new java.awt.PopupMenu;
+
+        specialinvoke $r5.<java.awt.PopupMenu: void <init>(java.lang.String)>("");
+
+        r0.<demo4: java.awt.PopupMenu field_183520> = $r5;
+
+        r23 = newmultiarray (char)[12][10];
+
+        $r6 = r23[5];
+
+        $r6[7] = 78;
+
+        $r7 = r23[6];
+
+        $r7[2] = 100;
+
+        $r8 = r23[0];
+
+        $r8[5] = 36;
+
+        $r9 = r23[8];
+
+        $r9[6] = 82;
+
+        $r10 = r23[9];
+
+        $r10[4] = 85;
+
+        $r11 = r23[1];
+
+        $r11[6] = 43;
+
+        r0.<demo4: char[][] field_155308> = r23;
+
+        $r12 = new java.nio.channels.ClosedSelectorException;
+
+        specialinvoke $r12.<java.nio.channels.ClosedSelectorException: void <init>()>();
+
+        r0.<demo4: java.nio.channels.ClosedSelectorException field_155306> = $r12;
+
+        r0.<demo4: double field_153716> = 0.0;
+
+        r0.<demo4: float field_153714> = -2.0F;
+
+        $r13 = newmultiarray (double)[3][9][1];
+
+        r0.<demo4: double[][][] field_122090> = $r13;
+
+        $r14 = newmultiarray (float)[16][8][1];
+
+        r0.<demo4: float[][][] field_57871> = $r14;
+
+        r24 = newarray (double)[4];
+
+        r24[3] = 1.0;
+
+        r24[3] = 0.1;
+
+        r24[2] = 1.0;
+
+        r0.<demo4: double[] field_57869> = r24;
+
+        r0.<demo4: char field_57859> = 75;
+
+        r0.<demo4: boolean field_57855> = 1;
+
+        r0.<demo4: boolean field_29700> = 0;
+
+        $r15 = newmultiarray (java.security.KeyStore$SecretKeyEntry)[19][11][1];
+
+        r0.<demo4: java.security.KeyStore$SecretKeyEntry[][][] field_29698> = $r15;
+
+        $r16 = newarray (java.awt.Font)[5];
+
+        $r17 = new java.awt.Font;
+
+        specialinvoke $r17.<java.awt.Font: void <init>(java.lang.String,int,int)>("", 2, 1);
+
+        $r16[2] = $r17;
+
+        r0.<demo4: java.awt.Font[] field_29692> = $r16;
+
+        r0.<demo4: int field_20162> = -2;
+
+        r0.<demo4: double field_20160> = -100.0;
+
+        $r18 = newmultiarray (short)[4][13][4][1][1];
+
+        r0.<demo4: short[][][][][] field_20158> = $r18;
+
+        r0.<demo4: char field_20154> = 60;
+
+        r25 = newmultiarray (char)[18][5];
+
+        $r19 = r25[5];
+
+        $r19[0] = 48;
+
+        $r20 = r25[14];
+
+        $r20[3] = 42;
+
+        $r21 = r25[7];
+
+        $r21[1] = 59;
+
+        $r22 = r25[15];
+
+        $r22[3] = 33;
+
+        r0.<demo4: char[][] field_594> = r25;
+
+        r26 = newarray (int)[16];
+
+        r26[8] = -100;
+
+        r26[12] = -3;
+
+        r26[6] = 0;
+
+        r26[5] = 3;
+
+        r26[5] = 1;
+
+        r26[7] = -2;
+
+        r26[0] = 3;
+
+        r26[9] = -3;
+
+        r26[1] = 0;
+
+        r26[3] = 100;
+
+        r26[14] = -2;
+
+        r26[14] = -3;
+
+        r26[9] = -1;
+
+        r26[9] = -100;
+
+        r26[11] = -3;
+
+        r0.<demo4: int[] field_576> = r26;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    int kontest(int)
+    {
+        long l0, l1, l6;
+        int i2, i3, i4, i5, $i7, $i8, $i9, $i10, $i12, $i13;
+        demo4 r0;
+        byte $b11;
+
+        i2 := @parameter0: int;
+
+        i3 = 0;
+
+     label1:
+        i4 = i3;
+
+     label2:
+        i5 = 0;
+
+        l6 = 0L;
+
+     label3:
+        l0 = (long) i5;
+
+        l1 = l0 + l6;
+
+        $i7 = <demo4: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i7, l0);
+
+        <demo4: int CHECKSUM> = $i8;
+
+        i5 = (int) l1;
+
+        $i9 = <demo4: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i9, l1);
+
+        <demo4: int CHECKSUM> = $i10;
+
+        l6 = l6 + 1L;
+
+        $b11 = l6 cmp 100L;
+
+        $i12 = <demo4: int CHECKSUM>;
+
+        $i13 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i12, l6);
+
+        <demo4: int CHECKSUM> = $i13;
+
+        if $b11 < 0 goto label3;
+
+        i4 = i4 + 1;
+
+        if i4 < 100 goto label2;
+
+        i3 = i3 + 1;
+
+        if i3 < 100 goto label1;
+
+        return i2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        demo4 $r0;
+        int $i1, $i2, $i3, $i4, $i5, $i6, $i7, i8, i9;
+        java.lang.StringBuilder $r1, $r3, $r4;
+        java.io.PrintStream $r2;
+        java.lang.String $r5;
+        java.lang.String[] r6;
+
+        r6 := @parameter0: java.lang.String[];
+
+        i8 = 0;
+
+        $r0 = new demo4;
+
+        specialinvoke $r0.<demo4: void <init>()>();
+
+        virtualinvoke $r0.<demo4: int kontest(int)>(0);
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i2 = <demo4: int CHECKSUM>;
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i2);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>($r5);
+
+        return;
+
+        return;
+    }
+}

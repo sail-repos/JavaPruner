@@ -1,0 +1,26 @@
+public class vm.runtime.defmeth.ConflictingDefaultsTest extends vm.runtime.defmeth.shared.DefMethTest
+{
+
+    public void <init>()
+    {
+        vm.runtime.defmeth.ConflictingDefaultsTest r0;
+
+        r0 := @this: vm.runtime.defmeth.ConflictingDefaultsTest;
+
+        specialinvoke r0.<vm.runtime.defmeth.shared.DefMethTest: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        vm.runtime.defmeth.ConflictingDefaultsTest $r0;
+        java.lang.String[] r1;
+
+        r1 := @parameter0: java.lang.String[];
+
+        return;
+
+        return;
+    }
+}

@@ -1,0 +1,716 @@
+public class vm.compiler.jbe.dead.dead03.dead03 extends java.lang.Object
+{
+    int global;
+    int i;
+    public static long TRAPCOUNT;
+    private static java.io.FileDescriptor field_3204;
+    private static java.util.FormatterClosedException field_35184;
+    public static java.lang.ref.WeakReference field_35187;
+    private volatile java.security.AllPermission[][][] field_35192;
+    protected static java.lang.ref.WeakReference[][][] field_36147;
+    public java.util.LinkedList field_45380;
+    public java.lang.ref.SoftReference field_45383;
+    private java.lang.SecurityException field_59697;
+
+    static void <clinit>()
+    {
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        vm.compiler.jbe.dead.dead03.dead03 r0;
+        java.lang.SecurityException $r1;
+        java.util.LinkedList r2;
+        java.security.AllPermission[][][] $r3;
+        java.lang.ref.SoftReference $r4;
+
+        r0 := @this: vm.compiler.jbe.dead.dead03.dead03;
+
+        $r1 = new java.lang.SecurityException;
+
+        specialinvoke $r1.<java.lang.SecurityException: void <init>()>();
+
+        r0.<vm.compiler.jbe.dead.dead03.dead03: java.lang.SecurityException field_59697> = $r1;
+
+        $r3 = newmultiarray (java.security.AllPermission)[512][256][256];
+
+        r2 = new java.util.LinkedList;
+
+        specialinvoke r2.<java.util.LinkedList: void <init>()>();
+
+        $r4 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r4.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r2);
+
+        r0.<vm.compiler.jbe.dead.dead03.dead03: java.lang.ref.SoftReference field_45383> = $r4;
+
+        r0.<vm.compiler.jbe.dead.dead03.dead03: java.util.LinkedList field_45380> = r2;
+
+        r0.<vm.compiler.jbe.dead.dead03.dead03: java.security.AllPermission[][][] field_35192> = $r3;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    int f()
+    {
+        int $i0, i13, i14;
+        sun.hotspot.WhiteBox $r0, $r180, $r181, $r300, r442, r444;
+        java.lang.NullPointerException $r1, $r423, $r439;
+        java.lang.ref.SoftReference $r2, $r116;
+        GCObj r4, r6, $r179, r447, r448, r449, r450, r451, r452, r453, r454, r455, r456, $r457;
+        java.lang.String $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r35, $r36, $r37, $r38, $r39, $r40, $r41, $r42, $r43, $r44, $r45, $r46, $r47, $r48, $r49, $r50, $r51, $r52, $r53, $r54, $r55, $r56, $r57, $r58, $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r67, $r68, $r69, $r70, $r71, $r72, $r73, $r74, $r75, $r76, $r77, $r78, $r79, $r80, $r81, $r82, $r83, $r84, $r85, $r86, $r87, $r88, $r89, $r90, $r91, $r92, $r93, $r94, $r95, $r96, $r97, $r98, $r99, $r100, $r101, $r102, $r103, $r104, $r105, $r106, $r107, $r108, $r109, $r182, $r183, $r184, $r185, $r186, $r187, $r188, $r189, $r190, $r191, $r192, $r193, $r194, $r195, $r196, $r197, $r198, $r199, $r200, $r201, $r202, $r203, $r204, $r205, $r206, $r207, $r208, $r209, $r210, $r211, $r212, $r213, $r214, $r215, $r216, $r217, $r218, $r219, $r220, $r221, $r222, $r223, $r224, $r225, $r226, $r227, $r228, $r229, $r230, $r231, $r232, $r233, $r234, $r235, $r236, $r237, $r238, $r239, $r240, $r241, $r242, $r243, $r244, $r245, $r246, $r247, $r248, $r249, $r250, $r251, $r252, $r253, $r254, $r255, $r256, $r257, $r258, $r259, $r260, $r261, $r262, $r263, $r264, $r265, $r266, $r267, $r268, $r269, $r270, $r271, $r272, $r273, $r274, $r275, $r276, $r277, $r278, $r279, $r280, $r281, $r282, $r283, $r284, $r285, $r286, $r287, $r288, $r289, $r290, $r291, $r292, $r293, $r294, $r295, $r296, $r297, $r298, $r299, $r301, $r302, $r303, $r304, $r305, $r306, $r307, $r308, $r309, $r310, $r311, $r312, $r313, $r314, $r315, $r316, $r317, $r318, $r319, $r320, $r321, $r322, $r323, $r324, $r325, $r326, $r327, $r328, $r329, $r330, $r331, $r332, $r333, $r334, $r335, $r336, $r337, $r338, $r339, $r340, $r341, $r342, $r343, $r344, $r345, $r346, $r347, $r348, $r349, $r350, $r351, $r352, $r353, $r354, $r355, $r356, $r357, $r358, $r359, $r360, $r361, $r362, $r363, $r364, $r365, $r366, $r367, $r368, $r369, $r370, $r371, $r372, $r373, $r374, $r375, $r376, $r377, $r378, $r379, $r380, $r381, $r382, $r383, $r384, $r385, $r386, $r387, $r388, $r389, $r390, $r391, $r392, $r393, $r394, $r395, $r396, $r397, $r398, $r399, $r400;
+        long $l4, l18;
+        java.lang.Object $r110, $r113, $r115, $r121, $r132, r443;
+        java.lang.ref.PhantomReference $r111, $r122, $r133, $r404, $r407, $r410;
+        java.lang.ref.ReferenceQueue $r112, $r123, $r134, $r403, $r406, $r409;
+        java.lang.ref.WeakReference $r114, $r402;
+        java.nio.file.ProviderMismatchException $r117;
+        java.lang.IndexOutOfBoundsException $r118;
+        java.util.Calendar$Builder $r119;
+        java.nio.channels.AlreadyBoundException $r120;
+        java.io.FilePermission $r124;
+        java.text.ParsePosition $r125;
+        java.util.ArrayList $r126, $r401;
+        java.security.spec.ECGenParameterSpec $r127;
+        java.util.LinkedList $r128, $r411, $r415;
+        java.util.UnknownFormatFlagsException $r129;
+        java.lang.InternalError $r130;
+        java.util.concurrent.ConcurrentLinkedQueue $r131;
+        java.security.spec.MGF1ParameterSpec $r135;
+        java.util.zip.ZipError $r405;
+        java.net.URISyntaxException $r408;
+        java.util.LinkedHashMap $r412;
+        java.nio.file.AccessDeniedException $r413;
+        java.lang.IllegalThreadStateException $r414;
+        java.util.logging.ErrorManager $r416;
+        java.lang.OutOfMemoryError $r418;
+        vm.compiler.jbe.dead.dead03.dead03 r441;
+        boolean[][][] r445;
+        char[][][] r446;
+
+        r441 := @this: vm.compiler.jbe.dead.dead03.dead03;
+
+        $i0 = r441.<vm.compiler.jbe.dead.dead03.dead03: int global>;
+
+        i13 = staticinvoke <java.lang.Math: int abs(int)>($i0);
+
+        staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        r442 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        i14 = 27;
+
+        if i13 < 0 goto label3;
+
+     label1:
+        l18 = <vm.compiler.jbe.dead.dead03.dead03: long TRAPCOUNT>;
+
+        goto label2;
+
+     label2:
+        $l4 = l18 + 1L;
+
+        $r7 = new java.lang.String;
+
+        specialinvoke $r7.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r8 = new java.lang.String;
+
+        specialinvoke $r8.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r9 = new java.lang.String;
+
+        specialinvoke $r9.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r10 = new java.lang.String;
+
+        specialinvoke $r10.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r11 = new java.lang.String;
+
+        specialinvoke $r11.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r12 = new java.lang.String;
+
+        specialinvoke $r12.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r13 = new java.lang.String;
+
+        specialinvoke $r13.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r14 = new java.lang.String;
+
+        specialinvoke $r14.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r15 = new java.lang.String;
+
+        specialinvoke $r15.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r16 = new java.lang.String;
+
+        specialinvoke $r16.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r17 = new java.lang.String;
+
+        specialinvoke $r17.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r18 = new java.lang.String;
+
+        specialinvoke $r18.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r19 = new java.lang.String;
+
+        specialinvoke $r19.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r20 = new java.lang.String;
+
+        specialinvoke $r20.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r21 = new java.lang.String;
+
+        specialinvoke $r21.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r22 = new java.lang.String;
+
+        specialinvoke $r22.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r23 = new java.lang.String;
+
+        specialinvoke $r23.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r24 = new java.lang.String;
+
+        specialinvoke $r24.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r25 = new java.lang.String;
+
+        specialinvoke $r25.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r26 = new java.lang.String;
+
+        specialinvoke $r26.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r27 = new java.lang.String;
+
+        specialinvoke $r27.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r28 = new java.lang.String;
+
+        specialinvoke $r28.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r29 = new java.lang.String;
+
+        specialinvoke $r29.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r30 = new java.lang.String;
+
+        specialinvoke $r30.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r31 = new java.lang.String;
+
+        specialinvoke $r31.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r32 = new java.lang.String;
+
+        specialinvoke $r32.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r33 = new java.lang.String;
+
+        specialinvoke $r33.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r34 = new java.lang.String;
+
+        specialinvoke $r34.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r35 = new java.lang.String;
+
+        specialinvoke $r35.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r36 = new java.lang.String;
+
+        specialinvoke $r36.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r37 = new java.lang.String;
+
+        specialinvoke $r37.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r38 = new java.lang.String;
+
+        specialinvoke $r38.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r39 = new java.lang.String;
+
+        specialinvoke $r39.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r40 = new java.lang.String;
+
+        specialinvoke $r40.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r41 = new java.lang.String;
+
+        specialinvoke $r41.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r42 = new java.lang.String;
+
+        specialinvoke $r42.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r43 = new java.lang.String;
+
+        specialinvoke $r43.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r44 = new java.lang.String;
+
+        specialinvoke $r44.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r45 = new java.lang.String;
+
+        specialinvoke $r45.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r46 = new java.lang.String;
+
+        specialinvoke $r46.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r47 = new java.lang.String;
+
+        specialinvoke $r47.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r48 = new java.lang.String;
+
+        specialinvoke $r48.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r49 = new java.lang.String;
+
+        specialinvoke $r49.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r50 = new java.lang.String;
+
+        specialinvoke $r50.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r51 = new java.lang.String;
+
+        specialinvoke $r51.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r52 = new java.lang.String;
+
+        specialinvoke $r52.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r53 = new java.lang.String;
+
+        specialinvoke $r53.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r54 = new java.lang.String;
+
+        specialinvoke $r54.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r55 = new java.lang.String;
+
+        specialinvoke $r55.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r56 = new java.lang.String;
+
+        specialinvoke $r56.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r57 = new java.lang.String;
+
+        specialinvoke $r57.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r58 = new java.lang.String;
+
+        specialinvoke $r58.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r59 = new java.lang.String;
+
+        specialinvoke $r59.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r60 = new java.lang.String;
+
+        specialinvoke $r60.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r61 = new java.lang.String;
+
+        specialinvoke $r61.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r62 = new java.lang.String;
+
+        specialinvoke $r62.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r63 = new java.lang.String;
+
+        specialinvoke $r63.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r64 = new java.lang.String;
+
+        specialinvoke $r64.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r65 = new java.lang.String;
+
+        specialinvoke $r65.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r66 = new java.lang.String;
+
+        specialinvoke $r66.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r67 = new java.lang.String;
+
+        specialinvoke $r67.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r68 = new java.lang.String;
+
+        specialinvoke $r68.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r69 = new java.lang.String;
+
+        specialinvoke $r69.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r70 = new java.lang.String;
+
+        specialinvoke $r70.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r71 = new java.lang.String;
+
+        specialinvoke $r71.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r72 = new java.lang.String;
+
+        specialinvoke $r72.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r73 = new java.lang.String;
+
+        specialinvoke $r73.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r74 = new java.lang.String;
+
+        specialinvoke $r74.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r75 = new java.lang.String;
+
+        specialinvoke $r75.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r76 = new java.lang.String;
+
+        specialinvoke $r76.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r77 = new java.lang.String;
+
+        specialinvoke $r77.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r78 = new java.lang.String;
+
+        specialinvoke $r78.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r79 = new java.lang.String;
+
+        specialinvoke $r79.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r80 = new java.lang.String;
+
+        specialinvoke $r80.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r81 = new java.lang.String;
+
+        specialinvoke $r81.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r82 = new java.lang.String;
+
+        specialinvoke $r82.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r83 = new java.lang.String;
+
+        specialinvoke $r83.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r84 = new java.lang.String;
+
+        specialinvoke $r84.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r85 = new java.lang.String;
+
+        specialinvoke $r85.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r86 = new java.lang.String;
+
+        specialinvoke $r86.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r87 = new java.lang.String;
+
+        specialinvoke $r87.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r88 = new java.lang.String;
+
+        specialinvoke $r88.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r89 = new java.lang.String;
+
+        specialinvoke $r89.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r90 = new java.lang.String;
+
+        specialinvoke $r90.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r91 = new java.lang.String;
+
+        specialinvoke $r91.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r92 = new java.lang.String;
+
+        specialinvoke $r92.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r93 = new java.lang.String;
+
+        specialinvoke $r93.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r94 = new java.lang.String;
+
+        specialinvoke $r94.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r95 = new java.lang.String;
+
+        specialinvoke $r95.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r96 = new java.lang.String;
+
+        specialinvoke $r96.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r97 = new java.lang.String;
+
+        specialinvoke $r97.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r98 = new java.lang.String;
+
+        specialinvoke $r98.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r99 = new java.lang.String;
+
+        specialinvoke $r99.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r100 = new java.lang.String;
+
+        specialinvoke $r100.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r101 = new java.lang.String;
+
+        specialinvoke $r101.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r102 = new java.lang.String;
+
+        specialinvoke $r102.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r103 = new java.lang.String;
+
+        specialinvoke $r103.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r104 = new java.lang.String;
+
+        specialinvoke $r104.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r105 = new java.lang.String;
+
+        specialinvoke $r105.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r106 = new java.lang.String;
+
+        specialinvoke $r106.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r107 = new java.lang.String;
+
+        specialinvoke $r107.<java.lang.String: void <init>(java.lang.String)>("^_f");
+
+        $r108 = new java.lang.String;
+
+        specialinvoke $r108.<java.lang.String: void <init>(java.lang.String)>("i\'|");
+
+        $r109 = new java.lang.String;
+
+        specialinvoke $r109.<java.lang.String: void <init>(java.lang.String)>("i\'|");
+
+        $r111 = new java.lang.ref.PhantomReference;
+
+        $r110 = new java.lang.Object;
+
+        specialinvoke $r110.<java.lang.Object: void <init>()>();
+
+        $r112 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r112.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r111.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r110, $r112);
+
+        $r114 = new java.lang.ref.WeakReference;
+
+        $r113 = new java.lang.Object;
+
+        specialinvoke $r113.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r114.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r113);
+
+        $r116 = new java.lang.ref.SoftReference;
+
+        $r115 = new java.lang.Object;
+
+        specialinvoke $r115.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r116.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r115);
+
+        $r117 = new java.nio.file.ProviderMismatchException;
+
+        specialinvoke $r117.<java.nio.file.ProviderMismatchException: void <init>()>();
+
+        $r118 = new java.lang.IndexOutOfBoundsException;
+
+        specialinvoke $r118.<java.lang.IndexOutOfBoundsException: void <init>()>();
+
+        $r119 = new java.util.Calendar$Builder;
+
+        specialinvoke $r119.<java.util.Calendar$Builder: void <init>()>();
+
+        $r120 = new java.nio.channels.AlreadyBoundException;
+
+        specialinvoke $r120.<java.nio.channels.AlreadyBoundException: void <init>()>();
+
+        $r122 = new java.lang.ref.PhantomReference;
+
+        $r121 = new java.lang.Object;
+
+        specialinvoke $r121.<java.lang.Object: void <init>()>();
+
+        $r123 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r123.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r122.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r121, $r123);
+
+        $r124 = new java.io.FilePermission;
+
+        specialinvoke $r124.<java.io.FilePermission: void <init>(java.lang.String,java.lang.String)>("f5", "efNsAV|J`?yc^=iORJiF.h {wygJa>V,5193o_l]`:QUDo6bIc#QUFQ#c[zM<];~6@=u<F`l}ZPmJKt|qaXW|x^7l8BosQZR&O~Y\'");
+
+        $r125 = new java.text.ParsePosition;
+
+        specialinvoke $r125.<java.text.ParsePosition: void <init>(int)>(-2);
+
+        $r126 = new java.util.ArrayList;
+
+        specialinvoke $r126.<java.util.ArrayList: void <init>()>();
+
+        $r127 = new java.security.spec.ECGenParameterSpec;
+
+        specialinvoke $r127.<java.security.spec.ECGenParameterSpec: void <init>(java.lang.String)>("X");
+
+        $r128 = new java.util.LinkedList;
+
+        specialinvoke $r128.<java.util.LinkedList: void <init>()>();
+
+        $r129 = new java.util.UnknownFormatFlagsException;
+
+        specialinvoke $r129.<java.util.UnknownFormatFlagsException: void <init>(java.lang.String)>("BM");
+
+        $r130 = new java.lang.InternalError;
+
+        specialinvoke $r130.<java.lang.InternalError: void <init>()>();
+
+        $r131 = new java.util.concurrent.ConcurrentLinkedQueue;
+
+        specialinvoke $r131.<java.util.concurrent.ConcurrentLinkedQueue: void <init>()>();
+
+        $r133 = new java.lang.ref.PhantomReference;
+
+        $r132 = new java.lang.Object;
+
+        specialinvoke $r132.<java.lang.Object: void <init>()>();
+
+        $r134 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r134.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r133.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r132, $r134);
+
+        $r135 = new java.security.spec.MGF1ParameterSpec;
+
+        specialinvoke $r135.<java.security.spec.MGF1ParameterSpec: void <init>(java.lang.String)>("f!7");
+
+        <vm.compiler.jbe.dead.dead03.dead03: long TRAPCOUNT> = $l4;
+
+        return 0;
+
+     label3:
+        return 2;
+
+        catch java.lang.NullPointerException from label1 to label1 with label1;
+        catch java.lang.NullPointerException from label1 to label1 with label1;
+        catch java.lang.OutOfMemoryError from label1 to label1 with label1;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.ref.WeakReference[][][] $r0;
+        java.util.FormatterClosedException $r1;
+        java.io.FileDescriptor $r2;
+        vm.compiler.jbe.dead.dead03.dead03 $r3;
+        java.lang.ref.WeakReference $r4;
+        java.lang.StringBuilder $r5, $r7, $r8, $r9;
+        java.io.PrintStream $r6;
+        int $i0, $i2;
+        java.lang.String $r10;
+        java.lang.String[] r18;
+        java.lang.Object r19;
+
+        r18 := @parameter0: java.lang.String[];
+
+        $r0 = newmultiarray (java.lang.ref.WeakReference)[128][32][256];
+
+        <vm.compiler.jbe.dead.dead03.dead03: java.lang.ref.WeakReference[][][] field_36147> = $r0;
+
+        $r1 = new java.util.FormatterClosedException;
+
+        specialinvoke $r1.<java.util.FormatterClosedException: void <init>()>();
+
+        <vm.compiler.jbe.dead.dead03.dead03: java.util.FormatterClosedException field_35184> = $r1;
+
+        $r2 = new java.io.FileDescriptor;
+
+        specialinvoke $r2.<java.io.FileDescriptor: void <init>()>();
+
+        <vm.compiler.jbe.dead.dead03.dead03: java.io.FileDescriptor field_3204> = $r2;
+
+        $r3 = new vm.compiler.jbe.dead.dead03.dead03;
+
+        specialinvoke $r3.<vm.compiler.jbe.dead.dead03.dead03: void <init>()>();
+
+        r19 = new java.lang.Object;
+
+        specialinvoke r19.<java.lang.Object: void <init>()>();
+
+        $r4 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r4.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r19);
+
+        <vm.compiler.jbe.dead.dead03.dead03: java.lang.ref.WeakReference field_35187> = $r4;
+
+        $r6 = <java.lang.System: java.io.PrintStream out>;
+
+        $r5 = new java.lang.StringBuilder;
+
+        specialinvoke $r5.<java.lang.StringBuilder: void <init>(java.lang.String)>("f()=");
+
+        $i0 = virtualinvoke $r3.<vm.compiler.jbe.dead.dead03.dead03: int f()>();
+
+        $r7 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i0);
+
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("; fopt()=");
+
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(-100);
+
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r6.<java.io.PrintStream: void println(java.lang.String)>($r10);
+
+        $i2 = virtualinvoke $r3.<vm.compiler.jbe.dead.dead03.dead03: int f()>();
+
+        return;
+
+        return;
+    }
+}

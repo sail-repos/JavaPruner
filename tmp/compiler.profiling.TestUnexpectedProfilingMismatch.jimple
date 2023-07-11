@@ -1,0 +1,316 @@
+public class compiler.profiling.TestUnexpectedProfilingMismatch extends java.lang.Object
+{
+    static final java.lang.invoke.MethodHandle mhA;
+    static final java.lang.invoke.MethodHandle mhB;
+    public static int my_check_sum;
+
+    static void <clinit>()
+    {
+        java.lang.Class $r0, $r10;
+        java.lang.IllegalAccessException $r1, $r3, r9, r13;
+        java.lang.NoSuchMethodException $r2, $r4, r8, r12;
+        java.lang.invoke.MethodHandles$Lookup r5;
+        java.lang.invoke.MethodType r6, r11;
+        java.lang.invoke.MethodHandle r7;
+        int $i0, $i1, $i2;
+
+        r5 = staticinvoke <java.lang.invoke.MethodHandles: java.lang.invoke.MethodHandles$Lookup lookup()>();
+
+        $r0 = <java.lang.Void: java.lang.Class TYPE>;
+
+        r6 = staticinvoke <java.lang.invoke.MethodType: java.lang.invoke.MethodType methodType(java.lang.Class,java.lang.Class)>($r0, class "Lcompiler/profiling/TestUnexpectedProfilingMismatch$A;");
+
+        r7 = null;
+
+     label01:
+        r7 = virtualinvoke r5.<java.lang.invoke.MethodHandles$Lookup: java.lang.invoke.MethodHandle findStatic(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)>(class "Lcompiler/profiling/TestUnexpectedProfilingMismatch;", "mA", r6);
+
+     label02:
+        goto label05;
+
+     label03:
+        $r4 := @caughtexception;
+
+        r8 = $r4;
+
+        goto label05;
+
+     label04:
+        $r3 := @caughtexception;
+
+        r9 = $r3;
+
+     label05:
+        <compiler.profiling.TestUnexpectedProfilingMismatch: java.lang.invoke.MethodHandle mhA> = r7;
+
+        $r10 = <java.lang.Void: java.lang.Class TYPE>;
+
+        r11 = staticinvoke <java.lang.invoke.MethodType: java.lang.invoke.MethodType methodType(java.lang.Class,java.lang.Class)>($r10, class "Lcompiler/profiling/TestUnexpectedProfilingMismatch$B;");
+
+     label06:
+        r7 = virtualinvoke r5.<java.lang.invoke.MethodHandles$Lookup: java.lang.invoke.MethodHandle findStatic(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)>(class "Lcompiler/profiling/TestUnexpectedProfilingMismatch;", "mB", r11);
+
+     label07:
+        goto label10;
+
+     label08:
+        $r2 := @caughtexception;
+
+        r12 = $r2;
+
+        goto label10;
+
+     label09:
+        $r1 := @caughtexception;
+
+        r13 = $r1;
+
+     label10:
+        <compiler.profiling.TestUnexpectedProfilingMismatch: java.lang.invoke.MethodHandle mhB> = r7;
+
+        <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum> = 0;
+
+        $i0 = <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum>;
+
+        $i1 = <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum>;
+
+        $i2 = staticinvoke <checksum.check_sum: int run(int,int)>($i0, $i1);
+
+        <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum> = $i2;
+
+        return;
+
+        catch java.lang.NoSuchMethodException from label01 to label02 with label03;
+        catch java.lang.IllegalAccessException from label01 to label02 with label04;
+        catch java.lang.NoSuchMethodException from label06 to label07 with label08;
+        catch java.lang.IllegalAccessException from label06 to label07 with label09;
+    }
+
+    public void <init>()
+    {
+        compiler.profiling.TestUnexpectedProfilingMismatch r0;
+
+        r0 := @this: compiler.profiling.TestUnexpectedProfilingMismatch;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public void m1(compiler.profiling.TestUnexpectedProfilingMismatch$A, boolean) throws java.lang.Throwable
+    {
+        boolean z0;
+        java.io.PrintStream $r0, $r5;
+        java.lang.StringBuilder $r1, $r2, $r3, $r4, $r6, $r7;
+        int $i0, $i1, i3;
+        java.lang.String $r8, r12;
+        compiler.profiling.TestUnexpectedProfilingMismatch$A r9;
+        java.lang.invoke.MethodHandle $r10;
+        compiler.profiling.TestUnexpectedProfilingMismatch r11;
+        byte b2;
+
+        r11 := @this: compiler.profiling.TestUnexpectedProfilingMismatch;
+
+        r9 := @parameter0: compiler.profiling.TestUnexpectedProfilingMismatch$A;
+
+        z0 := @parameter1: boolean;
+
+        if z0 == 0 goto label1;
+
+        $r0 = new java.io.PrintStream;
+
+        specialinvoke $r0.<java.io.PrintStream: void <init>(java.lang.String)>("|P~");
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+
+        b2 = 2;
+
+        $r2 = new java.lang.StringBuilder;
+
+        specialinvoke $r2.<java.lang.StringBuilder: void <init>()>();
+
+        $r3 = new java.lang.StringBuilder;
+
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>()>();
+
+        r12 = "1";
+
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>(java.lang.String)>("Test.var_bad = ");
+
+        i3 = <compiler.c2.Test6799693: int var_bad>;
+
+        $r6 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(i3);
+
+        $i0 = <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum>;
+
+        $i1 = staticinvoke <checksum.check_sum: int run(int,int)>($i0, i3);
+
+        <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum> = $i1;
+
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(" (expected 2)\n");
+
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(java.lang.String)>($r8);
+
+        $r10 = <compiler.profiling.TestUnexpectedProfilingMismatch: java.lang.invoke.MethodHandle mhA>;
+
+        virtualinvoke $r10.<java.lang.invoke.MethodHandle: void invoke(compiler.profiling.TestUnexpectedProfilingMismatch$A)>(r9);
+
+     label1:
+        return;
+    }
+
+    public void m2(compiler.profiling.TestUnexpectedProfilingMismatch$B) throws java.lang.Throwable
+    {
+        compiler.profiling.TestUnexpectedProfilingMismatch$B r0;
+        java.lang.invoke.MethodHandle $r1;
+        compiler.profiling.TestUnexpectedProfilingMismatch r2;
+
+        r2 := @this: compiler.profiling.TestUnexpectedProfilingMismatch;
+
+        r0 := @parameter0: compiler.profiling.TestUnexpectedProfilingMismatch$B;
+
+        $r1 = <compiler.profiling.TestUnexpectedProfilingMismatch: java.lang.invoke.MethodHandle mhB>;
+
+        virtualinvoke $r1.<java.lang.invoke.MethodHandle: void invoke(compiler.profiling.TestUnexpectedProfilingMismatch$B)>(r0);
+
+        if 100 <= 100 goto label1;
+
+     label1:
+        return;
+    }
+
+    public static void mA(compiler.profiling.TestUnexpectedProfilingMismatch$A)
+    {
+        java.lang.Object $r0;
+        java.lang.NullPointerException $r1;
+        compiler.profiling.TestUnexpectedProfilingMismatch$A r2;
+
+        r2 := @parameter0: compiler.profiling.TestUnexpectedProfilingMismatch$A;
+
+        $r0 = new java.lang.Object;
+
+        specialinvoke $r0.<java.lang.Object: void <init>()>();
+
+        $r1 = new java.lang.NullPointerException;
+
+        specialinvoke $r1.<java.lang.NullPointerException: void <init>(java.lang.String)>("This statement would have triggered an Exception: $stack3 = interfaceinvoke $stack2.<java.util.Iterator: java.lang.Object next()>()");
+
+        throw $r1;
+    }
+
+    public static void mB(compiler.profiling.TestUnexpectedProfilingMismatch$B)
+    {
+        compiler.profiling.TestUnexpectedProfilingMismatch$B r0;
+
+        r0 := @parameter0: compiler.profiling.TestUnexpectedProfilingMismatch$B;
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        compiler.profiling.TestUnexpectedProfilingMismatch $r0, r1;
+        compiler.profiling.TestUnexpectedProfilingMismatch$A $r2, r3;
+        compiler.profiling.TestUnexpectedProfilingMismatch$B $r4, r10;
+        int $i0, $i1, $i2, $i3, $i4, i5, i6;
+        java.io.PrintStream $r5, $r6, $r7;
+        java.lang.Throwable $r8;
+        java.lang.String[] r9;
+
+        r9 := @parameter0: java.lang.String[];
+
+        $r0 = new compiler.profiling.TestUnexpectedProfilingMismatch;
+
+        specialinvoke $r0.<compiler.profiling.TestUnexpectedProfilingMismatch: void <init>()>();
+
+        r1 = $r0;
+
+        $r2 = new compiler.profiling.TestUnexpectedProfilingMismatch$A;
+
+        specialinvoke $r2.<compiler.profiling.TestUnexpectedProfilingMismatch$A: void <init>()>();
+
+        r3 = $r2;
+
+        $r4 = new compiler.profiling.TestUnexpectedProfilingMismatch$B;
+
+        specialinvoke $r4.<compiler.profiling.TestUnexpectedProfilingMismatch$B: void <init>()>();
+
+        r10 = $r4;
+
+     label1:
+        i5 = 0;
+
+        goto label3;
+
+     label2:
+        virtualinvoke r1.<compiler.profiling.TestUnexpectedProfilingMismatch: void m1(compiler.profiling.TestUnexpectedProfilingMismatch$A,boolean)>(r3, 1);
+
+        i5 = i5 + 1;
+
+        $i0 = <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum>;
+
+        $i1 = staticinvoke <checksum.check_sum: int run(int,int)>($i0, i5);
+
+        <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum> = $i1;
+
+     label3:
+        if i5 < 255 goto label2;
+
+        virtualinvoke r1.<compiler.profiling.TestUnexpectedProfilingMismatch: void m1(compiler.profiling.TestUnexpectedProfilingMismatch$A,boolean)>(r3, 0);
+
+        i6 = 0;
+
+        goto label5;
+
+     label4:
+        virtualinvoke r1.<compiler.profiling.TestUnexpectedProfilingMismatch: void m2(compiler.profiling.TestUnexpectedProfilingMismatch$B)>(r10);
+
+        i6 = i6 + 1;
+
+        $i2 = <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum>;
+
+        $i3 = staticinvoke <checksum.check_sum: int run(int,int)>($i2, i6);
+
+        <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum> = $i3;
+
+     label5:
+        if i6 < 256 goto label4;
+
+        virtualinvoke r1.<compiler.profiling.TestUnexpectedProfilingMismatch: void m1(compiler.profiling.TestUnexpectedProfilingMismatch$A,boolean)>(r3, 1);
+
+     label6:
+        goto label8;
+
+     label7:
+        $r8 := @caughtexception;
+
+        virtualinvoke $r8.<java.lang.Throwable: void printStackTrace()>();
+
+     label8:
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(java.lang.String)>("TEST PASSED");
+
+        $r6 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r6.<java.io.PrintStream: void print(java.lang.String)>("my_check_sum_value:");
+
+        $r7 = <java.lang.System: java.io.PrintStream out>;
+
+        $i4 = <compiler.profiling.TestUnexpectedProfilingMismatch: int my_check_sum>;
+
+        virtualinvoke $r7.<java.io.PrintStream: void println(int)>($i4);
+
+        return;
+
+        catch java.lang.Throwable from label1 to label6 with label7;
+    }
+}

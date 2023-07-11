@@ -1,0 +1,1457 @@
+public class compiler.c2.cr6646020.Tester extends java.lang.Object
+{
+    final long var_70;
+    int var_71;
+    static double var_72;
+    static short var_73;
+    static final short var_74;
+    float var_75;
+
+    static void <clinit>()
+    {
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+        java.lang.NullPointerException $r1;
+        int $i0;
+        short $s1, s3, s4, s5;
+        byte $b2;
+
+        $z3 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z1 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z0 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z2 = $z1 ^ $z0;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z2;
+
+        $z4 = $z3 & $z2;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z4;
+
+        if $z4 == 0 goto label1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: short var_55> = 123;
+
+        $b2 = (byte) 123;
+
+        s3 = (short) $b2;
+
+        goto label2;
+
+     label1:
+        s3 = 123;
+
+        <compiler.c2.cr6646020.Tester_Class_3: short var_55> = 123;
+
+     label2:
+        <compiler.c2.cr6646020.Tester: short var_73> = s3;
+
+        $z6 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z5 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z7 = $z6 & $z5;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z7;
+
+        if $z7 == 0 goto label4;
+
+        $z8 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z8 == 0 goto label3;
+
+        s4 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        goto label5;
+
+     label3:
+        s4 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $i0 = s4 + 1;
+
+        $s1 = (short) $i0;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s1;
+
+        goto label5;
+
+     label4:
+        s5 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        staticinvoke <compiler.c2.cr6646020.Tester$lambda_20__1: java.util.function.Consumer bootstrap$(java.util.EnumSet,java.util.List,java.lang.Enum)>(null, null, null);
+
+        $r1 = new java.lang.NullPointerException;
+
+        specialinvoke $r1.<java.lang.NullPointerException: void <init>(java.lang.String)>("This statement would have triggered an Exception: virtualinvoke $stack10.<java.util.EnumSet: void forEach(java.util.function.Consumer)>($stack11)");
+
+        throw $r1;
+
+     label5:
+        <compiler.c2.cr6646020.Tester: short var_74> = s4;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.c2.cr6646020.Tester r0;
+        long $l0;
+
+        r0 := @this: compiler.c2.cr6646020.Tester;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        $l0 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        r0.<compiler.c2.cr6646020.Tester: long var_70> = $l0;
+
+        return;
+    }
+
+    protected final compiler.c2.cr6646020.Tester_Class_2 func_0()
+    {
+        byte $b0, $b1, $b2, $b3, $b4, $b7, $b8;
+        float $f0, $f1;
+        compiler.c2.cr6646020.Tester_Class_0[][] $r0;
+        compiler.c2.cr6646020.Tester_Class_0[] $r1;
+        short $s5, $s6, $s10, $s11, s20;
+        compiler.c2.cr6646020.Tester_Class_2 $r2, $r4, $r5, $r9;
+        double $d0, $d1, $d2, $d3, $d4;
+        compiler.c2.cr6646020.Tester_Class_2[] $r3;
+        int $i9, $i12, $i13, $i15, $i17;
+        compiler.c2.cr6646020.Tester r7;
+        compiler.c2.cr6646020.Tester_Class_0 r8;
+
+        r7 := @this: compiler.c2.cr6646020.Tester;
+
+        $b2 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b0 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b1 = $b0 ^ -1;
+
+        $b3 = $b2 ^ $b1;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b3;
+
+        $f0 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $f1 = $f0 + 72.0F;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = $f1;
+
+        $b4 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r0 = newmultiarray (compiler.c2.cr6646020.Tester_Class_0)[123][$b4];
+
+        $r1 = $r0[123];
+
+        r8 = $r1[123];
+
+        $r2 = (compiler.c2.cr6646020.Tester_Class_2) r8;
+
+        $s5 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $d0 = (double) $s5;
+
+        $s6 = <compiler.c2.cr6646020.Tester: short var_74>;
+
+        $d1 = (double) $s6;
+
+        $r3 = newarray (compiler.c2.cr6646020.Tester_Class_2)[123];
+
+        $b7 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b8 = $b7 | 123;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b8;
+
+        $r4 = $r3[$b8];
+
+        $r4.<compiler.c2.cr6646020.Tester_Class_2: double var_46> = 1.5415572402580879E38;
+
+        $d2 = $d1 / 1.5415572402580879E38;
+
+        $d3 = $d0 % $d2;
+
+        $i9 = (int) $d3;
+
+        $s10 = (short) $i9;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s10;
+
+        $d4 = (double) $s10;
+
+        $r2.<compiler.c2.cr6646020.Tester_Class_2: double var_46> = $d4;
+
+        $s11 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        <compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_13> = r8;
+
+        $r5 = (compiler.c2.cr6646020.Tester_Class_2) r8;
+
+        virtualinvoke $r5.<java.lang.Object: java.lang.Class getClass()>();
+
+        $i12 = 1600723343 | 123;
+
+        $i13 = $s11 | $i12;
+
+        s20 = (short) $i13;
+
+        goto label1;
+
+     label1:
+        goto label2;
+
+     label2:
+        $i15 = 3 - 2;
+
+        staticinvoke <jit.t.t012.t012_mutator: int fib(int)>($i15);
+
+        $i17 = 3 - 1;
+
+        staticinvoke <jit.t.t012.t012_mutator: int fib(int)>($i17);
+
+        <compiler.c2.cr6646020.Tester: short var_73> = s20;
+
+        $r9 = new compiler.c2.cr6646020.Tester_Class_2;
+
+        specialinvoke $r9.<compiler.c2.cr6646020.Tester_Class_2: void <init>()>();
+
+        return $r9;
+    }
+
+    private static compiler.c2.cr6646020.Tester_Class_3 func_1(byte, compiler.c2.cr6646020.Tester_Class_1, compiler.c2.cr6646020.Tester_Class_1, int)
+    {
+        int $i0, i2, i3, i5, i9, i10;
+        byte $b1, b4;
+        compiler.c2.cr6646020.Tester_Class_0[][] $r0;
+        compiler.c2.cr6646020.Tester_Class_0 $r1;
+        compiler.c2.cr6646020.Tester_Class_3 $r2;
+        compiler.c2.cr6646020.Tester_Class_1 r3, r4;
+        compiler.c2.cr6646020.Tester_Class_0[] r5;
+        java.lang.String[] r6;
+
+        b4 := @parameter0: byte;
+
+        r3 := @parameter1: compiler.c2.cr6646020.Tester_Class_1;
+
+        r4 := @parameter2: compiler.c2.cr6646020.Tester_Class_1;
+
+        i5 := @parameter3: int;
+
+        $i0 = b4 << 96;
+
+        $b1 = (byte) $i0;
+
+        $r0 = newmultiarray (compiler.c2.cr6646020.Tester_Class_0)[123][$b1];
+
+        r5 = $r0[123];
+
+        r6 = newarray (java.lang.String)[-2];
+
+        goto label1;
+
+     label1:
+        i9 = staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: int initInt(java.lang.String[],int)>(r6, 1);
+
+        i2 = staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: int initInt(java.lang.String[],int)>(r6, 3);
+
+        i3 = staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: int initInt(java.lang.String[],int)>(r6, -1);
+
+        i10 = staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: int initInt(java.lang.String[],int)>(r6, 2147483647);
+
+        staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: void test(int,int,long,long,long,long)>(i9, i2, 3L, 3L, 3L, 3L);
+
+        staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: void test(int,int,long,long,long,long)>(i9, i3, -1L, -1L, 4294967295L, 4294967295L);
+
+        staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: void test(int,int,long,long,long,long)>(i9, i10, 2147483647L, 2147483647L, 2147483647L, 2147483647L);
+
+        staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: void test(int,int,long,long,long,long)>(i2, i3, -3L, -3L, 12884901885L, 12884901885L);
+
+        staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: void test(int,int,long,long,long,long)>(i2, i10, 6442450941L, 6442450941L, 6442450941L, 6442450941L);
+
+        staticinvoke <compiler.c2.TestMultiplyLongHiZero_mutator: void test(int,int,long,long,long,long)>(i3, i10, -2147483647L, 9223372030412324865L, -2147483647L, 9223372030412324865L);
+
+        $r1 = r5[123];
+
+        $r2 = (compiler.c2.cr6646020.Tester_Class_3) $r1;
+
+        return $r2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        compiler.c2.cr6646020.Tester $r0;
+        int $i0, i7;
+        long $l1;
+        byte $b2, $b3, $b4;
+        double $d0, $d1;
+        float $f0;
+        short $s5, $s6;
+        java.lang.Throwable $r1;
+        java.lang.String[] r3;
+        java.lang.InternalError $r5;
+
+        r3 := @parameter0: java.lang.String[];
+
+        i7 = 0;
+
+        goto label7;
+
+     label1:
+        $r0 = new compiler.c2.cr6646020.Tester;
+
+        specialinvoke $r0.<compiler.c2.cr6646020.Tester: void <init>()>();
+
+        specialinvoke $r0.<compiler.c2.cr6646020.Tester: void test()>();
+
+     label2:
+        goto label4;
+
+     label3:
+        $r1 := @caughtexception;
+
+     label4:
+        $i0 = $r0.<compiler.c2.cr6646020.Tester: int var_71>;
+
+        if $i0 != 0 goto label5;
+
+        $l1 = $r0.<compiler.c2.cr6646020.Tester: long var_70>;
+
+        $b2 = $l1 cmp -1297640037857117185L;
+
+        if $b2 != 0 goto label5;
+
+        $d0 = <compiler.c2.cr6646020.Tester: double var_72>;
+
+        $b3 = $d0 cmpl 0.0;
+
+        if $b3 != 0 goto label5;
+
+        $f0 = $r0.<compiler.c2.cr6646020.Tester: float var_75>;
+
+        $d1 = (double) $f0;
+
+        $b4 = $d1 cmpl 0.0;
+
+        if $b4 != 0 goto label5;
+
+        $s5 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        if $s5 != -1 goto label5;
+
+        $s6 = <compiler.c2.cr6646020.Tester: short var_74>;
+
+        if $s6 == 15129 goto label6;
+
+     label5:
+        $r5 = new java.lang.InternalError;
+
+        specialinvoke $r5.<java.lang.InternalError: void <init>(java.lang.String)>("wrong answer");
+
+        throw $r5;
+
+     label6:
+        i7 = i7 + 1;
+
+     label7:
+        if i7 < 20000 goto label1;
+
+        return;
+
+        return;
+
+        catch java.lang.Throwable from label2 to label2 with label3;
+    }
+
+    private void test()
+    {
+        short $s0, $s2, $s4, $s6, $s8, $s13, $s14, $s20, $s32, $s39, $s40, $s42, $s45, $s46, $s62, $s63, $s68, $s74, $s79, $s81, $s85, $s87, $s116, s126, s128, s129, s135, $s137, $s139, $s161, $s162;
+        float $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12, $f13, $f14, $f15, $f16, $f17, $f18, $f19, $f20, $f21, $f22, $f23, $f24, f25;
+        int $i1, $i5, $i12, $i21, $i23, $i30, $i38, $i41, $i65, $i72, $i75, $i76, $i80, $i83, $i86, $i100, $i102, $i113, i118, $i121, i127, i130, i131, i133, i136, $i138, i147, $i155;
+        byte $b3, $b7, $b15, $b16, $b17, $b18, $b22, $b24, $b25, $b26, $b31, $b34, $b35, $b36, $b37, $b43, $b44, $b47, $b48, $b49, $b50, $b51, $b54, $b55, $b56, $b61, $b64, $b66, $b67, $b69, $b73, $b77, $b82, $b84, $b88, $b89, $b91, $b92, $b93, $b94, $b95, $b97, $b98, $b99, $b101, $b103, $b104, $b105, $b106, $b107, $b108, $b109, $b119, $b120, $b122, $b123, b124, b134, $b142, $b149, $b150, $b151, $b152, $b153, $b154, $b156, $b157, $b165;
+        java.lang.String $r0, $r5, $r6, $r14, $r21, $r22, $r23, $r25, $r29, $r31, $r32, $r38, $r39, $r40, r49, r52, r56, r65;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z19, $z20, $z21, $z22, $z23, $z24, $z25, $z26, $z27, $z28, $z29, $z30, $z31, $z32, $z34, $z35, $z36, $z37, $z38, $z39, $z40, z41, z42, z43, z44, $z45, $z46, $z47, $z48, $z49, $z50, $z51;
+        long[] $r1, $r9;
+        compiler.c2.cr6646020.Tester_Class_2 $r2, $r27, r47, r48, $r59;
+        long $l9, $l10, $l11, $l27, $l28, $l29, $l52, $l53, $l57, $l58, $l59, $l60, $l70, $l71, $l96, $l110, $l111, $l112, $l114, $l115, l117, l125, l132, $l140, $l141, $l143, $l144, $l145, l146, l158, $l160, $l163, $l164;
+        byte[][] $r3;
+        byte[] $r4;
+        char $c19, $c90;
+        long[][][] $r7;
+        long[][] $r8;
+        compiler.c2.cr6646020.Tester_Class_1 $r10, $r12, $r44, $r55, $r64, r66, r67, r68;
+        compiler.c2.cr6646020.Tester_Class_1[] $r11, $r30, $r63;
+        compiler.c2.cr6646020.Tester_Class_3 $r13, $r35, $r43, r50, r51;
+        compiler.c2.cr6646020.Tester_Class_3[][] $r16, $r41;
+        compiler.c2.cr6646020.Tester_Class_3[] $r17, $r42;
+        compiler.c2.cr6646020.Tester_Class_0[][] $r18, $r60;
+        compiler.c2.cr6646020.Tester_Class_0[] $r19, $r33, $r61;
+        compiler.c2.cr6646020.Tester_Class_0 $r20, $r26, $r34, $r62;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11;
+        compiler.c2.cr6646020.Tester r45;
+        boolean[] r46;
+        java.lang.Object[] $r53;
+        java.lang.Object $r54;
+        compiler.c2.cr6646020.Tester_Class_2[][] $r57;
+        compiler.c2.cr6646020.Tester_Class_2[] $r58;
+
+        r45 := @this: compiler.c2.cr6646020.Tester;
+
+        l117 = 0L;
+
+        $s0 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $f0 = (float) $s0;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = 85.0F;
+
+        $f1 = $f0 / 85.0F;
+
+        $i1 = (int) $f1;
+
+        $s2 = (short) $i1;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s2;
+
+        $f2 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $f3 = $f2 * 116.0F;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = $f3;
+
+        goto label02;
+
+     label01:
+        $s4 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $f4 = (float) $s4;
+
+        $f5 = $f4 + 1.5415572E38F;
+
+        $i5 = (int) $f5;
+
+        $s6 = (short) $i5;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s6;
+
+        $f6 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $f7 = $f6 + 123.0F;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = $f7;
+
+        l117 = l117 + 1L;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "";
+
+        $r0 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = $r0;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = $r0;
+
+     label02:
+        $b3 = l117 cmp 36L;
+
+        if $b3 < 0 goto label01;
+
+        $z0 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z1 = $z0 | 0;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z1;
+
+        if $z1 == 0 goto label11;
+
+        i118 = 0;
+
+        $r40 = "l";
+
+        $r39 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        virtualinvoke $r40.<java.lang.String: boolean startsWith(java.lang.String)>($r39);
+
+        goto label04;
+
+     label03:
+        $l114 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        $l115 = $l114 << 98;
+
+        <compiler.c2.cr6646020.Tester_Class_2: long var_44> = $l115;
+
+        i118 = i118 + 1;
+
+        $s116 = <compiler.c2.cr6646020.Tester: short var_74>;
+
+        $d3 = (double) $s116;
+
+        <compiler.c2.cr6646020.Tester: double var_72> = $d3;
+
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = 34816;
+
+     label04:
+        z41 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        z42 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        <compiler.c2.cr6646020.Tester_Class_1: boolean var_18> = 1;
+
+        z43 = 0;
+
+        goto label05;
+
+     label05:
+        $z34 = z42 & z43;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z34;
+
+        $z35 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z36 = $z34 | $z35;
+
+        $z37 = z41 | $z36;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z37;
+
+        if $z37 == 0 goto label06;
+
+        if i118 >= 15 goto label06;
+
+        $z39 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z40 = $z39 & 1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z40;
+
+        if $z40 != 0 goto label03;
+
+     label06:
+        $f23 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $d4 = (double) $f23;
+
+        $d5 = $d4 / 1.5148047552641134E308;
+
+        $f24 = (float) $d5;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = $f24;
+
+        r46 = newarray (boolean)[123];
+
+        $b119 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $d6 = (double) $b119;
+
+        $b120 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $d7 = (double) $b120;
+
+        $d8 = $d7 - 9.675021723726166E307;
+
+        $i121 = (int) $d8;
+
+        $b122 = (byte) $i121;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b122;
+
+        $d9 = (double) $b122;
+
+        <compiler.c2.cr6646020.Tester: double var_72> = 4.3844763012510596E307;
+
+        $d10 = neg 4.3844763012510596E307;
+
+        $d11 = $d9 / $d10;
+
+        $b123 = $d6 cmpg $d11;
+
+        if $b123 > 0 goto label07;
+
+        $l111 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        $b108 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b109 = $b108 ^ -1;
+
+        $l110 = (long) $b109;
+
+        $l112 = $l111 + $l110;
+
+        <compiler.c2.cr6646020.Tester_Class_2: long var_44> = $l112;
+
+        $i113 = (int) $l112;
+
+        b124 = (byte) $i113;
+
+        goto label08;
+
+     label07:
+        $b99 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $d0 = (double) $b99;
+
+        $d1 = $d0 + 1.7430965313164616E308;
+
+        $i100 = (int) $d1;
+
+        b124 = (byte) $i100;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = b124;
+
+     label08:
+        $z38 = r46[b124];
+
+        if $z38 == 0 goto label09;
+
+        $r44 = new compiler.c2.cr6646020.Tester_Class_1;
+
+        specialinvoke $r44.<compiler.c2.cr6646020.Tester_Class_1: void <init>()>();
+
+        r47 = virtualinvoke r45.<compiler.c2.cr6646020.Tester: compiler.c2.cr6646020.Tester_Class_2 func_0()>();
+
+        $r44.<compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_15> = r47;
+
+        r48 = (compiler.c2.cr6646020.Tester_Class_2) r47;
+
+        goto label10;
+
+     label09:
+        r48 = new compiler.c2.cr6646020.Tester_Class_2;
+
+        specialinvoke r48.<compiler.c2.cr6646020.Tester_Class_2: void <init>()>();
+
+     label10:
+        $b101 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $i102 = $b101 * 106;
+
+        $b103 = (byte) $i102;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b103;
+
+        $d2 = (double) $b103;
+
+        <compiler.c2.cr6646020.Tester: double var_72> = $d2;
+
+        r48.<compiler.c2.cr6646020.Tester_Class_2: double var_46> = $d2;
+
+        $b104 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b105 = $b104 >>> i118;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b105;
+
+        $b106 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r41 = newmultiarray (compiler.c2.cr6646020.Tester_Class_3)[$b105][$b106];
+
+        $b107 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r42 = $r41[$b107];
+
+        $r43 = $r42[123];
+
+        <compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_13> = $r43;
+
+        goto label19;
+
+     label11:
+        l125 = 0L;
+
+        $b7 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r1 = newarray (long)[$b7];
+
+        <compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_13> = $r1;
+
+        $r2 = (compiler.c2.cr6646020.Tester_Class_2) $r1;
+
+        $r2.<compiler.c2.cr6646020.Tester_Class_2: double var_46> = 114.0;
+
+     label12:
+        l125 = l125 + 1L;
+
+        $s8 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $l10 = (long) $s8;
+
+        $l9 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        $l11 = $l10 ^ $l9;
+
+        $i12 = (int) $l11;
+
+        $s13 = (short) $i12;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s13;
+
+        $z2 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z2 == 0 goto label13;
+
+        $b98 = l125 cmp 4L;
+
+        if $b98 < 0 goto label12;
+
+     label13:
+        $f9 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $s14 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $f8 = (float) $s14;
+
+        $b15 = $f9 cmpl $f8;
+
+        if $b15 < 0 goto label14;
+
+        z44 = 1;
+
+        goto label15;
+
+     label14:
+        z44 = 0;
+
+     label15:
+        <compiler.c2.cr6646020.Tester_Class_1: boolean var_18> = z44;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "xvodcylp";
+
+        r49 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        $r5 = "indreb";
+
+        $r3 = newmultiarray (byte)[123][123];
+
+        $b16 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r4 = $r3[$b16];
+
+        $b17 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b18 = $r4[$b17];
+
+        $c19 = virtualinvoke $r5.<java.lang.String: char charAt(int)>($b18);
+
+        $b22 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $s20 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $i21 = $s20 - 1;
+
+        s126 = (short) $i21;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = s126;
+
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = s126;
+
+        $i23 = $b22 % s126;
+
+        $b24 = (byte) $i23;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b24;
+
+        $b25 = $b24 ^ -1;
+
+        i127 = $c19 * $b25;
+
+        $z3 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $r6 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        $z4 = virtualinvoke $r6.<java.lang.String: boolean equalsIgnoreCase(java.lang.String)>("rkxwa");
+
+        $z5 = $z3 ^ $z4;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z5;
+
+        if $z5 != 0 goto label16;
+
+        $f22 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $f20 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $l96 = neg l125;
+
+        $f19 = (float) $l96;
+
+        $f21 = $f20 % $f19;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = $f21;
+
+        $b97 = $f22 cmpg $f21;
+
+        if $b97 > 0 goto label17;
+
+     label16:
+        $b26 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $l28 = (long) $b26;
+
+        $l27 = r45.<compiler.c2.cr6646020.Tester: long var_70>;
+
+        $l29 = $l28 ^ $l27;
+
+        $i30 = (int) $l29;
+
+        s128 = (byte) $i30;
+
+        $b31 = (byte) s128;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b31;
+
+        goto label18;
+
+     label17:
+        s128 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+     label18:
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = 107;
+
+        $s32 = s128 & 107;
+
+        virtualinvoke r49.<java.lang.String: int codePointCount(int,int)>(i127, $s32);
+
+        $b35 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b34 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r7 = newmultiarray (long)[$b35][123][$b34];
+
+        $b36 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r8 = $r7[$b36];
+
+        $b37 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r9 = $r8[$b37];
+
+        <compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_13> = $r9;
+
+     label19:
+        s129 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        <compiler.c2.cr6646020.Tester_Class_1: boolean var_18> = 0;
+
+        goto label20;
+
+     label20:
+        i130 = 117;
+
+        $i38 = s129 << i130;
+
+        $s39 = (short) $i38;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s39;
+
+        $s40 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $i41 = $s40 + 1;
+
+        $s42 = (short) $i41;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s42;
+
+        i131 = 0;
+
+        $r10 = new compiler.c2.cr6646020.Tester_Class_1;
+
+        specialinvoke $r10.<compiler.c2.cr6646020.Tester_Class_1: void <init>()>();
+
+        $b43 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r11 = newarray (compiler.c2.cr6646020.Tester_Class_1)[$b43];
+
+        $b44 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r12 = $r11[$b44];
+
+        $s45 = <compiler.c2.cr6646020.Tester: short var_74>;
+
+        $s46 = 77 & $s45;
+
+        $r13 = staticinvoke <compiler.c2.cr6646020.Tester: compiler.c2.cr6646020.Tester_Class_3 func_1(byte,compiler.c2.cr6646020.Tester_Class_1,compiler.c2.cr6646020.Tester_Class_1,int)>(123, $r10, $r12, $s46);
+
+        <compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_13> = $r13;
+
+        $r14 = "gdrlrsubb";
+
+        virtualinvoke $r14.<java.lang.String: java.lang.String substring(int,int)>(12438522, 0);
+
+        l132 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        $b48 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b47 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r16 = newmultiarray (compiler.c2.cr6646020.Tester_Class_3)[$b48][$b47];
+
+        $b49 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b50 = $b49 >> 878617600;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b50;
+
+        $r17 = $r16[$b50];
+
+        $b51 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        r50 = $r17[$b51];
+
+        $z6 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z6 == 0 goto label21;
+
+        i133 = 66;
+
+        goto label22;
+
+     label21:
+        i133 = 91;
+
+     label22:
+        r50.<compiler.c2.cr6646020.Tester_Class_3: int var_51> = i133;
+
+        $l52 = (long) i133;
+
+        $l53 = l132 | $l52;
+
+        <compiler.c2.cr6646020.Tester_Class_2: long var_44> = $l53;
+
+        $b54 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r18 = newmultiarray (compiler.c2.cr6646020.Tester_Class_0)[123][$b54];
+
+        $b55 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r19 = $r18[$b55];
+
+        $b56 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r20 = $r19[$b56];
+
+        r51 = (compiler.c2.cr6646020.Tester_Class_3) $r20;
+
+        $z8 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z7 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z9 = $z8 & $z7;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z9;
+
+        if $z9 == 0 goto label23;
+
+        b134 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        goto label24;
+
+     label23:
+        b134 = 123;
+
+     label24:
+        r51.<compiler.c2.cr6646020.Tester_Class_3: short var_56> = b134;
+
+        $r21 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = $r21;
+
+        goto label28;
+
+     label25:
+        $z32 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z32 == 0 goto label26;
+
+        r52 = "xqeisnyf";
+
+        goto label27;
+
+     label26:
+        r52 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = r52;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = r52;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = r52;
+
+     label27:
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "i";
+
+        virtualinvoke r52.<java.lang.String: java.lang.String concat(java.lang.String)>("i");
+
+        i131 = i131 + 1;
+
+        $r38 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = $r38;
+
+     label28:
+        if i131 >= 2 goto label29;
+
+        $z30 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z28 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z29 = $z28 ^ 1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z29;
+
+        $z31 = $z30 & $z29;
+
+        if $z31 != 0 goto label25;
+
+     label29:
+        $l57 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        $l60 = $l57 ^ -1L;
+
+        $l58 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        $l59 = $l58 - 1L;
+
+        <compiler.c2.cr6646020.Tester_Class_2: long var_44> = $l59;
+
+        $b61 = $l60 cmp $l58;
+
+        if $b61 == 0 goto label30;
+
+        s135 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = s135;
+
+        goto label31;
+
+     label30:
+        $s63 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $s62 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        s135 = $s63 >>> $s62;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = s135;
+
+     label31:
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = s135;
+
+        $z12 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z10 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z11 = $z10 ^ 1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z11;
+
+        $z13 = $z12 | $z11;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z13;
+
+        i136 = 0;
+
+        $b67 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $s68 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $b64 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $f10 = (float) $b64;
+
+        $f11 = $f10 * 9.831691E37F;
+
+        $i65 = (int) $f11;
+
+        $b66 = (byte) $i65;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b66;
+
+        $s74 = $s68 | $b66;
+
+        $b69 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $l70 = (long) $b69;
+
+        $l71 = $l70 + 6784278051481715712L;
+
+        $i72 = (int) $l71;
+
+        $b73 = (byte) $i72;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b73;
+
+        $i75 = $s74 * $b73;
+
+        $i76 = $b67 % $i75;
+
+        $b77 = (byte) $i76;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b77;
+
+        goto label33;
+
+     label32:
+        $s137 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $i138 = $s137 * 1621204618;
+
+        $s139 = (short) $i138;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s139;
+
+        $l140 = (long) $s139;
+
+        $l141 = 4242055901066916864L * $l140;
+
+        $r53 = newarray (java.lang.Object)[-1];
+
+        $b142 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r54 = $r53[$b142];
+
+        $r55 = (compiler.c2.cr6646020.Tester_Class_1) $r54;
+
+        virtualinvoke $r55.<java.lang.Object: java.lang.Class getClass()>();
+
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = i136;
+
+        $l143 = (long) i136;
+
+        $l144 = -9223372036854737042L ^ $l143;
+
+        $l145 = $l144 & 1859382584L;
+
+        l146 = $l141 / $l145;
+
+        i136 = i136 + 1;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "arceo";
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "arceo";
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "arceo";
+
+     label33:
+        $z45 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z45 == 0 goto label37;
+
+        if i136 >= 24 goto label37;
+
+        $z22 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z23 = $z22 ^ 1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z23;
+
+        if $z23 == 0 goto label34;
+
+        $z26 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z26 == 0 goto label35;
+
+     label34:
+        $z24 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z24 != 0 goto label32;
+
+        goto label36;
+
+     label35:
+        $z27 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z27 == 0 goto label32;
+
+     label36:
+        $z25 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        <compiler.c2.cr6646020.Tester_Class_1: boolean var_18> = $z25;
+
+        if $z25 != 0 goto label32;
+
+     label37:
+        r56 = "a";
+
+        $z46 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z46 == 0 goto label38;
+
+        i147 = 1058420888;
+
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = 1058420888;
+
+        goto label39;
+
+     label38:
+        i147 = 123;
+
+     label39:
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = i147;
+
+        virtualinvoke r56.<java.lang.String: int lastIndexOf(int)>(i147);
+
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = 661164411;
+
+        $s79 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $i80 = $s79 - 1;
+
+        $s81 = (short) $i80;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s81;
+
+        $r23 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        $r22 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        virtualinvoke $r23.<java.lang.String: java.lang.String concat(java.lang.String)>($r22);
+
+        $z14 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z14 == 0 goto label40;
+
+        $z21 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z21 == 0 goto label42;
+
+        goto label41;
+
+     label40:
+        $z15 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        if $z15 == 0 goto label42;
+
+     label41:
+        goto label42;
+
+     label42:
+        $b149 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b150 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r57 = newmultiarray (compiler.c2.cr6646020.Tester_Class_2)[$b149][$b150];
+
+        $r58 = $r57[123];
+
+        $r59 = $r58[123];
+
+        $r59.<compiler.c2.cr6646020.Tester_Class_2: double var_46> = 123.0;
+
+        $b151 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b152 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r60 = newmultiarray (compiler.c2.cr6646020.Tester_Class_0)[$b151][$b152];
+
+        $r61 = $r60[123];
+
+        $b153 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b154 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $i155 = $b153 - $b154;
+
+        $b156 = (byte) $i155;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b156;
+
+        $r62 = $r61[$b156];
+
+        $r63 = newarray (compiler.c2.cr6646020.Tester_Class_1)[123];
+
+        $b157 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r64 = $r63[$b157];
+
+        r65 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = r65;
+
+        $r64.<compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_15> = r65;
+
+        $z47 = virtualinvoke $r62.<java.lang.Object: boolean equals(java.lang.Object)>(r65);
+
+        if $z47 == 0 goto label43;
+
+        r45.<compiler.c2.cr6646020.Tester: int var_71> = 123;
+
+        goto label44;
+
+     label43:
+        l158 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+     label44:
+        $f12 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $r25 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_13> = $r25;
+
+        $r26 = (compiler.c2.cr6646020.Tester_Class_0) $r25;
+
+        $r27 = (compiler.c2.cr6646020.Tester_Class_2) $r26;
+
+        virtualinvoke $r27.<java.lang.Object: java.lang.Class getClass()>();
+
+        $f13 = $f12 * 1.60072333E9F;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = $f13;
+
+        $r29 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = $r29;
+
+        $z16 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z17 = $z16 & 1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z17;
+
+        $b82 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $i83 = $b82 + 1;
+
+        $b84 = (byte) $i83;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b84;
+
+        if 123 < $b84 goto label45;
+
+        $b94 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r33 = newarray (compiler.c2.cr6646020.Tester_Class_0)[$b94];
+
+        $b95 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r34 = $r33[$b95];
+
+        $r35 = (compiler.c2.cr6646020.Tester_Class_3) $r34;
+
+        <compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_13> = $r35;
+
+        $z19 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z20 = $z19 | 1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z20;
+
+     label45:
+        f25 = 0.0F;
+
+        $l160 = <compiler.c2.cr6646020.Tester_Class_2: long var_44>;
+
+        $s161 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $s162 = $s161 >>> 106;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s162;
+
+        $l163 = (long) $s162;
+
+        $l164 = $l160 | $l163;
+
+        <compiler.c2.cr6646020.Tester_Class_2: long var_44> = $l164;
+
+        <compiler.c2.cr6646020.Tester_Class_3: double var_52> = 1.83524286396421837E18;
+
+     label46:
+        f25 = f25 + 1.0F;
+
+        $z48 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z49 = <compiler.c2.cr6646020.Tester_Class_3: boolean var_53>;
+
+        $z50 = $z49 | 1;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z50;
+
+        $z51 = $z48 ^ $z50;
+
+        <compiler.c2.cr6646020.Tester_Class_3: boolean var_53> = $z51;
+
+        $b165 = f25 cmpg 16.0F;
+
+        if $b165 < 0 goto label46;
+
+        $s85 = <compiler.c2.cr6646020.Tester: short var_73>;
+
+        $i86 = $s85 - 1;
+
+        $s87 = (short) $i86;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s87;
+
+        <compiler.c2.cr6646020.Tester: short var_73> = $s85;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "oaxg";
+
+        $b88 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $r30 = newarray (compiler.c2.cr6646020.Tester_Class_1)[$b88];
+
+        $b89 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        r66 = $r30[$b89];
+
+        r67 = new compiler.c2.cr6646020.Tester_Class_1;
+
+        specialinvoke r67.<compiler.c2.cr6646020.Tester_Class_1: void <init>()>();
+
+        $r31 = "agdnue";
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "agdnue";
+
+        $c90 = virtualinvoke $r31.<java.lang.String: char charAt(int)>(1416972150);
+
+        $f15 = (float) $c90;
+
+        $f14 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $b91 = $f15 cmpl $f14;
+
+        if $b91 == 0 goto label47;
+
+        r68 = new compiler.c2.cr6646020.Tester_Class_1;
+
+        specialinvoke r68.<compiler.c2.cr6646020.Tester_Class_1: void <init>()>();
+
+        goto label48;
+
+     label47:
+        r68 = new compiler.c2.cr6646020.Tester_Class_1;
+
+        specialinvoke r68.<compiler.c2.cr6646020.Tester_Class_1: void <init>()>();
+
+     label48:
+        r67.<compiler.c2.cr6646020.Tester_Class_1: java.lang.Object var_15> = r68;
+
+        virtualinvoke r66.<java.lang.Object: boolean equals(java.lang.Object)>(r68);
+
+        $b92 = <compiler.c2.cr6646020.Tester_Class_1: byte var_21>;
+
+        $b93 = $b92 >>> 96;
+
+        <compiler.c2.cr6646020.Tester_Class_1: byte var_21> = $b93;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = "";
+
+        $f17 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $f16 = <compiler.c2.cr6646020.Tester_Class_2: float var_47>;
+
+        $f18 = $f17 + $f16;
+
+        <compiler.c2.cr6646020.Tester_Class_2: float var_47> = $f18;
+
+        $r32 = <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45>;
+
+        <compiler.c2.cr6646020.Tester_Class_2: java.lang.String var_45> = $r32;
+
+        return;
+
+        return;
+    }
+}

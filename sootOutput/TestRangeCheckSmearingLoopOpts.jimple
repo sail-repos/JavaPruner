@@ -1,0 +1,581 @@
+public class compiler.rangechecks.TestRangeCheckSmearingLoopOpts extends java.lang.Object
+{
+    static int dummy;
+    public static int CHECKSUM;
+    protected int field_101329;
+    private volatile float field_101331;
+    protected volatile float[] field_101333;
+    private static short field_101335;
+    private static volatile char[][] field_101337;
+    public static long TRAPCOUNT;
+
+    static void <clinit>()
+    {
+        char[][] r0;
+        char[] $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17;
+        int $i0, $i1, $i2;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: long TRAPCOUNT> = 0L;
+
+        r0 = newmultiarray (char)[14][18];
+
+        $r1 = r0[3];
+
+        $r1[10] = 96;
+
+        $r2 = r0[7];
+
+        $r2[0] = 112;
+
+        $r3 = r0[10];
+
+        $r3[17] = 81;
+
+        $r4 = r0[5];
+
+        $r4[10] = 71;
+
+        $r5 = r0[8];
+
+        $r5[6] = 66;
+
+        $r6 = r0[9];
+
+        $r6[1] = 97;
+
+        $r7 = r0[12];
+
+        $r7[12] = 41;
+
+        $r8 = r0[4];
+
+        $r8[4] = 44;
+
+        $r9 = r0[3];
+
+        $r9[7] = 49;
+
+        $r10 = r0[13];
+
+        $r10[12] = 54;
+
+        $r11 = r0[12];
+
+        $r11[7] = 62;
+
+        $r12 = r0[11];
+
+        $r12[5] = 103;
+
+        $r13 = r0[8];
+
+        $r13[8] = 86;
+
+        $r14 = r0[12];
+
+        $r14[13] = 111;
+
+        $r15 = r0[4];
+
+        $r15[16] = 72;
+
+        $r16 = r0[10];
+
+        $r16[17] = 67;
+
+        $r17 = r0[5];
+
+        $r17[0] = 108;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: char[][] field_101337> = r0;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335> = -3;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = 0;
+
+        $i1 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i0 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, $i0);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i2;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        float[] r0;
+        compiler.rangechecks.TestRangeCheckSmearingLoopOpts r1;
+
+        r1 := @this: compiler.rangechecks.TestRangeCheckSmearingLoopOpts;
+
+        r0 = newarray (float)[17];
+
+        r0[1] = -100.0F;
+
+        r0[3] = -2.0F;
+
+        r0[6] = 0.0F;
+
+        r0[6] = 3.0F;
+
+        r0[3] = -3.0F;
+
+        r0[12] = 100.0F;
+
+        r0[10] = -3.0F;
+
+        r0[0] = 0.1F;
+
+        r0[12] = -1.0F;
+
+        r1.<compiler.rangechecks.TestRangeCheckSmearingLoopOpts: float[] field_101333> = r0;
+
+        r1.<compiler.rangechecks.TestRangeCheckSmearingLoopOpts: float field_101331> = -100.0F;
+
+        r1.<compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int field_101329> = -2;
+
+        specialinvoke r1.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    static int m1(int[], int)
+    {
+        int $i0, $i1, $i3, $i4, $i5, $i6, $i7, $i9, $i11, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, $i36, $i38, $i40, $i42, $i44, $i46, $i47, $i48, $i49, $i50, $i51, $i52, $i53, $i54, $i55, $i56, $i57, $i58, $i59, $i60, $i61, $i62, i63, $i64, i65, i66, i67, i68, i71, i76, i77, i78, i79, i80, i81;
+        short $s2, $s8, $s10, $s12, $s35, $s37, $s39, $s41, $s43, $s45, s72;
+        java.net.MalformedURLException $r1, $r5;
+        java.security.KeyException $r2, $r4;
+        java.security.InvalidParameterException $r6;
+        int[] r7, r9;
+        long l69, l70, l73, l74, l82, l83;
+
+        r7 := @parameter0: int[];
+
+        i63 := @parameter1: int;
+
+     label01:
+        $i64 = r7[i63];
+
+        if $i64 >= 0 goto label02;
+
+        goto label03;
+
+     label02:
+        i63 = i63 + 1;
+
+        goto label01;
+
+     label03:
+        $i0 = i63 % 2;
+
+        if $i0 != 0 goto label11;
+
+        i65 = r7[i63];
+
+        $i30 = i65 % 2;
+
+        $i29 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i31 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i29, i65);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i31;
+
+        if $i30 != 0 goto label11;
+
+        i66 = 25;
+
+     label04:
+        if i66 >= 34 goto label09;
+
+        i67 = 44;
+
+     label05:
+        if i67 >= 65 goto label08;
+
+        if i67 <= 100 goto label06;
+
+     label06:
+        if i66 > 100 goto label07;
+
+     label07:
+        i66 = i66 + 1;
+
+        $i47 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i48 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i47, i66);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i48;
+
+        i67 = i67 + 1;
+
+        $i49 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i50 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i49, i67);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i50;
+
+        goto label05;
+
+     label08:
+        goto label04;
+
+     label09:
+        $i32 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        lookupswitch($i32)
+        {
+            case 0: goto label10;
+            case 1: goto label10;
+            case 2: goto label10;
+            default: goto label11;
+        };
+
+        $i44 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $s41 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335>;
+
+        $i42 = $s41 + 3;
+
+        $s43 = (short) $i42;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335> = $s43;
+
+        $s45 = (short) $i42;
+
+        $i46 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i44, $s45);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i46;
+
+        goto label10;
+
+        $i38 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $s35 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335>;
+
+        $i36 = $s35 * -100;
+
+        $s37 = (short) $i36;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335> = $s37;
+
+        $s39 = (short) $i36;
+
+        $i40 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i38, $s39);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i40;
+
+        goto label10;
+
+        staticinvoke <java.lang.Double: java.lang.String toString(double)>(2.0);
+
+        $i33 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i34 = staticinvoke <JITFuzzing.Check: int checksum(int,double)>($i33, 2.0);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i34;
+
+        goto label10;
+
+     label10:
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int dummy> = i63;
+
+     label11:
+        i68 = i63 - 1;
+
+     label12:
+        $r2 = new java.security.KeyException;
+
+        specialinvoke $r2.<java.security.KeyException: void <init>()>();
+
+        throw $r2;
+
+     label13:
+        $r4 := @caughtexception;
+
+        l69 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: long TRAPCOUNT>;
+
+        l70 = l69 + 1L;
+
+        $i51 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i52 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i51, l69);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i52;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: long TRAPCOUNT> = l70;
+
+        $i53 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i54 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i53, l70);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i54;
+
+        i71 = r7[i68];
+
+        s72 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335>;
+
+        if s72 <= -2 goto label16;
+
+     label14:
+        r9 = newarray (int)[9];
+
+        r9[3] = -3;
+
+        r9[6] = -3;
+
+        r9[0] = -2;
+
+        $r1 = new java.net.MalformedURLException;
+
+        specialinvoke $r1.<java.net.MalformedURLException: void <init>()>();
+
+        throw $r1;
+
+     label15:
+        $r5 := @caughtexception;
+
+        l73 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: long TRAPCOUNT>;
+
+        l74 = l73 + 1L;
+
+        $i55 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i56 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i55, l73);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i56;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: long TRAPCOUNT> = l74;
+
+        $i57 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i58 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i57, l74);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i58;
+
+        $i27 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i28 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i27, i68);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i28;
+
+     label16:
+        if i71 != 9 goto label18;
+
+        $i7 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int dummy>;
+
+        if $i7 <= 1 goto label17;
+
+     label17:
+        $i11 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $s8 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335>;
+
+        $i9 = $s8 + -2;
+
+        $s10 = (short) $i9;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: short field_101335> = $s10;
+
+        $s12 = (short) $i9;
+
+        $i13 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i11, $s12);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i13;
+
+        i76 = i63 - 3;
+
+        i77 = r7[i76];
+
+        $i14 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i15 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i14, i76);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i15;
+
+        i78 = r7[i63];
+
+        i79 = i77 + i78;
+
+        $i16 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i17 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i16, i77);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i17;
+
+        $i18 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i19 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i18, i78);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i19;
+
+        i80 = i63 - 2;
+
+        i81 = r7[i80];
+
+        $i20 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i21 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i20, i80);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i21;
+
+        $i23 = i79 + i81;
+
+        $i22 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i24 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i22, i79);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i24;
+
+        $i25 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i26 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i25, i81);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i26;
+
+        return $i23;
+
+     label18:
+        i63 = i63 + 1;
+
+     label19:
+        $i3 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i1 = s72 / -3;
+
+        $s2 = (short) $i1;
+
+        $i4 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i3, $s2);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i4;
+
+        goto label20;
+
+     label20:
+        goto label22;
+
+     label21:
+        $r6 := @caughtexception;
+
+        l82 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: long TRAPCOUNT>;
+
+        l83 = l82 + 1L;
+
+        $i59 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i60 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i59, l82);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i60;
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: long TRAPCOUNT> = l83;
+
+        $i61 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i62 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i61, l83);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i62;
+
+     label22:
+        $i5 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i6 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i5, i63);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i6;
+
+        goto label01;
+
+        catch java.security.InvalidParameterException from label19 to label20 with label21;
+        catch java.net.MalformedURLException from label14 to label15 with label15;
+        catch java.security.KeyException from label12 to label13 with label13;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        int $i1, $i2, $i4, i5;
+        java.lang.StringBuilder $r0, $r2, $r3;
+        java.io.PrintStream $r1;
+        java.lang.String $r4;
+        java.lang.ArrayIndexOutOfBoundsException $r5;
+        java.lang.String[] r6;
+        int[] r7;
+
+        r6 := @parameter0: java.lang.String[];
+
+        r7 = newarray (int)[11];
+
+        r7[1] = 1;
+
+        r7[2] = 2;
+
+        r7[3] = -3;
+
+        r7[4] = 4;
+
+        r7[5] = 5;
+
+        r7[6] = -2;
+
+        r7[7] = 7;
+
+        r7[8] = 8;
+
+        r7[9] = 9;
+
+        r7[10] = -1;
+
+        i5 = 0;
+
+        goto label2;
+
+     label1:
+        staticinvoke <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int m1(int[],int)>(r7, 0);
+
+        i5 = i5 + 1;
+
+        $i1 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, i5);
+
+        <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM> = $i2;
+
+     label2:
+        if i5 < 20000 goto label1;
+
+        r7[0] = -1;
+
+        staticinvoke <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int m1(int[],int)>(r7, 0);
+
+     label3:
+        goto label5;
+
+     label4:
+        $r5 := @caughtexception;
+
+     label5:
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        $r0 = new java.lang.StringBuilder;
+
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>()>();
+
+        $r2 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i4 = <compiler.rangechecks.TestRangeCheckSmearingLoopOpts: int CHECKSUM>;
+
+        $r3 = virtualinvoke $r2.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i4);
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>($r4);
+
+        return;
+
+        return;
+
+        catch java.lang.ArrayIndexOutOfBoundsException from label3 to label3 with label4;
+    }
+}

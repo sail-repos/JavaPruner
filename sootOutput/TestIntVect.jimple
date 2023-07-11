@@ -1,0 +1,461 @@
+public class compiler.c2.cr6340864.TestIntVect extends java.lang.Object
+{
+    private static final int ARRLEN;
+    private static final int ITERS;
+    private static final int ADD_INIT;
+    private static final int BIT_MASK;
+    private static final int VALUE;
+    private static final int SHIFT;
+    public static long TRAPCOUNT;
+    private java.util.jar.Attributes$Name[][][] field_77022;
+    public static float[][][] field_126873;
+    private volatile java.io.UncheckedIOException[][][] field_126876;
+
+    static void <clinit>()
+    {
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.c2.cr6340864.TestIntVect r0;
+        java.io.UncheckedIOException[][][] $r1;
+        java.util.jar.Attributes$Name[][][] $r2;
+
+        r0 := @this: compiler.c2.cr6340864.TestIntVect;
+
+        $r1 = newmultiarray (java.io.UncheckedIOException)[64][512][256];
+
+        r0.<compiler.c2.cr6340864.TestIntVect: java.io.UncheckedIOException[][][] field_126876> = $r1;
+
+        $r2 = newmultiarray (java.util.jar.Attributes$Name)[8][256][8];
+
+        r0.<compiler.c2.cr6340864.TestIntVect: java.util.jar.Attributes$Name[][][] field_77022> = $r2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream $r0;
+        java.lang.String[] r7;
+
+        r7 := @parameter0: java.lang.String[];
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Testing Integer vectors");
+
+        staticinvoke <compiler.c2.cr6340864.TestIntVect: int test()>();
+
+        return;
+
+        return;
+    }
+
+    static int test()
+    {
+        int[] r0, r11, r12, r13, r14;
+        long[] r1;
+        java.io.PrintStream $r2;
+        int i297, i298, i299;
+
+        r0 = newarray (int)[997];
+
+        r11 = newarray (int)[997];
+
+        r12 = newarray (int)[997];
+
+        r13 = newarray (int)[997];
+
+        i299 = 0;
+
+     label1:
+        staticinvoke <compiler.c2.cr6340864.TestIntVect: void test_mula(int[],int[],int[])>(r0, r11, r12);
+
+        staticinvoke <compiler.c2.cr6340864.TestIntVect: void test_mula(int[],int[],int[])>(r0, r11, r13);
+
+        i299 = i299 + 1;
+
+        if i299 < 11000 goto label1;
+
+        return 0;
+    }
+
+    static void test_mula(int[], int[], int[])
+    {
+        GCObj $r0, $r1, $r2, $r3, $r46, $r47, $r48, $r49, $r50, $r51, $r52, $r53, r94, r95, r96, r97, r98, r99, r100, r101, r102, r103, r104, r105, r106, r107, r108, r109, r110, r111, r112, r113, r114, r115, r116, r117, r118, r119, r120, r121, r122, r123, r124;
+        java.lang.String $r4, $r5, $r6, $r7, $r8, $r9;
+        byte[] $r10;
+        java.net.DatagramPacket $r11;
+        java.lang.ref.SoftReference $r12, $r26, $r31, $r37;
+        java.lang.Byte $r13;
+        java.io.UTFDataFormatException $r14;
+        java.util.ArrayList $r15, $r27, $r29, $r35, $r41;
+        java.lang.ref.WeakReference $r16, $r19;
+        java.lang.ref.ReferenceQueue $r17, $r23, $r32, $r40, $r45;
+        java.lang.ref.PhantomReference $r18, $r24, $r33, $r39, $r44;
+        java.util.LinkedList $r20, $r22, $r30, $r42;
+        java.nio.file.DirectoryNotEmptyException $r21;
+        java.lang.Object $r25, $r36, $r38, $r43;
+        java.text.AttributedString $r28;
+        java.security.spec.InvalidKeySpecException $r34;
+        int[] r54, r55, r56;
+        int $i6;
+
+        r54 := @parameter0: int[];
+
+        r55 := @parameter1: int[];
+
+        r56 := @parameter2: int[];
+
+        r94 = new GCObj;
+
+        specialinvoke r94.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 33554432);
+
+        r95 = new GCObj;
+
+        specialinvoke r95.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 32768);
+
+        r96 = new GCObj;
+
+        specialinvoke r96.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, r94, r95, 32768);
+
+        $r1 = new GCObj;
+
+        $r0 = new GCObj;
+
+        specialinvoke $r0.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 16777216);
+
+        $r2 = new GCObj;
+
+        specialinvoke $r2.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 16777216);
+
+        specialinvoke $r1.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>($r0, $r2, null, null, 524288);
+
+        r97 = new GCObj;
+
+        specialinvoke r97.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 32768);
+
+        r98 = new GCObj;
+
+        specialinvoke r98.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 268435456);
+
+        $r3 = new GCObj;
+
+        r99 = new GCObj;
+
+        specialinvoke r99.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 134217728);
+
+        r100 = new GCObj;
+
+        specialinvoke r100.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 536870912);
+
+        $r4 = new java.lang.String;
+
+        specialinvoke $r4.<java.lang.String: void <init>(java.lang.String)>("1`z,");
+
+        $r5 = new java.lang.String;
+
+        specialinvoke $r5.<java.lang.String: void <init>(java.lang.String)>("1`z,");
+
+        $r6 = new java.lang.String;
+
+        specialinvoke $r6.<java.lang.String: void <init>(java.lang.String)>("1`z,");
+
+        $r7 = new java.lang.String;
+
+        specialinvoke $r7.<java.lang.String: void <init>(java.lang.String)>("1`z,");
+
+        $r8 = new java.lang.String;
+
+        specialinvoke $r8.<java.lang.String: void <init>(java.lang.String)>("AS");
+
+        $r9 = new java.lang.String;
+
+        specialinvoke $r9.<java.lang.String: void <init>(java.lang.String)>("AS");
+
+        $r11 = new java.net.DatagramPacket;
+
+        $r10 = newmultiarray (byte)[8];
+
+        specialinvoke $r11.<java.net.DatagramPacket: void <init>(byte[],int)>($r10, 100);
+
+        $r12 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r12.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r97);
+
+        $r13 = new java.lang.Byte;
+
+        specialinvoke $r13.<java.lang.Byte: void <init>(byte)>(3);
+
+        $r14 = new java.io.UTFDataFormatException;
+
+        specialinvoke $r14.<java.io.UTFDataFormatException: void <init>()>();
+
+        $r15 = new java.util.ArrayList;
+
+        specialinvoke $r15.<java.util.ArrayList: void <init>()>();
+
+        $r16 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r16.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r97);
+
+        $r18 = new java.lang.ref.PhantomReference;
+
+        $r17 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r17.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r18.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r98, $r17);
+
+        $r19 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r19.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r96);
+
+        $r20 = new java.util.LinkedList;
+
+        specialinvoke $r20.<java.util.LinkedList: void <init>()>();
+
+        $r21 = new java.nio.file.DirectoryNotEmptyException;
+
+        specialinvoke $r21.<java.nio.file.DirectoryNotEmptyException: void <init>(java.lang.String)>("6_");
+
+        $r22 = new java.util.LinkedList;
+
+        specialinvoke $r22.<java.util.LinkedList: void <init>()>();
+
+        $r24 = new java.lang.ref.PhantomReference;
+
+        $r23 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r23.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r24.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r97, $r23);
+
+        $r26 = new java.lang.ref.SoftReference;
+
+        $r25 = new java.lang.Object;
+
+        specialinvoke $r25.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r26.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r25);
+
+        $r27 = new java.util.ArrayList;
+
+        specialinvoke $r27.<java.util.ArrayList: void <init>()>();
+
+        $r28 = new java.text.AttributedString;
+
+        specialinvoke $r28.<java.text.AttributedString: void <init>(java.lang.String)>("Oq]");
+
+        $r29 = new java.util.ArrayList;
+
+        specialinvoke $r29.<java.util.ArrayList: void <init>()>();
+
+        $r30 = new java.util.LinkedList;
+
+        specialinvoke $r30.<java.util.LinkedList: void <init>()>();
+
+        $r31 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r31.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r96);
+
+        $r33 = new java.lang.ref.PhantomReference;
+
+        $r32 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r32.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r33.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r98, $r32);
+
+        $r34 = new java.security.spec.InvalidKeySpecException;
+
+        specialinvoke $r34.<java.security.spec.InvalidKeySpecException: void <init>()>();
+
+        $r35 = new java.util.ArrayList;
+
+        specialinvoke $r35.<java.util.ArrayList: void <init>()>();
+
+        $r37 = new java.lang.ref.SoftReference;
+
+        $r36 = new java.lang.Object;
+
+        specialinvoke $r36.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r37.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r36);
+
+        $r39 = new java.lang.ref.PhantomReference;
+
+        $r38 = new java.lang.Object;
+
+        specialinvoke $r38.<java.lang.Object: void <init>()>();
+
+        $r40 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r40.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r39.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r38, $r40);
+
+        $r41 = new java.util.ArrayList;
+
+        specialinvoke $r41.<java.util.ArrayList: void <init>()>();
+
+        $r42 = new java.util.LinkedList;
+
+        specialinvoke $r42.<java.util.LinkedList: void <init>()>();
+
+        $r44 = new java.lang.ref.PhantomReference;
+
+        $r43 = new java.lang.Object;
+
+        specialinvoke $r43.<java.lang.Object: void <init>()>();
+
+        $r45 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r45.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r44.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r43, $r45);
+
+        r101 = new GCObj;
+
+        specialinvoke r101.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(r97, r98, r99, r100, 8);
+
+        r102 = new GCObj;
+
+        specialinvoke r102.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 67108864);
+
+        r103 = new GCObj;
+
+        specialinvoke r103.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 32);
+
+        r104 = new GCObj;
+
+        specialinvoke r104.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 128);
+
+        r105 = new GCObj;
+
+        specialinvoke r105.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(r102, null, r103, r104, 33554432);
+
+        $r46 = new GCObj;
+
+        r106 = new GCObj;
+
+        specialinvoke r106.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 16777216);
+
+        $r47 = new GCObj;
+
+        specialinvoke $r47.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, r106, 32768);
+
+        r107 = new GCObj;
+
+        specialinvoke r107.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 268435456);
+
+        r108 = new GCObj;
+
+        specialinvoke r108.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 16777216);
+
+        r109 = new GCObj;
+
+        specialinvoke r109.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 16);
+
+        $r48 = new GCObj;
+
+        specialinvoke $r48.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(r107, null, r108, r109, 64);
+
+        specialinvoke $r46.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, $r47, $r48, 256);
+
+        $r49 = new GCObj;
+
+        specialinvoke $r49.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(r96, r101, r105, null, 16);
+
+        r110 = new GCObj;
+
+        specialinvoke r110.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 64);
+
+        r111 = new GCObj;
+
+        specialinvoke r111.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, r110, null, null, 134217728);
+
+        r112 = new GCObj;
+
+        specialinvoke r112.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 16384);
+
+        r113 = new GCObj;
+
+        specialinvoke r113.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(r112, null, null, null, 134217728);
+
+        $r50 = new GCObj;
+
+        specialinvoke $r50.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, r111, r113, null, 16);
+
+        r114 = new GCObj;
+
+        specialinvoke r114.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 268435456);
+
+        r115 = new GCObj;
+
+        specialinvoke r115.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 8388608);
+
+        r116 = new GCObj;
+
+        specialinvoke r116.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(r114, null, null, r115, 256);
+
+        $r52 = new GCObj;
+
+        $r51 = new GCObj;
+
+        specialinvoke $r51.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 65536);
+
+        specialinvoke $r52.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, $r51, null, 65536);
+
+        r117 = new GCObj;
+
+        specialinvoke r117.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 512);
+
+        r118 = new GCObj;
+
+        specialinvoke r118.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 524288);
+
+        r119 = new GCObj;
+
+        specialinvoke r119.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 128);
+
+        r120 = new GCObj;
+
+        specialinvoke r120.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, r117, r118, r119, 8192);
+
+        r121 = new GCObj;
+
+        specialinvoke r121.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 16777216);
+
+        r122 = new GCObj;
+
+        specialinvoke r122.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 33554432);
+
+        r123 = new GCObj;
+
+        specialinvoke r123.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, null, null, null, 128);
+
+        r124 = new GCObj;
+
+        specialinvoke r124.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(r121, r122, null, r123, 256);
+
+        $r53 = new GCObj;
+
+        specialinvoke $r53.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>(null, r116, r120, r124, 16384);
+
+        specialinvoke $r3.<GCObj: void <init>(GCObj,GCObj,GCObj,GCObj,int)>($r49, $r50, $r53, null, 268435456);
+
+        goto label1;
+
+     label1:
+        return;
+
+        return;
+    }
+}

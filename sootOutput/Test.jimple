@@ -1,0 +1,70 @@
+public class Test extends java.lang.Object
+{
+    public static int FIELD;
+
+    public void <init>()
+    {
+        Test r0;
+
+        r0 := @this: Test;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        int $i0, $i1, $i2, $i3, $i4, $i5, i6, i7;
+
+        r0 := @parameter0: java.lang.String[];
+
+        $i0 = lengthof r0;
+
+        if $i0 <= 2 goto label1;
+
+        staticinvoke <Test: void test()>();
+
+     label1:
+        $i1 = <Test: int FIELD>;
+
+        $i2 = $i1 - 20;
+
+        <Test: int FIELD> = $i2;
+
+        i7 = 0;
+
+     label2:
+        if i7 >= 20 goto label3;
+
+        $i3 = <Test: int FIELD>;
+
+        $i4 = $i3 - 1;
+
+        <Test: int FIELD> = $i4;
+
+        $i5 = <Test: int FIELD>;
+
+        i6 = i7 / $i5;
+
+        i7 = i7 + 1;
+
+        goto label2;
+
+     label3:
+        return;
+    }
+
+    public static void test()
+    {
+        return;
+    }
+
+    static void <clinit>()
+    {
+        <Test: int FIELD> = 30;
+
+        return;
+    }
+}

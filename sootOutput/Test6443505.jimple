@@ -1,0 +1,102 @@
+public class compiler.c2.Test6443505 extends java.lang.Object
+{
+    static int q;
+    private volatile java.nio.BufferOverflowException field_4670;
+    public static long TRAPCOUNT;
+    private volatile java.lang.ref.SoftReference field_10497;
+    public java.security.UnrecoverableKeyException[][][] field_23953;
+    private static volatile java.lang.ref.WeakReference field_23962;
+
+    static void <clinit>()
+    {
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        java.nio.BufferOverflowException $r0;
+        java.security.UnrecoverableKeyException[][][] $r1;
+        java.lang.ref.SoftReference $r2;
+        compiler.c2.Test6443505 r3;
+        java.lang.Object r4;
+
+        r3 := @this: compiler.c2.Test6443505;
+
+        specialinvoke r3.<java.lang.Object: void <init>()>();
+
+        $r0 = new java.nio.BufferOverflowException;
+
+        specialinvoke $r0.<java.nio.BufferOverflowException: void <init>()>();
+
+        r3.<compiler.c2.Test6443505: java.nio.BufferOverflowException field_4670> = $r0;
+
+        $r1 = newmultiarray (java.security.UnrecoverableKeyException)[128][32][256];
+
+        r3.<compiler.c2.Test6443505: java.security.UnrecoverableKeyException[][][] field_23953> = $r1;
+
+        r4 = new java.lang.Object;
+
+        specialinvoke r4.<java.lang.Object: void <init>()>();
+
+        $r2 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r2.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r4);
+
+        r3.<compiler.c2.Test6443505: java.lang.ref.SoftReference field_10497> = $r2;
+
+        return;
+    }
+
+    public static void main(java.lang.String[]) throws java.lang.InterruptedException
+    {
+        java.lang.String $r0, $r1, $r2, $r3, $r4, $r5, r388;
+        java.lang.String[] r383, r385, r387;
+        compiler.c2.Test6443505 r384;
+
+        r383 := @parameter0: java.lang.String[];
+
+        r384 = new compiler.c2.Test6443505;
+
+        specialinvoke r384.<compiler.c2.Test6443505: void <init>()>();
+
+        r385 = newmultiarray (java.lang.String)[256];
+
+        r387 = newmultiarray (java.lang.String)[256];
+
+        $r0 = new java.lang.String;
+
+        specialinvoke $r0.<java.lang.String: void <init>()>();
+
+        $r1 = new java.lang.String;
+
+        specialinvoke $r1.<java.lang.String: void <init>()>();
+
+        r388 = new java.lang.String;
+
+        specialinvoke r388.<java.lang.String: void <init>()>();
+
+        virtualinvoke $r1.<java.lang.String: int codePointCount(int,int)>(-3, -3);
+
+        $r2 = new java.lang.String;
+
+        specialinvoke $r2.<java.lang.String: void <init>()>();
+
+        $r3 = new java.lang.String;
+
+        specialinvoke $r3.<java.lang.String: void <init>()>();
+
+        $r4 = new java.lang.String;
+
+        specialinvoke $r4.<java.lang.String: void <init>()>();
+
+        $r5 = new java.lang.String;
+
+        specialinvoke $r5.<java.lang.String: void <init>()>();
+
+        return;
+
+        return;
+    }
+}

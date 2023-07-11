@@ -1,0 +1,275 @@
+public class compiler.arraycopy.TestArrayCopyOverflowInBoundChecks extends java.lang.Object
+{
+    static byte[] src_array;
+    public static int CHECKSUM;
+    protected static char field_221382;
+    public java.util.concurrent.atomic.LongAdder[][] field_221384;
+    public static short[][][][][] field_221388;
+
+    static void <clinit>()
+    {
+        short[][][][][] $r0;
+        byte[] r1;
+        int $i0, $i1, $i2;
+
+        $r0 = newmultiarray (short)[16][6][2][1][1];
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: short[][][][][] field_221388> = $r0;
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: char field_221382> = 73;
+
+        r1 = newarray (byte)[5];
+
+        r1[0] = 97;
+
+        r1[1] = 98;
+
+        r1[2] = 99;
+
+        r1[3] = 100;
+
+        r1[4] = 101;
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: byte[] src_array> = r1;
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = 0;
+
+        $i1 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $i0 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, $i0);
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = $i2;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.arraycopy.TestArrayCopyOverflowInBoundChecks r0;
+        java.util.concurrent.atomic.LongAdder[][] $r1;
+        java.util.concurrent.atomic.LongAdder $r2;
+        java.util.concurrent.atomic.LongAdder[] $r3;
+
+        r0 := @this: compiler.arraycopy.TestArrayCopyOverflowInBoundChecks;
+
+        $r1 = newmultiarray (java.util.concurrent.atomic.LongAdder)[9][18];
+
+        $r3 = $r1[1];
+
+        $r2 = new java.util.concurrent.atomic.LongAdder;
+
+        specialinvoke $r2.<java.util.concurrent.atomic.LongAdder: void <init>()>();
+
+        $r3[1] = $r2;
+
+        r0.<compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: java.util.concurrent.atomic.LongAdder[][] field_221384> = $r1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        byte[] $r0, $r1;
+        int i0, $i1, $i2, $i4, $i5, $i7, $i8, $i9, i10, i11;
+        byte $b3, $b6;
+        java.lang.RuntimeException $r2;
+        java.lang.StringBuilder $r3, $r5, $r6;
+        java.io.PrintStream $r4;
+        java.lang.String $r7;
+        java.lang.String[] r8;
+
+        r8 := @parameter0: java.lang.String[];
+
+        i10 = 0;
+
+        goto label3;
+
+     label1:
+        $r0 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: byte[] src_array>;
+
+        i11 = lengthof $r0;
+
+        i0 = i11 - 1;
+
+        $i1 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, i11);
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = $i2;
+
+        $b3 = staticinvoke <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: byte test(int)>(i0);
+
+        $i4 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i4, i0);
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = $i5;
+
+        $r1 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: byte[] src_array>;
+
+        $b6 = $r1[0];
+
+        if $b3 == $b6 goto label2;
+
+        $r2 = new java.lang.RuntimeException;
+
+        specialinvoke $r2.<java.lang.RuntimeException: void <init>(java.lang.String)>("Test failed");
+
+        throw $r2;
+
+     label2:
+        i10 = i10 + 1;
+
+        $i7 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i7, i10);
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = $i8;
+
+     label3:
+        if i10 < 20000 goto label1;
+
+        $r4 = <java.lang.System: java.io.PrintStream out>;
+
+        $r3 = new java.lang.StringBuilder;
+
+        specialinvoke $r3.<java.lang.StringBuilder: void <init>()>();
+
+        $r5 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i9 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i9);
+
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r4.<java.io.PrintStream: void println(java.lang.String)>($r7);
+
+        return;
+
+        return;
+    }
+
+    static byte test(int)
+    {
+        char $c0, $c2, $c4;
+        int $i1, $i3, $i5, $i11, $i12, $i13, $i14, i15;
+        byte[] $r0, r8;
+        byte $b6;
+        short[][][][][] $r1;
+        java.util.concurrent.atomic.DoubleAdder[][][] r2;
+        long[][][][][] r3;
+        java.io.PrintWriter[] r4;
+        int[][][][] r5;
+        java.awt.dnd.DropTarget[][][][][] r6;
+        char[][][] r7;
+
+        i15 := @parameter0: int;
+
+        lookupswitch(i15)
+        {
+            case 0: goto label1;
+            case 1: goto label1;
+            case 2: goto label1;
+            case 3: goto label1;
+            case 4: goto label1;
+            case 5: goto label1;
+            case 6: goto label1;
+            case 7: goto label1;
+            default: goto label2;
+        };
+
+        r2 = newmultiarray (java.util.concurrent.atomic.DoubleAdder)[10][14][1];
+
+        goto label1;
+
+        i15 = i15 * -2;
+
+        goto label1;
+
+        i15 = i15 ^ 1;
+
+        goto label1;
+
+        r3 = newmultiarray (long)[20][8][1][1][1];
+
+        $r1 = newmultiarray (short)[1][15][1][8][2];
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: short[][][][][] field_221388> = $r1;
+
+        staticinvoke <java.lang.Long: long sum(long,long)>(100L, 100L);
+
+        $i11 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $i12 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i11, 100L);
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = $i12;
+
+        $i13 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $i14 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i13, 100L);
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = $i14;
+
+        goto label1;
+
+        r4 = newarray (java.io.PrintWriter)[16];
+
+        goto label1;
+
+        r5 = newmultiarray (int)[6][16][2][1];
+
+        goto label1;
+
+        staticinvoke <java.lang.Integer: int numberOfTrailingZeros(int)>(i15);
+
+        goto label1;
+
+        i15 = i15 % -3;
+
+        goto label1;
+
+     label1:
+        lookupswitch(9)
+        {
+            default: goto label2;
+        };
+
+        r6 = newmultiarray (java.awt.dnd.DropTarget)[4][13][4][1][1];
+
+        $i3 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM>;
+
+        $c0 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: char field_221382>;
+
+        $i1 = $c0 - 75;
+
+        $c2 = (char) $i1;
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: char field_221382> = $c2;
+
+        $c4 = (char) $i1;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,char)>($i3, $c4);
+
+        <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: int CHECKSUM> = $i5;
+
+        r7 = newmultiarray (char)[16][3][4];
+
+        $r0 = <compiler.arraycopy.TestArrayCopyOverflowInBoundChecks: byte[] src_array>;
+
+     label2:
+        r8 = newarray (byte)[10];
+
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>($r0, 0, r8, 1, i15);
+
+        $b6 = r8[1];
+
+        return $b6;
+    }
+}

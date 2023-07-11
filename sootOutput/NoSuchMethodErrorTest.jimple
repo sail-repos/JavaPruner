@@ -1,0 +1,528 @@
+public class NoSuchMethodErrorTest extends selectionresolution.SelectionResolutionTest
+{
+    public static final selectionresolution.SelectionResolutionTestCase$Builder initBuilder;
+    public static final selectionresolution.MethodData concreteMethod;
+    public static final selectionresolution.MethodData staticMethod;
+    public static final selectionresolution.MethodData privateMethod;
+    public static final selectionresolution.ClassData withDef;
+    public static final selectionresolution.ClassData withStaticDef;
+    public static final selectionresolution.ClassData withPrivateDef;
+    public static final selectionresolution.Template NoMethodResolutionTemplateClassBottom;
+    public static final selectionresolution.Template NoMethodResolutionTemplateIfaceBottom;
+    public static final selectionresolution.Template NoMethodSelectionTemplateClassMethodref;
+    public static final selectionresolution.Template NoMethodSelectionTemplateIfaceMethodref;
+    public static final java.util.Collection testgroups;
+    public static int my_check_sum;
+
+    static void <clinit>()
+    {
+        selectionresolution.SelectionResolutionTestCase$Builder $r0, $r2, $r54, $r61, $r68, $r75, $r82, $r100;
+        selectionresolution.Result $r1;
+        selectionresolution.MethodData $r3, $r6, $r9, $r13, $r16, $r19;
+        selectionresolution.MethodData$Context $r4, $r7, $r10, $r88, $r89, $r106, $r107;
+        selectionresolution.MethodData$Access $r5, $r8, $r11, $r86, $r104;
+        selectionresolution.ClassData $r12, $r15, $r18;
+        selectionresolution.ClassData$Package $r14, $r17, $r20, $r91, $r92, $r109, $r110;
+        selectionresolution.Template $r21, $r29, $r35, $r45, $r55, $r56, $r57, $r58, $r62, $r63, $r64, $r65, $r69, $r70, $r71, $r72, $r76, $r77, $r78, $r79, $r83, $r94, $r95, $r96, $r97, $r101, $r112, $r113, $r114, $r115;
+        java.util.function.Consumer $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r30, $r31, $r32, $r33, $r34, $r36, $r37, $r38, $r39, $r40, $r41, $r42, $r43, $r44, $r46, $r47, $r48, $r49, $r50, $r51;
+        selectionresolution.SelectionResolutionTest$TestGroup$Simple $r52, $r59, $r66, $r73, $r80, $r98;
+        selectionresolution.SelectionResolutionTestCase$InvokeInstruction $r53, $r60, $r67, $r74, $r81, $r99;
+        selectionresolution.Template$Kind $r84, $r102;
+        java.util.EnumSet $r85, $r87, $r90, $r93, $r103, $r105, $r108, $r111;
+        java.util.List $r116;
+        int $i0, $i1, $i2;
+        java.util.function.Consumer[] r117, r118, r119, r120;
+        selectionresolution.SelectionResolutionTest$TestGroup[] r121;
+        selectionresolution.Template[] r122, r123, r124, r125, r126, r127;
+
+        $r0 = new selectionresolution.SelectionResolutionTestCase$Builder;
+
+        specialinvoke $r0.<selectionresolution.SelectionResolutionTestCase$Builder: void <init>()>();
+
+        <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder> = $r0;
+
+        $r2 = <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        $r1 = <selectionresolution.Result: selectionresolution.Result NSME>;
+
+        virtualinvoke $r2.<selectionresolution.SelectionResolutionTestCase$Builder: void setResult(selectionresolution.Result)>($r1);
+
+        $r3 = new selectionresolution.MethodData;
+
+        $r5 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r4 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        specialinvoke $r3.<selectionresolution.MethodData: void <init>(selectionresolution.MethodData$Access,selectionresolution.MethodData$Context)>($r5, $r4);
+
+        <NoSuchMethodErrorTest: selectionresolution.MethodData concreteMethod> = $r3;
+
+        $r6 = new selectionresolution.MethodData;
+
+        $r8 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PUBLIC>;
+
+        $r7 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context STATIC>;
+
+        specialinvoke $r6.<selectionresolution.MethodData: void <init>(selectionresolution.MethodData$Access,selectionresolution.MethodData$Context)>($r8, $r7);
+
+        <NoSuchMethodErrorTest: selectionresolution.MethodData staticMethod> = $r6;
+
+        $r9 = new selectionresolution.MethodData;
+
+        $r11 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r10 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        specialinvoke $r9.<selectionresolution.MethodData: void <init>(selectionresolution.MethodData$Access,selectionresolution.MethodData$Context)>($r11, $r10);
+
+        <NoSuchMethodErrorTest: selectionresolution.MethodData privateMethod> = $r9;
+
+        $r12 = new selectionresolution.ClassData;
+
+        $r14 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r13 = <NoSuchMethodErrorTest: selectionresolution.MethodData concreteMethod>;
+
+        specialinvoke $r12.<selectionresolution.ClassData: void <init>(selectionresolution.ClassData$Package,selectionresolution.MethodData)>($r14, $r13);
+
+        <NoSuchMethodErrorTest: selectionresolution.ClassData withDef> = $r12;
+
+        $r15 = new selectionresolution.ClassData;
+
+        $r17 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r16 = <NoSuchMethodErrorTest: selectionresolution.MethodData staticMethod>;
+
+        specialinvoke $r15.<selectionresolution.ClassData: void <init>(selectionresolution.ClassData$Package,selectionresolution.MethodData)>($r17, $r16);
+
+        <NoSuchMethodErrorTest: selectionresolution.ClassData withStaticDef> = $r15;
+
+        $r18 = new selectionresolution.ClassData;
+
+        $r20 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r19 = <NoSuchMethodErrorTest: selectionresolution.MethodData staticMethod>;
+
+        specialinvoke $r18.<selectionresolution.ClassData: void <init>(selectionresolution.ClassData$Package,selectionresolution.MethodData)>($r20, $r19);
+
+        <NoSuchMethodErrorTest: selectionresolution.ClassData withPrivateDef> = $r18;
+
+        $r21 = new selectionresolution.Template;
+
+        r117 = newarray (java.util.function.Consumer)[7];
+
+        $r22 = staticinvoke <NoSuchMethodErrorTest$lambda_0__1: java.util.function.Consumer bootstrap$()>();
+
+        r117[0] = $r22;
+
+        $r23 = staticinvoke <NoSuchMethodErrorTest$lambda_1__2: java.util.function.Consumer bootstrap$()>();
+
+        r117[1] = $r23;
+
+        $r24 = staticinvoke <NoSuchMethodErrorTest$lambda_2__3: java.util.function.Consumer bootstrap$()>();
+
+        r117[2] = $r24;
+
+        $r25 = staticinvoke <NoSuchMethodErrorTest$lambda_3__4: java.util.function.Consumer bootstrap$()>();
+
+        r117[3] = $r25;
+
+        $r26 = staticinvoke <NoSuchMethodErrorTest$lambda_4__5: java.util.function.Consumer bootstrap$()>();
+
+        r117[4] = $r26;
+
+        $r27 = staticinvoke <NoSuchMethodErrorTest$lambda_5__6: java.util.function.Consumer bootstrap$()>();
+
+        r117[5] = $r27;
+
+        $r28 = staticinvoke <NoSuchMethodErrorTest$lambda_6__7: java.util.function.Consumer bootstrap$()>();
+
+        r117[6] = $r28;
+
+        specialinvoke $r21.<selectionresolution.Template: void <init>(java.lang.String,java.util.function.Consumer[])>("NoMethodResolutionTemplate", r117);
+
+        <NoSuchMethodErrorTest: selectionresolution.Template NoMethodResolutionTemplateClassBottom> = $r21;
+
+        $r29 = new selectionresolution.Template;
+
+        r118 = newarray (java.util.function.Consumer)[5];
+
+        $r30 = staticinvoke <NoSuchMethodErrorTest$lambda_7__8: java.util.function.Consumer bootstrap$()>();
+
+        r118[0] = $r30;
+
+        $r31 = staticinvoke <NoSuchMethodErrorTest$lambda_8__9: java.util.function.Consumer bootstrap$()>();
+
+        r118[1] = $r31;
+
+        $r32 = staticinvoke <NoSuchMethodErrorTest$lambda_9__10: java.util.function.Consumer bootstrap$()>();
+
+        r118[2] = $r32;
+
+        $r33 = staticinvoke <NoSuchMethodErrorTest$lambda_10__11: java.util.function.Consumer bootstrap$()>();
+
+        r118[3] = $r33;
+
+        $r34 = staticinvoke <NoSuchMethodErrorTest$lambda_11__12: java.util.function.Consumer bootstrap$()>();
+
+        r118[4] = $r34;
+
+        specialinvoke $r29.<selectionresolution.Template: void <init>(java.lang.String,java.util.function.Consumer[])>("NoMethodResolutionTemplate", r118);
+
+        <NoSuchMethodErrorTest: selectionresolution.Template NoMethodResolutionTemplateIfaceBottom> = $r29;
+
+        $r35 = new selectionresolution.Template;
+
+        r119 = newarray (java.util.function.Consumer)[9];
+
+        $r36 = staticinvoke <NoSuchMethodErrorTest$lambda_12__13: java.util.function.Consumer bootstrap$()>();
+
+        r119[0] = $r36;
+
+        $r37 = staticinvoke <NoSuchMethodErrorTest$lambda_13__14: java.util.function.Consumer bootstrap$()>();
+
+        r119[1] = $r37;
+
+        $r38 = staticinvoke <NoSuchMethodErrorTest$lambda_14__15: java.util.function.Consumer bootstrap$()>();
+
+        r119[2] = $r38;
+
+        $r39 = staticinvoke <NoSuchMethodErrorTest$lambda_15__16: java.util.function.Consumer bootstrap$()>();
+
+        r119[3] = $r39;
+
+        $r40 = staticinvoke <NoSuchMethodErrorTest$lambda_16__17: java.util.function.Consumer bootstrap$()>();
+
+        r119[4] = $r40;
+
+        $r41 = staticinvoke <NoSuchMethodErrorTest$lambda_17__18: java.util.function.Consumer bootstrap$()>();
+
+        r119[5] = $r41;
+
+        $r42 = staticinvoke <NoSuchMethodErrorTest$lambda_18__19: java.util.function.Consumer bootstrap$()>();
+
+        r119[6] = $r42;
+
+        $r43 = staticinvoke <NoSuchMethodErrorTest$lambda_19__20: java.util.function.Consumer bootstrap$()>();
+
+        r119[7] = $r43;
+
+        $r44 = staticinvoke <NoSuchMethodErrorTest$lambda_20__21: java.util.function.Consumer bootstrap$()>();
+
+        r119[8] = $r44;
+
+        specialinvoke $r35.<selectionresolution.Template: void <init>(java.lang.String,java.util.function.Consumer[])>("NoMethodSelectionTemplate", r119);
+
+        <NoSuchMethodErrorTest: selectionresolution.Template NoMethodSelectionTemplateClassMethodref> = $r35;
+
+        $r45 = new selectionresolution.Template;
+
+        r120 = newarray (java.util.function.Consumer)[6];
+
+        $r46 = staticinvoke <NoSuchMethodErrorTest$lambda_21__22: java.util.function.Consumer bootstrap$()>();
+
+        r120[0] = $r46;
+
+        $r47 = staticinvoke <NoSuchMethodErrorTest$lambda_22__23: java.util.function.Consumer bootstrap$()>();
+
+        r120[1] = $r47;
+
+        $r48 = staticinvoke <NoSuchMethodErrorTest$lambda_23__24: java.util.function.Consumer bootstrap$()>();
+
+        r120[2] = $r48;
+
+        $r49 = staticinvoke <NoSuchMethodErrorTest$lambda_24__25: java.util.function.Consumer bootstrap$()>();
+
+        r120[3] = $r49;
+
+        $r50 = staticinvoke <NoSuchMethodErrorTest$lambda_25__26: java.util.function.Consumer bootstrap$()>();
+
+        r120[4] = $r50;
+
+        $r51 = staticinvoke <NoSuchMethodErrorTest$lambda_26__27: java.util.function.Consumer bootstrap$()>();
+
+        r120[5] = $r51;
+
+        specialinvoke $r45.<selectionresolution.Template: void <init>(java.lang.String,java.util.function.Consumer[])>("NoMethodSelectionTemplate", r120);
+
+        <NoSuchMethodErrorTest: selectionresolution.Template NoMethodSelectionTemplateIfaceMethodref> = $r45;
+
+        r121 = newarray (selectionresolution.SelectionResolutionTest$TestGroup)[6];
+
+        $r52 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r54 = <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r122 = newarray (selectionresolution.Template)[4];
+
+        $r53 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r55 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r53);
+
+        r122[0] = $r55;
+
+        $r56 = <NoSuchMethodErrorTest: selectionresolution.Template NoMethodResolutionTemplateClassBottom>;
+
+        r122[1] = $r56;
+
+        $r57 = <selectionresolution.Template: selectionresolution.Template AllCallsiteCases>;
+
+        r122[2] = $r57;
+
+        $r58 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r122[3] = $r58;
+
+        specialinvoke $r52.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r54, r122);
+
+        r121[0] = $r52;
+
+        $r59 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r61 = <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r123 = newarray (selectionresolution.Template)[4];
+
+        $r60 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKESTATIC>;
+
+        $r62 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r60);
+
+        r123[0] = $r62;
+
+        $r63 = <NoSuchMethodErrorTest: selectionresolution.Template NoMethodResolutionTemplateIfaceBottom>;
+
+        r123[1] = $r63;
+
+        $r64 = <selectionresolution.Template: selectionresolution.Template CallsiteNotEqualsMethodref>;
+
+        r123[2] = $r64;
+
+        $r65 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r123[3] = $r65;
+
+        specialinvoke $r59.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r61, r123);
+
+        r121[1] = $r59;
+
+        $r66 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r68 = <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r124 = newarray (selectionresolution.Template)[4];
+
+        $r67 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r69 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r67);
+
+        r124[0] = $r69;
+
+        $r70 = <NoSuchMethodErrorTest: selectionresolution.Template NoMethodResolutionTemplateClassBottom>;
+
+        r124[1] = $r70;
+
+        $r71 = <selectionresolution.Template: selectionresolution.Template AllCallsiteCases>;
+
+        r124[2] = $r71;
+
+        $r72 = <NoSuchMethodErrorTest: selectionresolution.Template NoMethodSelectionTemplateClassMethodref>;
+
+        r124[3] = $r72;
+
+        specialinvoke $r66.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r68, r124);
+
+        r121[2] = $r66;
+
+        $r73 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r75 = <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r125 = newarray (selectionresolution.Template)[4];
+
+        $r74 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r76 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r74);
+
+        r125[0] = $r76;
+
+        $r77 = <NoSuchMethodErrorTest: selectionresolution.Template NoMethodResolutionTemplateIfaceBottom>;
+
+        r125[1] = $r77;
+
+        $r78 = <selectionresolution.Template: selectionresolution.Template CallsiteNotEqualsMethodref>;
+
+        r125[2] = $r78;
+
+        $r79 = <NoSuchMethodErrorTest: selectionresolution.Template NoMethodSelectionTemplateIfaceMethodref>;
+
+        r125[3] = $r79;
+
+        specialinvoke $r73.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r75, r125);
+
+        r121[3] = $r73;
+
+        $r80 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r82 = <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r126 = newarray (selectionresolution.Template)[5];
+
+        $r81 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEVIRTUAL>;
+
+        $r83 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r81);
+
+        r126[0] = $r83;
+
+        $r84 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r85 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r84);
+
+        $r86 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r87 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r86);
+
+        $r89 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r88 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r90 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r89, $r88);
+
+        $r92 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r91 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r93 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r92, $r91);
+
+        $r94 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r85, $r87, $r90, $r93);
+
+        r126[1] = $r94;
+
+        $r95 = <selectionresolution.Template: selectionresolution.Template MethodrefNotEqualsExpectedIface>;
+
+        r126[2] = $r95;
+
+        $r96 = <selectionresolution.Template: selectionresolution.Template AllCallsiteCases>;
+
+        r126[3] = $r96;
+
+        $r97 = <selectionresolution.Template: selectionresolution.Template TrivialObjectref>;
+
+        r126[4] = $r97;
+
+        specialinvoke $r80.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r82, r126);
+
+        r121[4] = $r80;
+
+        $r98 = new selectionresolution.SelectionResolutionTest$TestGroup$Simple;
+
+        $r100 = <NoSuchMethodErrorTest: selectionresolution.SelectionResolutionTestCase$Builder initBuilder>;
+
+        r127 = newarray (selectionresolution.Template)[5];
+
+        $r99 = <selectionresolution.SelectionResolutionTestCase$InvokeInstruction: selectionresolution.SelectionResolutionTestCase$InvokeInstruction INVOKEINTERFACE>;
+
+        $r101 = staticinvoke <selectionresolution.Template: selectionresolution.Template SetInvoke(selectionresolution.SelectionResolutionTestCase$InvokeInstruction)>($r99);
+
+        r127[0] = $r101;
+
+        $r102 = <selectionresolution.Template$Kind: selectionresolution.Template$Kind INTERFACE>;
+
+        $r103 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r102);
+
+        $r104 = <selectionresolution.MethodData$Access: selectionresolution.MethodData$Access PRIVATE>;
+
+        $r105 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum)>($r104);
+
+        $r107 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context INSTANCE>;
+
+        $r106 = <selectionresolution.MethodData$Context: selectionresolution.MethodData$Context ABSTRACT>;
+
+        $r108 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r107, $r106);
+
+        $r110 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package SAME>;
+
+        $r109 = <selectionresolution.ClassData$Package: selectionresolution.ClassData$Package DIFFERENT>;
+
+        $r111 = staticinvoke <java.util.EnumSet: java.util.EnumSet of(java.lang.Enum,java.lang.Enum)>($r110, $r109);
+
+        $r112 = staticinvoke <selectionresolution.Template: selectionresolution.Template ResultCombo(java.util.EnumSet,java.util.EnumSet,java.util.EnumSet,java.util.EnumSet)>($r103, $r105, $r108, $r111);
+
+        r127[1] = $r112;
+
+        $r113 = <selectionresolution.Template: selectionresolution.Template IfaceMethodrefNotEqualsExpected>;
+
+        r127[2] = $r113;
+
+        $r114 = <selectionresolution.Template: selectionresolution.Template AllCallsiteCases>;
+
+        r127[3] = $r114;
+
+        $r115 = <selectionresolution.Template: selectionresolution.Template TrivialObjectrefNotEqualMethodref>;
+
+        r127[4] = $r115;
+
+        specialinvoke $r98.<selectionresolution.SelectionResolutionTest$TestGroup$Simple: void <init>(selectionresolution.SelectionResolutionTestCase$Builder,selectionresolution.Template[])>($r100, r127);
+
+        r121[5] = $r98;
+
+        $r116 = staticinvoke <java.util.Arrays: java.util.List asList(java.lang.Object[])>(r121);
+
+        <NoSuchMethodErrorTest: java.util.Collection testgroups> = $r116;
+
+        <NoSuchMethodErrorTest: int my_check_sum> = 0;
+
+        $i1 = <NoSuchMethodErrorTest: int my_check_sum>;
+
+        $i0 = <NoSuchMethodErrorTest: int my_check_sum>;
+
+        $i2 = staticinvoke <checksum.check_sum: int run(int,int)>($i1, $i0);
+
+        <NoSuchMethodErrorTest: int my_check_sum> = $i2;
+
+        return;
+    }
+
+    private void <init>()
+    {
+        NoSuchMethodErrorTest r0;
+        java.util.Collection $r1;
+
+        r0 := @this: NoSuchMethodErrorTest;
+
+        $r1 = <NoSuchMethodErrorTest: java.util.Collection testgroups>;
+
+        specialinvoke r0.<selectionresolution.SelectionResolutionTest: void <init>(java.util.Collection)>($r1);
+
+        return;
+    }
+
+    public static transient void main(java.lang.String[])
+    {
+        NoSuchMethodErrorTest $r0;
+        java.io.PrintStream $r1, $r2;
+        int $i0;
+        java.lang.String[] r3;
+
+        r3 := @parameter0: java.lang.String[];
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-1");
+
+        $r0 = new NoSuchMethodErrorTest;
+
+        specialinvoke $r0.<NoSuchMethodErrorTest: void <init>()>();
+
+        virtualinvoke $r0.<NoSuchMethodErrorTest: void run()>();
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void print(java.lang.String)>("my_check_sum_value:");
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $i0 = <NoSuchMethodErrorTest: int my_check_sum>;
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(int)>($i0);
+
+        return;
+    }
+}

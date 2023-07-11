@@ -1,0 +1,656 @@
+public class compiler.escapeAnalysis.Test6726999 extends java.lang.Object
+{
+    private volatile java.util.concurrent.ExecutorCompletionService[][][] field_80519;
+    public static long TRAPCOUNT;
+    protected static char[][][] field_80624;
+
+    static void <clinit>()
+    {
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.escapeAnalysis.Test6726999 r0;
+        java.util.concurrent.ExecutorCompletionService[][][] $r1;
+
+        r0 := @this: compiler.escapeAnalysis.Test6726999;
+
+        $r1 = newmultiarray (java.util.concurrent.ExecutorCompletionService)[256][64][256];
+
+        r0.<compiler.escapeAnalysis.Test6726999: java.util.concurrent.ExecutorCompletionService[][][] field_80519> = $r1;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        compiler.escapeAnalysis.Test6726999 $r0;
+        compiler.escapeAnalysis.Test6726999$Point $r1;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, $i35, $i36, $i37, $i38, $i39, $i40, $i41, $i42, $i43, $i44, $i45, $i46, $i47, $i48, $i49, $i50, $i51, $i52, $i53, $i54, $i55, $i56, $i57, $i58, $i59, $i60, $i61, $i62, $i63, $i64, $i65, $i66, $i67, $i68, $i69, $i70, $i71, $i72, $i73, $i74, $i75, $i76, $i77, $i78, $i79, $i80, $i81, $i82, $i83, $i84, $i85, $i86, $i87, $i88, $i89, $i90, $i91, $i92, $i93, $i94, $i95, $i96, $i97, $i98, $i99, $i100, $i101, $i102, $i103, $i104, $i105, $i106, $i107, $i108, $i109, $i110, $i111, $i112, $i113, $i114, $i115, $i116, $i117, $i118, $i119, $i120, $i121, $i122, $i123, $i124, $i125, $i126, $i127, $i128, $i129, $i130, $i131, $i132, $i133, $i134, $i135, $i136, $i137, $i138, $i139, $i140, $i141, $i142, $i143, $i144, $i145, $i146, $i147, $i148, $i149, $i150, $i151, $i152, $i153, $i154, $i155, $i156, $i157, $i158, $i159, $i160, i693, i694, i697, i698, i699, i700, i701, i702, i703, i704, i705, i706, i707, i708, i709, i710, i711, i712, i713, i714, i715, i716, i717, i718, i719, i720, i721, i722, i723, i724, i725, i726, i727, i728, i729, i730, i731, i732, i733, i734, i735;
+        java.lang.StringBuilder $r2, $r4, $r6, $r8, $r10, $r12, $r14, $r16, $r18, $r20, $r22, $r24, $r26, $r28, $r30, $r32, $r34, $r36, $r38, $r40, $r42, $r44, $r46, $r48, $r50, $r52, $r54, $r56, $r58, $r60, $r62, $r64, $r66, $r68, $r70, $r72, $r74, $r76, $r78, $r80, $r82, $r84, $r86, $r88, $r90, $r92, $r94, $r96, $r98, $r100, $r102, $r104, $r106, $r108, $r110, $r112, $r114, $r116, $r118, $r120, $r122, $r124, $r126, $r128, $r130, $r132, $r134, $r136, $r138, $r140, $r142, $r144, $r146, $r148, $r150, $r152, $r154, $r156, $r158, $r160, $r162, $r164, $r166, $r168, $r170, $r172, $r174, $r176, $r178, $r180, $r182, $r184, $r187, $r189, $r191, $r193, $r195, $r197, $r199, $r201, $r203, $r205, $r207, $r209, $r211, $r213;
+        java.io.PrintStream $r3, $r7, $r11, $r15, $r19, $r23, $r27, $r31, $r35, $r39, $r43, $r47, $r51, $r55, $r59, $r63, $r67, $r71, $r75, $r79, $r83, $r87, $r91, $r95, $r99, $r103, $r107, $r111, $r115, $r119, $r123, $r127, $r131, $r135, $r139, $r143, $r147, $r151, $r155, $r159, $r163, $r167, $r171, $r175, $r179, $r183, $r188, $r192, $r196, $r200, $r204, $r208, $r212;
+        java.lang.String $r5, $r9, $r13, $r17, $r21, $r25, $r29, $r33, $r37, $r41, $r45, $r49, $r53, $r57, $r61, $r65, $r69, $r73, $r77, $r81, $r85, $r89, $r93, $r97, $r101, $r105, $r109, $r113, $r117, $r121, $r125, $r129, $r133, $r137, $r141, $r145, $r149, $r153, $r157, $r161, $r165, $r169, $r173, $r177, $r181, $r185, $r190, $r194, $r198, $r202, $r206, $r210, $r214;
+        char[][][] $r186;
+        java.lang.String[] r215;
+
+        r215 := @parameter0: java.lang.String[];
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-13");
+
+        $r0 = new compiler.escapeAnalysis.Test6726999;
+
+        specialinvoke $r0.<compiler.escapeAnalysis.Test6726999: void <init>()>();
+
+        $r1 = new compiler.escapeAnalysis.Test6726999$Point;
+
+        specialinvoke $r1.<compiler.escapeAnalysis.Test6726999$Point: void <init>()>();
+
+        i693 = 0;
+
+        i694 = 0;
+
+        goto label2;
+
+     label1:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-15");
+
+        $i0 = -100;
+
+        $i1 = -3;
+
+        $i2 = -3;
+
+        $i3 = 100;
+
+        $i4 = 0;
+
+        $i5 = -1;
+
+        $i6 = 0;
+
+        $i7 = 2;
+
+        $i8 = -2;
+
+        $i9 = -100;
+
+        $i10 = -2;
+
+        $i11 = -100;
+
+        $i12 = -2;
+
+        $i13 = 2;
+
+        $i14 = -1;
+
+        $i15 = -2;
+
+        $i16 = -3;
+
+        $i17 = -1;
+
+        $i18 = -100;
+
+        $i19 = -100;
+
+        $i20 = 3;
+
+        $i21 = -1;
+
+        $i22 = $i21 & -2;
+
+        $i23 = 100;
+
+        $i24 = $i23 & -2;
+
+        $i25 = 3;
+
+        $i26 = $i25 & -2;
+
+        $i27 = -100;
+
+        $i28 = $i27 & -2;
+
+        $i29 = 2;
+
+        $i30 = $i29 & -2;
+
+        $i31 = 3;
+
+        $i32 = $i31 & -2;
+
+        $i33 = 100;
+
+        $i34 = $i33 & -2;
+
+        $i35 = -100;
+
+        $i36 = $i35 & -2;
+
+        $i37 = $i36 + 1;
+
+        $i38 = 2;
+
+        $i39 = $i38 & -2;
+
+        $i40 = $i39 + 1;
+
+        $i41 = 0;
+
+        $i42 = $i41 & -2;
+
+        $i43 = $i42 + 1;
+
+        $i44 = 0;
+
+        $i45 = $i44 & -2;
+
+        $i46 = $i45 + 1;
+
+        $i47 = -2;
+
+        $i48 = $i47 & -2;
+
+        $i49 = $i48 + 1;
+
+        $i50 = 100;
+
+        $i51 = $i50 & -2;
+
+        $i52 = $i51 + 1;
+
+        $i53 = 1;
+
+        $i54 = $i53 & -2;
+
+        $i55 = $i54 + 1;
+
+        $i56 = -2;
+
+        $i57 = $i56 & -2;
+
+        $i58 = 0;
+
+        $i59 = $i58 & -2;
+
+        $i60 = 0;
+
+        $i61 = $i60 & -2;
+
+        $i62 = -1;
+
+        $i63 = $i62 & -2;
+
+        $i64 = 2;
+
+        $i65 = $i64 & -2;
+
+        $i66 = -100;
+
+        $i67 = $i66 & -2;
+
+        $i68 = 2;
+
+        $i69 = $i68 & -2;
+
+        $i70 = -2;
+
+        $i71 = $i70 & -2;
+
+        $i72 = $i71 + 1;
+
+        $i73 = 0;
+
+        $i74 = $i73 & -2;
+
+        $i75 = $i74 + 1;
+
+        $i76 = 3;
+
+        $i77 = $i76 & -2;
+
+        $i78 = $i77 + 1;
+
+        $i79 = -2;
+
+        $i80 = $i79 & -2;
+
+        $i81 = $i80 + 1;
+
+        $i82 = 3;
+
+        $i83 = $i82 & -2;
+
+        $i84 = $i83 + 1;
+
+        $i85 = 100;
+
+        $i86 = $i85 & -2;
+
+        $i87 = $i86 + 1;
+
+        $i88 = -100;
+
+        $i89 = $i88 & -2;
+
+        $i90 = $i89 + 1;
+
+        $i91 = -100;
+
+        $i92 = $i91 & -2;
+
+        $i93 = 2;
+
+        $i94 = $i93 & -2;
+
+        $i95 = 1;
+
+        $i96 = $i95 & -2;
+
+        $i97 = 100;
+
+        $i98 = $i97 & -2;
+
+        $i99 = 3;
+
+        $i100 = $i99 & -2;
+
+        $i101 = 100;
+
+        $i102 = $i101 & -2;
+
+        $i103 = 100;
+
+        $i104 = $i103 & -2;
+
+        $i105 = 0;
+
+        $i106 = $i105 & -2;
+
+        $i107 = $i106 + 1;
+
+        $i108 = 100;
+
+        $i109 = $i108 & -2;
+
+        $i110 = $i109 + 1;
+
+        $i111 = -2;
+
+        $i112 = $i111 & -2;
+
+        $i113 = $i112 + 1;
+
+        $i114 = 3;
+
+        $i115 = $i114 & -2;
+
+        $i116 = $i115 + 1;
+
+        $i117 = 100;
+
+        $i118 = $i117 & -2;
+
+        $i119 = $i118 + 1;
+
+        $i120 = -100;
+
+        $i121 = $i120 & -2;
+
+        $i122 = $i121 + 1;
+
+        $i123 = 100;
+
+        $i124 = $i123 & -2;
+
+        $i125 = $i124 + 1;
+
+        $i126 = -3;
+
+        $i127 = $i126 & -4;
+
+        $i128 = 100;
+
+        $i129 = $i128 & -4;
+
+        $i130 = 3;
+
+        $i131 = $i130 & -4;
+
+        $i132 = -3;
+
+        $i133 = $i132 & -4;
+
+        $i134 = virtualinvoke $r0.<compiler.escapeAnalysis.Test6726999: int test2_0_3(int)>($i133);
+
+        $i135 = $i134 & -4;
+
+        $i136 = 2;
+
+        $i137 = $i136 & -4;
+
+        $i138 = 1;
+
+        $i139 = $i138 & -4;
+
+        $i140 = 1;
+
+        $i141 = $i140 & -4;
+
+        $i142 = $i141 + 3;
+
+        $i143 = -2;
+
+        $i144 = $i143 & -4;
+
+        $i145 = $i144 + 3;
+
+        $i146 = 3;
+
+        $i147 = $i146 & -4;
+
+        $i148 = $i147 + 3;
+
+        $i149 = 3;
+
+        $i150 = $i149 & -4;
+
+        $i151 = $i150 + 3;
+
+        $i152 = virtualinvoke $r0.<compiler.escapeAnalysis.Test6726999: int test2_0_3(int)>($i151);
+
+        $i153 = $i152 & -4;
+
+        $i154 = $i153 + 3;
+
+        $i155 = 3;
+
+        $i156 = $i155 & -4;
+
+        $i157 = $i156 + 3;
+
+        $i158 = 100;
+
+        $i159 = $i158 & -4;
+
+        $i160 = $i159 + 3;
+
+        i693 = -100;
+
+        i694 = i694 + 1;
+
+     label2:
+        if i694 < 10000 goto label1;
+
+        return;
+
+        return;
+    }
+
+    int test2_0_3(int)
+    {
+        compiler.escapeAnalysis.Test6726999$Point[] r0;
+        int i0, i1, $i3, $i4, $i6, $i7, i12, i13, i14;
+        java.lang.String $r1, $r3, $r5, $r7, $r8, r60, r61, r62;
+        java.lang.ref.SoftReference $r2, $r12, $r25, $r27, $r32;
+        java.lang.ref.PhantomReference $r4, $r29, $r39;
+        java.lang.ref.WeakReference $r6, $r20, $r23, $r35;
+        byte[] $r9;
+        java.security.spec.X509EncodedKeySpec $r10;
+        java.lang.Object $r11, $r22, $r24, $r26, $r31;
+        char[] $r13;
+        java.security.KeyStore$PasswordProtection $r14;
+        java.util.ArrayList $r15, $r18, $r34, $r36;
+        java.security.ProtectionDomain[] $r16;
+        java.security.AccessControlContext $r17;
+        java.lang.ThreadGroup $r19;
+        java.util.zip.DataFormatException $r21;
+        java.lang.ref.ReferenceQueue $r28, $r33, $r38;
+        java.nio.file.NotLinkException $r30;
+        java.lang.NumberFormatException $r37;
+        sun.hotspot.WhiteBox $r40;
+        compiler.escapeAnalysis.Test6726999$Point $r42, $r54, $r55, r59;
+        compiler.escapeAnalysis.Test6726999 r52;
+        java.lang.OutOfMemoryError $r56, $r57, $r58;
+        long $l10, $l11;
+        char[][][] r63;
+
+        i0 := @parameter0: int;
+
+        r0 = newarray (compiler.escapeAnalysis.Test6726999$Point)[3];
+
+        i1 = i0 & 1;
+
+        i12 = i0 & 3;
+
+        i13 = 0;
+
+     label1:
+        r59 = new compiler.escapeAnalysis.Test6726999$Point;
+
+        specialinvoke r59.<compiler.escapeAnalysis.Test6726999$Point: void <init>()>();
+
+     label2:
+        i14 = 18;
+
+     label3:
+        if i14 >= 70 goto label4;
+
+        $r2 = new java.lang.ref.SoftReference;
+
+        $r1 = new java.lang.String;
+
+        specialinvoke $r1.<java.lang.String: void <init>(java.lang.String)>("2");
+
+        $r4 = new java.lang.ref.PhantomReference;
+
+        $r3 = new java.lang.String;
+
+        specialinvoke $r3.<java.lang.String: void <init>(java.lang.String)>("2");
+
+        r60 = new java.lang.String;
+
+        specialinvoke r60.<java.lang.String: void <init>(java.lang.String)>("2");
+
+        $r6 = new java.lang.ref.WeakReference;
+
+        $r5 = new java.lang.String;
+
+        specialinvoke $r5.<java.lang.String: void <init>(java.lang.String)>("#|");
+
+        r61 = new java.lang.String;
+
+        specialinvoke r61.<java.lang.String: void <init>(java.lang.String)>("#|");
+
+        r62 = new java.lang.String;
+
+        specialinvoke r62.<java.lang.String: void <init>(java.lang.String)>("#|");
+
+        $r7 = new java.lang.String;
+
+        specialinvoke $r7.<java.lang.String: void <init>(java.lang.String)>("Nl;?");
+
+        $r8 = new java.lang.String;
+
+        specialinvoke $r8.<java.lang.String: void <init>(java.lang.String)>("Nl;?");
+
+        $r10 = new java.security.spec.X509EncodedKeySpec;
+
+        $r9 = newmultiarray (byte)[128];
+
+        specialinvoke $r10.<java.security.spec.X509EncodedKeySpec: void <init>(byte[])>($r9);
+
+        $r12 = new java.lang.ref.SoftReference;
+
+        $r11 = new java.lang.Object;
+
+        specialinvoke $r11.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r12.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r11);
+
+        $r14 = new java.security.KeyStore$PasswordProtection;
+
+        $r13 = newmultiarray (char)[32];
+
+        specialinvoke $r14.<java.security.KeyStore$PasswordProtection: void <init>(char[])>($r13);
+
+        $r15 = new java.util.ArrayList;
+
+        specialinvoke $r15.<java.util.ArrayList: void <init>()>();
+
+        $r17 = new java.security.AccessControlContext;
+
+        $r16 = newmultiarray (java.security.ProtectionDomain)[8];
+
+        specialinvoke $r17.<java.security.AccessControlContext: void <init>(java.security.ProtectionDomain[])>($r16);
+
+        $r18 = new java.util.ArrayList;
+
+        specialinvoke $r18.<java.util.ArrayList: void <init>()>();
+
+        $r19 = new java.lang.ThreadGroup;
+
+        specialinvoke $r19.<java.lang.ThreadGroup: void <init>(java.lang.String)>("&Ny");
+
+        $r20 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r20.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r60);
+
+        specialinvoke $r6.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r5);
+
+        $r21 = new java.util.zip.DataFormatException;
+
+        specialinvoke $r21.<java.util.zip.DataFormatException: void <init>()>();
+
+        $r23 = new java.lang.ref.WeakReference;
+
+        $r22 = new java.lang.Object;
+
+        specialinvoke $r22.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r23.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r22);
+
+        $r25 = new java.lang.ref.SoftReference;
+
+        $r24 = new java.lang.Object;
+
+        specialinvoke $r24.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r25.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r24);
+
+        $r27 = new java.lang.ref.SoftReference;
+
+        $r26 = new java.lang.Object;
+
+        specialinvoke $r26.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r27.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r26);
+
+        $r29 = new java.lang.ref.PhantomReference;
+
+        $r28 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r28.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r29.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r61, $r28);
+
+        $r30 = new java.nio.file.NotLinkException;
+
+        specialinvoke $r30.<java.nio.file.NotLinkException: void <init>(java.lang.String)>("0eM0");
+
+        $r32 = new java.lang.ref.SoftReference;
+
+        $r31 = new java.lang.Object;
+
+        specialinvoke $r31.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r32.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r31);
+
+        $r33 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r33.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r4.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r3, $r33);
+
+        $r34 = new java.util.ArrayList;
+
+        specialinvoke $r34.<java.util.ArrayList: void <init>()>();
+
+        $r35 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r35.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r60);
+
+        $r36 = new java.util.ArrayList;
+
+        specialinvoke $r36.<java.util.ArrayList: void <init>()>();
+
+        specialinvoke $r2.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r1);
+
+        $r37 = new java.lang.NumberFormatException;
+
+        specialinvoke $r37.<java.lang.NumberFormatException: void <init>()>();
+
+        $r39 = new java.lang.ref.PhantomReference;
+
+        $r38 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r38.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r39.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r62, $r38);
+
+        r0[i13] = r59;
+
+        r63 = newmultiarray (char)[32][64][64];
+
+        $r40 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        virtualinvoke $r40.<sun.hotspot.WhiteBox: void youngGC()>();
+
+        i13 = i13 + 1;
+
+        i14 = i14 + 5;
+
+        goto label3;
+
+     label4:
+        if i13 < i12 goto label1;
+
+     label5:
+        $r56 = new java.lang.OutOfMemoryError;
+
+        specialinvoke $r56.<java.lang.OutOfMemoryError: void <init>()>();
+
+        throw $r56;
+
+     label6:
+        $r58 := @caughtexception;
+
+        $l10 = <compiler.escapeAnalysis.Test6726999: long TRAPCOUNT>;
+
+        $l11 = $l10 + 1L;
+
+        <compiler.escapeAnalysis.Test6726999: long TRAPCOUNT> = $l11;
+
+        $r42 = r0[i1];
+
+        if $r42 != null goto label7;
+
+        $i6 = 9 + i0;
+
+        $i7 = $i6 * 3;
+
+        return $i7;
+
+     label7:
+        return -1;
+
+        catch java.lang.OutOfMemoryError from label5 to label6 with label6;
+        catch java.lang.OutOfMemoryError from label2 to label2 with label2;
+    }
+}

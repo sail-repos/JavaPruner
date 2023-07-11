@@ -1,0 +1,833 @@
+public class compiler.c2.Test8000805 extends java.lang.Object
+{
+    public static int CHECKSUM;
+    protected static int field_216826;
+    private static short[][][] field_216828;
+    protected static java.net.UnknownServiceException field_216830;
+    protected static java.security.ProviderException[][][][] field_216833;
+    protected static volatile long field_216835;
+    private char[][][] field_216837;
+    protected static java.math.MathContext[] field_216855;
+    private static volatile char field_216857;
+    public static long TRAPCOUNT;
+
+    static void <clinit>()
+    {
+        java.math.MathContext[] $r0;
+        java.security.ProviderException[][][][] $r1;
+        java.net.UnknownServiceException $r2;
+        short[][][] $r3;
+        int $i0, $i1, $i2;
+
+        <compiler.c2.Test8000805: long TRAPCOUNT> = 0L;
+
+        <compiler.c2.Test8000805: char field_216857> = 57;
+
+        $r0 = newarray (java.math.MathContext)[6];
+
+        <compiler.c2.Test8000805: java.math.MathContext[] field_216855> = $r0;
+
+        <compiler.c2.Test8000805: long field_216835> = -3L;
+
+        $r1 = newmultiarray (java.security.ProviderException)[11][5][3][1];
+
+        <compiler.c2.Test8000805: java.security.ProviderException[][][][] field_216833> = $r1;
+
+        $r2 = new java.net.UnknownServiceException;
+
+        specialinvoke $r2.<java.net.UnknownServiceException: void <init>(java.lang.String)>("/");
+
+        <compiler.c2.Test8000805: java.net.UnknownServiceException field_216830> = $r2;
+
+        $r3 = newmultiarray (short)[5][16][3];
+
+        <compiler.c2.Test8000805: short[][][] field_216828> = $r3;
+
+        <compiler.c2.Test8000805: int field_216826> = 2;
+
+        <compiler.c2.Test8000805: int CHECKSUM> = 0;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i0 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, $i0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        char[][][] r0;
+        char[][] $r1, $r3, $r5, $r7, $r9, $r11, $r13, $r15;
+        char[] $r2, $r4, $r6, $r8, $r10, $r12, $r14, $r16;
+        compiler.c2.Test8000805 r17;
+
+        r17 := @this: compiler.c2.Test8000805;
+
+        r0 = newmultiarray (char)[1][17][11];
+
+        $r1 = r0[0];
+
+        $r2 = $r1[12];
+
+        $r2[10] = 65;
+
+        $r3 = r0[0];
+
+        $r4 = $r3[15];
+
+        $r4[5] = 108;
+
+        $r5 = r0[0];
+
+        $r6 = $r5[8];
+
+        $r6[7] = 124;
+
+        $r7 = r0[0];
+
+        $r8 = $r7[13];
+
+        $r8[6] = 98;
+
+        $r9 = r0[0];
+
+        $r10 = $r9[12];
+
+        $r10[0] = 103;
+
+        $r11 = r0[0];
+
+        $r12 = $r11[1];
+
+        $r12[4] = 109;
+
+        $r13 = r0[0];
+
+        $r14 = $r13[8];
+
+        $r14[2] = 86;
+
+        $r15 = r0[0];
+
+        $r16 = $r15[9];
+
+        $r16[5] = 101;
+
+        r17.<compiler.c2.Test8000805: char[][][] field_216837> = r0;
+
+        specialinvoke r17.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    static long _loadB2L_mask8(byte[])
+    {
+        byte b0;
+        int $i1, $i2, $i3, $i5, i6;
+        long $l4;
+        byte[] r0;
+
+        r0 := @parameter0: byte[];
+
+        b0 = r0[0];
+
+        i6 = b0 & 85;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,byte)>($i1, b0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $l4 = (long) i6;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $l4;
+    }
+
+    static long _loadS2Lmask13(short[])
+    {
+        java.util.InvalidPropertiesFormatException $r0, $r4, r7;
+        java.lang.Throwable $r1;
+        int[] $r2;
+        int $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i14, $i15, $i18, $i19, $i27, $i28, $i29, $i30, $i31, $i33, $i34, $i37, $i38, $i40, $i41, i42, i45;
+        java.lang.IllegalStateException $r3, $r5, r8;
+        long $l12, $l13, $l16, $l17, l23, l24, l25, l26, $l39;
+        short[] r6;
+        char c20, c21, c22, $c32, c43, c44, c46, c47;
+        float[] r9;
+        long[][][][][] r10;
+        short s35, s36;
+
+        r6 := @parameter0: short[];
+
+     label1:
+        if 0 == 1 goto label2;
+
+        $r0 = new java.util.InvalidPropertiesFormatException;
+
+        $r1 = new java.lang.Throwable;
+
+        $r2 = newarray (int)[6];
+
+        $r2[4] = -2;
+
+        c20 = 32;
+
+        c21 = 88;
+
+        staticinvoke <java.lang.Character: int compare(char,char)>(c20, c21);
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,char)>($i1, c21);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i4 = staticinvoke <JITFuzzing.Check: int checksum(int,char)>($i3, c20);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i4;
+
+        specialinvoke $r1.<java.lang.Throwable: void <init>(java.lang.String)>("L");
+
+        specialinvoke $r0.<java.util.InvalidPropertiesFormatException: void <init>(java.lang.Throwable)>($r1);
+
+        throw $r0;
+
+     label2:
+        goto label6;
+
+     label3:
+        $r4 := @caughtexception;
+
+        r7 = $r4;
+
+        lookupswitch(8)
+        {
+            case 0: goto label4;
+            case 1: goto label4;
+            case 2: goto label5;
+            case 3: goto label5;
+            case 4: goto label5;
+            case 5: goto label5;
+            case 6: goto label5;
+            default: goto label5;
+        };
+
+     label4:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONlong _loadS2Lmask13(short[])-:-28");
+
+     label5:
+        l25 = <compiler.c2.Test8000805: long TRAPCOUNT>;
+
+        l26 = l25 + 1L;
+
+        $i27 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i28 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i27, l25);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i28;
+
+        <compiler.c2.Test8000805: long TRAPCOUNT> = l26;
+
+        $i29 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i30 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i29, l26);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i30;
+
+     label6:
+        $i31 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $c32 = <compiler.c2.Test8000805: char field_216857>;
+
+        $i33 = $c32 * 69;
+
+        i45 = $i33;
+
+        c46 = (char) i45;
+
+        <compiler.c2.Test8000805: char field_216857> = c46;
+
+        c47 = (char) $i33;
+
+        $i34 = staticinvoke <JITFuzzing.Check: int checksum(int,char)>($i31, c47);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i34;
+
+        s35 = r6[0];
+
+        s36 = s35 & 4095;
+
+        $i37 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i38 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i37, s35);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i38;
+
+        $l39 = (long) s36;
+
+        $i40 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i41 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i40, s36);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i41;
+
+        return $l39;
+
+        catch java.util.InvalidPropertiesFormatException from label1 to label2 with label3;
+        catch java.lang.IllegalStateException from label4 to label5 with label5;
+    }
+
+    static long _loadS2Lmask16(short[])
+    {
+        short s0;
+        int $i1, $i2, $i3, $i5, i6;
+        long $l4;
+        short[] r0;
+
+        r0 := @parameter0: short[];
+
+        s0 = r0[0];
+
+        i6 = s0 & 65534;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i1, s0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $l4 = (long) i6;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $l4;
+    }
+
+    static long _loadS2LmaskFF(short[])
+    {
+        short s0;
+        int $i1, $i2, $i3, $i5, i6;
+        long $l4;
+        short[] r0;
+
+        r0 := @parameter0: short[];
+
+        s0 = r0[0];
+
+        i6 = s0 & 255;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i1, s0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $l4 = (long) i6;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $l4;
+    }
+
+    static int _loadUS_signExt(char[])
+    {
+        char c0;
+        int $i1, $i2, $i3, $i4, $i5, i6;
+        char[] r0;
+
+        r0 := @parameter0: char[];
+
+        c0 = r0[0];
+
+        i6 = c0 << 16;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,char)>($i1, c0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $i4 = i6 >> 16;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $i4;
+    }
+
+    static long loadB2L_mask8(byte[])
+    {
+        byte b0;
+        int $i1, $i2, $i3, $i5, i6;
+        long $l4;
+        byte[] r0;
+
+        r0 := @parameter0: byte[];
+
+        b0 = r0[0];
+
+        i6 = b0 & 85;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,byte)>($i1, b0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $l4 = (long) i6;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $l4;
+    }
+
+    static long loadS2Lmask13(short[])
+    {
+        short s0;
+        int $i1, $i2, $i3, $i5, i6;
+        long $l4;
+        short[] r0;
+
+        r0 := @parameter0: short[];
+
+        s0 = r0[0];
+
+        i6 = s0 & 4095;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i1, s0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $l4 = (long) i6;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $l4;
+    }
+
+    static long loadS2Lmask16(short[])
+    {
+        short s0;
+        int $i1, $i2, $i3, $i5, i6;
+        long $l4;
+        short[] r0;
+
+        r0 := @parameter0: short[];
+
+        s0 = r0[0];
+
+        i6 = s0 & 65534;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i1, s0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $l4 = (long) i6;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $l4;
+    }
+
+    static long loadS2LmaskFF(short[])
+    {
+        short s0;
+        int $i1, $i2, $i3, $i5, i6;
+        long $l4;
+        short[] r0;
+
+        r0 := @parameter0: short[];
+
+        s0 = r0[0];
+
+        i6 = s0 & 255;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i1, s0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $l4 = (long) i6;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $l4;
+    }
+
+    static int loadUS_signExt(char[])
+    {
+        char c0;
+        int $i1, $i2, $i3, $i4, $i5, i6;
+        char[] r0;
+
+        r0 := @parameter0: char[];
+
+        c0 = r0[0];
+
+        i6 = c0 << 16;
+
+        $i1 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,char)>($i1, c0);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i2;
+
+        $i4 = i6 >> 16;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i5 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i6);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i5;
+
+        return $i4;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        int $i0, $i1, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, i35, i39, i48, i49;
+        byte $b2, $b13, $b14, $b15, b36;
+        java.lang.InternalError $r0, $r6, $r10, $r14, $r18;
+        java.lang.Long $r1, $r2, $r11, $r12, $r15, $r16, $r19, $r20;
+        java.lang.String $r3, $r9, $r13, $r17, $r21, $r27;
+        short[] $r4, r31;
+        char[] $r5, r32;
+        java.lang.Integer $r7, $r8;
+        java.io.PrintStream $r22, $r24;
+        java.lang.StringBuilder $r23, $r25, $r26;
+        java.lang.String[] r28;
+        byte[] r29;
+        long l37, l38, l42, l43, l44, l45, l46, l47;
+        java.lang.Object[] r30, r33, r34, r35, r36;
+        short s40;
+        char c41;
+
+        r28 := @parameter0: java.lang.String[];
+
+        i35 = -128;
+
+        goto label3;
+
+     label1:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-23");
+
+        r29 = newarray (byte)[1];
+
+        b36 = (byte) i35;
+
+        r29[0] = b36;
+
+        $i0 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i1 = staticinvoke <JITFuzzing.Check: int checksum(int,byte)>($i0, b36);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i1;
+
+        l37 = staticinvoke <compiler.c2.Test8000805: long loadB2L_mask8(byte[])>(r29);
+
+        l38 = staticinvoke <compiler.c2.Test8000805: long _loadB2L_mask8(byte[])>(r29);
+
+        $b2 = l37 cmp l38;
+
+        if $b2 == 0 goto label2;
+
+     label2:
+        i35 = i35 + 1;
+
+        $i3 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i4 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i3, i35);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i4;
+
+     label3:
+        if i35 < 127 goto label1;
+
+        i39 = -32768;
+
+        goto label9;
+
+     label4:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-25");
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-34");
+
+        $r4 = newarray (short)[1];
+
+        s40 = (short) i39;
+
+        $r4[0] = s40;
+
+        $i9 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,short)>($i9, s40);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i10;
+
+        r31 = $r4;
+
+        $r5 = newarray (char)[1];
+
+        c41 = (char) i39;
+
+        $r5[0] = c41;
+
+        $i11 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i12 = staticinvoke <JITFuzzing.Check: int checksum(int,char)>($i11, c41);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i12;
+
+        r32 = $r5;
+
+        l42 = staticinvoke <compiler.c2.Test8000805: long loadS2LmaskFF(short[])>(r31);
+
+        l43 = staticinvoke <compiler.c2.Test8000805: long _loadS2LmaskFF(short[])>(r31);
+
+        $b13 = l42 cmp l43;
+
+        if $b13 == 0 goto label5;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-26");
+
+        $r18 = new java.lang.InternalError;
+
+        r33 = newarray (java.lang.Object)[2];
+
+        $r19 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l42);
+
+        $i30 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i31 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i30, l42);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i31;
+
+        r33[0] = $r19;
+
+        $r20 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l43);
+
+        $i32 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i33 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i32, l43);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i33;
+
+        r33[1] = $r20;
+
+        $r21 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("loadS2LmaskFF failed: %x != %x", r33);
+
+        specialinvoke $r18.<java.lang.InternalError: void <init>(java.lang.String)>($r21);
+
+        throw $r18;
+
+     label5:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-27");
+
+        l44 = staticinvoke <compiler.c2.Test8000805: long loadS2Lmask16(short[])>(r31);
+
+        l45 = staticinvoke <compiler.c2.Test8000805: long _loadS2Lmask16(short[])>(r31);
+
+        $b14 = l44 cmp l45;
+
+        if $b14 == 0 goto label6;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-28");
+
+        $r14 = new java.lang.InternalError;
+
+        r34 = newarray (java.lang.Object)[2];
+
+        $r15 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l44);
+
+        $i26 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i27 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i26, l44);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i27;
+
+        r34[0] = $r15;
+
+        $r16 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l45);
+
+        $i28 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i29 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i28, l45);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i29;
+
+        r34[1] = $r16;
+
+        $r17 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("loadS2Lmask16 failed: %x != %x", r34);
+
+        specialinvoke $r14.<java.lang.InternalError: void <init>(java.lang.String)>($r17);
+
+        throw $r14;
+
+     label6:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-29");
+
+        l46 = staticinvoke <compiler.c2.Test8000805: long loadS2Lmask13(short[])>(r31);
+
+        l47 = staticinvoke <compiler.c2.Test8000805: long _loadS2Lmask13(short[])>(r31);
+
+        $b15 = l46 cmp l47;
+
+        if $b15 == 0 goto label7;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-30");
+
+        $r10 = new java.lang.InternalError;
+
+        r35 = newarray (java.lang.Object)[2];
+
+        $r11 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l46);
+
+        $i22 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i23 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i22, l46);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i23;
+
+        r35[0] = $r11;
+
+        $r12 = staticinvoke <java.lang.Long: java.lang.Long valueOf(long)>(l47);
+
+        $i24 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i25 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i24, l47);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i25;
+
+        r35[1] = $r12;
+
+        $r13 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("loadS2Lmask13 failed: %x != %x", r35);
+
+        specialinvoke $r10.<java.lang.InternalError: void <init>(java.lang.String)>($r13);
+
+        throw $r10;
+
+     label7:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-31");
+
+        i48 = staticinvoke <compiler.c2.Test8000805: int loadUS_signExt(char[])>(r32);
+
+        i49 = staticinvoke <compiler.c2.Test8000805: int _loadUS_signExt(char[])>(r32);
+
+        if i48 == i49 goto label8;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-32");
+
+        $r6 = new java.lang.InternalError;
+
+        r36 = newarray (java.lang.Object)[2];
+
+        $r7 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i48);
+
+        $i18 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i19 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i18, i48);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i19;
+
+        r36[0] = $r7;
+
+        $r8 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i49);
+
+        $i20 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i21 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i20, i49);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i21;
+
+        r36[1] = $r8;
+
+        $r9 = staticinvoke <java.lang.String: java.lang.String format(java.lang.String,java.lang.Object[])>("loadUS_signExt failed: %x != %x", r36);
+
+        specialinvoke $r6.<java.lang.InternalError: void <init>(java.lang.String)>($r9);
+
+        throw $r6;
+
+     label8:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-33");
+
+        i39 = i39 + 1;
+
+        $i16 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $i17 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i16, i39);
+
+        <compiler.c2.Test8000805: int CHECKSUM> = $i17;
+
+     label9:
+        if i39 < 32767 goto label4;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-35");
+
+        $r22 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r22.<java.io.PrintStream: void println(java.lang.String)>("TEST PASSED.");
+
+        $r24 = <java.lang.System: java.io.PrintStream out>;
+
+        $r23 = new java.lang.StringBuilder;
+
+        specialinvoke $r23.<java.lang.StringBuilder: void <init>()>();
+
+        $r25 = virtualinvoke $r23.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i34 = <compiler.c2.Test8000805: int CHECKSUM>;
+
+        $r26 = virtualinvoke $r25.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i34);
+
+        $r27 = virtualinvoke $r26.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r24.<java.io.PrintStream: void println(java.lang.String)>($r27);
+
+        return;
+    }
+}

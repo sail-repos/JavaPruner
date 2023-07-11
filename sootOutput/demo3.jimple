@@ -1,0 +1,210 @@
+public class demo3 extends java.lang.Object
+{
+    public static int maxN;
+    public static int maxM;
+    public static int CHECKSUM;
+    public static volatile short[] field_5367;
+    private static volatile double field_5369;
+    public static long TRAPCOUNT;
+    protected volatile float field_16929;
+    private java.util.UUID[][][] field_16931;
+    private volatile int[][][] field_16933;
+    private static volatile char field_16939;
+    public static float field_16941;
+    public static volatile char[] field_16943;
+    protected volatile boolean field_16945;
+    private int[][] field_16947;
+    protected static java.lang.ArithmeticException[][] field_16950;
+    public java.awt.DisplayMode[][][][] field_16968;
+    protected int[] field_28821;
+    private volatile int field_28823;
+    private long field_28825;
+    private static volatile double[] field_28827;
+    protected short[][] field_28829;
+
+    static void <clinit>()
+    {
+        double[] $r0;
+        java.lang.ArithmeticException $r1, $r3, $r5, $r7, $r9, $r11;
+        java.lang.ArithmeticException[] $r2, $r4, $r6, $r8, $r10, $r12;
+        int $i0, $i1, $i2;
+        java.lang.ArithmeticException[][] r13;
+        char[] r14;
+        short[] r15;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        demo3 r0;
+        short[][] $r1;
+        short[] $r2;
+        int[] $r3, $r6, $r9, $r11;
+        java.awt.DisplayMode[][][][] $r4;
+        int[][] $r5, $r8, $r10;
+        int[][][] r7;
+        java.util.UUID[][][] $r12;
+
+        r0 := @this: demo3;
+
+        $r1 = newmultiarray (short)[16][5];
+
+        $r2 = $r1[6];
+
+        $r2[1] = -100;
+
+        r0.<demo3: short[][] field_28829> = $r1;
+
+        r0.<demo3: long field_28825> = -2L;
+
+        r0.<demo3: int field_28823> = -3;
+
+        $r3 = newarray (int)[3];
+
+        r0.<demo3: int[] field_28821> = $r3;
+
+        $r4 = newmultiarray (java.awt.DisplayMode)[20][12][1][1];
+
+        r0.<demo3: java.awt.DisplayMode[][][][] field_16968> = $r4;
+
+        $r5 = newmultiarray (int)[1][2];
+
+        $r6 = $r5[0];
+
+        $r6[1] = -100;
+
+        r0.<demo3: int[][] field_16947> = $r5;
+
+        r0.<demo3: boolean field_16945> = 1;
+
+        r7 = newmultiarray (int)[9][2][3];
+
+        $r8 = r7[5];
+
+        $r9 = $r8[0];
+
+        $r9[1] = -2;
+
+        $r10 = r7[8];
+
+        $r11 = $r10[1];
+
+        $r11[2] = -3;
+
+        r0.<demo3: int[][][] field_16933> = r7;
+
+        $r12 = newmultiarray (java.util.UUID)[20][11][1];
+
+        r0.<demo3: java.util.UUID[][][] field_16931> = $r12;
+
+        r0.<demo3: float field_16929> = 1.0F;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    int kontest(int)
+    {
+        long l0, l1, l6;
+        int i2, i3, i4, i5, $i7, $i8, $i9, $i10, $i12, $i13;
+        demo3 r0;
+        byte $b11;
+
+        i2 := @parameter0: int;
+
+        i3 = 0;
+
+     label1:
+        i4 = i3;
+
+     label2:
+        i5 = 0;
+
+        l6 = 0L;
+
+     label3:
+        l0 = (long) i5;
+
+        l1 = l0 + l6;
+
+        $i7 = <demo3: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i7, l0);
+
+        <demo3: int CHECKSUM> = $i8;
+
+        i5 = (int) l1;
+
+        $i9 = <demo3: int CHECKSUM>;
+
+        $i10 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i9, l1);
+
+        <demo3: int CHECKSUM> = $i10;
+
+        l6 = l6 + 1L;
+
+        $b11 = l6 cmp 100L;
+
+        $i12 = <demo3: int CHECKSUM>;
+
+        $i13 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i12, l6);
+
+        <demo3: int CHECKSUM> = $i13;
+
+        if $b11 < 0 goto label3;
+
+        i4 = i4 + 1;
+
+        if i4 < 100 goto label2;
+
+        i3 = i3 + 1;
+
+        if i3 < 100 goto label1;
+
+        return i2;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        demo3 $r0;
+        int $i1, $i2, $i3, $i4, i5;
+        java.lang.StringBuilder $r1, $r3, $r4;
+        java.io.PrintStream $r2;
+        java.lang.String $r5;
+        java.lang.String[] r6;
+
+        r6 := @parameter0: java.lang.String[];
+
+        i5 = 0;
+
+        $r0 = new demo3;
+
+        specialinvoke $r0.<demo3: void <init>()>();
+
+        virtualinvoke $r0.<demo3: int kontest(int)>(0);
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>()>();
+
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i2 = <demo3: int CHECKSUM>;
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i2);
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>($r5);
+
+        return;
+
+        return;
+    }
+}

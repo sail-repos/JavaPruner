@@ -1,0 +1,118 @@
+public class compiler.c2.cr8004867.TestIntAtomicOrdered extends java.lang.Object
+{
+    private static final int ARRLEN;
+    private static final int ITERS;
+    private static final int OFFSET;
+    private static final int SCALE;
+    private static final int ALIGN_OFF;
+    private static final int UNALIGN_OFF;
+
+    public void <init>()
+    {
+        compiler.c2.cr8004867.TestIntAtomicOrdered r0;
+
+        r0 := @this: compiler.c2.cr8004867.TestIntAtomicOrdered;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream $r0;
+        java.lang.String[] r7;
+
+        r7 := @parameter0: java.lang.String[];
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Testing Integer array atomic ordered operations");
+
+        staticinvoke <compiler.c2.cr8004867.TestIntAtomicOrdered: int test(boolean)>(0);
+
+        return;
+
+        return;
+    }
+
+    static int test(boolean)
+    {
+        java.util.concurrent.atomic.AtomicIntegerArray $r0, $r2;
+        java.io.PrintStream $r4;
+        boolean z0;
+        int i211, i212;
+
+        z0 := @parameter0: boolean;
+
+        $r0 = new java.util.concurrent.atomic.AtomicIntegerArray;
+
+        specialinvoke $r0.<java.util.concurrent.atomic.AtomicIntegerArray: void <init>(int)>(97);
+
+        $r2 = new java.util.concurrent.atomic.AtomicIntegerArray;
+
+        specialinvoke $r2.<java.util.concurrent.atomic.AtomicIntegerArray: void <init>(int)>(97);
+
+        i211 = 0;
+
+        goto label1;
+
+     label1:
+        i212 = 0;
+
+     label2:
+        staticinvoke <compiler.c2.cr8004867.TestIntAtomicOrdered: void test_ci_off(java.util.concurrent.atomic.AtomicIntegerArray,int)>($r0, 123);
+
+        i212 = i212 + 1;
+
+        if i212 < 11000 goto label2;
+
+        if z0 == 0 goto label3;
+
+        return -1;
+
+     label3:
+        return 0;
+    }
+
+    static void test_ci_off(java.util.concurrent.atomic.AtomicIntegerArray, int)
+    {
+        sun.hotspot.WhiteBox $r0, $r4, $r7, $r9, $r11, $r12;
+        GCObj $r1, $r2, $r3, $r5, $r6, $r8, $r10, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r28;
+        java.util.concurrent.atomic.AtomicIntegerArray $r13, r14;
+        int $i0, i1, i2;
+
+        r14 := @parameter0: java.util.concurrent.atomic.AtomicIntegerArray;
+
+        i1 := @parameter1: int;
+
+        i2 = 0;
+
+     label1:
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid test_ci_off(java.util.concurrent.atomic.AtomicIntegerArray,int)-:-6");
+
+        $r11 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        virtualinvoke $r11.<sun.hotspot.WhiteBox: void fullGC()>();
+
+        $r12 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        $r13 = new java.util.concurrent.atomic.AtomicIntegerArray;
+
+        specialinvoke $r13.<java.util.concurrent.atomic.AtomicIntegerArray: void <init>(int)>(-1);
+
+        virtualinvoke $r12.<sun.hotspot.WhiteBox: void fullGC()>();
+
+        $i0 = i2 + 3;
+
+        virtualinvoke $r13.<java.util.concurrent.atomic.AtomicIntegerArray: void lazySet(int,int)>($i0, -123);
+
+        i2 = i2 + 1;
+
+        if i2 < 94 goto label1;
+
+        return;
+
+        return;
+    }
+}

@@ -1,0 +1,1337 @@
+public class compiler.eliminateAutobox.TestFloatBoxing extends java.lang.Object
+{
+    static final java.lang.Float ibc;
+    public static long TRAPCOUNT;
+    protected static java.lang.AbstractMethodError[][][] field_213077;
+
+    static void <clinit>()
+    {
+        java.lang.Float $r0;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.eliminateAutobox.TestFloatBoxing r0;
+
+        r0 := @this: compiler.eliminateAutobox.TestFloatBoxing;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    static java.lang.Float foob(float)
+    {
+        float f0;
+        java.lang.Float $r0;
+
+        f0 := @parameter0: float;
+
+        $r0 = staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(f0);
+
+        return $r0;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        float[] r0, r34, r36;
+        float $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12, $f13, $f14, $f15, $f16, $f17, $f18, $f19, $f20, $f21, $f22, $f23, $f24, $f25, $f26, $f27, $f28, $f29, $f30, $f31, $f32, $f33, $f34, $f35, $f36, $f37, $f38, $f39, $f40, $f41, $f42, $f43, $f44, $f45, $f46, $f47, $f48, $f49, $f50, $f51, $f52, $f53, $f54, $f55, $f56, $f57, $f58, $f59, $f60, $f61, $f62, $f63, $f64, $f65, $f66, $f67, $f68, $f69, $f70, $f71, $f72, $f73, $f74, $f75, $f76, $f77, $f78, $f79, $f80, $f81, $f82, $f83, $f84, $f85, $f86, $f87, $f88, $f89, $f90, $f91, $f92, $f93, $f94, $f95, $f96, $f97, $f98, $f99, $f100, $f101, $f102, $f103, $f104, $f105, $f106, $f107, $f108, $f109, $f110, $f111, $f112, $f113, $f114, $f115, $f116, $f117, $f118, $f119, $f120, $f121, $f122, $f123, $f124, $f125, $f126, $f127, $f128, $f129, $f130, $f131, $f132, $f133, $f134, $f135, $f136, $f137, $f138, $f139, $f140, $f141, $f142, $f143, $f144, $f145, $f146, $f147, $f148, $f149;
+        java.lang.Float $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11;
+        java.lang.String[] r31, r32;
+        int i1, i2, i3, i4;
+
+        r31 := @parameter0: java.lang.String[];
+
+        r0 = newarray (float)[70];
+
+        i4 = 0;
+
+     label1:
+        $f124 = -1.0F;
+
+        r0[30] = $f124;
+
+        $f125 = -2.0F;
+
+        r0[31] = $f125;
+
+        $f126 = 0.1F;
+
+        r0[32] = $f126;
+
+        $f127 = -100.0F;
+
+        r0[33] = $f127;
+
+        $r7 = staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        $f128 = 100.0F;
+
+        r0[34] = $f128;
+
+        $f129 = 0.1F;
+
+        r0[35] = $f129;
+
+        $f130 = 1.0F;
+
+        r0[36] = $f130;
+
+        $f131 = -0.1F;
+
+        r0[37] = $f131;
+
+        $f132 = 0.1F;
+
+        r0[38] = $f132;
+
+        $r8 = staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        $f133 = -3.0F;
+
+        r0[39] = $f133;
+
+        $f134 = 0.0F;
+
+        r0[40] = $f134;
+
+        $f135 = 0.0F;
+
+        r0[41] = $f135;
+
+        $f136 = -0.1F;
+
+        r0[42] = $f136;
+
+        $f137 = -1.0F;
+
+        r0[43] = $f137;
+
+        $r9 = staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        $f138 = -3.0F;
+
+        r0[44] = $f138;
+
+        $f139 = 100.0F;
+
+        r0[45] = $f139;
+
+        $f140 = 1.0F;
+
+        r0[46] = $f140;
+
+        $f141 = -0.1F;
+
+        r0[47] = $f141;
+
+        $f142 = -1.0F;
+
+        r0[48] = $f142;
+
+        $r10 = staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        $f143 = -1.0F;
+
+        r0[49] = $f143;
+
+        $f144 = -100.0F;
+
+        r0[50] = $f144;
+
+        $f145 = 2.0F;
+
+        r0[51] = $f145;
+
+        $f146 = -3.0F;
+
+        r0[52] = $f146;
+
+        $f147 = -0.1F;
+
+        r0[53] = $f147;
+
+        $r11 = staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        $f148 = 0.1F;
+
+        r0[54] = $f148;
+
+        $f149 = staticinvoke <compiler.eliminateAutobox.TestFloatBoxing: float remi_sum_deop()>();
+
+        r0[55] = $f149;
+
+        r0[56] = -100.0F;
+
+        r0[57] = 2.0F;
+
+        r0[58] = 0.1F;
+
+        staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        r0[59] = 3.0F;
+
+        r0[60] = 0.0F;
+
+        r0[61] = 0.0F;
+
+        r0[62] = 3.0F;
+
+        r0[63] = -1.0F;
+
+        staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        r0[64] = 2.0F;
+
+        r0[65] = -1.0F;
+
+        r0[66] = 0.1F;
+
+        r0[67] = 0.1F;
+
+        r0[68] = -3.0F;
+
+        staticinvoke <java.lang.Float: java.lang.Float valueOf(float)>(1.0F);
+
+        r0[69] = -1.0F;
+
+        i4 = i4 + 1;
+
+        if i4 < 100 goto label1;
+
+        return;
+
+        return;
+    }
+
+    static float remi_sum_deop()
+    {
+        java.lang.Float $r0, $r1, r275;
+        float $f0, $f1, $f2, $f3;
+        java.lang.String $r2, $r4, $r5, $r6, $r7, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, r17, $r18, r19, $r20, $r21, $r22, $r23, $r24, $r25, r26, $r27, $r28, $r29, r30, $r31, $r32, $r33, $r34, $r35, $r36, r37, $r38, $r39, $r40, $r41, $r64, $r65, $r66, $r67, $r68, $r69, $r70, $r71, $r72, $r73, $r74, $r75, $r76, $r77, $r78, $r79, $r80, $r81, $r82, $r83, $r84, $r85, $r87, $r88, $r89, $r90, $r91, $r92, $r93, $r94, $r95, $r96, $r97, $r98, $r99, $r100, $r101, $r102, $r103, $r104, $r105, $r106, $r107, $r108, $r109, $r110, $r111, $r112, $r113, $r114, $r115, $r116, $r117, $r118, $r119, $r120, $r121, $r122, $r123, $r124, $r125, $r126, $r127, $r128, $r129, $r131, $r132, $r133, $r134, $r135, $r136, $r137, $r138, $r139, $r140, $r141, $r142, $r143, $r144, $r145, $r146, $r147, $r148, $r149, $r150, $r151, $r152, $r153, $r154, $r155, $r156, $r157, $r158, $r159, $r160, $r161, $r162, $r163, $r164, $r165, $r166, $r167, $r168, $r169, $r170, $r171, $r172, $r173, $r174, $r175, $r176, $r177, $r178, $r179, $r180, $r181, $r182, $r183, $r184, $r185, $r186, $r187, $r188, $r189, $r190, $r191, $r192, $r193, $r194, $r195, $r196, $r197, $r198, $r199, $r200, $r201, $r202, $r203, $r204, $r205, $r206, $r207, $r208, $r209, $r210, $r211, $r212, $r213, $r214, $r215, $r216, $r217, $r218, $r219, $r220, $r221, $r222, $r223, $r224, $r225, $r226, $r227, $r228, $r229, $r230, $r231, $r232, $r233, $r234, $r235, $r236, $r237, $r238, $r239;
+        java.lang.ref.PhantomReference $r3, $r51, $r242, $r248, $r261, $r265;
+        java.lang.ref.WeakReference $r8, $r55, $r62, $r130, $r246, $r258;
+        java.lang.Exception $r42;
+        java.security.PrivilegedActionException $r43;
+        java.lang.ref.ReferenceQueue $r44, $r50, $r241, $r249, $r262, $r266;
+        byte[] $r45, $r53;
+        java.security.cert.PolicyQualifierInfo $r46, $r54;
+        java.net.URISyntaxException $r47;
+        java.security.cert.CertificateExpiredException $r48;
+        java.util.LinkedList $r49, $r58, $r61, $r63, $r253;
+        java.nio.charset.UnsupportedCharsetException $r52;
+        java.util.ArrayList $r56, $r57, $r240, $r244, $r255, $r259;
+        java.lang.ref.SoftReference $r59, $r86, $r243, $r252;
+        java.util.Formatter $r60;
+        java.io.InterruptedIOException $r245;
+        java.lang.Object $r247, $r260, $r263, $r264;
+        java.nio.channels.NoConnectionPendingException $r250;
+        java.lang.InterruptedException $r251;
+        java.security.GeneralSecurityException $r254;
+        java.lang.InheritableThreadLocal $r256;
+        java.lang.RuntimePermission $r257;
+        java.nio.file.FileSystemNotFoundException $r267;
+        int i2;
+        sun.hotspot.WhiteBox r276;
+
+        $r0 = new java.lang.Float;
+
+        $f0 = 2.0F;
+
+        specialinvoke $r0.<java.lang.Float: void <init>(float)>($f0);
+
+        r275 = $r0;
+
+        i2 = 0;
+
+        goto label2;
+
+     label1:
+        $r1 = new java.lang.Float;
+
+        $f1 = virtualinvoke r275.<java.lang.Float: float floatValue()>();
+
+        $f2 = $f1 + 1.0F;
+
+        $f3 = 1.0F;
+
+        specialinvoke $r1.<java.lang.Float: void <init>(float)>($f3);
+
+        r276 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        virtualinvoke r276.<sun.hotspot.WhiteBox: void youngGC()>();
+
+        $r3 = new java.lang.ref.PhantomReference;
+
+        $r2 = new java.lang.String;
+
+        specialinvoke $r2.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r4 = new java.lang.String;
+
+        specialinvoke $r4.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r5 = new java.lang.String;
+
+        specialinvoke $r5.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r6 = new java.lang.String;
+
+        specialinvoke $r6.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r8 = new java.lang.ref.WeakReference;
+
+        $r7 = new java.lang.String;
+
+        specialinvoke $r7.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r9 = new java.lang.String;
+
+        specialinvoke $r9.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r10 = new java.lang.String;
+
+        specialinvoke $r10.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r11 = new java.lang.String;
+
+        specialinvoke $r11.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r12 = new java.lang.String;
+
+        specialinvoke $r12.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r13 = new java.lang.String;
+
+        specialinvoke $r13.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r14 = new java.lang.String;
+
+        specialinvoke $r14.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r15 = new java.lang.String;
+
+        specialinvoke $r15.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r16 = new java.lang.String;
+
+        specialinvoke $r16.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        r17 = new java.lang.String;
+
+        specialinvoke r17.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r18 = new java.lang.String;
+
+        specialinvoke $r18.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        r19 = new java.lang.String;
+
+        specialinvoke r19.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r20 = new java.lang.String;
+
+        specialinvoke $r20.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r21 = new java.lang.String;
+
+        specialinvoke $r21.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r22 = new java.lang.String;
+
+        specialinvoke $r22.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r23 = new java.lang.String;
+
+        specialinvoke $r23.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r24 = new java.lang.String;
+
+        specialinvoke $r24.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r25 = new java.lang.String;
+
+        specialinvoke $r25.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        r26 = new java.lang.String;
+
+        specialinvoke r26.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r27 = new java.lang.String;
+
+        specialinvoke $r27.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r28 = new java.lang.String;
+
+        specialinvoke $r28.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r29 = new java.lang.String;
+
+        specialinvoke $r29.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        r30 = new java.lang.String;
+
+        specialinvoke r30.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r31 = new java.lang.String;
+
+        specialinvoke $r31.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r32 = new java.lang.String;
+
+        specialinvoke $r32.<java.lang.String: void <init>(java.lang.String)>("N3");
+
+        $r33 = new java.lang.String;
+
+        specialinvoke $r33.<java.lang.String: void <init>(java.lang.String)>("h\'U");
+
+        $r34 = new java.lang.String;
+
+        specialinvoke $r34.<java.lang.String: void <init>(java.lang.String)>("h\'U");
+
+        $r35 = new java.lang.String;
+
+        specialinvoke $r35.<java.lang.String: void <init>(java.lang.String)>("h\'U");
+
+        $r36 = new java.lang.String;
+
+        specialinvoke $r36.<java.lang.String: void <init>(java.lang.String)>("_D8\'OG|!vs,f^&.&zRD D!Ey6Wg6,/#$9yO/(/f0zH4&4&cR@e}[L5f`*+9hMq.Nyv4Wfc7\'w;T{:zV~nt).<H} %uhqostCES,rK");
+
+        r37 = new java.lang.String;
+
+        specialinvoke r37.<java.lang.String: void <init>(java.lang.String)>("_D8\'OG|!vs,f^&.&zRD D!Ey6Wg6,/#$9yO/(/f0zH4&4&cR@e}[L5f`*+9hMq.Nyv4Wfc7\'w;T{:zV~nt).<H} %uhqostCES,rK");
+
+        $r38 = new java.lang.String;
+
+        specialinvoke $r38.<java.lang.String: void <init>(java.lang.String)>("|%B");
+
+        $r39 = new java.lang.String;
+
+        specialinvoke $r39.<java.lang.String: void <init>(java.lang.String)>("|%B");
+
+        $r40 = new java.lang.String;
+
+        specialinvoke $r40.<java.lang.String: void <init>(java.lang.String)>("|%B");
+
+        $r41 = new java.lang.String;
+
+        specialinvoke $r41.<java.lang.String: void <init>(java.lang.String)>("|%B");
+
+        $r43 = new java.security.PrivilegedActionException;
+
+        $r42 = new java.lang.Exception;
+
+        specialinvoke $r42.<java.lang.Exception: void <init>()>();
+
+        specialinvoke $r43.<java.security.PrivilegedActionException: void <init>(java.lang.Exception)>($r42);
+
+        specialinvoke $r8.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r7);
+
+        $r44 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r44.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r3.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r2, $r44);
+
+        $r46 = new java.security.cert.PolicyQualifierInfo;
+
+        $r45 = newmultiarray (byte)[64];
+
+        specialinvoke $r46.<java.security.cert.PolicyQualifierInfo: void <init>(byte[])>($r45);
+
+        $r47 = new java.net.URISyntaxException;
+
+        specialinvoke $r47.<java.net.URISyntaxException: void <init>(java.lang.String,java.lang.String)>("cB8EqN(UebS6)93<73{]wl,92(rH\'{g<b$Q\'Rh;S>h%-oyT<tocKg=6X[2DL-N2n{qNC26N.9MLgH%Jj,Idn-p<sSp%5!*A>s1\'Ep", "+5ir");
+
+        $r48 = new java.security.cert.CertificateExpiredException;
+
+        specialinvoke $r48.<java.security.cert.CertificateExpiredException: void <init>()>();
+
+        $r49 = new java.util.LinkedList;
+
+        specialinvoke $r49.<java.util.LinkedList: void <init>()>();
+
+        $r51 = new java.lang.ref.PhantomReference;
+
+        $r50 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r50.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r51.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r17, $r50);
+
+        $r52 = new java.nio.charset.UnsupportedCharsetException;
+
+        specialinvoke $r52.<java.nio.charset.UnsupportedCharsetException: void <init>(java.lang.String)>("]1");
+
+        $r54 = new java.security.cert.PolicyQualifierInfo;
+
+        $r53 = newmultiarray (byte)[256];
+
+        specialinvoke $r54.<java.security.cert.PolicyQualifierInfo: void <init>(byte[])>($r53);
+
+        $r55 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r55.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r19);
+
+        $r56 = new java.util.ArrayList;
+
+        specialinvoke $r56.<java.util.ArrayList: void <init>()>();
+
+        $r57 = new java.util.ArrayList;
+
+        specialinvoke $r57.<java.util.ArrayList: void <init>()>();
+
+        $r58 = new java.util.LinkedList;
+
+        specialinvoke $r58.<java.util.LinkedList: void <init>()>();
+
+        $r59 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r59.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r26);
+
+        $r60 = new java.util.Formatter;
+
+        specialinvoke $r60.<java.util.Formatter: void <init>()>();
+
+        $r61 = new java.util.LinkedList;
+
+        specialinvoke $r61.<java.util.LinkedList: void <init>()>();
+
+        $r62 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r62.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r37);
+
+        $r63 = new java.util.LinkedList;
+
+        specialinvoke $r63.<java.util.LinkedList: void <init>()>();
+
+        $r64 = new java.lang.String;
+
+        specialinvoke $r64.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r65 = new java.lang.String;
+
+        specialinvoke $r65.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r66 = new java.lang.String;
+
+        specialinvoke $r66.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r67 = new java.lang.String;
+
+        specialinvoke $r67.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r68 = new java.lang.String;
+
+        specialinvoke $r68.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r69 = new java.lang.String;
+
+        specialinvoke $r69.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r70 = new java.lang.String;
+
+        specialinvoke $r70.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r71 = new java.lang.String;
+
+        specialinvoke $r71.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r72 = new java.lang.String;
+
+        specialinvoke $r72.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r73 = new java.lang.String;
+
+        specialinvoke $r73.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r74 = new java.lang.String;
+
+        specialinvoke $r74.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r75 = new java.lang.String;
+
+        specialinvoke $r75.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r76 = new java.lang.String;
+
+        specialinvoke $r76.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r77 = new java.lang.String;
+
+        specialinvoke $r77.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r78 = new java.lang.String;
+
+        specialinvoke $r78.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r79 = new java.lang.String;
+
+        specialinvoke $r79.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r80 = new java.lang.String;
+
+        specialinvoke $r80.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r81 = new java.lang.String;
+
+        specialinvoke $r81.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r82 = new java.lang.String;
+
+        specialinvoke $r82.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r83 = new java.lang.String;
+
+        specialinvoke $r83.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r84 = new java.lang.String;
+
+        specialinvoke $r84.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r86 = new java.lang.ref.SoftReference;
+
+        $r85 = new java.lang.String;
+
+        specialinvoke $r85.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r87 = new java.lang.String;
+
+        specialinvoke $r87.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r88 = new java.lang.String;
+
+        specialinvoke $r88.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r89 = new java.lang.String;
+
+        specialinvoke $r89.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r90 = new java.lang.String;
+
+        specialinvoke $r90.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r91 = new java.lang.String;
+
+        specialinvoke $r91.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r92 = new java.lang.String;
+
+        specialinvoke $r92.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r93 = new java.lang.String;
+
+        specialinvoke $r93.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r94 = new java.lang.String;
+
+        specialinvoke $r94.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r95 = new java.lang.String;
+
+        specialinvoke $r95.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r96 = new java.lang.String;
+
+        specialinvoke $r96.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r97 = new java.lang.String;
+
+        specialinvoke $r97.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r98 = new java.lang.String;
+
+        specialinvoke $r98.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r99 = new java.lang.String;
+
+        specialinvoke $r99.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r100 = new java.lang.String;
+
+        specialinvoke $r100.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r101 = new java.lang.String;
+
+        specialinvoke $r101.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r102 = new java.lang.String;
+
+        specialinvoke $r102.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r103 = new java.lang.String;
+
+        specialinvoke $r103.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r104 = new java.lang.String;
+
+        specialinvoke $r104.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r105 = new java.lang.String;
+
+        specialinvoke $r105.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r106 = new java.lang.String;
+
+        specialinvoke $r106.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r107 = new java.lang.String;
+
+        specialinvoke $r107.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r108 = new java.lang.String;
+
+        specialinvoke $r108.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r109 = new java.lang.String;
+
+        specialinvoke $r109.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r110 = new java.lang.String;
+
+        specialinvoke $r110.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r111 = new java.lang.String;
+
+        specialinvoke $r111.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r112 = new java.lang.String;
+
+        specialinvoke $r112.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r113 = new java.lang.String;
+
+        specialinvoke $r113.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r114 = new java.lang.String;
+
+        specialinvoke $r114.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r115 = new java.lang.String;
+
+        specialinvoke $r115.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r116 = new java.lang.String;
+
+        specialinvoke $r116.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r117 = new java.lang.String;
+
+        specialinvoke $r117.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r118 = new java.lang.String;
+
+        specialinvoke $r118.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r119 = new java.lang.String;
+
+        specialinvoke $r119.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r120 = new java.lang.String;
+
+        specialinvoke $r120.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r121 = new java.lang.String;
+
+        specialinvoke $r121.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r122 = new java.lang.String;
+
+        specialinvoke $r122.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r123 = new java.lang.String;
+
+        specialinvoke $r123.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r124 = new java.lang.String;
+
+        specialinvoke $r124.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r125 = new java.lang.String;
+
+        specialinvoke $r125.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r126 = new java.lang.String;
+
+        specialinvoke $r126.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r127 = new java.lang.String;
+
+        specialinvoke $r127.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r128 = new java.lang.String;
+
+        specialinvoke $r128.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r130 = new java.lang.ref.WeakReference;
+
+        $r129 = new java.lang.String;
+
+        specialinvoke $r129.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r131 = new java.lang.String;
+
+        specialinvoke $r131.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r132 = new java.lang.String;
+
+        specialinvoke $r132.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r133 = new java.lang.String;
+
+        specialinvoke $r133.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r134 = new java.lang.String;
+
+        specialinvoke $r134.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r135 = new java.lang.String;
+
+        specialinvoke $r135.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r136 = new java.lang.String;
+
+        specialinvoke $r136.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r137 = new java.lang.String;
+
+        specialinvoke $r137.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r138 = new java.lang.String;
+
+        specialinvoke $r138.<java.lang.String: void <init>(java.lang.String)>("Ycz");
+
+        $r139 = new java.lang.String;
+
+        specialinvoke $r139.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r140 = new java.lang.String;
+
+        specialinvoke $r140.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r141 = new java.lang.String;
+
+        specialinvoke $r141.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r142 = new java.lang.String;
+
+        specialinvoke $r142.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r143 = new java.lang.String;
+
+        specialinvoke $r143.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r144 = new java.lang.String;
+
+        specialinvoke $r144.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r145 = new java.lang.String;
+
+        specialinvoke $r145.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r146 = new java.lang.String;
+
+        specialinvoke $r146.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r147 = new java.lang.String;
+
+        specialinvoke $r147.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r148 = new java.lang.String;
+
+        specialinvoke $r148.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r149 = new java.lang.String;
+
+        specialinvoke $r149.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r150 = new java.lang.String;
+
+        specialinvoke $r150.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r151 = new java.lang.String;
+
+        specialinvoke $r151.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r152 = new java.lang.String;
+
+        specialinvoke $r152.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r153 = new java.lang.String;
+
+        specialinvoke $r153.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r154 = new java.lang.String;
+
+        specialinvoke $r154.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r155 = new java.lang.String;
+
+        specialinvoke $r155.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r156 = new java.lang.String;
+
+        specialinvoke $r156.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r157 = new java.lang.String;
+
+        specialinvoke $r157.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r158 = new java.lang.String;
+
+        specialinvoke $r158.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r159 = new java.lang.String;
+
+        specialinvoke $r159.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r160 = new java.lang.String;
+
+        specialinvoke $r160.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r161 = new java.lang.String;
+
+        specialinvoke $r161.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r162 = new java.lang.String;
+
+        specialinvoke $r162.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r163 = new java.lang.String;
+
+        specialinvoke $r163.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r164 = new java.lang.String;
+
+        specialinvoke $r164.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r165 = new java.lang.String;
+
+        specialinvoke $r165.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r166 = new java.lang.String;
+
+        specialinvoke $r166.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r167 = new java.lang.String;
+
+        specialinvoke $r167.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r168 = new java.lang.String;
+
+        specialinvoke $r168.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r169 = new java.lang.String;
+
+        specialinvoke $r169.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r170 = new java.lang.String;
+
+        specialinvoke $r170.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r171 = new java.lang.String;
+
+        specialinvoke $r171.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r172 = new java.lang.String;
+
+        specialinvoke $r172.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r173 = new java.lang.String;
+
+        specialinvoke $r173.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r174 = new java.lang.String;
+
+        specialinvoke $r174.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r175 = new java.lang.String;
+
+        specialinvoke $r175.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r176 = new java.lang.String;
+
+        specialinvoke $r176.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r177 = new java.lang.String;
+
+        specialinvoke $r177.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r178 = new java.lang.String;
+
+        specialinvoke $r178.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r179 = new java.lang.String;
+
+        specialinvoke $r179.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r180 = new java.lang.String;
+
+        specialinvoke $r180.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r181 = new java.lang.String;
+
+        specialinvoke $r181.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r182 = new java.lang.String;
+
+        specialinvoke $r182.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r183 = new java.lang.String;
+
+        specialinvoke $r183.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r184 = new java.lang.String;
+
+        specialinvoke $r184.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r185 = new java.lang.String;
+
+        specialinvoke $r185.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r186 = new java.lang.String;
+
+        specialinvoke $r186.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r187 = new java.lang.String;
+
+        specialinvoke $r187.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r188 = new java.lang.String;
+
+        specialinvoke $r188.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r189 = new java.lang.String;
+
+        specialinvoke $r189.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r190 = new java.lang.String;
+
+        specialinvoke $r190.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r191 = new java.lang.String;
+
+        specialinvoke $r191.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r192 = new java.lang.String;
+
+        specialinvoke $r192.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r193 = new java.lang.String;
+
+        specialinvoke $r193.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r194 = new java.lang.String;
+
+        specialinvoke $r194.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r195 = new java.lang.String;
+
+        specialinvoke $r195.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r196 = new java.lang.String;
+
+        specialinvoke $r196.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r197 = new java.lang.String;
+
+        specialinvoke $r197.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r198 = new java.lang.String;
+
+        specialinvoke $r198.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r199 = new java.lang.String;
+
+        specialinvoke $r199.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r200 = new java.lang.String;
+
+        specialinvoke $r200.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r201 = new java.lang.String;
+
+        specialinvoke $r201.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r202 = new java.lang.String;
+
+        specialinvoke $r202.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r203 = new java.lang.String;
+
+        specialinvoke $r203.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r204 = new java.lang.String;
+
+        specialinvoke $r204.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r205 = new java.lang.String;
+
+        specialinvoke $r205.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r206 = new java.lang.String;
+
+        specialinvoke $r206.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r207 = new java.lang.String;
+
+        specialinvoke $r207.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r208 = new java.lang.String;
+
+        specialinvoke $r208.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r209 = new java.lang.String;
+
+        specialinvoke $r209.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r210 = new java.lang.String;
+
+        specialinvoke $r210.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r211 = new java.lang.String;
+
+        specialinvoke $r211.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r212 = new java.lang.String;
+
+        specialinvoke $r212.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r213 = new java.lang.String;
+
+        specialinvoke $r213.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r214 = new java.lang.String;
+
+        specialinvoke $r214.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r215 = new java.lang.String;
+
+        specialinvoke $r215.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r216 = new java.lang.String;
+
+        specialinvoke $r216.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r217 = new java.lang.String;
+
+        specialinvoke $r217.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r218 = new java.lang.String;
+
+        specialinvoke $r218.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r219 = new java.lang.String;
+
+        specialinvoke $r219.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r220 = new java.lang.String;
+
+        specialinvoke $r220.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r221 = new java.lang.String;
+
+        specialinvoke $r221.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r222 = new java.lang.String;
+
+        specialinvoke $r222.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r223 = new java.lang.String;
+
+        specialinvoke $r223.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r224 = new java.lang.String;
+
+        specialinvoke $r224.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r225 = new java.lang.String;
+
+        specialinvoke $r225.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r226 = new java.lang.String;
+
+        specialinvoke $r226.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r227 = new java.lang.String;
+
+        specialinvoke $r227.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r228 = new java.lang.String;
+
+        specialinvoke $r228.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r229 = new java.lang.String;
+
+        specialinvoke $r229.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r230 = new java.lang.String;
+
+        specialinvoke $r230.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r231 = new java.lang.String;
+
+        specialinvoke $r231.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r232 = new java.lang.String;
+
+        specialinvoke $r232.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r233 = new java.lang.String;
+
+        specialinvoke $r233.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r234 = new java.lang.String;
+
+        specialinvoke $r234.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r235 = new java.lang.String;
+
+        specialinvoke $r235.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r236 = new java.lang.String;
+
+        specialinvoke $r236.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r237 = new java.lang.String;
+
+        specialinvoke $r237.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r238 = new java.lang.String;
+
+        specialinvoke $r238.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r239 = new java.lang.String;
+
+        specialinvoke $r239.<java.lang.String: void <init>(java.lang.String)>("@");
+
+        $r240 = new java.util.ArrayList;
+
+        specialinvoke $r240.<java.util.ArrayList: void <init>()>();
+
+        $r242 = new java.lang.ref.PhantomReference;
+
+        $r241 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r241.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r242.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r275, $r241);
+
+        $r243 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r243.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r276);
+
+        $r244 = new java.util.ArrayList;
+
+        specialinvoke $r244.<java.util.ArrayList: void <init>()>();
+
+        $r245 = new java.io.InterruptedIOException;
+
+        specialinvoke $r245.<java.io.InterruptedIOException: void <init>()>();
+
+        $r246 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r246.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r276);
+
+        $r248 = new java.lang.ref.PhantomReference;
+
+        $r247 = new java.lang.Object;
+
+        specialinvoke $r247.<java.lang.Object: void <init>()>();
+
+        $r249 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r249.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r248.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r247, $r249);
+
+        $r250 = new java.nio.channels.NoConnectionPendingException;
+
+        specialinvoke $r250.<java.nio.channels.NoConnectionPendingException: void <init>()>();
+
+        $r251 = new java.lang.InterruptedException;
+
+        specialinvoke $r251.<java.lang.InterruptedException: void <init>()>();
+
+        $r252 = new java.lang.ref.SoftReference;
+
+        specialinvoke $r252.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>(r26);
+
+        $r253 = new java.util.LinkedList;
+
+        specialinvoke $r253.<java.util.LinkedList: void <init>()>();
+
+        specialinvoke $r130.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>($r129);
+
+        $r254 = new java.security.GeneralSecurityException;
+
+        specialinvoke $r254.<java.security.GeneralSecurityException: void <init>()>();
+
+        $r255 = new java.util.ArrayList;
+
+        specialinvoke $r255.<java.util.ArrayList: void <init>()>();
+
+        $r256 = new java.lang.InheritableThreadLocal;
+
+        specialinvoke $r256.<java.lang.InheritableThreadLocal: void <init>()>();
+
+        $r257 = new java.lang.RuntimePermission;
+
+        specialinvoke $r257.<java.lang.RuntimePermission: void <init>(java.lang.String)>("5#3Js?Y.eKH~(WM{OC^I+m>!J]Ll*VCW%vNnT=26 j>*P6.GZIGT[Sm@FnPeG.?~){*LTc/T2__EfqM`bJ]`p.DTg)Ke&|lDE9GIL");
+
+        $r258 = new java.lang.ref.WeakReference;
+
+        specialinvoke $r258.<java.lang.ref.WeakReference: void <init>(java.lang.Object)>(r30);
+
+        $r259 = new java.util.ArrayList;
+
+        specialinvoke $r259.<java.util.ArrayList: void <init>()>();
+
+        $r261 = new java.lang.ref.PhantomReference;
+
+        $r260 = new java.lang.Object;
+
+        specialinvoke $r260.<java.lang.Object: void <init>()>();
+
+        $r262 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r262.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r261.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r260, $r262);
+
+        $r263 = new java.lang.Object;
+
+        specialinvoke $r263.<java.lang.Object: void <init>()>();
+
+        $r265 = new java.lang.ref.PhantomReference;
+
+        $r264 = new java.lang.Object;
+
+        specialinvoke $r264.<java.lang.Object: void <init>()>();
+
+        $r266 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r266.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r265.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r264, $r266);
+
+        $r267 = new java.nio.file.FileSystemNotFoundException;
+
+        specialinvoke $r267.<java.nio.file.FileSystemNotFoundException: void <init>()>();
+
+        specialinvoke $r86.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r85);
+
+        r275 = $r1;
+
+        i2 = i2 + 1;
+
+     label2:
+        if i2 < 1000 goto label1;
+
+        return 1.0F;
+    }
+}

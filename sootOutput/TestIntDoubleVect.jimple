@@ -1,0 +1,623 @@
+public class compiler.codegen.TestIntDoubleVect extends java.lang.Object
+{
+    private static final int ARRLEN;
+    private static final int ITERS;
+    private static final int OFFSET;
+    private static final int SCALE;
+    private static final int ALIGN_OFF;
+    private static final int UNALIGN_OFF;
+    public static long TRAPCOUNT;
+    public static java.lang.ref.PhantomReference field_72940;
+    protected static volatile java.lang.ref.PhantomReference field_77053;
+
+    static void <clinit>()
+    {
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.codegen.TestIntDoubleVect r0;
+
+        r0 := @this: compiler.codegen.TestIntDoubleVect;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream $r0;
+        java.lang.String[] r7;
+
+        r7 := @parameter0: java.lang.String[];
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Testing Integer + Double vectors");
+
+        staticinvoke <compiler.codegen.TestIntDoubleVect: int test()>();
+
+        return;
+
+        return;
+    }
+
+    static int test()
+    {
+        int[] r0, r1;
+        double[] r2, r3;
+        java.io.PrintStream $r4;
+        int i128;
+
+        r0 = newarray (int)[997];
+
+        r1 = newarray (int)[997];
+
+        r2 = newarray (double)[997];
+
+        r3 = newarray (double)[997];
+
+        i128 = 0;
+
+     label1:
+        staticinvoke <compiler.codegen.TestIntDoubleVect: void test_cp(int[],int[],double[],double[])>(r0, r1, r2, r3);
+
+        i128 = i128 + 1;
+
+        if i128 < 11000 goto label1;
+
+     label2:
+        goto label2;
+    }
+
+    static void test_cp(int[], int[], double[], double[])
+    {
+        int[] r0, r1;
+        int $i0, i6;
+        GCObj $r2, $r3, $r4, r138, r139, r140, r141, r142, r143, r144, r145, r146, r147, r148, r150, r151, r152, r153, r154, r155, r156, r157, r158, r159, r160, r161, r162, r163, r164, r165, r166, r167, r168, r169, r170, r171, r172, r173, r174, r175, r176, r177, r178, r179, r180, r181, r182, r183, r184, r185, r186, r187, r188, r189, r190;
+        double[] r6, r7;
+        java.lang.NullPointerException $r10, $r13;
+        long $l3, $l4;
+        java.lang.String $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r35, $r36, $r37, $r38, $r39, $r40, $r41, $r42, $r43, $r44, $r45, $r46, $r47, $r48, $r49, $r50, $r51, $r52, $r53, $r54, $r55, $r56, $r57, $r58, $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r67, $r68, $r69, $r70, $r71, $r72, $r73, $r74, $r75, $r76, $r77, $r78, $r79, $r80, $r81, $r82, $r83, $r84, $r85, $r86, $r87, $r88, $r89, $r90, $r91, $r92, $r93, $r94, $r95, $r96, $r97, $r98, $r99, $r100, $r101, $r102, $r103, $r104, $r105, $r106, $r107, $r108, $r109, $r110, $r111, $r112, $r113, $r114;
+        java.lang.Object $r115, $r118, $r120, $r121, $r123, $r131;
+        java.lang.ref.PhantomReference $r116, $r124;
+        java.lang.ref.ReferenceQueue $r117, $r125;
+        java.beans.PropertyChangeEvent $r119;
+        java.security.DigestException $r122;
+        java.security.SecurityPermission $r126;
+        java.util.PropertyPermission $r127;
+        java.util.ConcurrentModificationException $r128;
+        java.util.LinkedList $r129, $r134, $r135;
+        java.text.SimpleDateFormat $r130;
+        java.lang.ref.SoftReference $r132;
+        java.lang.ArrayStoreException $r133;
+        java.security.Permissions $r136;
+        java.util.ArrayList $r137;
+        java.util.WeakHashMap[][][] r149;
+
+        r0 := @parameter0: int[];
+
+        r1 := @parameter1: int[];
+
+        r6 := @parameter2: double[];
+
+        r7 := @parameter3: double[];
+
+     label1:
+        $l3 = <compiler.codegen.TestIntDoubleVect: long TRAPCOUNT>;
+
+        $l4 = $l3 + 1L;
+
+        $r14 = new java.lang.String;
+
+        specialinvoke $r14.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r15 = new java.lang.String;
+
+        specialinvoke $r15.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r16 = new java.lang.String;
+
+        specialinvoke $r16.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r17 = new java.lang.String;
+
+        specialinvoke $r17.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r18 = new java.lang.String;
+
+        specialinvoke $r18.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r19 = new java.lang.String;
+
+        specialinvoke $r19.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r20 = new java.lang.String;
+
+        specialinvoke $r20.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r21 = new java.lang.String;
+
+        specialinvoke $r21.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r22 = new java.lang.String;
+
+        specialinvoke $r22.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r23 = new java.lang.String;
+
+        specialinvoke $r23.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r24 = new java.lang.String;
+
+        specialinvoke $r24.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r25 = new java.lang.String;
+
+        specialinvoke $r25.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r26 = new java.lang.String;
+
+        specialinvoke $r26.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r27 = new java.lang.String;
+
+        specialinvoke $r27.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r28 = new java.lang.String;
+
+        specialinvoke $r28.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r29 = new java.lang.String;
+
+        specialinvoke $r29.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r30 = new java.lang.String;
+
+        specialinvoke $r30.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r31 = new java.lang.String;
+
+        specialinvoke $r31.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r32 = new java.lang.String;
+
+        specialinvoke $r32.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r33 = new java.lang.String;
+
+        specialinvoke $r33.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r34 = new java.lang.String;
+
+        specialinvoke $r34.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r35 = new java.lang.String;
+
+        specialinvoke $r35.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r36 = new java.lang.String;
+
+        specialinvoke $r36.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r37 = new java.lang.String;
+
+        specialinvoke $r37.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r38 = new java.lang.String;
+
+        specialinvoke $r38.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r39 = new java.lang.String;
+
+        specialinvoke $r39.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r40 = new java.lang.String;
+
+        specialinvoke $r40.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r41 = new java.lang.String;
+
+        specialinvoke $r41.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r42 = new java.lang.String;
+
+        specialinvoke $r42.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r43 = new java.lang.String;
+
+        specialinvoke $r43.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r44 = new java.lang.String;
+
+        specialinvoke $r44.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r45 = new java.lang.String;
+
+        specialinvoke $r45.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r46 = new java.lang.String;
+
+        specialinvoke $r46.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r47 = new java.lang.String;
+
+        specialinvoke $r47.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r48 = new java.lang.String;
+
+        specialinvoke $r48.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r49 = new java.lang.String;
+
+        specialinvoke $r49.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r50 = new java.lang.String;
+
+        specialinvoke $r50.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r51 = new java.lang.String;
+
+        specialinvoke $r51.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r52 = new java.lang.String;
+
+        specialinvoke $r52.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r53 = new java.lang.String;
+
+        specialinvoke $r53.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r54 = new java.lang.String;
+
+        specialinvoke $r54.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r55 = new java.lang.String;
+
+        specialinvoke $r55.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r56 = new java.lang.String;
+
+        specialinvoke $r56.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r57 = new java.lang.String;
+
+        specialinvoke $r57.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r58 = new java.lang.String;
+
+        specialinvoke $r58.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r59 = new java.lang.String;
+
+        specialinvoke $r59.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r60 = new java.lang.String;
+
+        specialinvoke $r60.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r61 = new java.lang.String;
+
+        specialinvoke $r61.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r62 = new java.lang.String;
+
+        specialinvoke $r62.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r63 = new java.lang.String;
+
+        specialinvoke $r63.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r64 = new java.lang.String;
+
+        specialinvoke $r64.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r65 = new java.lang.String;
+
+        specialinvoke $r65.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r66 = new java.lang.String;
+
+        specialinvoke $r66.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r67 = new java.lang.String;
+
+        specialinvoke $r67.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r68 = new java.lang.String;
+
+        specialinvoke $r68.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r69 = new java.lang.String;
+
+        specialinvoke $r69.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r70 = new java.lang.String;
+
+        specialinvoke $r70.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r71 = new java.lang.String;
+
+        specialinvoke $r71.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r72 = new java.lang.String;
+
+        specialinvoke $r72.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r73 = new java.lang.String;
+
+        specialinvoke $r73.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r74 = new java.lang.String;
+
+        specialinvoke $r74.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r75 = new java.lang.String;
+
+        specialinvoke $r75.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r76 = new java.lang.String;
+
+        specialinvoke $r76.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r77 = new java.lang.String;
+
+        specialinvoke $r77.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r78 = new java.lang.String;
+
+        specialinvoke $r78.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r79 = new java.lang.String;
+
+        specialinvoke $r79.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r80 = new java.lang.String;
+
+        specialinvoke $r80.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r81 = new java.lang.String;
+
+        specialinvoke $r81.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r82 = new java.lang.String;
+
+        specialinvoke $r82.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r83 = new java.lang.String;
+
+        specialinvoke $r83.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r84 = new java.lang.String;
+
+        specialinvoke $r84.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r85 = new java.lang.String;
+
+        specialinvoke $r85.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r86 = new java.lang.String;
+
+        specialinvoke $r86.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r87 = new java.lang.String;
+
+        specialinvoke $r87.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r88 = new java.lang.String;
+
+        specialinvoke $r88.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r89 = new java.lang.String;
+
+        specialinvoke $r89.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r90 = new java.lang.String;
+
+        specialinvoke $r90.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r91 = new java.lang.String;
+
+        specialinvoke $r91.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r92 = new java.lang.String;
+
+        specialinvoke $r92.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r93 = new java.lang.String;
+
+        specialinvoke $r93.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r94 = new java.lang.String;
+
+        specialinvoke $r94.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r95 = new java.lang.String;
+
+        specialinvoke $r95.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r96 = new java.lang.String;
+
+        specialinvoke $r96.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r97 = new java.lang.String;
+
+        specialinvoke $r97.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r98 = new java.lang.String;
+
+        specialinvoke $r98.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r99 = new java.lang.String;
+
+        specialinvoke $r99.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r100 = new java.lang.String;
+
+        specialinvoke $r100.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r101 = new java.lang.String;
+
+        specialinvoke $r101.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r102 = new java.lang.String;
+
+        specialinvoke $r102.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r103 = new java.lang.String;
+
+        specialinvoke $r103.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r104 = new java.lang.String;
+
+        specialinvoke $r104.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r105 = new java.lang.String;
+
+        specialinvoke $r105.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r106 = new java.lang.String;
+
+        specialinvoke $r106.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r107 = new java.lang.String;
+
+        specialinvoke $r107.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r108 = new java.lang.String;
+
+        specialinvoke $r108.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r109 = new java.lang.String;
+
+        specialinvoke $r109.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r110 = new java.lang.String;
+
+        specialinvoke $r110.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r111 = new java.lang.String;
+
+        specialinvoke $r111.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r112 = new java.lang.String;
+
+        specialinvoke $r112.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r113 = new java.lang.String;
+
+        specialinvoke $r113.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r114 = new java.lang.String;
+
+        specialinvoke $r114.<java.lang.String: void <init>(java.lang.String)>("-;");
+
+        $r116 = new java.lang.ref.PhantomReference;
+
+        $r115 = new java.lang.Object;
+
+        specialinvoke $r115.<java.lang.Object: void <init>()>();
+
+        $r117 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r117.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r116.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r115, $r117);
+
+        $r119 = new java.beans.PropertyChangeEvent;
+
+        $r118 = new java.lang.Object;
+
+        specialinvoke $r118.<java.lang.Object: void <init>()>();
+
+        $r120 = new java.lang.Object;
+
+        specialinvoke $r120.<java.lang.Object: void <init>()>();
+
+        $r121 = new java.lang.Object;
+
+        specialinvoke $r121.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r119.<java.beans.PropertyChangeEvent: void <init>(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object)>($r118, "J/z", $r120, $r121);
+
+        $r122 = new java.security.DigestException;
+
+        specialinvoke $r122.<java.security.DigestException: void <init>()>();
+
+        $r124 = new java.lang.ref.PhantomReference;
+
+        $r123 = new java.lang.Object;
+
+        specialinvoke $r123.<java.lang.Object: void <init>()>();
+
+        $r125 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke $r125.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        specialinvoke $r124.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>($r123, $r125);
+
+        $r126 = new java.security.SecurityPermission;
+
+        specialinvoke $r126.<java.security.SecurityPermission: void <init>(java.lang.String)>("WvG");
+
+        $r127 = new java.util.PropertyPermission;
+
+        specialinvoke $r127.<java.util.PropertyPermission: void <init>(java.lang.String,java.lang.String)>(".E", "wi(ZOv%XYXyDsSJKm!?;q(0slTxAZS{R>;iO+mvl)hM;bf^Z-M3HDf^{aR2X?s_y5b!8pI4}Z-a(QpX5=$9 7r}Cym`i8<@]U:rz%");
+
+        $r128 = new java.util.ConcurrentModificationException;
+
+        specialinvoke $r128.<java.util.ConcurrentModificationException: void <init>()>();
+
+        $r129 = new java.util.LinkedList;
+
+        specialinvoke $r129.<java.util.LinkedList: void <init>()>();
+
+        $r130 = new java.text.SimpleDateFormat;
+
+        specialinvoke $r130.<java.text.SimpleDateFormat: void <init>()>();
+
+        $r132 = new java.lang.ref.SoftReference;
+
+        $r131 = new java.lang.Object;
+
+        specialinvoke $r131.<java.lang.Object: void <init>()>();
+
+        specialinvoke $r132.<java.lang.ref.SoftReference: void <init>(java.lang.Object)>($r131);
+
+        $r133 = new java.lang.ArrayStoreException;
+
+        specialinvoke $r133.<java.lang.ArrayStoreException: void <init>()>();
+
+        $r134 = new java.util.LinkedList;
+
+        specialinvoke $r134.<java.util.LinkedList: void <init>()>();
+
+        $r135 = new java.util.LinkedList;
+
+        specialinvoke $r135.<java.util.LinkedList: void <init>()>();
+
+        $r136 = new java.security.Permissions;
+
+        specialinvoke $r136.<java.security.Permissions: void <init>()>();
+
+        $r137 = new java.util.ArrayList;
+
+        specialinvoke $r137.<java.util.ArrayList: void <init>()>();
+
+        <compiler.codegen.TestIntDoubleVect: long TRAPCOUNT> = $l4;
+
+        $i0 = lengthof r0;
+
+        if 0 < $i0 goto label1;
+
+        return;
+
+        return;
+
+        catch java.lang.NullPointerException from label1 to label1 with label1;
+    }
+}

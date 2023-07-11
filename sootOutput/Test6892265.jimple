@@ -1,0 +1,214 @@
+public class compiler.runtime.Test6892265 extends java.lang.Object
+{
+    static final int NCOPY;
+    static final int OVERFLOW;
+    static int[] src2;
+    static int[] dst2;
+    public static int CHECKSUM;
+
+    static void <clinit>()
+    {
+        int[] $r0;
+        int $i0, $i1, $i2;
+
+        $r0 = newarray (int)[1];
+
+        <compiler.runtime.Test6892265: int[] src2> = $r0;
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = 0;
+
+        $i1 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i0 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i1, $i0);
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = $i2;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.runtime.Test6892265 r0;
+
+        r0 := @this: compiler.runtime.Test6892265;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        int[] $r0;
+        java.io.PrintStream $r1, $r2, $r3, $r5;
+        int $i0, $i1, $i2, $i3, $i4, i5, i6;
+        java.lang.StringBuilder $r4, $r6, $r7;
+        java.lang.String $r8;
+        java.lang.OutOfMemoryError $r9;
+        java.lang.String[] r10;
+
+        r10 := @parameter0: java.lang.String[];
+
+        $r0 = newarray (int)[536870913];
+
+        <compiler.runtime.Test6892265: int[] dst2> = $r0;
+
+        goto label2;
+
+     label1:
+        $r9 := @caughtexception;
+
+        staticinvoke <java.lang.System: void exit(int)>(95);
+
+     label2:
+        i5 = 0;
+
+     label3:
+        staticinvoke <compiler.runtime.Test6892265: void test()>();
+
+        i5 = i5 + 1;
+
+        $i0 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i1 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i0, i5);
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = $i1;
+
+        if i5 < 11000 goto label3;
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("finish");
+
+        $r5 = <java.lang.System: java.io.PrintStream out>;
+
+        $r4 = new java.lang.StringBuilder;
+
+        specialinvoke $r4.<java.lang.StringBuilder: void <init>()>();
+
+        $r6 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i4 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $r7 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i4);
+
+        $r8 = virtualinvoke $r7.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r5.<java.io.PrintStream: void println(java.lang.String)>($r8);
+
+        return;
+
+        return;
+
+        catch java.lang.OutOfMemoryError from label1 to label1 with label1;
+    }
+
+    static void test()
+    {
+        javax.management.openmbean.CompositeData $r0;
+        int $i0, $i1, $i2, $i3, i10, i11, $i12, i13, $i14, $i15, i16, $i18, $i19, $i21, $i22;
+        int[] r3, $r7, $r8, $r9, $r11;
+        double[] r4;
+        java.security.spec.EllipticCurve[][][][] r5;
+        boolean[][][][][] r6;
+        byte b17;
+        boolean[][][][] r10;
+
+        i10 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        i11 = 30;
+
+     label1:
+        if i11 >= 83 goto label2;
+
+        i10 = i10 % 100;
+
+        r4 = newarray (double)[8];
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = i10;
+
+        $i0 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i1 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i0, i10);
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = $i1;
+
+        r5 = newmultiarray (java.security.spec.EllipticCurve)[4][10][6][1];
+
+        i11 = i11 + 1;
+
+        $i2 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i3 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i2, i11);
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = $i3;
+
+        goto label1;
+
+     label2:
+        goto label3;
+
+        r6 = newmultiarray (boolean)[13][9][1][2][1];
+
+        goto label3;
+
+        $r0 = (javax.management.openmbean.CompositeData) null;
+
+        staticinvoke <java.lang.management.MemoryUsage: java.lang.management.MemoryUsage 'from'(javax.management.openmbean.CompositeData)>($r0);
+
+        goto label3;
+
+     label3:
+        $i12 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        i13 = $i12 + 2;
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = i13;
+
+        $i14 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i15 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i14, i13);
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = $i15;
+
+        i16 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        b17 = neg -1;
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = b17;
+
+        $i18 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i19 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i18, b17);
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = $i19;
+
+        $r7 = <compiler.runtime.Test6892265: int[] src2>;
+
+        $r8 = <compiler.runtime.Test6892265: int[] dst2>;
+
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>($r7, 0, $r8, 536870912, 1);
+
+        $r9 = <compiler.runtime.Test6892265: int[] dst2>;
+
+        r10 = newmultiarray (boolean)[11][7][3][1];
+
+        $r11 = <compiler.runtime.Test6892265: int[] src2>;
+
+        staticinvoke <java.lang.System: void arraycopy(java.lang.Object,int,java.lang.Object,int,int)>($r9, 536870912, $r11, 0, 1);
+
+        $i21 = <compiler.runtime.Test6892265: int CHECKSUM>;
+
+        $i22 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i21, 536870912);
+
+        <compiler.runtime.Test6892265: int CHECKSUM> = $i22;
+
+        return;
+
+        return;
+    }
+}

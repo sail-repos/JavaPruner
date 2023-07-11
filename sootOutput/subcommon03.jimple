@@ -1,0 +1,338 @@
+public class vm.compiler.jbe.subcommon.subcommon03.subcommon03 extends java.lang.Object
+{
+    int k;
+    int m;
+    int n;
+    float a;
+    float b;
+    float c;
+    float d;
+    float x;
+    float[] arr;
+    float[] arr_opt;
+    float[][] arr1;
+    float[][] arr1_opt;
+
+    public void <init>()
+    {
+        vm.compiler.jbe.subcommon.subcommon03.subcommon03 r0;
+        float[] $r1, $r2;
+        float[][] $r3, $r4;
+
+        r0 := @this: vm.compiler.jbe.subcommon.subcommon03.subcommon03;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        $r1 = newarray (float)[100];
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr> = $r1;
+
+        $r2 = newarray (float)[100];
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr_opt> = $r2;
+
+        $r3 = newmultiarray (float)[10][10];
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[][] arr1> = $r3;
+
+        $r4 = newmultiarray (float)[10][10];
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[][] arr1_opt> = $r4;
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        vm.compiler.jbe.subcommon.subcommon03.subcommon03 $r0;
+        java.io.PrintStream $r3;
+        java.lang.String[] r4;
+        nsk.share.Log r5;
+
+        r4 := @parameter0: java.lang.String[];
+
+        $r0 = new vm.compiler.jbe.subcommon.subcommon03.subcommon03;
+
+        specialinvoke $r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: void <init>()>();
+
+        virtualinvoke $r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: void un_optimized()>();
+
+        r5 = new nsk.share.Log;
+
+        specialinvoke r5.<nsk.share.Log: void <init>(java.io.PrintStream)>(null);
+
+        virtualinvoke r5.<nsk.share.Log: void complain(java.lang.Object)>("FAILURE 3.4.");
+
+        virtualinvoke r5.<nsk.share.Log: void complain(java.lang.Object)>("Wrong isSuspended value: true, expected: false");
+
+        <nsk.monitoring.ThreadInfo.from_c.from_c001_mutator: boolean testFailed> = 1;
+
+        staticinvoke <Reducer.StmtInsertion: void printBlock(java.lang.String)>("K-ONvoid main(java.lang.String[])-:-5");
+
+        $r3 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r3.<java.io.PrintStream: void println(java.lang.String)>("Test subcommon03 Passed.");
+
+        goto label1;
+
+     label1:
+        return;
+
+        return;
+    }
+
+    void un_optimized()
+    {
+        vm.compiler.jbe.subcommon.subcommon03.subcommon03 r0;
+        float $f0, $f1, $f2, $f3, $f4, $f5, $f6, $f7, $f8, $f9, $f10, $f11, $f12, $f13, $f14, $f15, $f16, $f17, $f18, $f19, $f20, $f21, $f22, $f23, $f24, $f25, $f26, $f27, $f28, $f29, $f30, f31, $f32, $f33, $f34, $f35, $f36, $f37, $f38, $f39, $f40, $f41, $f42, $f43, $f44, $f45, $f46, $f47, f56;
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16;
+        java.lang.StringBuilder $r1, $r3, $r4, $r5, $r18, $r20, $r21, $r22;
+        java.io.PrintStream $r2, $r19;
+        java.lang.String $r6, $r23;
+        float[] $r7, $r8, $r9, $r10, $r11, $r13, $r14, $r15, $r16, $r17, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31;
+        jit.Arrays.ArrayStoreCheck.A[] $r12;
+        int $i0, $i1;
+
+        r0 := @this: vm.compiler.jbe.subcommon.subcommon03.subcommon03;
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c> = 1.1234568F;
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d> = 1.010101F;
+
+        $f0 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c>;
+
+        $d2 = (double) $f0;
+
+        $f1 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d>;
+
+        $d0 = (double) $f1;
+
+        $d1 = $d0 * 2.0;
+
+        $d3 = staticinvoke <java.lang.Math: double sqrt(double)>($d1);
+
+        $d6 = $d2 * $d3;
+
+        $f2 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d>;
+
+        $d4 = (double) $f2;
+
+        $d5 = 2.0 * $d4;
+
+        $d7 = $d6 / $d5;
+
+        $f3 = (float) $d7;
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float a> = $f3;
+
+        $f4 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c>;
+
+        $d10 = (double) $f4;
+
+        $f5 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d>;
+
+        $d8 = (double) $f5;
+
+        $d9 = $d8 * 2.0;
+
+        $d11 = staticinvoke <java.lang.Math: double sqrt(double)>($d9);
+
+        $d14 = $d10 / $d11;
+
+        $f6 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d>;
+
+        $d12 = (double) $f6;
+
+        $d13 = 2.0 * $d12;
+
+        $d15 = $d14 / $d13;
+
+        $f7 = (float) $d15;
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float b> = $f7;
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $r1 = new java.lang.StringBuilder;
+
+        specialinvoke $r1.<java.lang.StringBuilder: void <init>(java.lang.String)>("a=");
+
+        $f8 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float a>;
+
+        $r3 = virtualinvoke $r1.<java.lang.StringBuilder: java.lang.StringBuilder append(float)>($f8);
+
+        $r4 = virtualinvoke $r3.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(";  b=");
+
+        $f9 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float b>;
+
+        $r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(float)>($f9);
+
+        $r6 = virtualinvoke $r5.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r2.<java.io.PrintStream: void print(java.lang.String)>($r6);
+
+        $r7 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f17 = $r7[0];
+
+        $r8 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f11 = $r8[0];
+
+        $r9 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f10 = $r9[0];
+
+        $f15 = $f11 * $f10;
+
+        $r10 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f13 = $r10[1];
+
+        $r11 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f12 = $r11[1];
+
+        $f14 = $f13 * $f12;
+
+        $f16 = $f15 + $f14;
+
+        $f18 = $f17 / $f16;
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c> = $f18;
+
+        $r12 = newarray (jit.Arrays.ArrayStoreCheck.A)[-100];
+
+        $r12[0] = null;
+
+        $r13 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f26 = $r13[1];
+
+        $r14 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f20 = $r14[0];
+
+        $r15 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f19 = $r15[0];
+
+        $f24 = $f20 * $f19;
+
+        $r16 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f22 = $r16[1];
+
+        $r17 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f21 = $r17[1];
+
+        $f23 = $f22 * $f21;
+
+        $f25 = $f24 + $f23;
+
+        $f27 = $f26 * $f25;
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d> = $f27;
+
+        $r19 = <java.lang.System: java.io.PrintStream out>;
+
+        $r18 = new java.lang.StringBuilder;
+
+        specialinvoke $r18.<java.lang.StringBuilder: void <init>(java.lang.String)>(";  c=");
+
+        $f28 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c>;
+
+        $r20 = virtualinvoke $r18.<java.lang.StringBuilder: java.lang.StringBuilder append(float)>($f28);
+
+        $r21 = virtualinvoke $r20.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>(";  d=");
+
+        $f29 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d>;
+
+        $r22 = virtualinvoke $r21.<java.lang.StringBuilder: java.lang.StringBuilder append(float)>($f29);
+
+        $r23 = virtualinvoke $r22.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r19.<java.io.PrintStream: void println(java.lang.String)>($r23);
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: int k> = 0;
+
+        $r24 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $i0 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: int k>;
+
+        f56 = $r24[$i0];
+
+        $r25 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $i1 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: int k>;
+
+        $f30 = $r25[$i1];
+
+        f31 = $f30 * 2.0F;
+
+        $r26 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f32 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float a>;
+
+        $r26[2] = $f32;
+
+        $r27 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f33 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float b>;
+
+        $r27[3] = $f33;
+
+        $r28 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f34 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c>;
+
+        $r28[4] = $f34;
+
+        $r29 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f35 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d>;
+
+        $r29[5] = $f35;
+
+        $r30 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f37 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float b>;
+
+        $f36 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c>;
+
+        $f38 = $f37 / $f36;
+
+        $r30[8] = $f38;
+
+        $r31 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float[] arr>;
+
+        $f40 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c>;
+
+        $f39 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float a>;
+
+        $f41 = $f40 - $f39;
+
+        $r31[9] = $f41;
+
+        $f43 = f31 / f56;
+
+        $f42 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float b>;
+
+        $f45 = $f43 * $f42;
+
+        $f44 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float a>;
+
+        $f46 = $f45 / $f44;
+
+        r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float c> = $f46;
+
+        $f47 = r0.<vm.compiler.jbe.subcommon.subcommon03.subcommon03: float d>;
+
+        $d16 = (double) $f47;
+
+        return;
+
+        return;
+    }
+}

@@ -1,0 +1,703 @@
+public class compiler.eliminateAutobox.TestIntBoxing extends java.lang.Object
+{
+    static final java.lang.Integer ibc;
+    public static long TRAPCOUNT;
+    protected volatile java.util.Vector[][][] field_20999;
+    private static volatile double[][][] field_21023;
+    protected volatile double[][][] field_57228;
+    private java.lang.ref.PhantomReference field_57238;
+    private volatile java.lang.reflect.UndeclaredThrowableException field_103420;
+    protected static volatile long[][][] field_103426;
+
+    static void <clinit>()
+    {
+        java.lang.Integer $r0;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.eliminateAutobox.TestIntBoxing r0;
+        double[][][] $r1;
+        java.lang.reflect.UndeclaredThrowableException $r2;
+        java.util.Vector[][][] $r3;
+        java.lang.ref.PhantomReference $r4;
+        java.lang.Throwable r5;
+        java.lang.ref.ReferenceQueue r6;
+
+        r0 := @this: compiler.eliminateAutobox.TestIntBoxing;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        $r1 = newmultiarray (double)[512][512][64];
+
+        r5 = new java.lang.Throwable;
+
+        specialinvoke r5.<java.lang.Throwable: void <init>()>();
+
+        $r2 = new java.lang.reflect.UndeclaredThrowableException;
+
+        specialinvoke $r2.<java.lang.reflect.UndeclaredThrowableException: void <init>(java.lang.Throwable)>(r5);
+
+        r0.<compiler.eliminateAutobox.TestIntBoxing: java.lang.reflect.UndeclaredThrowableException field_103420> = $r2;
+
+        r0.<compiler.eliminateAutobox.TestIntBoxing: double[][][] field_57228> = $r1;
+
+        $r3 = newmultiarray (java.util.Vector)[32][64][16];
+
+        r6 = new java.lang.ref.ReferenceQueue;
+
+        specialinvoke r6.<java.lang.ref.ReferenceQueue: void <init>()>();
+
+        $r4 = new java.lang.ref.PhantomReference;
+
+        specialinvoke $r4.<java.lang.ref.PhantomReference: void <init>(java.lang.Object,java.lang.ref.ReferenceQueue)>(r0, r6);
+
+        r0.<compiler.eliminateAutobox.TestIntBoxing: java.lang.ref.PhantomReference field_57238> = $r4;
+
+        r0.<compiler.eliminateAutobox.TestIntBoxing: java.util.Vector[][][] field_20999> = $r3;
+
+        return;
+    }
+
+    static void dummy()
+    {
+        return;
+
+        return;
+    }
+
+    static int foo(int)
+    {
+        int i0;
+
+        i0 := @parameter0: int;
+
+        return i0;
+    }
+
+    static java.lang.Integer foob(int)
+    {
+        int i0;
+        java.lang.Integer $r0;
+
+        i0 := @parameter0: int;
+
+        $r0 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0);
+
+        return $r0;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        int[] r0, r34;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, $i17, $i18, $i19, $i20, $i21, $i22, $i23, $i24, $i25, $i26, $i27, $i28, $i29, $i30, $i31, $i32, $i33, $i34, $i35, $i36, $i37, $i38, $i39, $i40, $i41, $i42, $i43, $i44, $i45, $i46, $i47, $i48, $i49, $i50, $i51, $i52, $i53, $i54, $i55, $i56, $i57, $i58, $i59, $i60, $i62, $i63, $i65, $i66, $i68, $i69, $i71, $i72, $i74, $i75, $i77, $i78, $i80, $i81, $i83, $i84, $i86, $i87, $i89, i134, i135;
+        java.lang.Integer $r1, $r2, $r3, $r4;
+        java.lang.String[] r31, r32;
+
+        r31 := @parameter0: java.lang.String[];
+
+        r0 = newarray (int)[70];
+
+        i135 = 0;
+
+     label1:
+        $i0 = r0[0];
+
+        $i1 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simple(int)>(i135);
+
+        $i2 = $i0 + $i1;
+
+        r0[0] = $i2;
+
+        $i3 = r0[1];
+
+        $i4 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simpleb(int)>(i135);
+
+        $i5 = $i3 + $i4;
+
+        r0[1] = $i5;
+
+        $i6 = r0[2];
+
+        $i7 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplec()>();
+
+        $i8 = $i6 + $i7;
+
+        r0[2] = $i8;
+
+        $i9 = r0[3];
+
+        $i10 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplef(int)>(i135);
+
+        $i11 = $i9 + $i10;
+
+        r0[3] = $i11;
+
+        $i12 = r0[4];
+
+        $r1 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i135);
+
+        $i13 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplep(java.lang.Integer)>($r1);
+
+        $i14 = $i12 + $i13;
+
+        r0[4] = $i14;
+
+        $i15 = r0[5];
+
+        $i16 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simple2(int)>(i135);
+
+        $i17 = $i15 + $i16;
+
+        r0[5] = $i17;
+
+        $i18 = r0[6];
+
+        $i19 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simpleb2(int)>(i135);
+
+        $i20 = $i18 + $i19;
+
+        r0[6] = $i20;
+
+        $i21 = r0[7];
+
+        $i22 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplec2(int)>(i135);
+
+        $i23 = $i21 + $i22;
+
+        r0[7] = $i23;
+
+        $i24 = r0[8];
+
+        $i25 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplem2(int)>(i135);
+
+        $i26 = $i24 + $i25;
+
+        r0[8] = $i26;
+
+        $i27 = r0[9];
+
+        $r2 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i135);
+
+        $i28 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplep2(int,java.lang.Integer)>(i135, $r2);
+
+        $i29 = $i27 + $i28;
+
+        r0[9] = $i29;
+
+        $i30 = r0[10];
+
+        $i31 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simple_deop(int)>(i135);
+
+        $i32 = $i30 + $i31;
+
+        r0[10] = $i32;
+
+        $i33 = r0[11];
+
+        $i34 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simpleb_deop(int)>(i135);
+
+        $i35 = $i33 + $i34;
+
+        r0[11] = $i35;
+
+        $i36 = r0[12];
+
+        $i37 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplec_deop(int)>(i135);
+
+        $i38 = $i36 + $i37;
+
+        r0[12] = $i38;
+
+        $i39 = r0[13];
+
+        $i40 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplef_deop(int)>(i135);
+
+        $i41 = $i39 + $i40;
+
+        r0[13] = $i41;
+
+        $i42 = r0[14];
+
+        $r3 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i135);
+
+        $i43 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int simplep_deop(java.lang.Integer)>($r3);
+
+        $i44 = $i42 + $i43;
+
+        r0[14] = $i44;
+
+        $i45 = r0[15];
+
+        $i46 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int test(int)>(i135);
+
+        $i47 = $i45 + $i46;
+
+        r0[15] = $i47;
+
+        $i48 = r0[16];
+
+        $i49 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int testb(int)>(i135);
+
+        $i50 = $i48 + $i49;
+
+        r0[16] = $i50;
+
+        $i51 = r0[17];
+
+        $i52 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int testc(int)>(i135);
+
+        $i53 = $i51 + $i52;
+
+        r0[17] = $i53;
+
+        $i54 = r0[18];
+
+        $i55 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int testm(int)>(i135);
+
+        $i56 = $i54 + $i55;
+
+        r0[18] = $i56;
+
+        $i57 = r0[19];
+
+        $r4 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i135);
+
+        $i58 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int testp(int,java.lang.Integer)>(i135, $r4);
+
+        $i59 = $i57 + $i58;
+
+        r0[19] = $i59;
+
+        $i60 = r0[20];
+
+        $i62 = $i60 + -3;
+
+        r0[20] = $i62;
+
+        $i63 = r0[21];
+
+        $i65 = $i63 + 3;
+
+        r0[21] = $i65;
+
+        $i66 = r0[22];
+
+        $i68 = $i66 + 1;
+
+        r0[22] = $i68;
+
+        $i69 = r0[23];
+
+        $i71 = $i69 + 2;
+
+        r0[23] = $i71;
+
+        $i72 = r0[24];
+
+        staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i135);
+
+        $i74 = $i72 + -100;
+
+        r0[24] = $i74;
+
+        $i75 = r0[25];
+
+        $i77 = $i75 + 1;
+
+        r0[25] = $i77;
+
+        $i78 = r0[26];
+
+        $i80 = $i78 + 3;
+
+        r0[26] = $i80;
+
+        $i81 = r0[27];
+
+        $i83 = $i81 + 0;
+
+        r0[27] = $i83;
+
+        $i84 = r0[28];
+
+        $i86 = $i84 + -3;
+
+        r0[28] = $i86;
+
+        $i87 = r0[29];
+
+        staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i135);
+
+        $i89 = $i87 + 0;
+
+        r0[29] = $i89;
+
+        i135 = i135 + 1;
+
+        if i135 < 12000 goto label1;
+
+        return;
+
+        return;
+    }
+
+    static int simple(int)
+    {
+        java.lang.Integer $r0;
+        int i0, $i1;
+
+        i0 := @parameter0: int;
+
+        $r0 = new java.lang.Integer;
+
+        specialinvoke $r0.<java.lang.Integer: void <init>(int)>(i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i1;
+    }
+
+    static int simple2(int)
+    {
+        java.lang.Integer $r0, $r1;
+        int $i0, $i1, $i2, $i3, i4;
+
+        i4 := @parameter0: int;
+
+        $r0 = new java.lang.Integer;
+
+        specialinvoke $r0.<java.lang.Integer: void <init>(int)>(i4);
+
+        $r1 = new java.lang.Integer;
+
+        $i0 = i4 + 1;
+
+        specialinvoke $r1.<java.lang.Integer: void <init>(int)>($i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        $i2 = virtualinvoke $r1.<java.lang.Integer: int intValue()>();
+
+        $i3 = $i1 + $i2;
+
+        return $i3;
+    }
+
+    static int simple_deop(int)
+    {
+        java.lang.Integer $r0;
+        int i0, $i1, $i2;
+
+        i0 := @parameter0: int;
+
+        $r0 = new java.lang.Integer;
+
+        $i1 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int foo(int)>(i0);
+
+        specialinvoke $r0.<java.lang.Integer: void <init>(int)>($i1);
+
+        staticinvoke <compiler.eliminateAutobox.TestIntBoxing: void dummy()>();
+
+        $i2 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i2;
+    }
+
+    static int simpleb(int)
+    {
+        int i0, $i1;
+        java.lang.Integer $r0;
+
+        i0 := @parameter0: int;
+
+        $r0 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i1;
+    }
+
+    static int simpleb2(int)
+    {
+        java.lang.Integer $r0, r1;
+        int $i0, $i1, $i2, $i3, i4;
+
+        i4 := @parameter0: int;
+
+        $r0 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i4);
+
+        $i0 = i4 + 1;
+
+        r1 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i3 = $i1 + $i2;
+
+        return $i3;
+    }
+
+    static int simpleb_deop(int)
+    {
+        int i0, $i1, $i2;
+        java.lang.Integer $r0;
+
+        i0 := @parameter0: int;
+
+        $i1 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: int foo(int)>(i0);
+
+        $r0 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i1);
+
+        $i2 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i2;
+    }
+
+    static int simplec()
+    {
+        java.lang.Integer $r0;
+        int $i0;
+
+        $r0 = <compiler.eliminateAutobox.TestIntBoxing: java.lang.Integer ibc>;
+
+        $i0 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i0;
+    }
+
+    static int simplec2(int)
+    {
+        int $i0, $i1, $i2, $i3, i4;
+        java.lang.Integer $r0, r1;
+
+        i4 := @parameter0: int;
+
+        $r0 = <compiler.eliminateAutobox.TestIntBoxing: java.lang.Integer ibc>;
+
+        $i0 = i4 + 1;
+
+        r1 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i3 = $i1 + $i2;
+
+        return $i3;
+    }
+
+    static int simplec_deop(int)
+    {
+        java.lang.Integer $r0;
+        int $i0, i1;
+
+        i1 := @parameter0: int;
+
+        $r0 = <compiler.eliminateAutobox.TestIntBoxing: java.lang.Integer ibc>;
+
+        $i0 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i0;
+    }
+
+    static int simplef(int)
+    {
+        int i0, $i1;
+        java.lang.Integer $r0;
+        long[][][] $r1;
+
+        i0 := @parameter0: int;
+
+        $r0 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: java.lang.Integer foob(int)>(i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i1;
+    }
+
+    static int simplef_deop(int)
+    {
+        int i0, $i1;
+        java.lang.Integer $r0;
+
+        i0 := @parameter0: int;
+
+        $r0 = staticinvoke <compiler.eliminateAutobox.TestIntBoxing: java.lang.Integer foob(int)>(i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        return $i1;
+    }
+
+    static int simplem2(int)
+    {
+        java.lang.Integer $r0, r1;
+        int $i0, $i1, $i2, $i3, i4;
+
+        i4 := @parameter0: int;
+
+        $r0 = new java.lang.Integer;
+
+        specialinvoke $r0.<java.lang.Integer: void <init>(int)>(i4);
+
+        $i0 = i4 + 1;
+
+        r1 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i0);
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i3 = $i1 + $i2;
+
+        return $i3;
+    }
+
+    static int simplep(java.lang.Integer)
+    {
+        java.lang.Integer r0;
+        int $i0;
+
+        r0 := @parameter0: java.lang.Integer;
+
+        $i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        return $i0;
+    }
+
+    static int simplep2(int, java.lang.Integer)
+    {
+        int $i0, $i1, $i2, i3, i4;
+        java.lang.Integer $r0, r1;
+
+        i3 := @parameter0: int;
+
+        r1 := @parameter1: java.lang.Integer;
+
+        $i0 = i3 + 1;
+
+        $r0 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>($i0);
+
+        i4 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        $i1 = virtualinvoke $r0.<java.lang.Integer: int intValue()>();
+
+        $i2 = $i1 + i4;
+
+        return $i2;
+    }
+
+    static int simplep_deop(java.lang.Integer)
+    {
+        java.lang.Integer r0;
+        int $i0;
+
+        r0 := @parameter0: java.lang.Integer;
+
+        $i0 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        return $i0;
+    }
+
+    static int test(int)
+    {
+        java.lang.Integer $r0, r1;
+        int i0, $i1, $i2, $i3;
+
+        i0 := @parameter0: int;
+
+        $r0 = new java.lang.Integer;
+
+        specialinvoke $r0.<java.lang.Integer: void <init>(int)>(i0);
+
+        r1 = $r0;
+
+        $i1 = i0 & 1;
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        return $i2;
+    }
+
+    static int testb(int)
+    {
+        int i0, $i1, $i2, $i3;
+        java.lang.Integer r0;
+
+        i0 := @parameter0: int;
+
+        r0 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0);
+
+        $i2 = virtualinvoke r0.<java.lang.Integer: int intValue()>();
+
+        return $i2;
+    }
+
+    static int testc(int)
+    {
+        int i0, $i1, $i2, $i3;
+        java.lang.Integer $r0, r1;
+
+        i0 := @parameter0: int;
+
+        r1 = <compiler.eliminateAutobox.TestIntBoxing: java.lang.Integer ibc>;
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        return $i2;
+    }
+
+    static int testm(int)
+    {
+        int i0, $i1, $i2, $i3;
+        java.lang.Integer $r0, r1;
+
+        i0 := @parameter0: int;
+
+        r1 = staticinvoke <java.lang.Integer: java.lang.Integer valueOf(int)>(i0);
+
+        $i2 = virtualinvoke r1.<java.lang.Integer: int intValue()>();
+
+        return $i2;
+    }
+
+    static int testp(int, java.lang.Integer)
+    {
+        java.lang.String $r0, $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14, $r15, $r16, $r17, $r18, $r19, $r20, $r21, $r22, $r23, $r24, $r25, $r26, $r27, $r28, $r29, $r30, $r31, $r32, $r33, $r34, $r35, $r36, $r37, $r38, $r39, $r40, $r41, $r42, $r43, $r44, $r45, $r46, $r47, $r48, $r49, $r50, $r51, $r52, $r53, $r54, $r55, $r56, $r57, $r58, $r59, $r60, $r61, $r62, $r63, $r64, $r65, $r66, $r67, $r68, $r69, $r70, $r71, $r72, $r73, $r74, $r75, $r76, $r77, $r78, $r79, $r80, $r81, $r82, $r83, $r84, $r85, $r86, $r87, $r88, $r89, $r90, $r91, $r92, $r93, $r94, $r95, $r96, $r97, $r98, $r99, $r100, $r128, $r129, $r131, $r133, $r134, $r135, $r136, $r137, $r138, $r139, $r140, $r141, $r142, $r143, $r144, $r145, $r146, $r147, $r148, $r149, $r150, r171, r172, r173;
+        java.util.ArrayList $r101, $r102, $r104, $r162;
+        java.lang.ref.SoftReference $r103, $r132, $r154;
+        java.lang.ref.ReferenceQueue $r105, $r115, $r118, $r123, $r124, $r156, $r158, $r163;
+        java.lang.ref.PhantomReference $r106, $r116, $r119, $r122, $r125, $r130, $r159, $r164;
+        java.util.LinkedList $r107, $r109, $r110, $r113, $r152, $r157, $r160;
+        java.lang.ref.WeakReference $r108, $r161;
+        java.io.SyncFailedException $r111;
+        java.lang.OutOfMemoryError $r112;
+        java.lang.reflect.GenericSignatureFormatError $r114;
+        java.nio.channels.AlreadyConnectedException $r117;
+        java.lang.UnknownError $r120;
+        java.lang.Object $r121, $r153;
+        java.lang.Integer $r126, $r127, r166;
+        int i1, $i2, $i3, $i4, i8, i13;
+        java.util.jar.JarException $r151;
+        java.lang.management.LockInfo $r155;
+        java.util.LongSummaryStatistics $r165;
+        double[][][] r167;
+        java.util.Random r168;
+
+        i1 := @parameter0: int;
+
+        r166 := @parameter1: java.lang.Integer;
+
+        $i3 = virtualinvoke r166.<java.lang.Integer: int intValue()>();
+
+        return $i3;
+    }
+}

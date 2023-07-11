@@ -1,0 +1,214 @@
+public class compiler.runtime.Test6826736 extends java.lang.Object
+{
+    int[] arr;
+    int[] arr2;
+    public static int CHECKSUM;
+    protected volatile java.lang.Exception[][] field_280369;
+    public long[][][][][] field_280377;
+    public static double field_280379;
+    private volatile short field_280381;
+    private volatile double field_280383;
+    public static volatile boolean[][][][] field_280385;
+
+    static void <clinit>()
+    {
+        boolean[][][][] $r0;
+        int $i0, $i1, $i2;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.runtime.Test6826736 r0;
+        long[][][][][] $r1;
+        java.lang.Exception[][] $r2;
+        java.lang.Throwable r3, $r4, $r6;
+        java.lang.Exception[] $r5;
+        java.lang.Exception $r7;
+
+        r0 := @this: compiler.runtime.Test6826736;
+
+        r0.<compiler.runtime.Test6826736: double field_280383> = 0.1;
+
+        r0.<compiler.runtime.Test6826736: short field_280381> = 0;
+
+        $r1 = newmultiarray (long)[17][4][1][3][1];
+
+        r0.<compiler.runtime.Test6826736: long[][][][][] field_280377> = $r1;
+
+        $r2 = newmultiarray (java.lang.Exception)[17][7];
+
+        $r5 = $r2[13];
+
+        r3 = (java.lang.Throwable) null;
+
+        $r4 = new java.lang.Throwable;
+
+        specialinvoke $r4.<java.lang.Throwable: void <init>(java.lang.Throwable)>(r3);
+
+        $r6 = new java.lang.Throwable;
+
+        specialinvoke $r6.<java.lang.Throwable: void <init>(java.lang.String,java.lang.Throwable)>("", r3);
+
+        $r7 = new java.lang.Exception;
+
+        specialinvoke $r7.<java.lang.Exception: void <init>(java.lang.Throwable)>(r3);
+
+        $r5[2] = $r7;
+
+        r0.<compiler.runtime.Test6826736: java.lang.Exception[][] field_280369> = $r2;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        compiler.runtime.Test6826736 $r0;
+        int[] $r2, $r5, r18;
+        int $i0, $i1, $i2, $i3, $i4, $i5, $i12, i22, i23, i24, i27, i28, $i29, $i30, $i31, $i32;
+        java.io.PrintStream $r3, $r4, $r7, $r12;
+        java.lang.StringBuilder $r6, $r8, $r9;
+        java.lang.String $r10;
+        boolean[][][][] $r11;
+        java.lang.String[] r14;
+        long[][][][][] r15;
+        short[][][][] r19;
+
+        r14 := @parameter0: java.lang.String[];
+
+        goto label1;
+
+     label1:
+        i22 = 0;
+
+        $r0 = new compiler.runtime.Test6826736;
+
+        specialinvoke $r0.<compiler.runtime.Test6826736: void <init>()>();
+
+        r15 = newmultiarray (long)[10][1][12][1][2];
+
+        i23 = 0;
+
+        goto label3;
+
+     label2:
+        $r2 = newarray (int)[100];
+
+        $r0.<compiler.runtime.Test6826736: int[] arr> = $r2;
+
+        i22 = virtualinvoke $r0.<compiler.runtime.Test6826736: int test(int)>(i22);
+
+        i23 = i23 + 1;
+
+        $i0 = <compiler.runtime.Test6826736: int CHECKSUM>;
+
+        $i1 = staticinvoke <JITFuzzing.Check: int checksum(int,int)>($i0, i23);
+
+        <compiler.runtime.Test6826736: int CHECKSUM> = $i1;
+
+     label3:
+        if i23 < 100 goto label2;
+
+        i28 = 0;
+
+        $r12 = <java.lang.System: java.io.PrintStream out>;
+
+        $r11 = newmultiarray (boolean)[17][7][1][2];
+
+        <compiler.runtime.Test6826736: boolean[][][][] field_280385> = $r11;
+
+        virtualinvoke $r12.<java.io.PrintStream: void println(java.lang.String)>("Warmup is done.");
+
+        goto label4;
+
+        return;
+
+     label4:
+        $r7 = <java.lang.System: java.io.PrintStream out>;
+
+        $r6 = new java.lang.StringBuilder;
+
+        specialinvoke $r6.<java.lang.StringBuilder: void <init>()>();
+
+        $r8 = virtualinvoke $r6.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("CHECKSUM: ");
+
+        $i12 = <compiler.runtime.Test6826736: int CHECKSUM>;
+
+        $r9 = virtualinvoke $r8.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>($i12);
+
+        $r10 = virtualinvoke $r9.<java.lang.StringBuilder: java.lang.String toString()>();
+
+        virtualinvoke $r7.<java.io.PrintStream: void println(java.lang.String)>($r10);
+
+        return;
+
+        return;
+    }
+
+    int test(int)
+    {
+        int $i0, $i2, $i5, $i6, $i7, $i8, $i9, $i10, $i11, $i12, $i13, $i14, $i15, $i16, i17, i18, i19, i20;
+        byte $b1;
+        long l3, l4, l21;
+        compiler.runtime.Test6826736 r0;
+        int[] $r1, $r2;
+
+        i17 := @parameter0: int;
+
+        i18 = 0;
+
+     label1:
+        i19 = i18;
+
+     label2:
+        i20 = 0;
+
+        l21 = 0L;
+
+     label3:
+        l3 = (long) i20;
+
+        l4 = l3 + l21;
+
+        $i5 = <compiler.runtime.Test6826736: int CHECKSUM>;
+
+        $i6 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i5, l3);
+
+        <compiler.runtime.Test6826736: int CHECKSUM> = $i6;
+
+        i20 = (int) l4;
+
+        $i7 = <compiler.runtime.Test6826736: int CHECKSUM>;
+
+        $i8 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i7, l4);
+
+        <compiler.runtime.Test6826736: int CHECKSUM> = $i8;
+
+        l21 = l21 + 1L;
+
+        $b1 = l21 cmp 100L;
+
+        $i0 = <compiler.runtime.Test6826736: int CHECKSUM>;
+
+        $i2 = staticinvoke <JITFuzzing.Check: int checksum(int,long)>($i0, l21);
+
+        <compiler.runtime.Test6826736: int CHECKSUM> = $i2;
+
+        if $b1 < 0 goto label3;
+
+        i19 = i19 + 1;
+
+        if i19 < 100 goto label2;
+
+        i18 = i18 + 1;
+
+        if i18 < 100 goto label1;
+
+        return i17;
+    }
+}

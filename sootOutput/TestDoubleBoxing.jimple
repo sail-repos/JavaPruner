@@ -1,0 +1,657 @@
+public class compiler.eliminateAutobox.TestDoubleBoxing extends java.lang.Object
+{
+    static final java.lang.Double ibc;
+
+    static void <clinit>()
+    {
+        java.lang.Double $r0;
+
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.eliminateAutobox.TestDoubleBoxing r0;
+
+        r0 := @this: compiler.eliminateAutobox.TestDoubleBoxing;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    static java.lang.Double foob(double)
+    {
+        double d0;
+        java.lang.Double $r0;
+
+        d0 := @parameter0: double;
+
+        $r0 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(d0);
+
+        return $r0;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        double $d0, $d1, $d2, $d3, $d4, $d5, $d6, $d7, $d8, $d9, $d10, $d11, $d12, $d13, $d14, $d15, $d16, $d17, $d18, $d19, $d20, $d21, $d22, $d23, $d24, $d25, $d26, $d27, $d28, $d29, $d30, $d31, $d32, $d33, $d34, $d35, $d36, $d37, $d38, $d39, $d40, $d41, $d42, $d43, $d44, $d45, $d46, $d47, $d48, $d49, $d50, $d51, $d52, $d53, $d54, $d55, $d56, $d57, $d58, $d59, $d60, $d61, $d62, $d63, $d64, $d65, $d66, $d67, $d68, $d69, $d70, $d71, $d72, $d73, $d74, $d75, $d76, $d77, $d78, $d79, $d80, $d81, $d82, $d83, $d84, $d85, $d86, $d87, $d88, $d89, $d90, $d91, $d92, $d93, $d94, $d95, $d96, $d97, $d98, $d99, $d100, $d101, $d102, $d103, $d104, $d105, $d106, $d107, $d108, $d109, $d110, $d111, $d112, $d113, $d114, $d115, $d116, $d117, $d118, $d119, $d120, $d121, $d122, $d123, $d124, $d125, $d126, $d127, $d128, $d129, $d130, $d131, $d132, $d133, $d134, $d135, $d136, $d137, $d138, $d139, $d140, $d141, $d142, $d143, $d144, $d145, $d146, $d147, $d148, $d149, $d150, $d151, $d152, $d153, $d154, $d155, $d156, $d157, $d158, $d159, $d160, $d161, $d162, $d163, $d164, $d165, $d166, $d167;
+        java.lang.Double $r1, $r2, $r3, $r4, $r5, $r6, $r7, $r8, $r9, $r10, $r11, $r12, $r13, $r14;
+        byte $b0;
+        java.lang.StringBuilder $r15, $r19, $r20, $r21, $r22, $r25, $r27, $r28;
+        java.lang.String $r16, $r18, $r23, $r29;
+        java.io.PrintStream $r17, $r24, $r26;
+        java.lang.InternalError $r30;
+        java.lang.String[] r31, r32;
+        double[] r34, r35, r36;
+        int i1, i2, i3, i4, i5, i6;
+
+        r31 := @parameter0: java.lang.String[];
+
+        r35 = newarray (double)[70];
+
+        i2 = 0;
+
+     label1:
+        $d1 = r35[0];
+
+        $d0 = (double) i2;
+
+        $d2 = -2.0;
+
+        $d3 = $d1 + $d2;
+
+        r35[0] = $d3;
+
+        $d5 = r35[1];
+
+        $d4 = (double) i2;
+
+        $d6 = 0.1;
+
+        $d7 = $d5 + $d6;
+
+        r35[1] = $d7;
+
+        $d8 = r35[2];
+
+        $d9 = -0.1;
+
+        $d10 = $d8 + $d9;
+
+        r35[2] = $d10;
+
+        $d12 = r35[3];
+
+        $d11 = (double) i2;
+
+        $d13 = 1.0;
+
+        $d14 = $d12 + $d13;
+
+        r35[3] = $d14;
+
+        $d16 = r35[4];
+
+        $d15 = (double) i2;
+
+        $r1 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d15);
+
+        $d17 = 1.0;
+
+        $d18 = $d16 + $d17;
+
+        r35[4] = $d18;
+
+        $d20 = r35[5];
+
+        $d19 = (double) i2;
+
+        $d21 = 3.0;
+
+        $d22 = $d20 + $d21;
+
+        r35[5] = $d22;
+
+        $d24 = r35[6];
+
+        $d23 = (double) i2;
+
+        $d25 = 2.0;
+
+        $d26 = $d24 + $d25;
+
+        r35[6] = $d26;
+
+        $d28 = r35[7];
+
+        $d27 = (double) i2;
+
+        $d29 = 0.0;
+
+        $d30 = $d28 + $d29;
+
+        r35[7] = $d30;
+
+        $d32 = r35[8];
+
+        $d31 = (double) i2;
+
+        $d33 = 3.0;
+
+        $d34 = $d32 + $d33;
+
+        r35[8] = $d34;
+
+        $d36 = r35[9];
+
+        $d37 = (double) i2;
+
+        $d35 = (double) i2;
+
+        $r2 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d35);
+
+        $d38 = -3.0;
+
+        $d39 = $d36 + $d38;
+
+        r35[9] = $d39;
+
+        $d41 = r35[10];
+
+        $d40 = (double) i2;
+
+        $d42 = 0.1;
+
+        $d43 = $d41 + $d42;
+
+        r35[10] = $d43;
+
+        $d45 = r35[11];
+
+        $d44 = (double) i2;
+
+        $d46 = 0.1;
+
+        $d47 = $d45 + $d46;
+
+        r35[11] = $d47;
+
+        $d49 = r35[12];
+
+        $d48 = (double) i2;
+
+        $d50 = -2.0;
+
+        $d51 = $d49 + $d50;
+
+        r35[12] = $d51;
+
+        $d53 = r35[13];
+
+        $d52 = (double) i2;
+
+        $d54 = -0.1;
+
+        $d55 = $d53 + $d54;
+
+        r35[13] = $d55;
+
+        $d57 = r35[14];
+
+        $d56 = (double) i2;
+
+        $r3 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d56);
+
+        $d58 = -2.0;
+
+        $d59 = $d57 + $d58;
+
+        r35[14] = $d59;
+
+        $d61 = r35[15];
+
+        $d60 = (double) i2;
+
+        $d62 = 3.0;
+
+        $d63 = $d61 + $d62;
+
+        r35[15] = $d63;
+
+        $d65 = r35[16];
+
+        $d64 = (double) i2;
+
+        $d66 = staticinvoke <compiler.eliminateAutobox.TestDoubleBoxing: double testb(double,int)>($d64, i2);
+
+        $d67 = $d65 + $d66;
+
+        r35[16] = $d67;
+
+        $d69 = r35[17];
+
+        $d68 = (double) i2;
+
+        $d70 = -2.0;
+
+        $d71 = $d69 + $d70;
+
+        r35[17] = $d71;
+
+        $d73 = r35[18];
+
+        $d72 = (double) i2;
+
+        $d74 = -2.0;
+
+        $d75 = $d73 + $d74;
+
+        r35[18] = $d75;
+
+        $d77 = r35[19];
+
+        $d78 = (double) i2;
+
+        $d76 = (double) i2;
+
+        $r4 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d76);
+
+        $d79 = -3.0;
+
+        $d80 = $d77 + $d79;
+
+        r35[19] = $d80;
+
+        $d82 = r35[20];
+
+        $d81 = (double) i2;
+
+        $d83 = -0.1;
+
+        $d84 = $d82 + $d83;
+
+        r35[20] = $d84;
+
+        $d86 = r35[21];
+
+        $d85 = (double) i2;
+
+        $d87 = -0.1;
+
+        $d88 = $d86 + $d87;
+
+        r35[21] = $d88;
+
+        $d90 = r35[22];
+
+        $d89 = (double) i2;
+
+        $d91 = 100.0;
+
+        $d92 = $d90 + $d91;
+
+        r35[22] = $d92;
+
+        $d94 = r35[23];
+
+        $d93 = (double) i2;
+
+        $d95 = 3.0;
+
+        $d96 = $d94 + $d95;
+
+        r35[23] = $d96;
+
+        $d98 = r35[24];
+
+        $d99 = (double) i2;
+
+        $d97 = (double) i2;
+
+        $r5 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d97);
+
+        $d100 = -0.1;
+
+        $d101 = $d98 + $d100;
+
+        r35[24] = $d101;
+
+        $d103 = r35[25];
+
+        $d102 = (double) i2;
+
+        $d104 = -100.0;
+
+        $d105 = $d103 + $d104;
+
+        r35[25] = $d105;
+
+        $d107 = r35[26];
+
+        $d106 = (double) i2;
+
+        $d108 = 0.0;
+
+        $d109 = $d107 + $d108;
+
+        r35[26] = $d109;
+
+        $d111 = r35[27];
+
+        $d110 = (double) i2;
+
+        $d112 = 0.1;
+
+        $d113 = $d111 + $d112;
+
+        r35[27] = $d113;
+
+        $d115 = r35[28];
+
+        $d114 = (double) i2;
+
+        $d116 = 3.0;
+
+        $d117 = $d115 + $d116;
+
+        r35[28] = $d117;
+
+        $d119 = r35[29];
+
+        $d120 = (double) i2;
+
+        $d118 = (double) i2;
+
+        $r6 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d118);
+
+        $d121 = 100.0;
+
+        $d122 = $d119 + $d121;
+
+        r35[29] = $d122;
+
+        i2 = i2 + 1;
+
+        if i2 < 12000 goto label1;
+
+        r36 = newarray (double)[1000];
+
+        i4 = 0;
+
+     label2:
+        $d124 = -100.0;
+
+        r35[30] = $d124;
+
+        $d125 = 0.0;
+
+        r35[31] = $d125;
+
+        $d126 = 100.0;
+
+        r35[32] = $d126;
+
+        $d127 = 0.0;
+
+        r35[33] = $d127;
+
+        $r7 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d128 = -0.1;
+
+        r35[34] = $d128;
+
+        $d129 = -2.0;
+
+        r35[35] = $d129;
+
+        $d130 = 3.0;
+
+        r35[36] = $d130;
+
+        $d131 = -0.1;
+
+        r35[37] = $d131;
+
+        $d132 = 100.0;
+
+        r35[38] = $d132;
+
+        $r8 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d133 = -100.0;
+
+        r35[39] = $d133;
+
+        $d134 = -0.1;
+
+        r35[40] = $d134;
+
+        $d135 = 100.0;
+
+        r35[41] = $d135;
+
+        $d136 = 0.0;
+
+        r35[42] = $d136;
+
+        $d137 = 3.0;
+
+        r35[43] = $d137;
+
+        $r9 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d138 = staticinvoke <compiler.eliminateAutobox.TestDoubleBoxing: double sump_deop(double[],java.lang.Double)>(r36, $r9);
+
+        r35[44] = $d138;
+
+        $d139 = 2.0;
+
+        r35[45] = $d139;
+
+        $d140 = 1.0;
+
+        r35[46] = $d140;
+
+        $d141 = -3.0;
+
+        r35[47] = $d141;
+
+        $d142 = -2.0;
+
+        r35[48] = $d142;
+
+        $r10 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d143 = -3.0;
+
+        r35[49] = $d143;
+
+        $d144 = 100.0;
+
+        r35[50] = $d144;
+
+        $d145 = -1.0;
+
+        r35[51] = $d145;
+
+        $d146 = 0.1;
+
+        r35[52] = $d146;
+
+        $d147 = 2.0;
+
+        r35[53] = $d147;
+
+        $r11 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d148 = 100.0;
+
+        r35[54] = $d148;
+
+        $d149 = 1.0;
+
+        r35[55] = $d149;
+
+        $d150 = -0.1;
+
+        r35[56] = $d150;
+
+        $d151 = -100.0;
+
+        r35[57] = $d151;
+
+        $d152 = -0.1;
+
+        r35[58] = $d152;
+
+        $r12 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d153 = 0.1;
+
+        r35[59] = $d153;
+
+        $d154 = 2.0;
+
+        r35[60] = $d154;
+
+        $d155 = -0.1;
+
+        r35[61] = $d155;
+
+        $d156 = 3.0;
+
+        r35[62] = $d156;
+
+        $d157 = 0.1;
+
+        r35[63] = $d157;
+
+        $r13 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d158 = 1.0;
+
+        r35[64] = $d158;
+
+        $d159 = 100.0;
+
+        r35[65] = $d159;
+
+        $d160 = -0.1;
+
+        r35[66] = $d160;
+
+        $d161 = 2.0;
+
+        r35[67] = $d161;
+
+        $d162 = 0.1;
+
+        r35[68] = $d162;
+
+        $r14 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(1.0);
+
+        $d163 = -3.0;
+
+        r35[69] = $d163;
+
+        i4 = i4 + 1;
+
+        if i4 < 100 goto label2;
+
+        i5 = 0;
+
+        if i5 <= 0 goto label3;
+
+     label3:
+        return;
+
+        return;
+    }
+
+    static double sump_deop(double[], java.lang.Double)
+    {
+        double d0, $d1, $d2;
+        java.lang.NullPointerException $r0, $r1;
+        double[] r2;
+        java.lang.Double r3, r6;
+        int i1;
+
+        r2 := @parameter0: double[];
+
+        r3 := @parameter1: java.lang.Double;
+
+        i1 = lengthof r2;
+
+     label1:
+        if 0 < i1 goto label2;
+
+     label2:
+        r6 = new java.lang.Double;
+
+        $d1 = r2[0];
+
+        staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d1);
+
+        $r0 = new java.lang.NullPointerException;
+
+        specialinvoke $r0.<java.lang.NullPointerException: void <init>(java.lang.String)>("This statement would have triggered an Exception: l7#23 = virtualinvoke l9#7.<java.lang.Double: double doubleValue()>()");
+
+        throw $r0;
+
+        if 0 < i1 goto label1;
+
+        $d2 = virtualinvoke r3.<java.lang.Double: double doubleValue()>();
+
+        return $d2;
+    }
+
+    static double testb(double, int)
+    {
+        double d0, $d1, $d2;
+        int $i0, i1;
+        Property $r0, $r1;
+        java.lang.LinkageError $r2;
+        java.lang.String $r3;
+        java.lang.Double r4;
+
+        d0 := @parameter0: double;
+
+        i1 := @parameter1: int;
+
+        r4 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>(d0);
+
+        $i0 = i1 & 1;
+
+        if $i0 != 0 goto label1;
+
+        $d1 = d0 + 1.0;
+
+        r4 = staticinvoke <java.lang.Double: java.lang.Double valueOf(double)>($d1);
+
+        $r0 = new Property;
+
+        specialinvoke $r0.<Property: void <init>()>();
+
+        $r1 = new Property;
+
+        specialinvoke $r1.<Property: void <init>()>();
+
+        goto label1;
+
+        $r2 := @caughtexception;
+
+        $r3 = virtualinvoke $r2.<java.lang.LinkageError: java.lang.String getMessage()>();
+
+        <TestClassResolutionFail_mutator: java.lang.String message> = $r3;
+
+     label1:
+        $d2 = virtualinvoke r4.<java.lang.Double: double doubleValue()>();
+
+        return $d2;
+
+        catch java.lang.LinkageError from label1 to label1 with label1;
+    }
+}

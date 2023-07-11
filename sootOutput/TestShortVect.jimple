@@ -1,0 +1,119 @@
+public class compiler.c2.cr6340864.TestShortVect extends java.lang.Object
+{
+    private static final int ARRLEN;
+    private static final int ITERS;
+    private static final int ADD_INIT;
+    private static final int BIT_MASK;
+    private static final int VALUE;
+    private static final int SHIFT;
+    protected static java.nio.file.FileSystemException[][][] field_117485;
+    public static long TRAPCOUNT;
+
+    static void <clinit>()
+    {
+        return;
+
+        return;
+    }
+
+    public void <init>()
+    {
+        compiler.c2.cr6340864.TestShortVect r0;
+
+        r0 := @this: compiler.c2.cr6340864.TestShortVect;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream $r0;
+        java.lang.String[] r7;
+
+        r7 := @parameter0: java.lang.String[];
+
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Testing Short vectors");
+
+        staticinvoke <compiler.c2.cr6340864.TestShortVect: int test()>();
+
+        return;
+
+        return;
+    }
+
+    static int test()
+    {
+        short[] r0, r11, r12, r13, r14;
+        long[] r1;
+        int $i0, i486, i488;
+        java.io.PrintStream $r2;
+        int[] r15;
+        short s487;
+
+        r0 = newarray (short)[997];
+
+        r11 = newarray (short)[997];
+
+        i488 = 0;
+
+     label1:
+        staticinvoke <compiler.c2.cr6340864.TestShortVect: void test_subv(short[],short[],short)>(r0, r11, 7);
+
+        i488 = i488 + 1;
+
+        if i488 < 11000 goto label1;
+
+        return 0;
+    }
+
+    static void test_subv(short[], short[], short)
+    {
+        sun.hotspot.WhiteBox $r0, $r1;
+        short s0, $s1;
+        java.util.Random r2;
+        java.nio.file.FileSystemException[][] r3;
+        short[] r8, r9;
+        java.nio.file.FileSystemException[][][] r10;
+        int i8, i9, i10, $i14;
+
+        r8 := @parameter0: short[];
+
+        r9 := @parameter1: short[];
+
+        s0 := @parameter2: short;
+
+        $r0 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        $r1 = staticinvoke <sun.hotspot.WhiteBox: sun.hotspot.WhiteBox getWhiteBox()>();
+
+        virtualinvoke $r1.<sun.hotspot.WhiteBox: void youngGC()>();
+
+        virtualinvoke $r0.<sun.hotspot.WhiteBox: void fullGC()>();
+
+        goto label2;
+
+     label1:
+        $s1 = r9[0];
+
+        r10 = <compiler.c2.cr6340864.TestShortVect: java.nio.file.FileSystemException[][][] field_117485>;
+
+        r2 = new java.util.Random;
+
+        specialinvoke r2.<java.util.Random: void <init>(long)>(1L);
+
+        i8 = lengthof r10;
+
+     label2:
+        $i14 = lengthof r8;
+
+        if 0 < $i14 goto label1;
+
+        return;
+
+        return;
+    }
+}

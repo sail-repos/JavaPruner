@@ -1,0 +1,76 @@
+public class InvokeStaticSuccessTest extends selectionresolution.SelectionResolutionTest
+{
+    public static final selectionresolution.SelectionResolutionTestCase$Builder initBuilder;
+    public static final java.util.Collection testgroups;
+    public static int my_check_sum;
+
+    static void <clinit>()
+    {
+        selectionresolution.SelectionResolutionTestCase$Builder $r0, $r2, $r6, $r23, $r39, $r55, $r69, $r85, $r101, $r115, $r131, $r146, $r161, $r175, $r190, $r204, $r218;
+        selectionresolution.SelectionResolutionTestCase$InvokeInstruction $r1;
+        selectionresolution.SelectionResolutionTest$TestGroup[] r3;
+        selectionresolution.SelectionResolutionTest$TestGroup$Simple $r4, $r21, $r37, $r53, $r67, $r83, $r99, $r113, $r129, $r144, $r159, $r173, $r188, $r202, $r216;
+        selectionresolution.Template$Kind $r5, $r22, $r38, $r54, $r68, $r84, $r100, $r114, $r130, $r145, $r160, $r174, $r189, $r203, $r217;
+        java.util.EnumSet $r7, $r12, $r14, $r16, $r24, $r28, $r30, $r32, $r40, $r44, $r46, $r48, $r56, $r58, $r60, $r62, $r70, $r74, $r76, $r78, $r86, $r90, $r92, $r94, $r102, $r104, $r106, $r108, $r116, $r120, $r122, $r124, $r132, $r135, $r137, $r139, $r147, $r150, $r152, $r154, $r162, $r164, $r166, $r168, $r176, $r179, $r181, $r183, $r191, $r193, $r195, $r197, $r205, $r207, $r209, $r211, $r219, $r221, $r223, $r225;
+        selectionresolution.MethodData$Access $r8, $r9, $r10, $r11, $r25, $r26, $r27, $r41, $r42, $r43, $r57, $r71, $r72, $r73, $r87, $r88, $r89, $r103, $r117, $r118, $r119, $r133, $r134, $r148, $r149, $r163, $r177, $r178, $r192, $r206, $r220;
+        selectionresolution.MethodData$Context $r13, $r29, $r45, $r59, $r75, $r91, $r105, $r121, $r136, $r151, $r165, $r180, $r194, $r208, $r222;
+        selectionresolution.ClassData$Package $r15, $r31, $r47, $r61, $r77, $r93, $r107, $r123, $r138, $r153, $r167, $r182, $r196, $r210, $r224;
+        selectionresolution.Template $r17, $r18, $r19, $r20, $r33, $r34, $r35, $r36, $r49, $r50, $r51, $r52, $r63, $r64, $r65, $r66, $r79, $r80, $r81, $r82, $r95, $r96, $r97, $r98, $r109, $r110, $r111, $r112, $r125, $r126, $r127, $r128, $r140, $r141, $r142, $r143, $r155, $r156, $r157, $r158, $r169, $r170, $r171, $r172, $r184, $r185, $r186, $r187, $r198, $r199, $r200, $r201, $r212, $r213, $r214, $r215, $r226, $r227, $r228, $r229;
+        java.util.List $r230;
+        int $i0, $i1, $i2;
+        selectionresolution.Template[] r231, r232, r233, r234, r235, r236, r237, r238, r239, r240, r241, r242, r243, r244, r245;
+
+        return;
+
+        return;
+    }
+
+    private void <init>()
+    {
+        InvokeStaticSuccessTest r0;
+        java.util.Collection $r1;
+
+        r0 := @this: InvokeStaticSuccessTest;
+
+        $r1 = <InvokeStaticSuccessTest: java.util.Collection testgroups>;
+
+        specialinvoke r0.<selectionresolution.SelectionResolutionTest: void <init>(java.util.Collection)>($r1);
+
+        return;
+    }
+
+    public static transient void main(java.lang.String[])
+    {
+        InvokeStaticSuccessTest $r0;
+        java.io.PrintStream $r1, $r2;
+        int $i0;
+        java.lang.NullPointerException $r3;
+        java.lang.String[] r4;
+
+        r4 := @parameter0: java.lang.String[];
+
+        $r0 = new InvokeStaticSuccessTest;
+
+        specialinvoke $r0.<InvokeStaticSuccessTest: void <init>()>();
+
+        virtualinvoke $r0.<InvokeStaticSuccessTest: void run()>();
+
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+
+        virtualinvoke $r1.<java.io.PrintStream: void print(java.lang.String)>("my_check_sum_value:");
+
+        $r2 = <java.lang.System: java.io.PrintStream out>;
+
+        $i0 = <InvokeStaticSuccessTest: int my_check_sum>;
+
+        virtualinvoke $r2.<java.io.PrintStream: void println(int)>($i0);
+
+        $r3 = new java.lang.NullPointerException;
+
+        specialinvoke $r3.<java.lang.NullPointerException: void <init>(java.lang.String)>("This statement would have triggered an Exception: $stack5.<compiler.escapeAnalysis.Test6689060$Point: int x> = 5");
+
+        throw $r3;
+
+        return;
+    }
+}
